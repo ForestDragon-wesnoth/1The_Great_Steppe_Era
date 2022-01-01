@@ -1,0 +1,10 @@
+wesnoth po generation commands (use shift+ins in the cygwin console):
+
+1. use the "cd" command to go to the GSE add-on folder
+
+
+2.use the following command to generate .pot
+
+perl wmlxgettext_edited.pl --domain=wesnoth-gse --directory=. *.cfg utils/*.cfg lua/*.lua factions/*.cfg maps/*.cfg units/ogres/*.cfg units/khaganate/*.cfg units/hunns/*.cfg  units/slavs/*.cfg units/kingdom/*.cfg > wesnoth-gse.pot
+
+3.in PoEdit, in catalog select "update from POT", and then edit the strings

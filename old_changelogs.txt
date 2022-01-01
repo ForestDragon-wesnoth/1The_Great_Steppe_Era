@@ -1,0 +1,519 @@
+
+General changes:
+- replaced the crappy old translation system with a proper .po-based one. If you find any text that hasn't been translated or other translation errors, let us know. Additionally, you can now contribute by translating the era into your language if you want
+- factions now have their descriptions in the help menu, similarly to default era ones
+- new add-on icon
+- the era has been ported to 1.16
+Dead Field Coven changes:
+- brought back Primal Patriarch, this time with new art and changed stats
+- Demon Warmonger has a new 'souleater' attack, and his 'devourer of souls' ability now gains souls equal to the killed unit's level instead of always 1
+
+0.5.1c Release
+- fixed building upgrades not costing any gold
+
+0.5.1b Release
+- added option to disable custom AI (as some options currently cause OOS in multiplayer, like in Afterlife)
+
+0.5.1 Release
+Bull Tumen changes:
+- when the leader (or all leaders, if there are multiple) dies, all captured units become freed
+- fixed multiple prisoners only being sold one at a time, as well as a few other minor bugs with capture
+Serpent Khaganate changes:
+- added portrait for vampires (contributed by Kordov)
+- shadow master now has area of effect instead of stun on his blood explosion attack
+- fixed some portraits being scaled weirdly in the help menu
+Northern Knyaz Triumvirate changes:
+- added custom AMLA to Grand Guard, and reduced his max exp from 150 to 100
+- buffed apprentice ranged damage from 6-2 to 7-2, but nerfed melee from 5-2 to 4-1
+- nerfed skylark price to 17
+
+0.5.0b Release
+Northern Knyaz Triumvirate changes:
+- added descriptions to a few abilities that were missing them (reflect/light area)
+- fixed skylark not having magical special
+
+0.5.0 Release
+Northern Knyaz Triumvirate changes:
+- faction has been pretty much completely reworked
+- instead of a single specialized builder unit, nearly each of the faction's recruitable units can build 1 building type
+- Builder has been replaced by Apprentice (unit that can upgrade buildings)
+- there are more slav changes than listed here, but you'll have see them for yourself :) 
+
+0.4.1beta Release
+General changes:
+- new add-on icon
+- added option to disable the leader nerf feature (useful if you're playing co-op gamemodes instead of pvp ones, where balance isn't as strictly important)
+- balanced random is now the default option in the english version
+- the 'slow 7mp leaders' code now also works on 8mp leaders and above
+- fixed the slow leader/nerf leader features applying traits even if the leader already had the trait
+Bull Tumen changes:
+- reduced bull's max xp from 37 to 33
+Serpent Khaganate changes:
+- salamanders now have +2 hp, but 0% pierce resistance instead of 20%
+Dead Field Coven changes:
+- +5 hp but -1 mp for kanavar slasher
+- removed Kanavar Marksman from the leaderpool for now
+- kanavars birthed by rodimitsa now cost 12 gold instead of 11
+- barrow warden now has 8 moves instead of 7
+
+0.4.0beta Release
+General changes:
+- added 'Random Balanced' to the GSE era
+- added 'Random GSE' and 'Random Default' to the GSE + Default era
+- leaders with 7MP or more now have the slow trait
+- certain very op leaders (bull priest, thunder shaman and serpenthead) now have an 'old' trait (different from mainline's 'aged', this trait reduces all damage by 1, and max hp by 4), while some slightly op leaders (naga bekh and punisher, as well as wild witch) get a 'fragile' trait (-4 max hp)
+Bull Tumen changes:
+- new unit: Minotaur Fanatic (alternate levelup for Bull, branch goes to lvl4)
+- mancatcher rework: -5 hp, removed bolas, +1 strike for dagger, added whip attack as a replacement for bolas
+- pillage now gives 1 less gold from village, but 75% instead of 50% on kill
+- bull changes: added minotaur advancement, -5 hp, +2 cost
+- tarbynn changes: -2 hp, -1 cost, -1 melee damage, +1 ranged damage
+- +1 hp for ogre hunter, -2 hp for ogre shaman and +1 cost for ogre grunt
+- tarbyyns no longer create fire when destroying villages
+Serpent Khaganate changes:
+- new unit: Salamander (powerful fire damage attacker and swimmer)
+- serpenthead rework: +2 hp, lvl1 no longer has black fire (lvl2 has it with 8-3 damage), -4 enslave damage but enslave now has always hits and works on non-living units (except mechanical)
+- gnoll rework: removed disloyal, removed slow from ranged attack on lvl1, -1 cost
+- naga changes: +1 hp (but lower hp for bekh), -2 cost, nerfed oversight from 20% back to 15%, removed convert slaves on lvl1
+- nuckelavee changes: +1 hp, -2 cost
+- vampire changes: -1 ranged damage, night form is now neutral instead of chaotic
+Dead Field Coven changes:
+- primal rework: primal spawn is now lvl1 and no longer has container of darkness (lvl2 and above keep the ability though), -7 hp, -2 damage, -10 cost, added primal strength (lvl2), and removed primal patriarch for now
+- witch rework: -1 hp, +1 mp, -4 cost, -1 chill burst damage, curse no longer has curse of decay on lvl1, kanavars take 1 turn less to be birthed but +5 recall cost, removed the 'recruited kanavars get witch buffs if the witch is a leader'
+- demon changes: -2 cost, -3 ranged damage, added leadership animation
+- ghoul changes: -3 cost, added AMLA for fiend, added english description
+- kanavar changes: -1 cost, -1 ranged damage, birthed kanavars have 4 upkeep
+- barrow rider changes: -1 hp
+- fear shadow changes: +1 mp, +1 cost, bonus fear shadows given by wild witch now cost 9 to recall instead of 0
+- slave spearman changes: -5 hp, +2 max exp, +1 cost
+- slave archer changes: -6 hp, +1 cost
+- removed barrow warden/primal from the leaderpool
+Northern Knyaz Triumvirate changes:
+- removed starting wall
+- the AI no longer builds watchtowers (as it doesn't benefit from clearing fog, and tends to waste gold on them)
+
+
+0.3.4 Release
+General changes:
+- shortened the era description, as it used to take up most of the screen
+Bull Tumen changes:
+- apprentice now has unpoison
+- fixed freed captured units being not being removed from the captured units list in the code
+Serpent Khaganate changes:
+- oversight now buffs disloyals too
+- reworked naga overseer: added convert slaves special on melee, buffed oversight from 15% to 20%, and naga punisher's oversight from 30% to 33%, oversight now buffs disloyals too, increased blade/pierce resistances by 10%, reduced cold resistance by 10%, increased cost from 16 to 18
+- reworked gnoll: lower hp, melee is now 4-4 instead of 3-5, cost is increased from 14 to 15, increased blade resistance by 10% and reduced pierce resistance by 10%
+- tweaked serpenthead: +1 max hp, increased pierce/arcane resistance from 10% to 20%, and reduced cold resistance from -10% to -20%
+- buffed vampire ranged damage from 6-2 to 7-2
+- nuckelavee now have better movecosts/defenses, but slightly less hp
+- slave spearmen/archers now have slightly more hp and have their own movetype (instead of using the dunefolk movetype), but have -10% cold resistance
+- enslave now works on vampires
+- nagas/serpentheads now have 50% defense on forest/hills instead of 40%
+Dead Field Coven changes:
+- new unit line: Steppe Ghoul
+- new sprites for the demon line
+- added menu on cursed units that lets you see which witch cursed the unit
+- curse of decay now spawns a lesser ghoul on kill
+- primal rework: +1 mp, slightly lower hp/attack/cost, +10% impact resistance, -10% blade/arcane resistances
+- witch rework: shadow burst is now replaced by a slightly stronger cold attack, curse is now arcane, the unit has slightly higher hp, wild witch no longer has overwhelm on her evil eye attack
+- barrow rider now have 40% pierce resistance instead of 30%, and 8 mp instead of 7
+- fear shadows now have have 30% defense on water, and have 2 movecost on water instead of 3, but have 6 MP instead of 7
+- kanavars now cost 22 instead of 23, but cost 8 to recall isntead of 7
+- demons now have 0% pierce resistance instead of -20%, and 8-2 ranged damage instead of 7-2
+- curse of decay now deals damage AFTER healing instead of before
+- witches with a birth timer now have a kanavar overlay
+- fixed mistress of dead field having enslave on her attack
+Northern Knyaz Triumvirate changes:
+- added custom AMLA to Luminary, and reduced its max exp from 100 to 70
+- AI can now use longranged attacks
+- improved build AI (still very WIP, but slightly less awful than before (for example, it can no longer build on impassable terrain))
+- long-range is now a weapon special instead of ability (as otherwise outposts used the bow attack instead of the ballista one for long-ranged attacks)
+- fixed long-range attacks being able to target invisible units
+
+0.3.3 Release
+Bull Tumen changes:
+- pillaged villages now burn for 1 turn longer (purely visual effect)
+- burning villages now have campfire sound source
+- added more random names for steppe ogres
+Serpent Khaganate changes:
+- added spear attack animation for khaganate sentinel (contributed by Tezereth)
+- finish off special now also gives bonus chance to hit if the enemy is at low HP (now enslave is less reliant on RNG)
+- khaganate can now convert slaves in the same way as other factions can free them
+- khaganate can now free slaves if they are former allies
+Northern Knyaz Triumvirate changes:
+- added new building AMLA to Zimnovsk Master Architect
+- added spear attack animation for zimnovsk militia (contributed by Tezereth)
+- added mace attack animation for zimnovsk militia (contributed by Tezereth)
+- added russian descriptions to the zimnovsk grand guard and the krad jouster line
+- outpost's ballista attack is now attack-only, but it now has a new bow attack
+- outpost can now advance to fortress, and reduced its max exp from 100 to 50
+- longrange attacks can no longer be used on adjacent units
+- nerfed skylark's defense from 60% to 50%
+- increased skylark's price from 15 to 16
+- increased zimnovsk militia's price from 13 to 16
+- nerfed zimnovsk militia's HP from 40 to 37
+- reduced teleporter (AMLA building) cost from 20 to 18
+- fixed traps not being counted as buildings
+- fixed petrified units counting towards slave/disloyal total level calculations
+- fixed not being able to undo moves if there is a trap on the battlefield
+- fixed lvl0 units not being able to free slaves
+- fixed some AMLAs not increasing max exp
+
+0.3.2 Release
+- added custom AMLA to Krad Master Architect, and reduced his max exp from 100 to 70
+- added custom AMLA to Temsk Master Architect, and reduced his max exp from 100 to 70
+- added custom AMLA to Zimnovsk Master Architect, and reduced his max exp from 100 to 70
+- added custom AMLA to Temsk Braveheart, and reduced his max exp from 100 to 70
+- added custom AMLA to Temsk Champion, and reduced his max exp from 150 to 100
+- messenger of light now has lesser illuminates instead of illuminates
+- increased skylark's price from 13 to 15
+- reduced serpenthead tarhan's price from 21 to 20
+- buffed fortress damage from 16-2 to 17-2
+- reduced fortress price from 26 to 25
+- nerfed krad knyaz warrior's melee damage on all attacks
+- wood wall now costs 5 instead of 6
+- pit trap's immobilization now lasts 3 turns instead of 2
+- invisible units no longer count towards total level for slaves/disloyals
+- repairing villages is now slightly cheaper
+- capture ability no longer works on buildings
+- in the steppe survival, the last wave turn is now shown in the objectives
+- fixed the rubble image not being removed when a village is repaired
+- fixed skylarks not receiving experience from aoe attacks when defending
+- fixed starting walls spawning on castles if the starting keep is next to the border and the side is AI
+- fixed the market build option not showing cost properly when selecting zimnovsk master architect as leader
+- fixed the [unstore_unit] error for longranged attacks
+- fixed longranged attacks not giving exp
+
+0.3.1 Release
+- added russian descriptions to the temsk raider, tesmk archer and zimnovsk militia (except lvl3) unit lines
+- added custom AMLA to Kanavar Slasher, and reduced his max exp from 100 to 70
+- added saber attack animation for kanavar slasher (contributed by Tezereth)
+- added sword attack animation for barrow tsar (contributed by Tezereth)
+- nerfed buildings' fire resistances by 10%
+- nerfed outpost hp from 55 to 50
+- nerfed outpost longrange attack range from 4 tiles to 3 tiles
+- removed melee attack from outpost
+- removed Drake Master Smith from the leader pool
+- buildings can no longer be built on deep water
+- fixed missing russian description for the build/long-range abilities
+- fixed the ravenform menu being usable on enemies
+- fixed lvl2 architects not being able to build if they were advanced from lvl1
+
+0.3.0 Release
+- new faction: Northern Knyaz Triumvirate
+- The Northern Knyaz Triumvirate is a faction of the people of the north. The three knyazdoms entered into an alliance to fight back the evil that is approaching from the steppe. Playing as the triumvirate, you will command a diverse and flexible army. Your units will be able to build fortifications, improve armor and inspire allies to battle. Use the creative potential of the northerners to defeat the nomad armies!
+
+
+0.2.10 Release
+Serpent Khaganate changes:
+- translated vampire race description (contributed by dwarftough)
+- translated ka'ruuk'oni race description (contributed by dwarftough)
+
+0.2.9 Release
+Bull Tumen changes:
+- fixed the antisocial ability being nullified by leadership
+Serpent Khaganate changes:
+- vampires now transform at the start of the turn, instead of side turn
+- buffed slave archer's price from 10 to 9
+- nerfed gnoll ripper/shredder's bear trap damage from 7-2/8-3 to 6-2/7-3
+Dead Field Coven changes:
+- witches' birth timer now only starts when in a 3-tile radius from a demon
+- added the option (in match settings) to enable halo for demon that visually shows the above change's radius
+- nerfed kanavar's flat/sand/castle defense from 50% to 40%
+- increased witch price from 20 gold to 21
+- reduced primal spawn price from 28 to 27
+- recalling kanavars now costs 7 gold instead of 5
+- recalling wolves given at the start by wild witch now costs 0 gold instead of 5
+
+0.2.8 Release
+Bull Tumen changes:
+- caged units are no longer sold if there are more freers than slavers next to the cage (otherwise it was nearly impossible to free caged units in normal circumstances)
+- buffed ogre shallow water defense from 10% to 20%
+- reduced ogre shaman's max exp from 45 to 42
+- fixed the thunderstrike not triggering properly when there is more than 1 unit with the ability
+- translated Tarbynn description (contributed by dwarftough)
+Serpent Khaganate changes:
+- added portrait to the gnoll line (contributed by zhora)
+- added custom AMLA to Khaganate Sentinel, and reduced his max exp from 100 to 60
+- added custom AMLA to Khaganate Marksman, and reduced his max exp from 100 to 60
+- khaganate sentinel's melee attack is now changed from spear to pike
+- fixed the khaganate citizenship AMLA not giving the loyal trait
+- translated serpenthead race description (contributed by dwarftough)
+Dead Field Coven changes:
+- added custom AMLA to Mistress of Dead Field, and reduced her max exp from 200 to 125
+- added portraits to the fear shadow line
+- added a '+1 damage' AMLA to fear incarnate, and the pack alpha AMLA now also gives skirmisher
+- nerfed primal spawn hp from 66 to 62
+- nerfed primal spawn max exp from 65 to 70
+- nerfed primal spawn price from 25 to 28
+- container of darkness' healing is now rounded down instead of up
+- removed fearless trait from primal spawn
+- changed demon knyaz's spear icon to the pike icon
+Misc changes:
+- aoe attacks now trigger more types of events
+- aoe attacks now show their chance to hit in the weapon special name
+
+
+0.2.7 Release
+Major changes:
+- new scenario: Steppe Fortress: a survival scenario where you must fend off waves of steppe units from three sides
+Bull Tumen changes:
+- ogre grand shaman now has a lightning storm aoe attack
+- added portrait for bulls
+- translated battle chariot description into english
+Serpent Khaganate changes:
+- removed backstab from vampires' bloody blade (arcane backstab was absolutely broken in the khaganate vs coven matchup)
+- tweaked the slave overlay image
+- translated lvl2/lvl3 vampires' descriptions (contributed by dwarftough)
+- translated gnoll ripper description into english
+- fixed slaves not having the slave overlay when spawned via debug or another non-recruit method
+- fixed the khaganate citizenship AMLA not showing up in the unit panel, and showing a debug message
+Dead Field Coven changes:
+- added custom AMLA to Fear Incarnate, and reduced its max exp from 100 to 60
+- added custom AMLA to Kanavar Shadowshot, and reduced his max exp from 150 to 100
+- witches can now give birth from any allied demons, not just those from their side (this is to allow for more coven teamwork)
+- curse of decay can now kill units, and on kill gives experience to the witch who allied the curse
+- primal spawn's container of darkness is now returned to the original version
+- removed the dextrous trait from kanavars
+- reduced primal spawn's price from 28 to 25
+- buffed kanavar marskman's arrow dance damage from 7-1 to 8-1
+- buffed barrow rider pierce resistance from 20% back to 30%
+- buffed kanavar's castle defense from 40% to 50%
+- curse of decay is now removed if the witch who applied the curse is not on the map or petrified
+- fixed primal spawn's rampage damage being reduced incorrectly, with damage being reduced more it's not supposed to when resetting
+Misc changes:
+- reduced max exp for some units: rodimitsa/tribal bull/naga punisher 70 > 55, wild witch 100 > 60, battle chariot/lvl2 nuckelavee 70 > 60, serpent khagan 100 > 90
+- fixed area of effect attacks not giving exp
+
+
+0.2.6b Release
+- added kanavar marskman to the leader list
+- fixed vampires having backstab/drain on the ranged attack
+
+0.2.6 Release
+- when selecting wild witch as leader, you now get two fear shadows in your recall list
+- reworked witch attacks: chernava's shadow flare is now 7-2 instead of 6-2, curse is now 4-3 instead of 2-8 but the curse of decay deals 4 damage instead of 3, wild witch deals 8-4 damage instead of 7-4 (shadow flare is now the primary attack, while curse is more focused on the debuff)
+- removed bow attack from barrow rider, but reduced price from 17 to 16 (reworking barrow rider to be a more spammable melee unit)
+- reworked how the container of darkness ability works: instead of healing when damaged, it now heals adjacent units each turn depending on how low the primal spawn's hp is (lower hp = more healing)
+- lvl2 demon now has lesser leadership, but the sword attack is changed from 7-4 to 8-3 and hp is reduced from 55 to 52 (demon is now less dps-focused and slightly more support-focused)
+- nerfed barrow rider's pierce resistance from 30% to 20%
+- vampires now have a blood blade arcane melee attack (this it to make the day form more viable, as the main appeal of vampires is their arcane damage)
+- slave spearman now has firststrike
+- reworked kanavar damage: melee is now 4-3 instead of 4-4, but ranged is 6-4 instead of 5-4
+- nerfed kanavars' blade/impact resistances from 20%/30% to 15%/25%, cold resistance from 10% to 0%, and arcane resistance from 0% to -10% (kanavars were rather annoying to deal with for ogres)
+- reduced tarbynn price from 20 to 19 (fun unit, but a bit overpriced)
+- reduced kanavar price from 24 to 23 (under normal circumstances they are simply not worth recruiting. now at least they can be kinda worth it if you have a dark matron as your leader)
+- nerfed primal spawn's impact resistance from 20% to 10% (this is to give hunter/chariot a better matchup against primals)
+- nerfed demon's arcane resistance from -15% to -20%
+- primal patriarch now has the container of darkness ability
+- buffed primal fury's ram damage from 20-2 to 21-2 and base rampage damage from 28-1 to 29-1
+- the patriarch of unlife ability now works on vampires too
+- wild witch's evil eye attack is now hyperfocused instead of focused (this is to make her apply the debuff more reliably)
+- buffed grand witch's max hp from 53 to 54, mistress of dead field's max hp from 63 to 65, and wild witch's max from 42 to 45
+- reduced demon's max exp from 80 to 77 (they were a bit too hard to level up in my opinion)
+- reduced primal spawn's max exp from 68 to 65 (they were a bit too hard to level up in my opinion)
+- nerfed nuckelavee's blade/impact resistances from 20%/30% to 15%/25% (nuckelavee was a bit too tanky for a scout, especially against ogres)
+
+
+0.2.5b Release
+- small code fix
+
+0.2.5 Release
+- slaves now have a 'Khaganate Citizenship' AMLA at max level, which makes the unit no longer a slave, gives a damage bonus, and makes the unit loyal (this is to reward people who heavily level up their slaves)
+- added custom AMLA to Rodimistsa, and reduced her max exp from 100 to 70
+- added custom AMLA to Serpent Khagan, and reduced his max exp from 150 to 100
+- added custom AMLA to Battle Chariot, and reduced its max exp from 100 to 70
+- added custom AMLA to Tribal Bull, and reduced its max exp from 100 to 70
+- added custom AMLA to Naga Punisher, and reduced his max exp from 100 to 70
+- added custom AMLA to Nuckelavee Blackspear/Bansheetaur, and reduced their max exp from 100 to 70
+- units with oversight now gain exp whenever an adjacent slave kills an enemy equal to 33% of the exp gained by the slave
+- increased naga overseer/bekh's max from 38/80 to 40/85
+- destroying villages now gives 3 experience (to give more non-gold rewards for using the ability, and to make leveling up ogres a bit easier in pvp)
+- reworked witch buffs: dark matron gives 10% magical resistances instead of 15%, but 15% hp bonus instead of 10%, grand witch gives 15% magic res. instead of 20%, but 25% hp bonus instead of 20%, mistress of the dead field gives 20% magical res. instead of 25%, but 35% hp bonus instead of 30%, and grand witch/mistress of dead field now give +1 movement
+- nerfed lvl2/lvl3 tarbynn's ranged damage by 1
+- buffed primal fury's base rampage damage from 27-1 to 28-1
+- buffed dark matron's/grand witch's cold/fire resistances by 10%
+- units already revived by the 'patriarch of unlife' ability now have a purple skull overlay, as otherwise it was impossible to tell them apart
+- units revived by 'patriarch of unlife' ability can now be revived again if they level up
+- the 'patriarch of unlife' ability now plays an animation when triggered
+- if a unit is revived by 'patriarch of unlife' ability, the attacker will no longer get the exp they would get from a kill
+- the 'enslave all enemies when enslaving the leader' feature no longer triggers if the enemy has multiple leaders on the field
+- when freeing a slave who used to be an allied leader, that leader returns to their original side (as having one leader on each side is usually more useful than two leaders on one side)
+- fixed curse of nature/evil eye not being removed when it's supposed to be
+- fixed incinerate not working on drakes
+- fixed enslave messages having the same text for both male/female units
+
+0.2.4 Release
+- replaced fear shadow's consume fear ability with backstab, but nerfed moves from 8 to 7
+- changed fear incarnate's melee damage from 7-4 to 9-3
+- naga punisher now has enslave 1 instead of convert slaves (to make him more useful outside mirror matches)
+- added new hit/death sounds for bulls/chariots
+- devourer of souls ability no longer gets souls from lvl0 units (as otherwise it was too powerful)
+- khagan's presence ability now can no longer buff other khagans
+- increased fungus defense by 10% and reduced movement cost by 1 for ogres/bulls/chariots/gnolls/nuckelavee/vampires/fear shadows/barrow riders
+- increased fear shadow's exp requirement from 22 to 24, and fear manifestation's exp requirement from 41 to 43
+- reduced gnoll ripper's exp requirement from 82 to 70
+- reduced ogre hunter's exp requirement from 38 to 37, and skirmisher/burner's exp requirements from 85 to 80
+- reduced ogre shaman's exp requirement from 47 to 45, and bull priest's exp requirements from 95 to 90
+- reduced ogre foreman's exp requirement from 90 to 85
+- reduced greyblade's exp requirement from 41 to 39, and twilight warrior's exp requirements from 95 to 85
+- reduced bekh's exp requirement from 85 to 80
+- witches' exp from birth is now multiplied by their level (this change is to make getting lvl3/lvl4 witches a bit easier in survivals)
+- curse of nature is now removed if the unit changes side (otherwise when enslaved, cursed units became permanently cursed.)
+- fixed calculator menus not allowing you to undo moves after using them
+- fixed the OOS error with wolves
+
+0.2.3 Release
+- destroying villages now heals 8 hp and removes poison
+- buffed ogre grunt melee damage, but nerfed hp from 40 to 36 (lvl2/lvl3 primary attack stayed the same, but second attack/hp got changed)
+- buffed ogre chariot melee damage, but nerfed hp from 50 to 47
+- buffed bull melee damage
+- the capture ability now takes 1 turn to sell a prisoner instead of 2, but only gives 100% of the unit's cost as gold insteaad of 133%
+- increased fear shadow price from 12 to 13
+- minor text fixes
+- fixed slaves not losing curse of decay when freed
+
+0.2.2 Release
+- added a 'GSE + Default' sub-era (not balanced, and is just for fun)
+- added melee attack animations for barrow warden (contributed by Tezereth)
+- removed Primal Fury/Primal Patriarch from leader list, but added Primal Spawn instead
+- nerfed Ogre Bodyguard's fire/cold resistances by 10%
+- nerfed Tempest Lord's fire resistance from 20% to 10%, but buffed arcane resistance from -15% to -10%
+- nerfed demons' ranged damage
+- buffed barrow warden's axe damage from 7-3 to 8-3
+- increase barrow rider price from 16 to 17 (and lvl2/lvl3 had their price increased too)
+- fixed the "consume fear" weapon special being active on defense
+- fixed healing effects from abilities like container of darkness removing slow/poison when they aren't supposed to
+- fixed disloyal units not having their curse of decay removed when changing sides
+- minor ability description fixes
+- moved the changelogs of 0.1.9 and earlier to a old_changelogs.txt file in the add-on files (to make the add-on description more compact)
+
+0.2.1 Release
+- if selected as leader, wild witches can now recruit fear manifestations instead of just fear shadows
+- nerfed demon/demon warmonger's melee damage by 1
+- buffed ogre grunt's price from 15 to 14
+- buffed the prices of some lvl2/lvl3 ogres
+- buffed fear manifestation's cost from 20 to 18
+- kanavars/demons/barrow riders/nuckelavee now have 30% forest defense (like mainline cavalry do)
+- chariots now have 20% forest defense
+- buffed dark matron's exp requirement from 100 to 92
+- if a captured unit is about to be sold when there a no units from the capturer's side left, the unit escapes the cage instead
+- translated Bekh/Bekhlarbekh's descriptions into english
+- fixed wml error message when a captured unit is sold while the capturer is dead
+- fixed curse of decay not being removed when a unit is enslaved
+
+0.2.0 Release
+- new faction: Dead Field Coven. 
+- The Dead Field Coven is a faction gathered by the fugitive witch-queen in the eastern lands of the Great Steppe. Playing as this faction, you will control a sinister army of fugitive witches, demons, half-blood kanavars and the ancient horrors of the steppe in the form of primitive beasts possessed by the spirits, ghost wolves woven from fear, and skeletal nomads. You have to support and breed the new race of nomad half-demons and gradually accumulate your power. The faction is weak at the initial stage of the game, but strong in a long game, when it is possible to gather several generations of kanavars and sweep away the enemy army with a horde of half-breeds led by the demons themselves.
+
+0.1.9 Release
+- buffed ogre fungus defense from 20% to 30% (except for chariots)
+- added the marksman special to the ogre mancatcher line's ranged attack (so it's easier to finish off enemies)
+- nerfed gnoll fire resistance from 0% to -10%
+- made a new willbreak attack animation for the serpent tarhan line
+- added a simple leadership animation to serpent tumenbashi/serpent khagan
+- added a simple floating animation to lvl2/lvl3 tarbynns
+- the serpentheads' black fire attack is now slightly blacker
+- the serpentheads' black fire attack now has a different animation when missing (as having the hit/miss anims be identical was a bit annoying)
+- added new icons for tumenbashi/khagan's crush will/enslave attacks
+- translated the serpent tarhan/tumenbashi/khagan's description into english
+- translated the greyblade's description into english
+- translated the gnoll biter's description into english
+- translated the nuckelavee's description into english
+- translated the slave bowman's description into english
+- fixed the disloyal calculator not showing the level properly
+- fixed the disloyal calculator not showing oversight properly
+
+0.1.8 Release
+- the capture ability now move the captured unit behind the capturer
+- added a disloyal calculator rightclick menu (works like the slave calculator)
+- added a captured calculator rightclick menu (works like the slave calculator)
+- cages from the capture ability now scale to the unit's size (using Lua)
+- fixed trample not triggering non-pillage moveto events properly
+
+0.1.7 Release
+- slaves now have their own race: southern humans (mostly just to give them dunefolk names instead of default human ones)
+- added the option (in match settings) to enable halo for units with oversight/khagan's presence that visually shows the abilities' radius
+- added the option (in match settings) to disable camera movement that happens when a village is burned
+- the slave calculator now takes into account whether the current side is the khaganate, and will show that they cannot free enemy slaves
+- buffed slaves' forest defense from 40% to 50%
+- buffed slave spearman's damage from 6-2 to 7-2 (the advancements also got their damaged buffed by 1)
+- buffed gnoll's pierce/impact resistances from 0% to 10%
+- buffed greyblade's cost from 19 to 18
+- nerfed chariot hp from 52 to 50
+- nerfed chariot blade resistance from 30% to 20%
+- the capture ability now triggers on-kill events when selling units (otherwise selliing units could likely break some scenarios), except for the on-kill abilities like disloyal.
+- the ogre mancatcher line no longer uses mainline ogre portraits, as they really didn't fit the unit, and the other ogre lines don't use it anymore
+
+0.1.6 Release
+- redesigned the slave calculator menu
+- added an easter egg unit only accessible through debug
+- added attack/defend/leadership animations for naga overseer (contributed by Tezereth)
+- added scimitar attack/defend animations for naga punisher (contributed by Tezereth)
+- added attack/defend animations for naga bekh (contributed by Tezereth)
+- added attack animation for naga beklarbekh (contributed by Tezereth)
+- added defend animation for slave infantry (contributed by Tezereth)
+- buffed the capture ability's gold from 125% of the unit's cost to 133%
+- buffed nuckelavee's forest/deep water/cave/fungus movement costs (reduced by 1 each), and increased fungus defense from 20% to 30% 
+- nerfed bull's hp from 47 to 45, and tribal bull's hp from 70 to 68
+- the overwhelm weapon special now fully disables the enemy attack instead of setting its strikes to 0 (as otherwise it could be abused against berserkers)
+- if you somehow get a darkens ability (from another addon), it will now make vampires stay in night form while the area is darkened
+- fixed enslaved units being able to move/attack on the same turn as they were enslaved
+- fixed the disloyal description being incorrect
+
+0.1.5 Release
+- added a rightclick menu that lets you whether a slave can be freed or not
+- added attack animations for slave infantry (contributed by Tezereth)
+- nerfed chariot price from 20 to 22
+- slaves are now worth 0.5 levels for levels calculations (this is so they are a bit harder to free)
+- fixed the enslave ability being able to enslave units of any level
+- fixed the old the old slave code counting allies as enemies, and enemies as allies
+- fixed trampling chariots "bouncing" off mountains/walls
+- bats/falcons can no longer free slaves
+
+0.1.4d Release
+- bulls/monsters/wolves can no longer free slaves
+
+0.1.4c Release
+- fixed oversight/khagan's presence abilities working on enemy slaves/disloyal units
+- fixed the paralyze ability not working properly for vampires
+- small AI improvements
+
+0.1.4b Release
+- fixed incorrect slave freeing radius
+
+0.1.4 Release
+- nerfed the village gold from the pillage ability by 25% (from 4 times the village income to 3 times the village income)
+- nerfed lvl1 chariot's trample damage from 13-1 to 11-1, and lvl2 chariot's trample damage from 20-1 to 17-1
+- nerfed the ogre grunt's cost from 14 to 15
+- buffed serpenhead tarhan's price from 22 to 21
+- slightly reduced exp requirements for the following units: ogre hunter, ogre mancatcher, ogre slaver's apprentice, ogre shaman, ogre bull priest, naga overseer
+- the oversight/khagan's presence abilities no longer work while the unit is captured
+- the enslave ability's description now specifies that enslaving an enemy leader enslaves his other units
+- the AI will no longer attack prisoners
+- fixed the capture ability description not specifying the level requirements in the english version, and specifiying the incorrect radius in the russian version
+- fixed enslaved overseers "overseeing" themselves (thus not being able to be freed)
+
+0.1.3 Release
+- added custom AI for slaves that makes them stick next to overseers
+- buffed the vampire line's melee damage in day form by 1
+- enslaved/converted units can no longer move/attack on the same turn as being enslaved/converted
+- reverted the nuckelavee price back to the original values
+- fixed trample not triggering the pillage/disloyal abilities (or any other death-related events for that matter)
+- trample now moves the unit more smoothly (the animation used to move the unit to the original tile for a second)
+- removed the "trample!" floating text when using the trample special (as it seems a bit redundant in my opinion)
+
+0.1.2 Release
+- the disloyal ability has been reworked (it's now based on nearby unit levels, similar to freeing slaves, instead of on RNG)
+- slaves/disloyal units can no longer move/attack on the same turn as deserting
+- nerfed the ogre chariot's pierce resistance from 0% to -20%
+- reduced nuckelavee's price from 17 to 16 (and it's advancements are a bit cheaper too)
+- slave archers can now have the dextrous trait
+- fixed the trample ability not destroying villages the unit lands on (as well as any other moveto events, for that matter)
+- a few minor spelling fixes
+
+0.1.1 Release
+added link to forum thread
+
+0.1.0 Release
+the initial alpha release

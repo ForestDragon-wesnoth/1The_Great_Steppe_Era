@@ -1,0 +1,1557 @@
+#textdomain wesnoth-gse
+
+# wmllint: unbalanced-on
+#define ABILITY_ARSON_MANUAL
+    # Canned definition of the Feeding ability to be included in an
+    # [abilities] clause.  Note: this is deliberately unbalanced WML,
+    # in order to close the abilities clause then insert the event
+    # then reopen the abilities clause.
+    [dummy]
+        id=steppe_arson
+        {TRANSLATE_ABILITY "arson" "поджог"}
+        description=_ "When standing in a village, this unit can burn down villages via a rightclick menu. This costs full moves/attacks, but gives the arsonist's side some gold (equal to five times the side's village gold setting), and leaves him with a third of his moves."
+    [/dummy]
+    [dummy]
+        id=arsonai
+    [/dummy]
+    # wmlxgettext: [abilities]
+[/abilities]
+[event]
+#ifver WESNOTH_VERSION >= 1.14.0
+    name=unit placed
+#else
+    name=start,post advance,recruit,recall
+#endif
+    id=start_ogre_arson
+    first_time_only=no
+    [set_menu_item]
+        id=ogre_arson
+#ifdef OGRE_RUSSIAN
+        description="Сжечь эту деревню (дает немного золота)"
+#else
+        description="Burn down this village (gives some gold)"
+#endif
+        image="misc/arsonicon.png"
+        [show_if]
+        [/show_if]
+
+        [filter_location]
+            [filter]
+                    side=$side_number
+                    ability=steppe_arson
+#                    [filter_wml]
+#                        moves=$this_unit.max_moves
+#                    [/filter_wml]
+            [/filter]
+            terrain=*^V*
+        [/filter_location]
+        [command]
+    [store_unit]
+        [filter]
+           x,y=$x1,$y1
+        [/filter]
+        variable=arsonist
+        kill=no
+    [/store_unit]
+    {ARSONEVENT arsonist}
+        [/command]
+    [/set_menu_item]
+    [set_menu_item]
+        id=ogre_rebuild
+#ifdef OGRE_RUSSIAN
+        description="Перестроить эту деревню (стоит золота)"
+#else
+        description="Rebuild this village (costs some gold)"
+#endif
+        image="misc/villageicon.png"
+        [show_if]
+        [have_unit]
+            ability=ogrefaction
+        [/have_unit]
+        [and]
+        [have_unit]
+            side=$side_number
+            [not]
+            #this is so ogres themselves can't rebuild villages. feature suggested by Mechanical
+                ability=ogrefaction
+            [/not]
+            [filter_location]
+                x,y=$x1,$y1
+                radius=2
+            [/filter_location]
+        [/have_unit]
+        [/and]
+        [/show_if]
+
+        [filter_location]
+            terrain=*^Ecf
+#            [filter]
+#                    side=$side_number
+#            [/filter]
+        [/filter_location]
+        [command]
+            [store_gold]
+                variable=actualgold
+                side=$side_number
+            [/store_gold]
+    [store_side]
+        side=$side_number
+        variable=rebuildside
+    [/store_side]
+    {VARIABLE rebuildcost "$($rebuildside.village_gold| * 6)"}
+            {IF_VAR actualgold greater_than_equal_to $rebuildcost| (
+                [then]
+                    [message]
+                        speaker=narrator
+                        side_for=$side_number
+                {TRANSLATE_MISC2 (
+                        caption=_ "Меню Перестройки"
+                        message= _ "Перестройка деревни стоит <span color='#cccc33'>$rebuildcost|</span> золота. Сделать это?"+$bribetext|
+                ) (
+                        caption=_ "Rebuild Menu"
+                        message= _ "Rebuilding this village costs <span color='#cccc33'>$rebuildcost|</span> gold. Do it?"+$bribetext|
+                )}
+                        image=wesnoth-icon.png
+                [option]
+                        
+                {TRANSLATE_MISC2 (
+            message=  {MENU_IMG_TXT "attacks/blank-attack.png" "Нет"}
+            ) (
+            message=  {MENU_IMG_TXT "attacks/blank-attack.png" "No"}
+            )}
+            [command]
+                         [/command]
+        [/option]
+        [option]
+                        
+                {TRANSLATE_MISC2 (
+            message=  {MENU_IMG_TXT "icons/coins_copper.png" "Да"}
+            ) (
+            message=  {MENU_IMG_TXT "icons/coins_copper.png" "Yes"}
+            )}
+            [command]
+                    [gold]
+                        amount=-$rebuildcost|
+                        side=$side_number
+                    [/gold]
+    [sound]
+        name=gold.ogg
+    [/sound]
+    [delay]
+        time=200
+    [/delay]
+    [sound]
+        name=mace.wav
+    [/sound]
+    [remove_item]
+        image="scenery/village-human-burned1.png"
+        x,y=$x1,$y1
+    [/remove_item]
+    [remove_item]
+        image="scenery/village-human-burned2.png"
+        x,y=$x1,$y1
+    [/remove_item]
+    [remove_item]
+        image="scenery/village-human-burned3.png"
+        x,y=$x1,$y1
+    [/remove_item]
+    [remove_item]
+        image="scenery/village-human-burned4.png"
+        x,y=$x1,$y1
+    [/remove_item]
+    {VARIABLE_OP villagetype rand (Vh,Vhc,Vhh,Vud,Vwm)}
+[terrain]
+terrain=^$villagetype
+x,y=$x1,$y1
+layer=overlay
+[/terrain]
+    [capture_village]
+        ## reset ownership to prior Side
+        x,y=$x1,$y1
+        side=$side_number
+        fire_event=no
+    [/capture_village]
+            [/command]
+        [/option]
+        [/message]
+                [/then]
+                [else]
+                    [message]
+                        speaker=narrator
+                        side_for=$side_number
+                {TRANSLATE_MISC2 (
+                        caption=_ "Меню Перестройки"
+                        message= _ "Недостаточно золота что бы построить деревни (необходимо <span color='#cccc33'>$rebuildcost|</span> золота)"
+                ) (
+                        caption=_ "Bribe Menu"
+                        message= _ "Not enough gold to rebuild this village (costs <span color='#cccc33'>$rebuildcost|</span> gold)"
+                )}
+                        image=wesnoth-icon.png
+                    [/message]
+                [/else]
+            )}
+{CLEAR_VARIABLE rebuildside}
+{CLEAR_VARIABLE rebuildcost}
+        [/command]
+    [/set_menu_item]
+    [/event]
+#ifndef MULTIPLAYER
+    [event]
+    name=turn refresh
+    id=arson_ai
+    first_time_only=no
+    [store_unit]
+        [filter]
+            side=$side_number
+            ability=steppe_arson
+        [filter_location]
+#        [not]
+#            [filter]
+#                canrecruit=yes
+#                [filter_side]
+#                [ally_of]
+#                    side=$side_number
+#                [/ally_of]
+#                [/filter_side]
+#            [/filter]
+#                radius=$(($map_size.width|+$map_size.height|/2)/6)
+#        [/not]
+            [and]
+                terrain=*^V*
+            [/and]
+        [/filter_location]
+        [/filter]
+        variable=arsonist2
+        kill=no
+    [/store_unit]
+    [if]
+    [variable]
+        name=arsonist2.length
+        greater_than=0
+    [/variable]
+    [and]
+    [have_unit]
+        side=$side_number
+        [filter_side]
+             controller=ai
+        [/filter_side]
+    [/have_unit]
+    [/and]
+    [then]
+    {FOREACH arsonist2 i}
+    {OGRE_STORE_ARSONRADIUS}
+    [if]
+    [have_location]
+        x,y=$arsonist2[$i].x,$arsonist2[$i].y
+                [not]
+            [filter]
+                canrecruit=yes
+                [filter_side]
+                [ally_of]
+                    side=$side_number
+                [/ally_of]
+                [/filter_side]
+            [/filter]
+                radius=$steppe_arsonradius
+                [/not]
+    [/have_location]
+    [then]
+    [scroll_to]
+        x,y=$arsonist2[$i].x,$arsonist2[$i].y
+    [/scroll_to]
+    {ARSONEVENT arsonist2[$i]}
+    [/then]
+    [/if]
+    {NEXT i}
+    [/then]
+    [/if]
+    {CLEAR_VARIABLE arsonist2}
+    [/event]
+    [event]
+    name=unused#moveto
+    id=arson_ai_moveto
+    first_time_only=no
+    [filter]
+        ability=steppe_arson
+        canrecruit=yes
+        [filter_side]
+                controller=ai
+        [/filter_side]
+        [filter_location]
+                terrain=*^V*
+        [/filter_location]
+    [/filter]
+
+        [store_map_dimensions]
+        [/store_map_dimensions]
+    [store_unit]
+        [filter]
+            x,y=$x1,$y1
+            side=$side_number
+            ability=steppe_arson
+        [filter_location]
+#        [not]
+#            [filter]
+#                canrecruit=yes
+#                [filter_side]
+#                [ally_of]
+#                    side=$side_number
+#                [/ally_of]
+#                [/filter_side]
+#            [/filter]
+#                radius=$(($map_size.width|+$map_size.height|/2)/6)
+#        [/not]
+            [and]
+                terrain=*^V*
+            [/and]
+        [/filter_location]
+        [/filter]
+        variable=arsonist
+        kill=no
+    [/store_unit]
+    [if]
+    [variable]
+        name=arsonist.length
+        greater_than=0
+    [/variable]
+    [and]
+    [have_unit]
+        side=$side_number
+        [filter_side]
+             controller=ai
+        [/filter_side]
+    [/have_unit]
+    [/and]
+    [then]
+    {ARSONEVENT arsonist}
+    [/then]
+    [else]
+    [allow_undo][/allow_undo]
+    [/else]
+    [/if]
+    {CLEAR_VARIABLE arsonist}
+    [/event]
+#endif
+[+abilities]
+    # wmlxgettext: [/abilities]
+#enddef
+# wmllint: unbalanced-off
+
+#define ABILITY_GRAZE NUMBER 
+    [dummy]
+        id=graze{NUMBER}
+        {TRANSLATE_ABILITY "graze "+{NUMBER} "пасется "+{NUMBER}}
+        description=_"This unit earns "+{NUMBER}+_" gold each turn if standing on grass terrain, farmland, or an oasis. Besides gaining gold, it also heals by "+{NUMBER}+_" hitpoints while grazing. Does not work if the unit is standing next to an enemy."
+    [/dummy]
+    [dummy]
+        id=grazeai
+    [/dummy]
+     # wmlxgettext: [abilities]
+[/abilities]
+    [event]
+    name=side turn
+    first_time_only=no
+    [store_unit]
+        [filter]
+            side=$side_number
+            ability=graze{NUMBER}
+        [filter_location]
+            terrain=G*,G*^*,*^Gvs,*^Do,*^Edp*
+        [/filter_location]
+        [not]
+        [filter_wml]
+        [status]
+            petrified=yes
+        [/status]
+        [/filter_wml]
+        [/not]
+        [not]
+                [filter_adjacent]
+                [filter_side]
+                    [enemy_of]
+                        side=$side_number
+                    [/enemy_of]
+                [/filter_side]
+                [/filter_adjacent]
+        [/not]
+        [/filter]
+        variable=grazer
+        kill=no
+    [/store_unit]
+    [if]
+    [variable]
+        name=grazer.length
+        greater_than=0
+    [/variable]
+    [then]
+    {FOREACH grazer i}
+    [scroll_to]
+        x,y=$grazer[$i].x,$grazer[$i].y
+        side=$side_number
+    [/scroll_to]
+    [gold]
+        side=$side_number
+        amount={NUMBER}
+    [/gold]
+    [sound]
+      name=gold.ogg
+    [/sound]
+        [unstore_unit]
+            variable=grazer[$i]
+            text="{NUMBER}g"
+            red=255
+            green=255
+            blue=0
+            find_vacant=no
+        [/unstore_unit]
+    [heal_unit]
+      [filter]
+        id=$grazer[$i].id
+      [/filter]
+      amount={NUMBER}
+      animate=no
+    [/heal_unit]
+    [delay]
+       time=100
+    [/delay]
+    {NEXT i}
+    {CLEAR_VARIABLE grazer}
+    [/then]
+    [/if]
+    [/event]
+
+[+abilities] # wmlxgettext: [/abilities]
+#enddef
+
+#scrapped micro ais:
+
+
+        [micro_ai]
+            side={SIDE}
+            id=khaganate_slaveai1
+            ai_type=zone_guardian
+            action=add
+            [filter]
+                ability=steppe_slave
+            [filter_location]
+            [filter]
+            [filter_side]
+            [enemy_of]
+                side={SIDE}
+            [/enemy_of]
+            [/filter_side]
+            [/filter]
+            radius=10
+            [/filter_location]
+            [and]
+            [filter_location]
+            ability=steppe_oversight
+            [filter_side]
+            [ally_of]
+                side={SIDE}
+            [/ally_of]
+            [/filter_side]
+            radius=7
+            [/filter_location]
+            [/and]
+            [/filter]
+            [filter_location]
+            [filter]
+            ability=steppe_oversight
+            [filter_side]
+            [ally_of]
+                side={SIDE}
+            [/ally_of]
+            [/filter_side]
+            [/filter]
+            radius=2
+            [/filter_location]
+#            ca_score=30000
+        [/micro_ai]
+
+        [micro_ai]
+            side={SIDE}
+            ai_type=goto
+            id=khaganate_slaveai
+            action=add
+            ca_id=steppe_slaveai
+
+            [filter]
+                ability=steppe_slave
+            [/filter]
+            [filter_location]
+            [filter]
+            ability=steppe_oversight
+            [filter_side]
+            [ally_of]
+                side={SIDE}
+            [/ally_of]
+            [/filter_side]
+            [/filter]
+            radius=2
+            [/filter_location]
+            ca_score=170005
+            unique_goals=yes
+        [/micro_ai]
+
+ #keeps slaves close to nagas
+
+        [micro_ai]
+            side={SIDE}
+            ai_type=hang_out
+            id=khaganate_slave_ai
+            action=add
+
+            [filter]
+                ability=steppe_slave
+            [/filter]
+            [filter_location]
+            [filter]
+            ability=steppe_oversight
+            [filter_side]
+            [ally_of]
+                side={SIDE}
+            [/ally_of]
+            [/filter_side]
+            [not]
+                cancrecruit=yes#so the slaves aren't frozen in place next to the leader
+            [/not]
+            [/filter]
+#            radius=2
+            [/filter_location]
+
+#            [avoid]
+#                terrain=C*,H*,M*,A*,S*,*^F*
+#            [/avoid]
+        [/micro_ai]
+
+#define ABILITY_DISLOYAL
+#has a chance to defect
+    [dummy]
+        id=steppe_disloyal
+        {TRANSLATE_ABILITY "disloyal" "нелояльный"}
+        {TRANSLATE_DESCRIPTION  _"This unit has a chance to join the enemy upon being defeated (the chance depends on the attacker/defender levels, with 25% by default, but the chance being higher if the attacker's level is higher than the defender's (15% per level difference), and vice verse). After joining the enemy, their hitpoints reset to 50%, but they lose half of their experience for the rest of the battle. Also, upon deserting, they move to the enemy side's leader.
+
+        If their side's leader dies, disloyal units automatically desert to the enemy. If the disloyal unit is a leader, they lose their ability to recruit." _"Этот боец склонен к дезертирству. Когда его здоровье опускается до 0, он с некоторой вероятностью может перейти на сторону врага. Вероятность составляет по умолчанию 25% и зависит от разницы в уровне. Чем выше уровень того, кто добил дезертира, тем выше шанс дезертирства, и наоборот. При дезертирстве боец теряет половину своего опыта, восстанавливает некоторое количество здоровья и перемещается к лидеру врага. 
+
+        В случае смерти лидера стороны всё нелояльные бойцы автоматически дезертируют. Если дезертир был лидером, он теряет свое лидерство (это касается и возможности вербовать, и особенности, если таковая имелась)."}
+    [/dummy]
+     # wmlxgettext: [abilities]
+[/abilities]
+[event]
+    name=last breath
+    first_time_only=no
+    [filter]
+        ability=steppe_disloyal
+        [not]
+        [filter_location]
+            [filter]
+                ability=steppe_oversight
+            [filter_side]
+            [ally_of]
+                side=$unit.side
+            [/ally_of]
+            [/filter_side]
+            [/filter]
+            radius=1
+            [or]
+            [filter]
+                ability=steppe_khagans_presense
+            [filter_side]
+            [ally_of]
+                side=$unit.side
+            [/ally_of]
+            [/filter_side]
+            [/filter]
+            radius=2
+            [/or]
+        [/filter_location]
+        [or]
+            ability=steppe_slave
+        [/or]
+        [/not]
+    [/filter]
+    [filter_second_attack]
+    [not]
+       special=steppe_enslave
+       [or]
+       special=steppe_capture
+       [/or]
+    [/not]
+    [/filter_second_attack]
+    {VARIABLE disloyalchance 25}
+    {VARIABLE_OP disloyalchance add "$(15 * ($second_unit.level| - $unit.level|) )"}
+
+#    {RANDOM 0..4}
+#    {VARIABLE random 2}#for debugging
+    {RANDOM 0..100}
+#    {IF_VAR random equals 2 (
+    {IF_VAR random less_than_equal_to $disloyalchance (
+    [then]
+    {MODIFY_UNIT id=$unit.id hitpoints 0}
+        [heal_unit]
+            [filter]
+                id=$unit.id
+            [/filter]
+            amount="$($unit.max_hitpoints| / 3)"
+            animate=yes
+        [/heal_unit]
+    {MODIFY_UNIT id=$unit.id side $second_unit.side}
+    {MODIFY_UNIT id=$unit.id experience "$($unit.experience| / 2)"}#halving unit experience
+#in case the deserting unit is a leader:
+    {MODIFY_UNIT id=$unit.id canrecruit no}
+    [capture_village]
+    x,y=$unit.x,$unit.y
+    side=$second_unit.side
+    [/capture_village]
+        [sound]
+            name=horn-signals/horn-1.ogg
+        [/sound]
+
+#move the traitor unit to the enemy side's leader
+
+        [store_unit]
+            [filter]
+                side=$second_unit.side
+                canrecruit=yes
+            [/filter]
+            variable=steppe_disloyal_leader
+            kill=no
+        [/store_unit]
+
+#        [chat]
+#            message=_"$unit.id, $steppe_disloyal_leader.id"
+#        [/chat]
+
+        {DISLOYAL_STORE_LOCATION $unit.id}
+        {CLEAR_VARIABLE steppe_disloyal_leader}
+    [/then])}
+
+[/event]
+[+abilities]
+#enddef
+
+#unused macro that was used for the old era's pillage AI
+#define OGRE_STORE_ARSONRADIUS
+[store_map_dimensions]
+[/store_map_dimensions]
+#{VARIABLE steppe_arsonradius "$(($map_size.width|+$map_size.height|/2)/4)"}
+{VARIABLE steppe_arsonradius $map_size.width}
+{VARIABLE_OP steppe_arsonradius add $map_size.height}
+{VARIABLE_OP steppe_arsonradius divide 2}
+{VARIABLE_OP steppe_arsonradius divide 4}
+{VARIABLE_OP steppe_arsonradius round 2}
+#enddef
+
+
+#define ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS VALUE FORMULA1 FORMULA2
+    [heals]
+        value={VALUE}
+#        id=healingsteppe{VALUE}
+        id=containerofdarkness_heal
+        affect_allies=yes
+        {TRANSLATE_ABILITY _"container of darkness +{VALUE}" "вместитилище тьмы +{VALUE}"}
+#so the ability is invisible when inactive:
+        name_inactive=""
+        {TRANSLATE_DESCRIPTION _"This unit heals adjacent undead units. The healing amount starts at +2hp and heals 1 more for each 10% hp the unit lost (+12 max)." _"Этот юнит лечит окружающих нежить-союзников каждый ход. Количество леченного ЗД начинается с +2, но лечит на 1 больше за каждый потерянный 10% ЗД этого юнита (макс. +12)."}
+        affect_self=no
+        poison=slowed
+        [affect_adjacent]
+            adjacent=n,ne,se,s,sw,nw
+            [and]
+                race=undead
+                [or]
+                    race=steppevampire
+                [/or]
+            [/and]
+        [/affect_adjacent]
+        [filter]
+            formula={FORMULA1}
+            [and]
+                formula={FORMULA2}
+            [/and]
+        [/filter]
+    [/heals]
+#enddef
+
+#define ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALING_HEALS
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 2 "(self.hitpoints >= self.max_hitpoints)" "(self.hitpoints >= self.max_hitpoints)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 3 "(self.hitpoints < self.max_hitpoints)" "(self.hitpoints >= self.max_hitpoints * 0.9)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 4 "(self.hitpoints < self.max_hitpoints * 0.9)" "(self.hitpoints >= self.max_hitpoints * 0.8)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 5 "(self.hitpoints < self.max_hitpoints * 0.8)" "(self.hitpoints >= self.max_hitpoints * 0.7)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 6 "(self.hitpoints < self.max_hitpoints * 0.7)" "(self.hitpoints >= self.max_hitpoints * 0.6)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 7 "(self.hitpoints < self.max_hitpoints * 0.6)" "(self.hitpoints >= self.max_hitpoints * 0.5)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 8 "(self.hitpoints < self.max_hitpoints * 0.5)" "(self.hitpoints >= self.max_hitpoints * 0.4)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 9 "(self.hitpoints < self.max_hitpoints * 0.4)" "(self.hitpoints >= self.max_hitpoints * 0.3)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 10 "(self.hitpoints < self.max_hitpoints * 0.3)" "(self.hitpoints >= self.max_hitpoints * 0.2)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 11 "(self.hitpoints < self.max_hitpoints * 0.2)" "(self.hitpoints >= self.max_hitpoints * 0.1)"}
+
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALS 12 "(self.hitpoints < self.max_hitpoints * 0.1)" "(self.hitpoints < self.max_hitpoints * 0.1)"}
+#enddef
+
+#define ABILITY_STEPPE_CONTAINER_OF_DARKNESS_DUMMY
+    [dummy]
+        id=steppe_container_of_darkness #for filter stuff
+        {TRANSLATE_ABILITY _"container of darkness" "вместитилище тьмы"}
+        {TRANSLATE_DESCRIPTION _"This unit heals adjacent undead units. The healing amount starts at +2hp and heals 1 more for each 10% hp the unit lost (+12 max)." _"Этот юнит лечит окружающих нежить-союзников каждый ход. Количество леченного ЗД начинается с +2, но лечит на 1 больше за каждый потерянный 10% ЗД этого юнита (макс. +12)."}
+     [/dummy]
+#enddef
+
+#define ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALING
+{ABILITY_STEPPE_CONTAINER_OF_DARKNESS_DUMMY}
+[/abilities]
+#the point of adding the ability via events is so that players don't see every single heal ability in the recruit/recall menu
+[event]
+    name=unit placed
+    id=steppe_hunn_primal_heal_event
+    first_time_only=no
+    [filter]
+        ability=steppe_container_of_darkness
+    [/filter]
+    [object]
+        silent=yes
+        duration=scenario
+        [filter]
+            x,y=$x1,$y1
+        [/filter]
+        [effect]
+            apply_to=remove_ability
+            [abilities]
+            {ABILITY_STEPPE_CONTAINER_OF_DARKNESS_DUMMY}
+            [/abilities]
+        [/effect]
+        [effect]
+            apply_to=new_ability
+            [abilities]
+            {ABILITY_STEPPE_CONTAINER_OF_DARKNESS_HEALING_HEALS}
+            [/abilities]
+        [/effect]
+    [/object]
+[/event]
+[+abilities]
+#enddef
+
+#define STEPPE_CURSE_OF_DECAY_UNCURSE2_UNUSED UNITVAR
+
+#this macro checks which witch cursed a specific unit, and removes the curse variables from said unit
+    [store_unit]
+        [filter]
+            [has_attack]
+                special=steppe_curse_of_decay
+            [/has_attack]
+        [/filter]
+        variable=steppe_curser
+        kill=no
+    [/store_unit]
+    [if]
+    [variable]
+        name=steppe_curser.length
+        greater_than=0
+    [/variable]
+    [then]
+    {FOREACH steppe_curser i}
+    {IF_VAR steppe_curser[$i].variables.last_cursed_unit_id equals ${UNITVAR}.id (
+    [then]
+#    [chat]
+#       message="$steppe_curser[$i].id| ${UNITVAR}.variables.decay_damage|"
+#    [/chat]
+    {STEPPE_CURSE_OF_DECAY_UNCURSE steppe_curser[$i] ${UNITVAR}.variables.decay_damage}
+    [/then]
+    )}
+
+    {NEXT i}
+    [/then]
+    [/if]
+    {CLEAR_VARIABLE steppe_curser}
+#enddef
+
+#define STEPPE_ARMOBREAK_ANTISTACK VAR
+
+
+#!!! WORK IN PROGRESS !!!
+
+
+[if]
+[have_unit]
+    find_in={VAR}
+    ability=armorbroken10
+[/have_unit]
+[and]
+[have_unit]
+    find_in={VAR}
+    ability=armorbroken20
+[/have_unit]
+[/and]
+[then]
+        [object]
+            silent=yes
+            duration=turn
+            [filter]
+                find_in={VAR}
+            [/filter]
+       [effect]
+          apply_to=remove_ability
+          [abilities]
+              {ABILITY_ARMOR_BROKEN 10}
+          [/abilities]
+       [/effect]
+        [/object]
+[/then]
+[/if]
+[if]
+[have_unit]
+    find_in={VAR}
+    ability=armorbroken15
+[/have_unit]
+[and]
+[have_unit]
+    find_in={VAR}
+    ability=armorbroken20
+[/have_unit]
+[/and]
+[then]
+        [object]
+            silent=yes
+            duration=turn
+            [filter]
+                find_in={VAR}
+            [/filter]
+       [effect]
+          apply_to=remove_ability
+          [abilities]
+              {ABILITY_ARMOR_BROKEN 15}
+          [/abilities]
+       [/effect]
+        [/object]
+[/then]
+[/if]
+#enddef
+
+#define ABILITY_ARMOR_BROKEN NUMBER
+    # Canned definition of the Steadfast ability to be included in an [abilities]
+    # clause.
+    [resistance]
+        id=armorbroken{NUMBER}
+        sub={NUMBER}
+        max_value=100
+        # applies to any type if we leave it out
+        apply_to=blade,pierce,impact
+        [filter_base_value]
+            greater_than=-20
+            less_than=100
+        [/filter_base_value]
+        {TRANSLATE_ABILITY "broken armor "+{NUMBER} "сломанная броня "+{NUMBER} }
+        description= _ "This unit’s physical resistances are reduced by "+{NUMBER}+_"%. This effect disappears after a turn."
+        affect_self=yes
+    [/resistance]
+#enddef
+
+#define WEAPON_SPECIAL_ARMORBREAK NUMBER
+    [dummy]
+        id=armorbreak{NUMBER}
+        {TRANSLATE_ABILITY "armor break "+{NUMBER} "ломание брони "+{NUMBER} }
+        description=_ "On hit, reduces enemy physical resistances by "+{NUMBER}+_" for a turn."
+    [/dummy]
+    [/specials]
+[/attack]
+
+   [event]
+       name=attacker hits
+       first_time_only=no
+   
+       [filter_attack]
+           special=armorbreak{NUMBER}
+       [/filter_attack]
+        [object]
+            silent=yes
+            duration=turn
+            [filter]
+                find_in=second_unit
+            [/filter]
+       [effect]
+          apply_to=new_ability
+          [abilities]
+              {ABILITY_ARMOR_BROKEN {NUMBER}}
+          [/abilities]
+       [/effect]
+        [/object]
+#WIP        
+#        {STEPPE_ARMOBREAK_ANTISTACK second_unit}
+   [/event]
+   [event]
+       name=defender hits
+       first_time_only=no
+   
+       [filter_second_attack]
+           special=armorbreak{NUMBER}
+       [/filter_second_attack]
+        [object]
+            silent=yes
+            duration=turn
+            [filter]
+                find_in=unit
+            [/filter]
+       [effect]
+          apply_to=new_ability
+          [abilities]
+              {ABILITY_ARMOR_BROKEN {NUMBER}}
+          [/abilities]
+       [/effect]
+        [/object]
+   [/event]
+    [+attack]
+    [+specials]
+#enddef
+
+#define ABILITY_DISPELLED NUMBER
+    # Canned definition of the Steadfast ability to be included in an [abilities]
+    # clause.
+    [resistance]
+        id=dispelled{NUMBER}
+        sub={NUMBER}
+        max_value=100
+        # applies to any type if we leave it out
+        apply_to=arcane,fire,cold
+        [filter_base_value]
+            greater_than=-20
+            less_than=100
+        [/filter_base_value]
+        {TRANSLATE_ABILITY "dispelled "+{NUMBER} "рассеяный "+{NUMBER} }
+        description= _ "This unit’s magical resistances are reduced by "+{NUMBER}+_"%. This effect disappears after a turn."
+        affect_self=yes
+    [/resistance]
+#enddef
+
+#define WEAPON_SPECIAL_DISPEL NUMBER
+    [dummy]
+        id=dispel{NUMBER}
+        {TRANSLATE_ABILITY "dispel "+{NUMBER} "рассеивание "+{NUMBER} }
+        description=_ "On hit, reduces enemy magical resistances by "+{NUMBER}+_" for a turn."
+    [/dummy]
+    [/specials]
+[/attack]
+
+   [event]
+       name=attacker hits
+       first_time_only=no
+   
+       [filter_attack]
+           special=dispel{NUMBER}
+       [/filter_attack]
+        [object]
+            silent=yes
+            duration=turn
+            [filter]
+                find_in=second_unit
+            [/filter]
+       [effect]
+          apply_to=new_ability
+          [abilities]
+              {ABILITY_DISPELLED {NUMBER}}
+          [/abilities]
+       [/effect]
+        [/object]
+   [/event]
+   [event]
+       name=defender hits
+       first_time_only=no
+   
+       [filter_second_attack]
+           special=dispel{NUMBER}
+       [/filter_second_attack]
+        [object]
+            silent=yes
+            duration=turn
+            [filter]
+                find_in=unit
+            [/filter]
+       [effect]
+          apply_to=new_ability
+          [abilities]
+              {ABILITY_DISPELLED {NUMBER}}
+          [/abilities]
+       [/effect]
+        [/object]
+   [/event]
+    [+attack]
+    [+specials]
+#enddef
+
+#define WEAPON_SPECIAL_DISTANT_ATTACK NUMBER
+#currently unused
+    [chance_to_hit]
+        id=distant_attack
+        name= _ "distant attack {NUMBER}"
+        name_inactive= _ "distant attack {NUMBER}"
+        description= _ "This attack has a large range, and thus the enemies can barely see it, having their aim drop in retaliation by {NUMBER}%."# if the defender's weapon has this trait too, the fight will be as usual."
+        description_inactive= _ "This attack has a large range, and thus the enemies can barely see it, having their aim drop in retaliation by {NUMBER}%."# if the defender's weapon has this trait too, the fight will be as usual."
+        add=-{NUMBER}
+        active_on=offense
+        apply_to=opponent
+        [filter_base_value]
+            greater_than=30
+        [/filter_base_value]
+    [/chance_to_hit]
+#enddef
+
+scrapped concepts:
+
+steppe legacy ideas (similar to loti legacies but for GSE):
+
+awareness: "discover the unit's hidden potential" (so it doesn't sound too ripped-off. instead of generating on unit spawns, the legacy should spawn in post advance at max level, like khaganate citizens)
+
+"destined to rule":
+ requirement for the legacy to be rolled: unit doesn't already have leadership, and can't recruit
+ amlas: 1. "unit gains lesser leadership" 2. "unit gains leadership" (removes lesser leadership) 3. "unit can recruit" (same as khagan)
+
+"spellblade":
+ requirement: doesn't already have a ranged magical attack ([has_attack] with special=magical)
+ amlas: 1. "new attack: energy blast" (4-1 arcane ranged magical, uses the saurian augur attack anim, +1 damage/strikes per level) 2. +10% magical resistances
+
+#-------------------------------------------------------------------------------
+#Hidden Potential AMLAs:
+
+#define STEPPE_AMLA_HIDDEN_POTENTIAL_LEADER
+
+{STEPPE_ADVANCEMENT hidden_potential_leader _"Lesser Leadership ability, +20% XP" _"Способность 'низшее лидерство', +20% ОП" icons/haste-royal-2.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=awareness
+        [effect]
+            apply_to=new_ability
+            [abilities]
+                {ABILITY_LESSER_LEADERSHIP}
+            [/abilities]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT hidden_potential_leader2 _"Leadership ability, +20% XP" _"Способность 'лидерство', +20% ОП" icons/haste-royal-3.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=hidden_potential_leader
+        [effect]
+            apply_to=remove_ability
+            [abilities]
+                {ABILITY_LESSER_LEADERSHIP}
+            [/abilities]
+        [/effect]
+        [effect]
+            apply_to=new_ability
+            [abilities]
+                {ABILITY_LEADERSHIP}
+            [/abilities]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT_FILTERED hidden_potential_leader3 _"Can recruit, +15% XP" _"Может вербовать, +15% ОП" misc/leader-crown.png (
+        canrecruit=no
+) (
+        strict_amla=yes
+        max_times=1
+        [effect]
+            apply_to=new_ability
+            [abilities]
+              [dummy]
+                 id=steppe_amla_canrecruit #dummy ability to trigger post advance
+              [/dummy]
+            [/abilities]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=15%
+        [/effect]
+)}
+
+#enddef
+
+#define STEPPE_AMLA_HIDDEN_POTENTIAL_SPELLBLADE
+
+{STEPPE_ADVANCEMENT hidden_potential_spellblade _"Guardian Path II: shield attack (6-1 block 35%), +20% XP" _"Путь Стража II: атака щитом (6-1 защита 35%), +20% ОП" attacks/rectangular-shield.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=awareness
+        [effect]
+            apply_to=new_attack
+            name=energy blast
+            description= _ "energy blast"
+            icon=attacks/light-sky-2.png
+            type=arcane
+            range=ranged
+            [specials]
+                {WEAPON_SPECIAL_MAGICAL}
+            [/specials]
+            damage=4
+            number=1
+        [/effect]
+        [effect]
+            apply_to=attack
+            name=energy blast
+            increase_damage=1
+            increase_attacks=1
+            times=per level
+        [/effect]
+        [effect]
+            apply_to=new_animation
+            [attack_anim]
+                [filter_attack]
+                    name=energy blast
+                [/filter_attack]
+                {MISSILE_FRAME_ICE}
+                start_time=-200
+                {SOUND:HIT_AND_MISS magic-dark.ogg magic-dark-miss.ogg -200}
+            [/attack_anim]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+#enddef
+
+
+{STEPPE_ADVANCEMENT guardian_path _"Guardian Path: +10% physical resistances and firststrike, cannot take other paths after this, +20% XP" _"Путь Стража: +10% физических сопротивлений, бьет первым, нельзя выбрать другие пути после этого, +20% ОП" attacks/rectangular-shield.png (
+        strict_amla=yes
+        max_times=1
+        exclude_amla=frenzy_path
+        [effect]
+            apply_to=resistance
+            replace=no
+            [resistance]
+                blade=-10
+                pierce=-10
+                impact=-10
+            [/resistance]
+        [/effect]
+        [effect]
+            apply_to=attack
+            name=halberd,halberd_slash
+            [set_specials]
+                mode=append
+                {WEAPON_SPECIAL_FIRSTSTRIKE}
+            [/set_specials]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT guardian_path2 _"Guardian Path II: shield attack (6-1 block 35%), +20% XP" _"Путь Стража II: атака щитом (6-1 защита 35%), +20% ОП" attacks/rectangular-shield.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=guardian_path
+        [effect]
+            apply_to=new_attack
+            name="shield"
+            description= _ "shield"
+            icon=attacks/rectangular-shield.png
+            type=impact
+            range=melee
+            [specials]
+                {WEAPON_SPECIAL_BLOCK VALUE 35}
+            [/specials]
+            damage=6
+            number=1
+        [/effect]
+        [effect]
+            apply_to=new_animation
+            [attack_anim]
+                [filter_attack]
+                    name=shield
+                [/filter_attack]
+        
+                start_time=-200
+        
+                [frame]
+                duration=300
+                [/frame]
+        
+                {SOUND:HIT_AND_MISS mace.wav {SOUND_LIST:MISS} -50}
+            [/attack_anim]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT guardian_path3 _"Guardian Path III: steadfast ability, +20% XP" _"Путь Стража III: способность 'стойкий', +20% ОП" attacks/rectangular-shield.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=guardian_path2
+        [effect]
+            apply_to=new_ability
+            [abilities]
+                {ABILITY_STEADFAST}
+            [/abilities]
+        [/effect]        
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT frenzy_path _"Frenzy Path: berserk 2, cannot take other paths after this, +20% XP" _"Путь Ярости: берсерк 2, нельзя выбрать другие пути после этого, +20% ОП" attacks/frenzy.png (
+        strict_amla=yes
+        max_times=1
+        exclude_amla=guardian_path
+        [effect]
+            apply_to=attack
+            name=halberd,halberd_slash
+            [set_specials]
+                mode=append
+                {WEAPON_SPECIAL_STEPPE_CUSTOM_BERSERK 2}
+            [/set_specials]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT frenzy_path2 _"Frenzy Path II: berserk 3 and desperate specials, +20% XP" _"Путь Ярости II: берсерк 3 и отчаянный, +20% ОП" attacks/frenzy.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=frenzy_path
+        [effect]
+            apply_to=attack
+            name=halberd,halberd_slash
+            remove_specials=steppe_custom_berserk2
+            [set_specials]
+                mode=append
+                {WEAPON_SPECIAL_STEPPE_CUSTOM_BERSERK 3}
+                {WEAPON_SPECIAL_STEPPE_DESPERATE}
+            [/set_specials]
+        [/effect]
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+{STEPPE_ADVANCEMENT awareness _"aware of legacy possessed" _"aware of legacy possessed" units/unknown-unit.png (
+        strict_amla=yes
+        max_times=1
+)}
+
+{STEPPE_ADVANCEMENT legacy_ogre _"Can destroy villages (Ogre Legacy)" _"Can destroy villages (Ogre Legacy)" attacks/torch.png (
+        strict_amla=yes
+        max_times=1
+        require_amla=awareness
+        [effect]
+            apply_to=new_ability
+            [abilities]
+                {ABILITY_PILLAGE ()}
+            [/abilities]
+        [/effect]        
+        [effect]
+            apply_to=max_experience
+            increase=20%
+        [/effect]
+)}
+
+
+#WIP, uncomment when Mechanical makes a sprite
+
+#[unit_type]
+#    id=Hunn_Demon_Darkness
+##ifdef OGRE_RUSSIAN
+#    name= _"WIP Demon undead buffer"
+##else
+#    name= _ "WIP demon"
+##endif
+#    race=undead
+#    image="units/hunns/demon2c.png"
+#    halo="halo/darkens-aura.png"
+##ifver WESNOTH_VERSION >= 1.14.0
+##else
+#    {MAGENTA_IS_THE_TEAM_COLOR}
+##endif    
+#    hitpoints=68
+#    movement_type=hunndemon
+#    [resistance]
+#        fire=100
+#        cold=60
+#        arcane=140
+#    [/resistance]
+#    movement=7
+#    experience=150
+#    level=3
+#    alignment=chaotic
+#    advances_to=null
+#    {AMLA_DEFAULT}
+#    cost=60
+#    usage=fighter
+##ifdef OGRE_RUSSIAN
+#    description= _ ""
+##else
+#    description= _ ""
+##endif
+#    {STEPPE_DEATH_ANIM_TWOSOUND lich-die.ogg horse-die.ogg}
+#    {STEPPE_DEFENSE_ANIM_TWOSOUND "units/hunns/demon2c.png" "units/hunns/demon2c.png" {SOUND_LIST:LICH_HIT} {SOUND_LIST:HORSE_HIT}}
+#    {STEPPE_FLOAT_WATER_STANDING_ANIM}
+#    [abilities]
+#    {ABILITY_HUNNFACTION}
+##    {ABILITY_STEPPE_DEMON demon_warmonger "boiling blood" "кипящая кровь" _"While is unit is in a 3-tile radius from them, his side's witches can give #birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."  _"Когда этот юнит стоит в радиусе 3 #клеток от них, ведьмы его стороны могут рожать канаваров. Канавары рожденые/вербованые когда этот юнит живой получают навсегда особенность 'бесстрашный'."}
+#    {ABILITY_STEPPE_PATRIARCH_OF_UNLIFE}
+#    {ABILITY_STEPPE_DARKENS}
+#    [/abilities]
+#
+#    [attack]
+#        name=sword
+#        description=_"baneblade"
+#        icon=attacks/baneblade.png
+#        type=arcane
+#        range=melee
+#        damage=10
+#        number=3
+#        [specials]
+#            {WEAPON_SPECIAL_DRAIN}
+#        [/specials]
+#    [/attack]
+#
+#    [attack]
+#        name=souleater
+#        {TRANSLATE_ATTACK _"souleater" "пожиратель душ"}
+#        icon=attacks/scimitar-souleater.png
+#        type=blade
+#        range=melee
+#        damage=18
+#        number=1
+#        [specials]
+#            {WEAPON_SPECIAL_STEPPE_ABSORB_POWER}
+#            {WEAPON_SPECIAL_RELIABLE}
+#        [/specials]
+#        attack_weight=1.33
+#    [/attack]
+#
+#    [attack]
+#        name=wail
+#        description=_"wail"
+#        icon=attacks/wail.png
+#        type=cold
+#        range=ranged
+#        damage=7
+#        number=3
+#    [/attack]
+#
+#    [attack_anim]
+#        [filter_attack]
+#            name=wail
+#        [/filter_attack]
+#        {MISSILE_FRAME_WAIL}
+#        start_time=-250
+#        [frame]
+#            duration=50
+#        [/frame]
+#        [frame]
+#            duration=250
+#            sound=wail.wav
+#        [/frame]
+#    [/attack_anim]
+#
+#    [attack_anim]
+#        [filter_attack]
+#            name=sword,souleater
+#        [/filter_attack]
+#
+#        start_time=-900
+#
+#        [frame]
+#            offset=0.0~-0.2:50
+#        [/frame]
+#        [frame]
+#            offset=-0.2~-0.4:500,-0.4~0.9:500,0.9~0:200
+#            sound=horse-canter.wav
+#        [/frame]
+#
+#        {SOUND:HIT_AND_MISS {SOUND_LIST:SWORD_SWISH} {SOUND_LIST:MISS} -100}
+#    [/attack_anim]
+#
+#    [extra_anim]
+#        flag=revive
+#        start_time=0
+#        halo1_start_time=0
+#        halo1_auto_vflip=false
+#        halo2_start_time=100
+#        halo2_auto_vflip=false
+#        halo3_start_time=200
+#        halo3_auto_vflip=false
+#        [halo1_frame]
+#            halo="halo/saurian-magic-halo-[1~7].png:100"
+#            halo_mod="~CS(10,-100,10)~BLEND(150,0,200,0.4)"
+#            halo_y=-30
+#            offset=1.0
+#            sound=magic-dark-big.ogg
+#        [/halo1_frame]
+#        [halo2_frame]
+#            halo="halo/saurian-magic-halo-[1~7].png:100"
+#            halo_mod="~CS(10,-100,10)~BLEND(150,0,200,0.4)"
+#            halo_y=-10
+#            offset=1.0
+#        [/halo2_frame]
+#        [halo3_frame]
+#            halo="halo/saurian-magic-halo-[1~7].png:100"
+#            halo_mod="~CS(10,-100,10)~BLEND(150,0,200,0.4)"
+#            halo_y=10
+#            offset=1.0
+#        [/halo3_frame]
+#
+#        [frame]
+#            duration=500
+#            halo=halo/undead/black-magic-[1~5].png
+#        [/frame]
+#    [/extra_anim]
+#[/unit_type]
+
+#define ABILITY_FORTIFY_BOATS NUMBER
+    [resistance]
+        id=fortify_boat{NUMBER}
+        add={NUMBER}
+        max_value=60
+        # applies to any type if we leave it out
+#        apply_to=blade,pierce,impact,fire,cold
+        [filter_base_value]
+#            greater_than=-20
+            less_than=60
+        [/filter_base_value]
+        name=_"fortify boats "+{NUMBER}
+        description= _ "Adjacent boats' resistances are increased by "+{NUMBER}+_"% (up to 60%). However, this effect wears off after a turn."
+        affect_self=no
+        affect_allies=yes
+        [affect_adjacent]
+            [filter]
+                type_adv_tree=Slav_Boat
+            [/filter]
+        [/affect_adjacent]
+    [/resistance]
+#enddef
+
+#define TRAIT_SLAVE
+#enddef
+#define TRAIT_SLAVE_OLD
+            [trait]
+              id=steppe_slave
+              availability=musthave
+              name= _"slave"
+              description= _ "Enslaved, "
+            [effect]
+                apply_to=hitpoints
+                increase_total=-15%
+                full_heal=yes
+            [/effect]            
+            [effect]
+                apply_to=max_experience
+                increase=30%
+            [/effect]
+
+        [effect]
+            apply_to=status
+            add=steppe_slave
+        [/effect]
+            [/trait]
+#enddef
+
+#{STEPPE_ADVANCEMENT ruler_of_unlife _"Ruler of Unlife: enslave ability now works on non-living units, +20% XP" attacks/evil-eye-eerie-3.png (
+#        strict_amla=yes
+#        max_times=1
+#        [effect]
+#            apply_to=attack
+#            name=willbreak
+#            [set_specials]
+#                mode=append
+#                [damage]
+#                    id=steppe_enslave_undead
+#                    {TRANSLATE_ABILITY _"ruler of unlife"}
+#                    {TRANSLATE_DESCRIPTION _"The enslave special now works on non-living units."}
+#                [/damage]
+#            [/set_specials]
+#        [/effect]
+#        [effect]
+#            apply_to=max_experience
+#            increase=20%
+#        [/effect]
+#)}
+
+#define TRANSLATE_ATTACK NAME RUSNAME
+#ifdef OGRE_RUSSIAN
+        description={RUSNAME}
+#else
+        description={NAME}
+#endif
+#enddef
+
+#define TRANSLATE_ABILITY NAME RUSNAME
+#ifdef OGRE_RUSSIAN
+        name={RUSNAME}
+#else
+        name={NAME}
+#endif
+#enddef
+
+#define TRANSLATE_ABILITY_HIDES NAME RUSNAME
+#ifdef OGRE_RUSSIAN
+        name={RUSNAME}
+        name_inactive={RUSNAME}
+#else
+        name={NAME}
+        name_inactive={NAME}
+#endif
+#enddef
+
+#define TRANSLATE_MISC ORIG RUS
+#ifdef OGRE_RUSSIAN
+{RUS}#else
+{ORIG}#endif
+#enddef
+
+#define TRANSLATE_MISC2 RUS ORIG
+#ifdef OGRE_RUSSIAN
+{RUS}#else
+{ORIG}#endif
+#enddef
+
+#define TRANSLATE_DESCRIPTION DESCR RUSDESCR
+#ifdef OGRE_RUSSIAN
+        description={RUSDESCR}
+#else
+        description={DESCR}
+#endif
+#enddef
+
+#define TRANSLATE_DESCRIPTION_HIDES DESCR RUSDESCR
+#ifdef OGRE_RUSSIAN
+        description={RUSDESCR}
+        description_inactive={RUSDESCR}
+#else
+        description={DESCR}
+        description_inactive={DESCR}
+#endif
+#enddef
+
+#define TRANSLATE_MESSAGE MESSAGE RUSMESSAGE
+#ifdef OGRE_RUSSIAN
+        message={RUSMESSAGE}
+#else
+        message={MESSAGE}
+#endif
+#enddef

@@ -1,0 +1,25 @@
+--Credits--
+
+People who contributed to the project:
+
+ ForestDragon: main coder, some frankensprited icons
+
+ Mechanical: main artist
+
+ Tezereth: Naga/slave infantry animations
+
+ zhora: gnoll portrait
+
+Add-ons I took some assets from:
+
+ UMC Magic Icons: many great magic icons
+
+ Era of Magic: AOE weapon special code
+
+ Under the Burning Suns: tauroch hit sounds reused/edited for bulls
+
+ Archaic Era: bull portrait (recolored yak)
+
+ WTactics art giveback thread: raven portrait (recolored from original)
+
+if I (ForestDragon) missed anything, let me know by either messaging me on discord or on the official forums
