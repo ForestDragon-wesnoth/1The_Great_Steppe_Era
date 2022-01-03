@@ -332,7 +332,7 @@ end
             fade_out_time = 2000-- if no delay is provided in the function, use a default value
         end
     
-        delay_time = fade_out_time / 10 -- since the fade out takes roughly 10 steps, divide the time by 10
+        delay_time = math.floor(fade_out_time / 10)  -- since the fade out takes roughly 10 steps, divide the time by 10
 --        wesnoth.message(fade_out_time)
     
         while wesnoth.audio.music_list.volume >= 10 do
@@ -351,7 +351,7 @@ end
             fade_in_time = 0-- if no delay is provided in the function, fade in is instant
         end
     
-        delay_time = fade_in_time / 10 -- since the fade out takes roughly 10 steps, divide the time by 10
+        delay_time = math.floor(fade_in_time / 10) -- since the fade out takes roughly 10 steps, divide the time by 10
 --        wesnoth.message(fade_in_time)
 
         while wesnoth.audio.music_list.volume <= 90 do
