@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: 2022-01-01 21:09+0400\n"
-"PO-Revision-Date: 2022-01-01 21:13+0400\n"
+"PO-Revision-Date: 2022-01-04 22:02+0400\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -3165,7 +3165,7 @@ msgstr ""
 "всегда заметны по фиолетому поясу поверх голого торса и золотому ожерелью на "
 "шее - знаку их статуса. На войне тарханы выполняют функции послов, а так же "
 "офицеров, как штабных, так и полевых, и в последнем случае активно "
-"используют против врагов их сковавыющий волю гипноз."
+"используют против врагов их сковавыющий волю гипноз. "
 
 #. [attack]: type=impact
 #: units/khaganate/Khaganate_Serpentheads.cfg:93
