@@ -98,7 +98,16 @@ function steppe_attach_unit_status_renderer()
 
        if u.variables.faith then
           faith = u.variables.faith
+       else
+          faith = "ERROR"
        end
+
+       if u.variables.sermons_left then
+          sermons = u.variables.sermons_left
+       else
+          sermons = "ERROR"        
+       end
+
 
 --for debugging
        if 0 + faith > max_faith then
@@ -136,7 +145,7 @@ function steppe_attach_unit_status_renderer()
  --         } })
  --         else
           table.insert(s, { "element", {
-            text = _"Faith: ".. (u.variables.faith and (tostring(u.variables.faith)) or "0").." ("..faith_name[faith]..")".."\n",
+            text = _"Faith: ".. (faith and (tostring(faith)) or "0").." ("..faith_name[faith]..")".."\n",
             tooltip = _"Gives different effects based on faith level:\n 1 - unit becomes lawful and fearless, but gets the pride 15% ability\n 2 - unit gains +1 damage, but gets the pride 25% ability\n 3 - unit gains the soul flame ability\n"
           } })
 --         end
@@ -145,7 +154,7 @@ function steppe_attach_unit_status_renderer()
               if u.variables.faith < max_faith then
     
               table.insert(s, { "element", {
-                text = _"Sermons left: ".. (u.variables.sermons_left and (tostring(u.variables.sermons_left)) or "0").."\n",
+                text = _"Sermons left: ".. (sermons and (tostring(sermons)) or "0").."\n",
                 tooltip = _"The amount of sermons until the unit's faith level increases by 1"
               } })
     
