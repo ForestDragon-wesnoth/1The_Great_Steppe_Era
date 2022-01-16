@@ -101,7 +101,7 @@ function steppe_attach_unit_status_renderer()
        end
 
 --for debugging
-       if 0 + u.variables.faith > max_faith then
+       if 0 + faith > max_faith then
           faith = 99
        end
 
