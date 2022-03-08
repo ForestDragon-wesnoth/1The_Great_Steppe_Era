@@ -16,7 +16,7 @@ end
 
 function steppe_attach_unit_status_renderer()
   local old_unit_weapons = wesnoth.interface.game_display.unit_weapons
-  function wesnoth.theme_items.unit_weapons()
+  function wesnoth.interface.game_display.unit_weapons()
     local s = old_unit_weapons()
     local u = wesnoth.interface.get_displayed_unit()
     if u then

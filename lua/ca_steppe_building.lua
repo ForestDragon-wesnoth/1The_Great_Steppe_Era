@@ -82,7 +82,7 @@ function ca_building:evaluation()
             if type(tmp_buildcost) == "string" then
 
                 tmp_buildcost = string.sub(tmp_buildcost,2,99) --cuts down the string to remove the first letter from it ($) so the variable can be accessed through Lua
-                tmp_buildcost = wesnoth.get_variable(tmp_buildcost)
+                tmp_buildcost = wml.variables[tmp_buildcost]
 
 --            wesnoth.message(tmp_buildcost)
 
