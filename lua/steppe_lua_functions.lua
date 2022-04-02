@@ -83,84 +83,85 @@ function steppe_attach_unit_status_renderer()
         end
       end
 
-      if steppe_has_ability(u, "kingdomfaction") == true or u.variables.faith then
-
-        local faith_name = {}
-        local heresy_name = {}
-
-        local faith = 0
---        local heresy = 0
-
-        local max_faith = 3
---        local max_heresy = 4
-
---        local is_heretic = false
-
-       if u.variables.faith then
-          faith = u.variables.faith
-       else
-          faith = "ERROR"
-       end
-
-       if u.variables.sermons_left then
-          sermons = u.variables.sermons_left
-       else
-          sermons = "ERROR"        
-       end
-
-
---for debugging
-       if 0 + faith > max_faith then
-          faith = 99
-       end
-
---       if u.variables.faith < 0 then
---          is_heretic=true
---          heresy = u.variables.faith * -1
+--faith is disabled for now
+--      if steppe_has_ability(u, "kingdomfaction") == true or u.variables.faith then
 --
+--        local faith_name = {}
+--        local heresy_name = {}
+--
+--        local faith = 0
+----        local heresy = 0
+--
+--        local max_faith = 3
+----        local max_heresy = 4
+--
+----        local is_heretic = false
+--
+--       if u.variables.faith then
+--          faith = u.variables.faith
+--       else
+--          faith = "ERROR"
+--       end
+--
+--       if u.variables.sermons_left then
+--          sermons = u.variables.sermons_left
+--       else
+--          sermons = "ERROR"        
+--       end
+--
+--
+----for debugging
+--       if 0 + faith > max_faith then
 --          faith = 99
 --       end
--- 
---       if heresy > max_heresy then
---          heresy = 99
---       end
-
-          faith_name[0] = _"Godless"
-          faith_name[1] = _"Believer"
-          faith_name[2] = _"Faithful"
-          faith_name[3] = _"Pious"
---          faith_name[4] = "Fanatic"
-          faith_name[99] = _"ERROR: TOO HIGH FAITH"
-
---          heresy_name[1] = "Godless"
---          heresy_name[2] = "Sinner"
---          heresy_name[3] = "Apostate"
---          heresy_name[4] = "Heretic"
---          heresy_name[99] = "ERROR: TOO HIGH HERESY"
-
- --         if heresy > 0 then
- --         table.insert(s, { "element", {
- --           text = "Heresy: ".. (heresy and (tostring(heresy)) or "0").." ("..heresy_name[heresy]..")".."\n",
- --           tooltip = "The unit gains an invisuble backstab-like weapon special that deals 25% more damage per level of heresy. Also, at heresy 3 and higher, the unit becomes chaotic."
- --         } })
- --         else
-          table.insert(s, { "element", {
-            text = _"Faith: "..faith.." ("..faith_name[faith]..")".."\n",
-            tooltip = _"Gives different effects based on faith level:\n 1 - unit becomes lawful and fearless, but gets the pride 15% ability\n 2 - unit gains +1 damage, but gets the pride 25% ability\n 3 - unit gains the soul flame ability\n"
-          } })
---         end
-
-
-              if u.variables.faith < max_faith then
-    
-              table.insert(s, { "element", {
-                text = _"Sermons left: "..sermons.."\n",
-                tooltip = _"The amount of sermons until the unit's faith level increases by 1"
-              } })
-    
-              end
-
-      end
+--
+----       if u.variables.faith < 0 then
+----          is_heretic=true
+----          heresy = u.variables.faith * -1
+----
+----          faith = 99
+----       end
+---- 
+----       if heresy > max_heresy then
+----          heresy = 99
+----       end
+--
+--          faith_name[0] = _"Godless"
+--          faith_name[1] = _"Believer"
+--          faith_name[2] = _"Faithful"
+--          faith_name[3] = _"Pious"
+----          faith_name[4] = "Fanatic"
+--          faith_name[99] = _"ERROR: TOO HIGH FAITH"
+--
+----          heresy_name[1] = "Godless"
+----          heresy_name[2] = "Sinner"
+----          heresy_name[3] = "Apostate"
+----          heresy_name[4] = "Heretic"
+----          heresy_name[99] = "ERROR: TOO HIGH HERESY"
+--
+-- --         if heresy > 0 then
+-- --         table.insert(s, { "element", {
+-- --           text = "Heresy: ".. (heresy and (tostring(heresy)) or "0").." ("..heresy_name[heresy]..")".."\n",
+-- --           tooltip = "The unit gains an invisuble backstab-like weapon special that deals 25% more damage per level of heresy. Also, at heresy 3 and higher, the unit becomes chaotic."
+-- --         } })
+-- --         else
+--          table.insert(s, { "element", {
+--            text = _"Faith: "..faith.." ("..faith_name[faith]..")".."\n",
+--            tooltip = _"Gives different effects based on faith level:\n 1 - unit becomes lawful and fearless, but gets the pride 15% ability\n 2 - unit gains +1 damage, but gets the pride 25% ability\n 3 - unit gains the soul flame ability\n"
+--          } })
+----         end
+--
+--
+--              if u.variables.faith < max_faith then
+--    
+--              table.insert(s, { "element", {
+--                text = _"Sermons left: "..sermons.."\n",
+--                tooltip = _"The amount of sermons until the unit's faith level increases by 1"
+--              } })
+--    
+--              end
+--
+--      end
 
     end
     return s
