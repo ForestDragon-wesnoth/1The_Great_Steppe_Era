@@ -14,7 +14,7 @@ local ca_ravenform = {}
 -- Also unload units onto best hexes adjacent to landing site
 
 function ca_ravenform:evaluation()
-    local units = wesnoth.get_units { side = wesnoth.current.side, formula = 'movement_left > 0' }
+    local units = wesnoth.units.gets { side = wesnoth.current.side, formula = 'movement_left > 0' }
 
     for i,u in ipairs(units) do
 --        wesnoth.message("ravenform unit detected")
@@ -27,7 +27,7 @@ function ca_ravenform:evaluation()
 end
 
 function ca_ravenform:execution()
-    local units = wesnoth.get_units { side = wesnoth.current.side, ability="steppe_ravenform", formula = 'movement_left > 0' }
+    local units = wesnoth.units.gets { side = wesnoth.current.side, ability="steppe_ravenform", formula = 'movement_left > 0' }
 
 --    wesnoth.message("the ravenform ai is executed for side " .. wesnoth.current.side)
 
