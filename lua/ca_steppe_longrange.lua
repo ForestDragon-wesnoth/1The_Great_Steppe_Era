@@ -45,13 +45,12 @@ function ca_longrange:evaluation(cfg, data)
             
 --                local filter_second = { lua_function = "steppe_longrange_filter", { "filter_side", { { "enemy_of", { side = wesnoth.current.side } } } } }
                 local filter_second = { { "filter_side", { { "enemy_of", { side = wesnoth.current.side } } } } }
---FOR SOME GODDAMN FUCKING REASON IT DIDN'T FUCKING WORK BECAUSE IT'S APPARENTLY TABLE NOT WML TABLE FOR FUCKS SAKE THIS IS FUCKING BULLSHIT
---                local filter_not_adjacent = { { "not", { "filter_adjacent_location", { x = u.x, y = u.y } } } }
                 local enemies_potential = AH.get_live_units {
                     { "and", filter_second },
 --                    { "and", filter_not_adjacent },
                     { "filter_location", { x = u.x, y = u.y, radius = longrange_get_range(u) } },
-                    { "filter_vision", { side = wesnoth.current.side, visible = 'yes' } }
+                    { "filter_vision", { side = wesnoth.current.side, visible = 'yes' } },
+                    { "not", { { "filter_adjacent", { x = u.x, y = u.y } } } }
                 }
                         
                 local enemies_found = false
