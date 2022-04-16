@@ -21,8 +21,8 @@ local repairloc_number
 function ca_repairvillage:evaluation()
 --        wesnoth.message("repairing evaluation")
 
---    local units = wesnoth.get_units { side = wesnoth.current.side, formula = 'movement_left > 0' }
-    local units = wesnoth.get_units { side = wesnoth.current.side, ability = "steppe_repair_village"}
+--    local units = wesnoth.get_unit { side = wesnoth.current.side, formula = 'movement_left > 0' }
+    local units = wesnoth.get_unit { side = wesnoth.current.side, ability = "steppe_repair_village"}
 
     destroyed_villages = H.get_variable_array "destroyed_village_information"
 
@@ -38,7 +38,7 @@ function ca_repairvillage:evaluation()
             local can_repair = false
             local will_repair = false
 
-            local tmp_repaircost = wesnoth.get_variable("steppe_village_repaircost")
+            local tmp_repaircost = wml.variables["steppe_village_repaircost"]
 
 --THIS CODE ISN'T REALLY NEEDED ANYMORE, AS I HAVE A SIMPLER SOLUTION
 --                local village_distance

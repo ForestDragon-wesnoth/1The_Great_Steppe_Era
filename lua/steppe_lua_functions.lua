@@ -32,7 +32,7 @@ function steppe_attach_unit_status_renderer()
       if steppe_has_ability(u, "birther_of_fiends") == true then
         if u.variables.birthturns and u.variables.birthturns > 0 then
   
-         local birthtext_disabled = wesnoth.get_variable("steppe_disable_birthturntext")
+         local birthtext_disabled = wml.variables["steppe_disable_birthturntext"]
 
           if birthtext_disabled ~= "yes" then
   
@@ -171,7 +171,7 @@ end
 function steppe_find_enslave_level(variable)
 --   wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/ravana_inspect_table.lua"
    helper = wesnoth.require "lua/helper.lua"
-   local attack = wesnoth.get_variable(variable)
+   local attack = wml.variables[variable]
 --   inspect_table({attack}, {})
    local specials = helper.get_child(attack, "specials")
    local special = helper.get_child(specials, "enslave")
@@ -182,7 +182,7 @@ end
 function steppe_find_enslave_nonliving(variable)
 --   wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/ravana_inspect_table.lua"
    helper = wesnoth.require "lua/helper.lua"
-   local attack = wesnoth.get_variable(variable)
+   local attack = wml.variables[variable]
 --   inspect_table({attack}, {})
    local specials = helper.get_child(attack, "specials")
    local special = helper.get_child(specials, "enslave")
@@ -214,14 +214,14 @@ end
 --note: this won't be needed if/when I switch to 1.16, but it is necessary in 1.14
 function steppe_force_gamestate_change(ai)
     -- Can be done using any unit of the AI side; works even if the unit already has 0 moves
-    local unit = wesnoth.get_units { side = wesnoth.current.side }[1]
+    local unit = wesnoth.get_unit { side = wesnoth.current.side }[1]
     local cfg_reset_moves = { id = unit.id, moves = unit.moves }
     ai.stopunit_moves(unit)
     wesnoth.invoke_synced_command('reset_moves', cfg_reset_moves)
 end
 
 function wesnoth.custom_synced_commands.reset_moves(cfg)
-    local unit = wesnoth.get_units { id = cfg.id }[1]
+    local unit = wesnoth.get_unit { id = cfg.id }[1]
     unit.moves = cfg.moves
 end
 
@@ -315,7 +315,7 @@ local path = wesnoth.find_path(x1, y1, x2, y2, {
 end
 
 function steppe_longrange_filter(unit)
-   local x,y = wesnoth.get_variable("x1"),wesnoth.get_variable("y1")
+   local x,y = wml.variables["x1"],wml.variables["y1"]
 --coordinates work flawlessly
 --   wesnoth.message(unit.x)
 --   wesnoth.message(unit.y)
