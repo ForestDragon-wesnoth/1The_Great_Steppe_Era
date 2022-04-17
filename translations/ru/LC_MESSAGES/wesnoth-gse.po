@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-04-16 17:40+0300\n"
+"PO-Revision-Date: 2022-04-17 10:23+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -207,6 +207,12 @@ msgid ""
 "logistics for the chthonic forces of the underworld to ensure that the "
 "creatures of the surface are prostrated before the greatness of your empire!"
 msgstr ""
+"Мандат Тартара — восточная фракция ужасающих тварей и монстров, поднявшихся "
+"из таинственной Бездны Тартара. Играя за эту фракцию, вы будете командовать "
+"разношерстной армией крепких и могучих солдат, которым не хватает скорости и "
+"мобильности. Организуйте продуманную логистику для хтонических сил "
+"подземного мира, чтобы существа поверхности пали ниц пред величием вашей "
+"империи!"
 
 #. [multiplayer_side]: id=hunns, type=random, description={FACTION_DESCRIPTION_COVEN}
 #. [multiplayer_side]: id=hunns_aoh, type=random, description={FACTION_DESCRIPTION_COVEN}
@@ -235,7 +241,7 @@ msgstr "Королевство огров"
 #. [multiplayer_side]: id=mandate_rpg, type=random, description={FACTION_DESCRIPTION_MANDATE}
 #: factions/mandate-aoh.cfg:4 factions/mandate-rpg.cfg:4 factions/mandate.cfg:4
 msgid "Tartarus Mandate"
-msgstr ""
+msgstr "Мандат Тартара"
 
 #. [multiplayer_side]: id=ogres, type=random, description={FACTION_DESCRIPTION_OGRE}
 #. [multiplayer_side]: id=ogres_aoh, type=random, description={FACTION_DESCRIPTION_OGRE}
@@ -339,10 +345,8 @@ msgstr "Отразите все волны противников"
 
 #. [note]
 #: maps/2p_Steppe_Survival_Fortress.cfg:192
-#, fuzzy
-#| msgid "The last wave is at turn 43"
 msgid "The last wave is at turn 27"
-msgstr "Последняя волна появится на 43 ходу"
+msgstr "Последняя волна появится на 27 ходу"
 
 #. [message]: speaker=narrator
 #: maps/2p_Steppe_Survival_Fortress.cfg:285
@@ -1449,24 +1453,18 @@ msgstr "Вороны"
 
 #. [race]: id=steppe_kobold
 #: races.cfg:269
-#, fuzzy
-#| msgid "race^Gnoll"
 msgid "race^Kobold"
-msgstr "Гнолл"
+msgstr "Кобольд"
 
 #. [race]: id=steppe_kobold
 #: races.cfg:270
-#, fuzzy
-#| msgid "race+female^Gnoll"
 msgid "race+female^Kobold"
-msgstr "Гнолл"
+msgstr "Кобольд"
 
 #. [race]: id=steppe_kobold
 #: races.cfg:271
-#, fuzzy
-#| msgid "race^Gnolls"
 msgid "race^Kobolds"
-msgstr "Гноллы"
+msgstr "Кобольды"
 
 #. [race]: id=steppe_kobold
 #: races.cfg:272
@@ -1497,6 +1495,29 @@ msgid ""
 "throwing weapons, as well as engage in mining and underground agriculture – "
 "all for the glory of the Empire."
 msgstr ""
+"Кобольды внешне схожи с Ящерами, отличаясь во многом синим окрасом чешуи и "
+"янтарно-красными глазами. Однако более существенным различием является образ "
+"жизни – вместо джунглей и болот они предпочли глубокие пещеры и горы, где "
+"они живут подземной водой, флорой и фауной. Кобольды живут кланами, "
+"сосредотачиваясь около крупных рудных и минеральных месторождений и "
+"подземных озёр. В таких условиях – при необходимости пробиваться к новым "
+"ходам и отстаивать свои пещеры от чужаков – синие ящеры развили технологию "
+"скорострельных арбалетов и взрывных составов. \n"
+"Точно не известно, знали ли Кобольды о Великой Бездне раньше или они "
+"собрались в её пределах только когда Тартар воззвал новых претендентов на "
+"Мандат. Но когда Империя Шиан оказалась в состоянии кризиса, синие ящеры "
+"стремительно консолидировали свои кланы в желании приобрести блага "
+"обречённой цивилизации. Осыпая площади городов стрелами и проламывая стены "
+"шахтёрским снаряжением, они в кратчайшие сроки уничтожили Империя Шиан. В "
+"знак своего триумфа, они схватили без разбора живых и мёртвых жителей и "
+"скинули в беспросветную черноту Великой Бездны.\n"
+"Хотя Кобольды не смогли долго удерживать свою власть – испытав в дальнейшем "
+"натиск появившихся из Бездны Цзянши с армией Терракотовых Воинов – "
+"восставших Шианцев – они смогли пережить суровые времена и остаются важной "
+"частью государства под Мандатом Мангусов. Кобольды не покладая рук "
+"изготавливают искусное огнестрельное и метательное оружие, а также "
+"занимаются горным делом и подземным сельским хозяйством – всё во славу "
+"Империи."
 
 #. [race]: id=steppe_kobold
 #: races.cfg:277
@@ -1504,20 +1525,18 @@ msgid ""
 "Xiar,Zann,Sassu,Shax,Zassn,Qinx,Xix,Grix,Jong,Shann,Yogg,Naq,Jix,Janx,Yaog,"
 "Yonq,Nix,Niqt,Gaq,Gax,Vax,Veqt,Oppaq,Opax,Renx,Mellq."
 msgstr ""
+"Хиар,Занн,Сассу,Шах,Зассн,Кинкс,Зикс,Грикс,Ёнг,Шанн,Ёгг,Нак,Джикс,Джанкс,Яог,"
+"Ёнк,Никс,Никт,Гак,Гакс,Вакс,Вект,Оппак,Опакс,Ренкс,Меллк."
 
 #. [race]: id=steppe_mangus
 #: races.cfg:282 races.cfg:284
-#, fuzzy
-#| msgid "race^Ravens"
 msgid "race^Mangus"
-msgstr "Вороны"
+msgstr "Мангусы"
 
 #. [race]: id=steppe_mangus
 #: races.cfg:283
-#, fuzzy
-#| msgid "race+female^Raven"
 msgid "race+female^Mangus"
-msgstr "Ворон"
+msgstr "Мангус"
 
 #. [race]: id=steppe_mangus
 #: races.cfg:285
@@ -1572,6 +1591,54 @@ msgid ""
 "Mangus is barely imaginable, yet Worms provide great help burrowing tunnels "
 "for their close friends."
 msgstr ""
+"Мангусы - звероподобные гиганты, легко затмевающие своим ростом даже самые "
+"высокие разумные расы. Они правят Мандатом Тартара железным кулаком и не "
+"боятся сами вступать в битву, размахивая своими молотами-метеорами с "
+"невиданной неистовом.\n"
+"\n"
+"<header>text='Происхождение'</header>\n"
+"\n"
+"Мангусы не были известны в Ирдии до того, как они получили Мандат. Возможно, "
+"это по причине того, что они жили слишком глубоко, чтобы совершить "
+"полноценный контакт с другими расами. В любом случае, Мангусы оказались "
+"успешными в нынешней ситуации – свергнув неблагополучных Цзянши, сохранили "
+"все предыдущие правящие расы и интегрировали их в работающее общество, а "
+"также заключили союз с легкомысленным, но могущественным Яогуаем. На данный "
+"момент Мангусы кажутся достойными обладателями Мандата.\n"
+"\n"
+"<header>text='Жизнь'</header>\n"
+"\n"
+"Мангусы обитают в самых глубоких пещерах и туннелях, связанных с Бездной. "
+"Они живут со своими семьями до подросткового возраста, когда большинство "
+"мужчин уходят на службу, участвуя в жестокой жизни и доказывая свою "
+"ценность. Нередки случаи, когда мангусы участвуют в дуэлях и кровавых "
+"забавах. Однако, несмотря на их жестокую внешность, они обычно достаточно "
+"умны, чтобы избегать подобных распрей во время войн.\n"
+"В отличие от других рас, мангусы, похоже, не страдают от старости – они не "
+"становятся дряхлыми и хрупкими, только увеличиваясь в силе и размере с "
+"годами. В определенный момент старый Мангус решал совершить Великий Спуск – "
+"спуститься в Бездну Тартара, пытаясь добраться до самых глубоких и "
+"неизведанных уголков подземных лабиринтов и поразмыслить в мрачном "
+"уединении. После такого путешествия в глубины подземелий он возвращается "
+"“затемненным” – что говорят мангусы вместо “просветленного”. “Затемненные” "
+"мангусы ещё больше и сильнее обычных гигантов, а также обретают до трех "
+"голов или лиц. Они заслужили название Йельбеген – “демонический дракон”. Они "
+"являются элитой среди мангусов и занимают самые высокие посты в обществе "
+"Мандата. Они по–прежнему получают огромное удовольствие от сражений – это "
+"было бы ужасно неправильным использованием их новой силы – обычно оставляя "
+"самую муторную и скучную административную работу неутомимым и неподкупным "
+"Цзянши.\n"
+"\n"
+"<header>text='Мангусы и черви'</header>\n"
+"\n"
+"Жизнь Мангуса тесно связана с жизнью Червя. Хотя Мангусы являются нынешними "
+"обладателями Мандата, они, вероятно, не достигли бы таких высот без помощи "
+"Червей. Эти отношения нельзя приравнять к отношениям владелец-домашнее "
+"животное, поскольку ни один мангус не имеет прямого контроля над конкретным "
+"Червем, наоборот, их отношения весьма взаимны и равноправны.\n"
+"Такая сильная связь объяснима, поскольку подземная жизнь таких гигантов, как "
+"Мангусов, едва ли возможна, если бы черви не оказывали огромную помощь в "
+"прокладывании туннелей для своих близких друзей."
 
 #. [race]: id=steppe_mangus
 #: races.cfg:302
@@ -1580,30 +1647,27 @@ msgid ""
 "Nikan,Ankhbayar,Batbayar,Batu,Chingis,Ganbold,Gantulga,Ganzorig,Naranbaatar,"
 "Otgonbayar,Temur,Erkin"
 msgstr ""
+"Елден,Елюй,Еэж,Алин,Шолонту,Ердени,Фодо,Якдан,Ниованггиян,Сахалиян,Муке,"
+"Никан,Анкхбаяр,Батбаяр,Бату,Чингис,Ганболд,Гантулга,Ганзориг,Наранбаатар,"
+"Отгонбаяр,Темур,Ерки"
 
 #. [race]: id=steppe_worm
 #. Generator for worm names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
 #: races.cfg:307
-#, fuzzy
-#| msgid "race^Gnoll"
 msgid "race^Worm"
-msgstr "Гнолл"
+msgstr "Червь"
 
 #. [race]: id=steppe_worm
 #. Generator for worm names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
 #: races.cfg:308
-#, fuzzy
-#| msgid "race+female^Gnoll"
 msgid "race+female^Worm"
-msgstr "Гнолл"
+msgstr "Червь"
 
 #. [race]: id=steppe_worm
 #. Generator for worm names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
 #: races.cfg:309
-#, fuzzy
-#| msgid "race^Gnolls"
 msgid "race^Worms"
-msgstr "Гноллы"
+msgstr "Черви"
 
 #. [race]: id=steppe_worm
 #. Generator for worm names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
@@ -1629,6 +1693,25 @@ msgid ""
 "to that one of drakes and lizards, although in the case of mangus and worms, "
 "this it has truly reached the level of symbiosis."
 msgstr ""
+"Черви, также известные как Олгой Хорхой, – чудовища огромных размеров. "
+"Рыбацкая лодка с лёгкостью поместится в их жвалах, а при своей длине тела "
+"они напоминают поваленное дерево. Они могут показаться безмозглыми "
+"монстрами, но это представление обманчиво. Есть какой-то разум, скрытый, "
+"дремлющий в этой огромной массе кинжалоподобных зубов и вонючей плоти. "
+"Другие существа могут не до конца понимать это, но они чувствуют присутствие "
+"Червя, они чувствуют его давящую волю – как будто Тартар шепчет через своих "
+"детей.\n"
+"Везде, где есть Червь, есть и Мангус. Хотя такой союз кажется на первый "
+"взгляд неочевидным, огромному по размерам мангусу было бы трудно выжить в "
+"подземной среде без помощи роющих червей-переростков. Эта связь проявляется "
+"в почти священном уважении Мангуса к Червям, которое может быть омрачено "
+"только их фанатизмом по отношению к Великой Бездне. Мангусы кланяются и "
+"приветствуют червей так же, как своих сородичей, и празднуют их достижение "
+"старости.\n"
+"В то же время черви ни в коем случае не являются домашними животными "
+"мангусов, они независимы от них и ни у кого не находятся на содержании. Эти "
+"отношения можно сравнить с отношениями селезней и ящериц, хотя в случае "
+"мангуса и червей они действительно достигли уровня симбиоза."
 
 #. [race]: id=steppe_worm
 #. Generator for worm names; see <https://wiki.wesnoth.org/Context-free_grammar> for syntax
@@ -1637,18 +1720,18 @@ msgid ""
 "Øẗhbaæz,Dhræmnäzgghul,Grohnyzbaæz,Zubnyzurzhydy,Gorzvohzhydgÿzoth,Dazrupghül,"
 "Gorzubhyv,Urḧrrupdurgrozbhyd"
 msgstr ""
+"Øẗхбаæз,Дхрæмнэзггхул,Грохнызбаæз,Зубнызуржыды,Горзвохжыдгÿзотх,Дазрупгхюл,"
+"Горзубхыв,Урḧррупдургрозбхыд"
 
 #. [race]: id=steppe_yaoguai
 #: races.cfg:331 races.cfg:333
 msgid "race^Yaoguai"
-msgstr ""
+msgstr "Яогуаи"
 
 #. [race]: id=steppe_yaoguai
 #: races.cfg:332
-#, fuzzy
-#| msgid "race+female^Vampire"
 msgid "race+female^Yaoguai"
-msgstr "Вампирка"
+msgstr "Яогуаи"
 
 #. [race]: id=steppe_yaoguai
 #: races.cfg:334
@@ -1722,6 +1805,68 @@ msgid ""
 "Although Jiangshi do not live together with Yaoguai, their innate magical "
 "abilities and essence are similar, which may suggest their common origin."
 msgstr ""
+"Яогаи - магические существа двойственной природы. Они находятся между жизнью "
+"и смертью, природой и цивилизацией, преданностью и хитростью. Многие обитают "
+"в изолированных горах, лесах и болотах Мандата Тартар. Хотя яогаи служат "
+"государству в мирное и военное время, их родные края пользуется значительной "
+"автономией: им разрешено самоуправление без императорского надзора, а "
+"посторонним строго запрещено посещать территорию Яогаев. Таким образом, "
+"жизнь этих существ покрыта завесой тайны даже для тех, с кем они "
+"союзничают.\n"
+"\n"
+"<header>text='Происхождение'</header>\n"
+"\n"
+"Происхождение Яогуаев покрыто тайной из-за их изолированности. Хотя Лисицы и "
+"Джорогумо имеют человеческую внешность или черты, по своим привычкам и "
+"разуму они сильно отличаются.\n"
+"Наиболее вероятным предположением является то, что Яогаи являются "
+"результатом специальных обрядов древних культов, которые совершенствовали и "
+"совершенствовали своих фамильяров, пытаясь найти способ достичь "
+"божественности. Но с тех пор, как фамильяры стали более могущественными, чем "
+"их хозяева, они больше не нуждались в их господстве. \n"
+"\n"
+"<header>text='История'</header>\n"
+"\n"
+"С момента своего существования Яогуаи наводили ужас на любого, кто "
+"осмеливался приблизиться к их землям. Такое враждебное и чрезмерно защитное "
+"поведение было особенно очевидно в их отношениях с Шианом. Они часто "
+"похищали детей или соблазняли мужчин для последующих манипуляций или "
+"убийств, что вызывало сильную паранойю среди населения.\n"
+"Во время Первого Мандата, Мандата Шиана, напряженность была особенно "
+"высокой. Пока объединенная империя пыталась оттеснить Яогуаев, существа "
+"оставались тщательно скрывались. Но в редкие моменты, когда они сталкивались "
+"с Шианом, они были такими разрушительными и жестокими, какими их ещё не "
+"видели.\n"
+"Аналогичная ситуация сложилась между Яогуаями и Кобольдами, которые были "
+"заинтересованы в охоте на них ради развлечения. Это закончилось трагически "
+"для Кобольдов, когда Яогуаи организовали сокрушительную контратаку, сделав "
+"синих ящеров уязвимыми для появившихся сил Цзянши и Терракотовых Воинов.\n"
+"Во время правления Цзянши отношения между империей и Яогуаями казались на "
+"удивление нейтральными, если полным игнорированием друг друга. Тем не менее, "
+"Цзянши, скорее всего, знали о присутствии Яогуаев.\n"
+"Мангусы, пришедшие к власти после Цзянши, обратился к Яогуаям как "
+"большинство важных вопросов в государстве было решено. Они предложили "
+"нескольким сообществам стать клиентами Мандата, обещая сохранение автономии "
+"и секретов в обмен на сотрудничество. Предложение, которое казалось "
+"подозрительно выгодным Яогуаям, в конце концов завоевало свои позиции. Когда "
+"первые сообщества приняли условия, им было дано задание закрепить пакт – они "
+"должны связаться с другими Яогуаями и предложить им тоже стать клиентами "
+"Мандата, если они откажутся – уничтожить их без колебаний.\n"
+"В конце концов, Яогуаи доказали свою верность Мандату и ныне играют важную "
+"роль в жизни Империи.\n"
+"\n"
+"<header>text='Виды'</header>\n"
+"\n"
+"Существует несколько известных видов яогуаев:\n"
+"Лисицы - человекоподобные существа с лисьими чертами – в первую очередь – "
+"ушами и хвостами, хотя их конечности также имеют сходство с лисьими. Они "
+"наиболее способны в магии среди Яогуаев.\n"
+"Как и Лисицы, Джорогумо также обладают звериными и гуманоидными чертами, но "
+"в более заметной степени – имеют человеческую верхнюю часть тела, "
+"прикрепленную к гигантскому пауку.\n"
+"Хотя Цзянши не живут вместе с Яогуай и больше напоминают нежить, их "
+"врожденные магические способности и сущность схожи, что может "
+"свидетельствовать об их общем происхождении."
 
 #. [race]: id=steppe_yaoguai
 #: races.cfg:358
@@ -1730,6 +1875,9 @@ msgid ""
 "Nikan,Bang,Fai,Feng,Guowei,Jenghis,Kang,Lei,Mengfu,Najun,Rijin,Seng,Syaoran,"
 "Dong,Yahui"
 msgstr ""
+"Елден,Елюй,Еэж,Алин,Шолонту,Ердени,Фодо,Якдан,Ниованггиян,Сахалиян,Муке,"
+"Никан,Анкхбаяр,Батбаяр,Бату,Чингис,Ганболд,Гантулга,Ганзориг,Наранбаатар,"
+"Отгонбаяр,Темур,Ерки"
 
 #. [race]: id=steppe_yaoguai
 #: races.cfg:359
@@ -1737,23 +1885,23 @@ msgid ""
 "Sain,Ilha,Hojo,Muke,Ulhicun,Aihai,Airu,Ami,Bei,Cao,Chai,Chaomei,Dali,Daxia,"
 "Haijun,Jiao,Lei,Lianfang,Najun,Noqua,Yoko,Mao,Kanna,Ai,Xia,Rin,Mai"
 msgstr ""
+"Саин,Илха,Хоё,Муке,Улхицун,Аихаи,Аиру,Ами,Беи,Цао,Чаи,Чаомеи,Дали,Дасяхэ,"
+"Хаиюн,Йиао,Леи,Лианфанг,Наюн,Нояуа,Ёко,Мао,Канна,Аи,Хиа,Рин,Маи"
 
 #. [race]: id=steppe_terracotta
 #: races.cfg:364
 msgid "race^Terracotta Man"
-msgstr ""
+msgstr "Терракотовый человек"
 
 #. [race]: id=steppe_terracotta
 #: races.cfg:365
-#, fuzzy
-#| msgid "race+female^Desert Nagini"
 msgid "race+female^Terracotta Woman"
-msgstr "Песчаная нагиня"
+msgstr "Терракотовый человек"
 
 #. [race]: id=steppe_terracotta
 #: races.cfg:366
 msgid "race^Terracotta Men"
-msgstr ""
+msgstr "Терракотовый человек"
 
 #. [race]: id=steppe_terracotta
 #: races.cfg:372
@@ -1761,6 +1909,8 @@ msgid ""
 "Chen,Fang,Dong,Gang,Heng,Hong,Jian,Jing,Kai,Lian,Ming,Rong,Shun,Tao,Xiang,"
 "Yahui,Yang,Zheng,Wen,Zhou"
 msgstr ""
+"Чен,Фанг,Донг,Ганг,Хенг,Хонг,Йиан,Йинг,Каи,Лиан,Минг,Ронг,Шун,Тао,Сян,Яхуи,"
+"Янг,Чженг,Вен,Чжоу"
 
 #. [editor_group]: id=wesnoth-UMC-GSE
 #: terrain.cfg:5
@@ -4253,10 +4403,8 @@ msgstr "Старый тролль"
 
 #. [unit_type]: id=Mandate_Jiangshi, race=steppe_yaoguai
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:4
-#, fuzzy
-#| msgid "fangs"
 msgid "Jiangshi"
-msgstr "клыки"
+msgstr "Цзяньши"
 
 #. [unit_type]: id=Mandate_Jiangshi, race=steppe_yaoguai
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:19
@@ -4273,18 +4421,29 @@ msgid ""
 "deadliness – and to keep dangerous undead fed with life essence of the enemy "
 "and not the Mandate’s subjects."
 msgstr ""
+"Цзянши походят на типичную нежить – с их пустым взглядом и бледной кожей, "
+"туго натянутой на иссохшее тело, находящееся, однако, в хорошей сохранности. "
+"Двигаются они неуклюже и неестественно – как если бы эти самые трупы "
+"подвесили на нитках и заставили дёргаться по команде кукловода. Однако, "
+"несмотря на неловкую походку, Цзянши двигаются весьма быстро и точно, "
+"застигая врасплох своих врагов и поглощая их жизненную силу – одну из "
+"немногих потребностей отвратительных вампиров.\n"
+"Мандат Тартара активно ищет Цзянши, буквально занимаясь их принудительным "
+"трудоустройством. В этом кроется две цели – использовать их исключительную "
+"скорость и смертоносность – а также направлять голод нежити на врагов, а не "
+"на подданных Мандата."
 
 #. [attack]: type=cold
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:44
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:114
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:185
 msgid "draining touch"
-msgstr ""
+msgstr "высасывающее касание"
 
 #. [unit_type]: id=Mandate_Umbral_Mandarin, race=steppe_yaoguai
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:70
 msgid "Umbral Mandarin"
-msgstr ""
+msgstr "Теневой Мандарин"
 
 #. [unit_type]: id=Mandate_Umbral_Mandarin, race=steppe_yaoguai
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:88
@@ -4298,11 +4457,18 @@ msgid ""
 "execute their every order and watch so that the iron grip of Tartarus could "
 "hold on everyone."
 msgstr ""
+"Поглотив достаточно жизненных сил и доказав свою преданность, Цзянши могут "
+"пройти специальные экзамены на ум и способности, чтобы подняться по "
+"меритократической лестнице до почётного ранга Теневых Мандаринов. \n"
+"Они выполняют самые разные обязанности – от чиновников и полиции до убийц и "
+"разведчиков. Заинтересованные лишь в жизненной энергии, Теневые Мандарины "
+"верны неподкупно верны хозяевам Мандата. Они готовы исполнить каждый их "
+"приказ и следят, чтобы железный порядок соблюдался всеми остальными."
 
 #. [unit_type]: id=Mandate_Eye_of_Abyss, race=steppe_yaoguai
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:140
 msgid "Eye of Abyss"
-msgstr ""
+msgstr "Глаз Бездны"
 
 #. [unit_type]: id=Mandate_Eye_of_Abyss, race=steppe_yaoguai
 #: units/mandate/Mandate_Jiangshi_Vampires.cfg:159
@@ -4318,11 +4484,17 @@ msgid ""
 "their goals, and the Will of Tartarus is the only law they will not dare to "
 "break."
 msgstr ""
+"Наиболее отличившиеся из Мандаринов со временем могут войти в круг высших "
+"государственных служащих – Глаза Бездны. Проходя специальную церемонию, они "
+"получают Печать Бездны – отныне они служат не хозяевам Мандата, а самому "
+"Великому Тартару – они его зоркие очи и орудия справедливости. Из каждой "
+"тени они следят за работой военной и бюрократической машины, уничтожая любое "
+"препятствие и проблему, будь она внутренней или внешней. "
 
 #. [unit_type]: id=Mandate_Kobold, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:4
 msgid "Kobold"
-msgstr ""
+msgstr "Кобольд"
 
 #. [unit_type]: id=Mandate_Kobold, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:17
@@ -4338,16 +4510,25 @@ msgid ""
 "the blue lizards use heavy shields made of turtle or pangolin shell, "
 "although they sacrifice their inherent maneuverability."
 msgstr ""
+"В армии Мандата Тартара большинство Кобольдов заняты инженерно-осадным "
+"делом. Взрывные составы были открыты синими ящерами ещё при полной изоляции "
+"в глубинах пещер, где им нужно было быстро расчищать завалы, а то и вызывать "
+"их при необходимости. Однако именно на поверхности в этом деле можно "
+"разгуляться – сделать заряд ещё мощнее, а запуск – дальше и точнее.\n"
+"Большинство Кобольдов-осадников используют стрелы-ракеты – фейерверки. Для "
+"компенсации своей природной хрупкости и защиты от искр из сопла ракеты, "
+"синие ящеры используют увесистые щиты, сделанные из панциря черепахи или "
+"панголина, хотя и жертвуют присущей им манёвренностью. "
 
 #. [attack]: type=fire
 #: units/mandate/Mandate_Kobold.cfg:38 units/mandate/Mandate_Kobold.cfg:525
 msgid "firework"
-msgstr ""
+msgstr "Фейерверк"
 
 #. [unit_type]: id=Mandate_Cannoneer, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:98
 msgid "Kobold Cannoneer"
-msgstr ""
+msgstr "Канонир"
 
 #. [unit_type]: id=Mandate_Cannoneer, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:116
@@ -4363,23 +4544,33 @@ msgid ""
 "suitable both for protection from enemy attacks and for strong counter-"
 "strikes."
 msgstr ""
+"Если рядовые Кобольды не более чем искусные кустари, то Канониры – настоящие "
+"инженеры, закалённые в бою и учении. Вместо примитивных, неудобных и даже "
+"опасных для самого стрелка фейерверков они используют ручницы, производимые "
+"под тщательным надзором кузнецов, алхимиков и государственных чиновников. "
+"Такое орудие войны позволяет использовать не только разрывные бомбы, но и "
+"увесистые болванки, сбивающие с ног и ломающие кости наиболее упрямым "
+"целям.\n"
+"Щиты-панцири также получают замену в виде полноценных металлических щитов, "
+"пригодные как для защиты от вражеского натиска, так и для крепких ударов в "
+"ответ."
 
 #. [attack]: type=impact
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
 #: units/mandate/Mandate_Kobold.cfg:137 units/mandate/Mandate_Kobold.cfg:241
 #: utils/abilities_mandate.cfg:677
 msgid "handcannon"
-msgstr ""
+msgstr "ручная бомбарда"
 
 #. [attack]: type=fire
 #: units/mandate/Mandate_Kobold.cfg:151 units/mandate/Mandate_Kobold.cfg:255
 msgid "explosive shot"
-msgstr ""
+msgstr "взрывной заряд"
 
 #. [unit_type]: id=Mandate_Bombardier, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:199
 msgid "Kobold Bombardier"
-msgstr ""
+msgstr "Бомбардир"
 
 #. [unit_type]: id=Mandate_Bombardier, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:220
@@ -4393,11 +4584,19 @@ msgid ""
 "portable ram. The typical image of Olgoi-Horhoi on the shield surface "
 "provided the nickname “Worm’s Mandibles” for the bombard."
 msgstr ""
+"Наиболее опытные, крепкие и хорошо обученные Кобольды могут притронуться к "
+"оружию под стать их высоким требованиям – бомбарде. Плотные металлические "
+"боеприпасы дают большую убойность и дальнобойность по сравнению с каменными, "
+"не говоря уже о большей прочности ствола, которая позволяет использовать "
+"усиленный заряд пороха.\n"
+"Щит, соединённый с самой пушкой, не только служит упором и защитой стрелка, "
+"но и превращает бомбарду в настоящий таран. Типичное изображение Олгой-"
+"хорхоя на щитах закрепило за бомбардой прозвище “Жвало Червя”."
 
 #. [unit_type]: id=Mandate_Chukonu, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:303
 msgid "Kobold Chukonu"
-msgstr ""
+msgstr "Чукону"
 
 #. [unit_type]: id=Mandate_Chukonu, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:316
@@ -4410,13 +4609,17 @@ msgid ""
 "exhausting enemies with skirmishes where the main parameters are shooters’ "
 "mobility and continuous fire, instead of power."
 msgstr ""
+"Не все кобольды занимаются осадным делом и обороной. Специальные группы "
+"переснаряжаются с тяжёлых щитов и громоздких ракет на уникальные "
+"скорострельные арбалеты. Хотя по бронебойности и мощи такие искусные поделки "
+"и уступают традиционным образцам – и тем более пушкам кобольдов-осадников – "
+"они незаменимы для изнуряющего огня, когда решает не мощь, а мобильность "
+"бойцов и непрерывность натиска."
 
 #. [attack]: type=impact
 #: units/mandate/Mandate_Kobold.cfg:325 units/mandate/Mandate_Kobold.cfg:409
-#, fuzzy
-#| msgid "crossbow"
 msgid "crossbow bash"
-msgstr "арбалет"
+msgstr "удар арбалетом"
 
 #. [attack]: type=pierce
 #. [specials]
@@ -4428,7 +4631,7 @@ msgstr "залп стрел"
 #. [unit_type]: id=Mandate_Chukonu_Master, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:384
 msgid "Kobold Arrowstorm"
-msgstr ""
+msgstr "Мастер Чукону"
 
 #. [unit_type]: id=Mandate_Chukonu_Master, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:398
@@ -4444,11 +4647,22 @@ msgid ""
 "projectiles – which have feathers attached as well as metallic tips made out "
 "of the best metal found by the lizard miners."
 msgstr ""
+"Хотя скорострельные арбалеты кобольдов-застрельщиков и являются "
+"примечательным образцом инженерной мысли, во многом они рассчитаны на "
+"количество, а не на качество – что видно по простым плечам лука и "
+"примитивных стрел, которые зачастую даже не имеют оперения, порой – и "
+"металлических наконечников.\n"
+"Однако арбалетчики-скорострелы, которые доказали своё мастерство и искусство "
+"обращения со своим вооружением, могут рассчитывать на усиленные версии. \n"
+"Элитные варианты арбалетов оснащены композитными плечами, которые лучше "
+"передают энергию болтам. Болты же являются полноценными снарядами для "
+"арбалета – в наличии и оперение и крепкие наконечники, сделанные из "
+"отборного металла, который могут добыть ящеры-горняки."
 
 #. [unit_type]: id=Mandate_Kobold_Spearman, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:468
 msgid "Kobold Fire Lancer"
-msgstr ""
+msgstr "Огненный копейщик"
 
 #. [unit_type]: id=Mandate_Kobold_Spearman, race=steppe_kobold
 #: units/mandate/Mandate_Kobold.cfg:488
@@ -4464,20 +4678,25 @@ msgid ""
 "power of Mangus at melee or at range like their kin or Vixens, they occupy a "
 "flexible role that ensures formidable defense and offense alike."
 msgstr ""
+"Хотя кобольды не славятся исключительной силой или выносливостью – "
+"высококачественное вооружение, надлежащая подготовка и военный опыт могут "
+"компенсировать это.\n"
+"В качестве альтернативы щитам самые храбрые и закаленные в боях Кобольды "
+"оснащены более тяжелой броней, которая, в свою очередь, позволяет орудовать "
+"двуручным огненным копьем – грозным гибридом огнемёта и копья.\n"
+"Огненные Копейщики – универсальные бойцы – хотя они не обладают такой мощью "
+"в ближнем бою, как Мангус, или в дальнем как свои сородичи или Лисицы, они "
+"занимают гибкую роль, обеспечивая уверенную оборону и атаку. "
 
 #. [attack]: type=fire
 #: units/mandate/Mandate_Kobold.cfg:512
-#, fuzzy
-#| msgid "black firestorm"
 msgid "point-blank firework"
-msgstr "буря проклятого пламени"
+msgstr "фейерверк в упор"
 
 #. [unit_type]: id=Mandate_Mangus, race=steppe_mangus
 #: units/mandate/Mandate_Manguses.cfg:4
-#, fuzzy
-#| msgid "Ogre Grunt"
 msgid "Mangus Grunt"
-msgstr "Общинник"
+msgstr "Мангус"
 
 #. [unit_type]: id=Mandate_Mangus, race=steppe_mangus
 #: units/mandate/Mandate_Manguses.cfg:17
@@ -4493,18 +4712,28 @@ msgid ""
 "wraps around his waist or forearm even in peaceful times – as peace is but "
 "preparation for war."
 msgstr ""
+"Пехотинцы Мангусов - довольно молодые индивиды, делающие свои первые шаги в "
+"военной иерархии. Несмотря на отсутствие реальной подготовки, они, как "
+"правило, довольно грозные воины благодаря сильной конкуренции между "
+"собратьями и традиции решать местные распри в поединках и драках. Конечно, "
+"там, где их слабая дисциплина и мастерство особенно проявляются, они "
+"компенсируют, даже с избытком – своими чудовищными размерами и мощью.\n"
+"Поскольку для существ такого размера трудно изготовить высококачественное "
+"оружие, большинство мангусов полагаются на цепы и молоты-метеоры, которые "
+"они по обыкновению обматывают вокруг талии или предплечья даже в мирное "
+"время, поскольку мир – это всего лишь подготовка к войне."
 
 #. [attack]: type=impact
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
 #: units/mandate/Mandate_Manguses.cfg:27 units/mandate/Mandate_Manguses.cfg:76
 #: units/mandate/Mandate_Manguses.cfg:131 utils/abilities_mandate.cfg:643
 msgid "flail"
-msgstr ""
+msgstr "цеп"
 
 #. [unit_type]: id=Mandate_Kheshig, race=steppe_mangus
 #: units/mandate/Mandate_Manguses.cfg:53
 msgid "Mangus Kheshig"
-msgstr ""
+msgstr "Кешиг"
 
 #. [unit_type]: id=Mandate_Kheshig, race=steppe_mangus
 #: units/mandate/Mandate_Manguses.cfg:66
@@ -4519,11 +4748,20 @@ msgid ""
 "effective martial art taught through years of experience in harsh and "
 "unforgiving combat."
 msgstr ""
+"Кешиги - телохранители генералов и элитные ударные части, которых боятся "
+"враги и которыми восхищаются союзники. Они настоящие солдаты, испытанные "
+"войной, а не только драками в тавернах и кровавым спортом. Только зрелые "
+"магнусы, обладающие хорошим соотношением безрассудства и хитрости, "
+"поднимаются, чтобы пополнить ряды кешигов.\n"
+"Экипировка кешигов более искусная, как и их техника. Их мастерство владения "
+"молотами-метеорами – это не просто инстинктивные грубые удары, а "
+"смертоносное и эффективное боевое искусство, которому они научились за годы "
+"опыта в суровых боях, которые не прощают ошибок."
 
 #. [unit_type]: id=Mandate_Yelbeghen, race=steppe_mangus
 #: units/mandate/Mandate_Manguses.cfg:102
 msgid "Yelbeghen"
-msgstr ""
+msgstr "Йельбеген"
 
 #. [unit_type]: id=Mandate_Yelbeghen, race=steppe_mangus
 #: units/mandate/Mandate_Manguses.cfg:121
@@ -4544,11 +4782,27 @@ msgid ""
 "dragon”. They lead the government and military – showing no mercy or "
 "weakness in both."
 msgstr ""
+"Мангусы потенциально могут жить очень долго, если не вечно, хотя "
+"безрассудство и бешенство, с которыми молодняк вступает в бой, значительно "
+"снижают шансы дожить до того, что может считаться старшим возрастом по "
+"стандартам других рас. Такая редкая привилегия с лихвой окупается тем, что "
+"мангусы кажутся невосприимчивыми к умственной и физической слабости, "
+"присущей старшему возрасту. Самые тяжелые травмы и раны в конечном итоге "
+"заживают и не оставляют ничего, кроме отметин и шрамов, поэтому ни один "
+"старый мангус не остается навсегда искалеченным и бездеятельным.\n"
+"В определенный момент старый Мангус отправлялся в путешествие в Бездну, "
+"добираясь до самых темных и наименее известных подземных путей и туннелей, "
+"чтобы медитировать. Спускаясь в абсолютную бесконечную тьму, мангусы "
+"проводят там дни, если не недели и месяцы. Возвращаясь обратно на "
+"поверхность, мангусы выглядят сильнее и крупнее и, что самое главное – "
+"обладают тремя головами или лицами, слитыми вместе. Такие мангусы получают "
+"имя Йельбеген – “демонический дракон”. Они руководят государством и армией, "
+"не проявляя ни милосердия, ни слабости ни в том, ни в другом."
 
 #. [unit_type]: id=Mandate_Jorogumo, race=steppe_yaoguai
 #: units/mandate/Mandate_Spiderwomen.cfg:4
 msgid "Jorogumo"
-msgstr ""
+msgstr "Джорогумо"
 
 #. [unit_type]: id=Mandate_Jorogumo, race=steppe_yaoguai
 #: units/mandate/Mandate_Spiderwomen.cfg:17
@@ -4562,22 +4816,26 @@ msgid ""
 "since the integration – they take use of powerful poison as well as their "
 "signature spider silk to ensnare the enemy."
 msgstr ""
+"Очаровательные и ужасающие девы-пауки Джорогумо наводили ужас на Восточные "
+"Земли издавна, будь это исконные обитатели или пришельцы. Это привело к "
+"появлению множества пугающих историй и примет, которыми Джорогумо до сих пор "
+"бесстыдно гордятся, хотя ныне разделяют жизненное пространство под Тартаром "
+"Бездны с потомками своих жертв.\n"
+"Как вспомогательные бойцы из автономных провинций Яогуаев, Джорогумо едва ли "
+"изменились со дня интеграции – в бой они пускают мощный яд и – другой свой "
+"важный атрибут паучий шёлк, которым они опутывают врагов."
 
 #. [attack]: type=impact
 #: units/mandate/Mandate_Spiderwomen.cfg:39
 #: units/mandate/Mandate_Spiderwomen.cfg:115
 #: units/mandate/Mandate_Spiderwomen.cfg:223
-#, fuzzy
-#| msgid "awe"
 msgid "web"
-msgstr "страх"
+msgstr "паутина"
 
 #. [unit_type]: id=Mandate_Death_Weaver, race=steppe_yaoguai
 #: units/mandate/Mandate_Spiderwomen.cfg:81
-#, fuzzy
-#| msgid "Death of your leader"
 msgid "Death Weaver"
-msgstr "Смерть вашего лидера"
+msgstr "Ткачиха Смерти"
 
 #. [unit_type]: id=Mandate_Death_Weaver, race=steppe_yaoguai
 #: units/mandate/Mandate_Spiderwomen.cfg:94
@@ -4592,17 +4850,25 @@ msgid ""
 "they meet an enemy – they shred its life threads asunder, foretelling its "
 "inevitable doom."
 msgstr ""
+"Паучий шёлк — ценный материал: он легче перьев будучи прочнее самой "
+"качественной кольчуги. Но для Джорогумо шёлк — это нечто большее, чем просто "
+"один из многих товаров торговли — для них он сакрален. Джорогумо верят, что "
+"вся история мира записана в узорах паутин, которые могут рассказать "
+"неизвестное прошлое и что ещё грядёт. Самые опытные и искусные индивиды — "
+"мастера ткачества и чтения таких узоров — заслуживают звание Ткачей Смерти. "
+"Встречая друзей, они гладят узоры паутины изысканными веретенами, встречая "
+"врага, они рвут на части его жизненные нити, предвещая его неминуемую гибель."
 
 #. [attack]: type=pierce
 #: units/mandate/Mandate_Spiderwomen.cfg:127
 #: units/mandate/Mandate_Spiderwomen.cfg:236
 msgid "needle"
-msgstr ""
+msgstr "игла"
 
 #. [unit_type]: id=Mandate_Chthonic_Empress, race=steppe_yaoguai
 #: units/mandate/Mandate_Spiderwomen.cfg:187
 msgid "Chthonic Empress"
-msgstr ""
+msgstr "Хтоническая Императрица"
 
 #. [unit_type]: id=Mandate_Chthonic_Empress, race=steppe_yaoguai
 #: units/mandate/Mandate_Spiderwomen.cfg:201
@@ -4616,13 +4882,25 @@ msgid ""
 "Yaoguai, loyal allies of the Mandate and grave enemies of whoever crosses "
 "their path."
 msgstr ""
+"Общество Джорогумо и Яогуаев в целом не имеет четкой иерархии, подобной "
+"централизованному государству, как например сам Мандат Тартара. Они "
+"действуют скорее как духи – чуткие к природе и другим существам вокруг них, "
+"живущие в своем собственном уединенном мире-общине. Формальных правил как "
+"таковых не существует, но участие и солидарность – это последние вещи, "
+"которые стоит игнорировать.\n"
+"Таким образом, старейшие и мудрейшие Джорогумо – чьё мастерство шелка, "
+"веретена и чтения нитей не имеет себе равных – служат так называемыми "
+"императрицами. Они ведут  жизни Яогуаев и решают самые сложные вопросы.\n"
+"Императрицы Джорогумо поднялись на еще более высокий уровень после "
+"сотрудничества с Мандатом. Наделенные невообразимыми знаниями, дарованными "
+"Тартаром, они стали известны как Хтонические Императрицы – свирепые лидеры "
+"Яогуай, верные союзники Мандата и смертельные враги любого, кто встанет у "
+"них на пути."
 
 #. [unit_type]: id=Mandate_Terracotta_Warrior, race=steppe_terracotta
 #: units/mandate/Mandate_Terracotta_Warriors.cfg:81
-#, fuzzy
-#| msgid "Great Warrior"
 msgid "Terracotta Warrior"
-msgstr "Гридь"
+msgstr "Терракотовый воин"
 
 #. [unit_type]: id=Mandate_Terracotta_Warrior, race=steppe_terracotta
 #: units/mandate/Mandate_Terracotta_Warriors.cfg:94
@@ -4639,11 +4917,21 @@ msgid ""
 "discipline, strengthened tenfold since they gave up their bodies to the "
 "glory of the Mandate."
 msgstr ""
+"Людская цивилизация Шиан была первой, кого коснулась благословляющая тьма "
+"Великой Бездны. Хотя Шианцы и создали основу ныне существующей империи, они "
+"были и первыми, кто провинился на своём посту. Они потеряли "
+"снисходительность Тартара, уйдя, казалось бы, в анналы истории. Однако затем "
+"они были возрождены – их тленные тела срослись воедино с волшебной глиной "
+"Бездны, провинившиеся получили второй шанс. Шианцы доказали свою гибкость и "
+"упорство, являясь вновь ключевой ячейкой государства.\n"
+"Как и в древние времена, Шианские воины полагаются на свои мечи и железную "
+"дисциплину, ставшую ещё прочнее с тех пор, как они отдали свои тела во славу "
+"Мандата Бездны."
 
 #. [unit_type]: id=Mandate_Terracotta_Sergeant, race=steppe_terracotta
 #: units/mandate/Mandate_Terracotta_Warriors.cfg:157
 msgid "Terracotta Sergeant"
-msgstr ""
+msgstr "Терракотовый сержант"
 
 #. [unit_type]: id=Mandate_Terracotta_Sergeant, race=steppe_terracotta
 #: units/mandate/Mandate_Terracotta_Warriors.cfg:175
@@ -4659,11 +4947,18 @@ msgid ""
 "Terracotta Sergeants and serve as an example not only to the rest of the "
 "Terracotta Host, but to the entire army of Tartarus Mandate."
 msgstr ""
+"Возрождённые Шианцы кажутся бездумными безвольными статуями, хотя это и не "
+"совсем так. Хотя их разум сильно затуманен, ими все равно движет чувство "
+"воинского самосовершенствования – Терракотовые воины растут в сноровке и "
+"мастерстве как и живые существа. \n"
+"Достигшие определённого мастерства воины возводятся в Терракотовых Сержантов "
+"и служат примером не только для остального Терракотового воинства, но и всей "
+"армии Мандата Бездны."
 
 #. [unit_type]: id=Mandate_Terracotta_Bannerlord, race=steppe_terracotta
 #: units/mandate/Mandate_Terracotta_Warriors.cfg:238
 msgid "Terracotta Bannerlord"
-msgstr ""
+msgstr "Терракотовый хоругвий"
 
 #. [unit_type]: id=Mandate_Terracotta_Bannerlord, race=steppe_terracotta
 #: units/mandate/Mandate_Terracotta_Warriors.cfg:257
@@ -4680,11 +4975,22 @@ msgid ""
 "banner of Tartarus Mandate and leads the Terracotta Host as the Terracotta "
 "Bannerlord."
 msgstr ""
+"Терракотовые Сержанты не останавливаются в своём развитии и словно одержимые "
+"продолжают совершенствовать свои навыки, чему способствует практически "
+"полный иммунитет глиняного тела к усталости.\n"
+"В определённый момент Терракотовый Сержант получает достаточно мастерства, "
+"чтобы поддерживать долговременные отростки и ассимилировать в своё тело "
+"инородные тела – кости, металл и камень. Со временем, эти способности "
+"позволят создать собственного терракотового скакуна – нередко с "
+"использованием живого коня в качестве основы. \n"
+"Движимый смутной ностальгией по старой империи Шиана, когда благородный воин "
+"был обязан идти в бой на своём верном коне, Сержант берёт в руки знамя "
+"Мандата и ведёт Терракотовое войско как Терракотовый Хоругвий. "
 
 #. [unit_type]: id=Mandate_Vixen_Witch, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:86
 msgid "Vixen Witch"
-msgstr ""
+msgstr "Лисья ведьма"
 
 #. [unit_type]: id=Mandate_Vixen_Witch, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:100
@@ -4701,22 +5007,29 @@ msgid ""
 "Although capable of handling melee combat with their claws, Vixen Witches "
 "are fragile and rely on handling an enemy from safe range. "
 msgstr ""
+"Ведьмы-лисицы - одно из многих вспомогательных войск, собранных из земель "
+"Яогуаев Мандатм Тартара. Однако не следует считать так называемые "
+"“вспомогательные” войска слабыми. Там, где молоты-метеоры Мангусов и "
+"артиллерия Кобольдов не дают никакого эффекта, Лисьи Ведьмы вызывают бури "
+"мощной энергии, аннигилируя врагов и распыляя их вспышками нефритового "
+"пламени. За счёт своей природной ловкости и магии, Лисьи Ведьмы быстры и "
+"способны на левитацию - идеальные застрельщики в труднопроходимой местности, "
+"где большая часть регулярной армии Мандата испытывает недостаток скорости и "
+"маневренности.\n"
+"Несмотря на возможность вести ближний бой когтями, Лисьи Ведьмы хрупки и "
+"предпочитают расправляться с врагом с безопасного расстояния."
 
 #. [attack]: type=arcane
 #: units/mandate/Mandate_Vixens.cfg:123 units/mandate/Mandate_Vixens.cfg:208
 #: units/mandate/Mandate_Vixens.cfg:294 units/mandate/Mandate_Vixens.cfg:375
 #: units/mandate/Mandate_Vixens.cfg:472
-#, fuzzy
-#| msgid "mystical smith"
 msgid "mystical fire"
-msgstr "кузнец-волшебник"
+msgstr "колдовской огонь"
 
 #. [unit_type]: id=Mandate_Vixen_Shaman, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:155
-#, fuzzy
-#| msgid "Ogre Grand Shaman"
 msgid "Vixen Shaman"
-msgstr "Верховный шаман"
+msgstr "Шаманка"
 
 #. [unit_type]: id=Mandate_Vixen_Shaman, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:172
@@ -4735,18 +5048,28 @@ msgid ""
 "their view of spiritual world allows them to achieve deadly precision with "
 "such attacks."
 msgstr ""
+"По мере взросления Лисицы следуют одному из двух путей – либо принимают "
+"физический мир, либо настраиваются на потусторонние силы – духовный мир.\n"
+"Лисицы, которые выбирают духовный мир, присоединяются к кругам шаманов. В "
+"отличие от гордых одиночек Охотниц, Шаманы тесно связаны с остальной частью "
+"сообщества – проводят ритуалы, обучают молодых Лисиц и командуют духовными "
+"силами. Настроенные на планы за пределами материального, шаманы "
+"трансформируются, получая дополнительные хвосты, которые легко отличают их "
+"от остальных сородичей.\n"
+"Хотя шаманы, возможно, не так закалены в бою, как Охотницы, их магическая "
+"сила еще страшней – она сжигает плоть, кости и металл с такой же лёгкостью, "
+"как дерево, а их взгляд на духовный мир позволяет им достигать смертоносной "
+"точности при атаках."
 
 #. [attack]: type=fire
 #: units/mandate/Mandate_Vixens.cfg:195 units/mandate/Mandate_Vixens.cfg:281
-#, fuzzy
-#| msgid " fire damage."
 msgid "fire barrage"
-msgstr " огненного урона."
+msgstr " огненный шквал"
 
 #. [unit_type]: id=Mandate_Vixen_Fangshi, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:240
 msgid "Vixen Fangshi"
-msgstr ""
+msgstr "Фанши"
 
 #. [unit_type]: id=Mandate_Vixen_Fangshi, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:258
@@ -4765,11 +5088,23 @@ msgid ""
 "sky with inferno of jade and golden flames dwarfing the sun’s light even in "
 "the brightest of days."
 msgstr ""
+"Фанши - Мастера магических искусств не только среди Лисиц, но и среди всех "
+"Яогуаев. Их знаменитый третий хвост является результатом тесной связи с "
+"духовным миром, который возвышает их за пределы материального.\n"
+"Будучи полной противоположностью Охотницам и Высшим Хищникам, Фанши тесно "
+"связаны с сообществом Яогуаев, а также с Мандатом Тартара. Они служат "
+"высшими жрецами, советниками и магами. Несмотря на чуждую природу Яогуай для "
+"основного населения Мандата, Фанши - одни из немногих, кто может выступать в "
+"качестве медиумов с Тартаром, часто помогая старым Мангусам в их подземном "
+"путешествии для превращения в Йельбегенов.\n"
+"Хотя Фанши проживают в более или менее цивилизованных частях империи, они не "
+"чужды войне. Выходя на поле боя, они превращают небо в ад из золотых и "
+"нефритовых огней, затмевающих своей яркостью даже полуденное солнце."
 
 #. [unit_type]: id=Mandate_Vixen_Huntress, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:326
 msgid "Vixen Huntress"
-msgstr ""
+msgstr "Охотница"
 
 #. [unit_type]: id=Mandate_Vixen_Huntress, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:339
@@ -4788,18 +5123,26 @@ msgid ""
 "Huntresses is indeed a hunt – with bigger stakes, and more kinds of prey to "
 "choose from."
 msgstr ""
+"По мере взросления Лисицы следуют одному из двух путей – либо принимают "
+"физический мир, либо настраиваются на потусторонние силы – духовный мир.\n"
+"Те Лисицы, которые связывают себя с материальным, природным миром, выбирают "
+"путь Охотниц. Они живут полной жизнью по естественным правилам – живут за "
+"счет скромных даров природы и борются с ее жестокими испытаниями.\n"
+"Охотницы – одиночки, в основном проводящие время вдали от сородичей. Иногда "
+"они сотрудничают с другими Охотницами или даже соревнуются с ними – обычно в "
+"манере состязания, но жестокие распри не редкость. Однако в трудные времена "
+"они без колебаний присоединятся к своим сестрам. Война для Охотниц и есть "
+"охота – с большими рисками и большим выбором добычи на выбор."
 
 #. [attack]: type=arcane
 #: units/mandate/Mandate_Vixens.cfg:362 units/mandate/Mandate_Vixens.cfg:459
-#, fuzzy
-#| msgid "mystical smith"
 msgid "mystical fan"
-msgstr "кузнец-волшебник"
+msgstr "колдовской веер"
 
 #. [unit_type]: id=Mandate_Vixen_Apex_Predator, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:422
 msgid "Apex Predator"
-msgstr ""
+msgstr "Верховный Хищник"
 
 #. [unit_type]: id=Mandate_Vixen_Apex_Predator, race=steppe_yaoguai
 #: units/mandate/Mandate_Vixens.cfg:436
@@ -4821,11 +5164,29 @@ msgid ""
 "fierce and unhinged as they might be, Apex Predators are good allies in "
 "battle."
 msgstr ""
+"Каждый день Охотницы – это суровая подготовка. Она разделяет свои охотничьи "
+"угодья с местными животными, агрессивными духами и неизвестными Яогуаями, а "
+"также с их собственными сёстрами. Либо она умирает и становится не более чем "
+"новым слоем почвы, либо торжествует над другими, стоя на вершине пищевой "
+"цепи.\n"
+"Охотницы, достигшие подобных высот, известны как Верховные Хищники. Они "
+"контролируют свои владения, отнимая жизнь у любого существа, которого "
+"захотят. Непредсказуемы и смертоносные, даже их сёстры стараются не заходить "
+"на территорию Верховного Хищника. Несмотря дурную славу, Верховные Хищники "
+"держат земли Яогуай под защитой, устанавливая природный порядок и "
+"предотвращая появление других яогуаев, с которыми боятся столкнуться даже "
+"Джорогумо и Лисицы.\n"
+"Война - одна из немногих ситуаций, когда Высшие Хищники не стремятся создать "
+"напряженность в отношениях со своими сородичами. Более того, они обычно "
+"присоединяются к военным партиям Мандата без разрешения или уведомления, что "
+"вызывает большой гнев среди военных бюрократов. Но обычные солдаты не "
+"возражают против их присутствия – какими бы свирепыми и неуравновешенными "
+"они ни были, Высшие Хищники – хорошие союзники в бою."
 
 #. [unit_type]: id=Mandate_Worm, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:5
 msgid "Olgoi Horhoi"
-msgstr ""
+msgstr "Олгой-хорхой"
 
 #. [unit_type]: id=Mandate_Worm, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:17
@@ -4854,11 +5215,18 @@ msgid ""
 "maneuvers, breaking holes in the enemy's defenses for creatures more adapted "
 "for war."
 msgstr ""
+"Черви Олгой Хорхой играют важную роль в военной машине Мандата Бездны, "
+"прорывая подземные ходы, необходимые для весьма нерасторопной армии "
+"Империи.  \n"
+"При необходимости, Черви также могут вступать в бой – прогрызая вражеские "
+"ряды своими жвалами – однако хороший командир должен понимать возможности и "
+"ключевую роль этих чудовищ в построении подземной логистики – без которой "
+"даже могучая армия Мандата потерпит крах. "
 
 #. [unit_type]: id=Mandate_Gu_Worm, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:56
 msgid "Gu-Worm"
-msgstr ""
+msgstr "Червь Гу"
 
 #. [unit_type]: id=Mandate_Gu_Worm, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:68
@@ -4877,18 +5245,28 @@ msgid ""
 "rusty dust and encase any living tissue in painful abscesses and exfoliating "
 "flesh."
 msgstr ""
+"Над некоторыми червями экспериментируют для особых военных целей. Это может "
+"быть отравление водоснабжения противника, уничтожение растительности на "
+"местности, чтобы оставить врага без воды и укрытия, или медленное и верное "
+"убийство самого врага.\n"
+"Для этого черви проходят специальную “подготовку” - их кормят исключительно "
+"ядовитыми животными и растениями, медленно накапливая токсины в телах "
+"чудовищ. В определенный момент Червей нередко поощряют пожирать других "
+"соперников, накапливая в своих венах еще больше отвратительных субстанций.\n"
+"Эта процедура приводит к появлению сильно мутировавших Червей Гу. Жидкости "
+"их организма настолько едкие, что даже одно дыхание червя может превратить "
+"самую лучшую броню в ржавую пыль и покрыть любое живое существо болезненными "
+"нарывами и отслаивающейся плотью."
 
 #. [attack]: type=fire
 #: units/mandate/Mandate_Worms.cfg:95 units/mandate/Mandate_Worms.cfg:166
-#, fuzzy
-#| msgid "fire breath"
 msgid "acid breath"
-msgstr "огненное дыхание"
+msgstr "ядовитое дыхание"
 
 #. [unit_type]: id=Mandate_Jade_Wyrm, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:125
 msgid "Jade Wyrm"
-msgstr ""
+msgstr "Нефритовый змий"
 
 #. [unit_type]: id=Mandate_Jade_Wyrm, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:139
@@ -4905,11 +5283,21 @@ msgid ""
 "mind. They coat themselves and everyone around them in thick darkness no "
 "light can pierce but the toxic glow of jade armor. "
 msgstr ""
+"Все черви обладают разумом – хотя их разум хранит мысли, непонятные или даже "
+"опасные для других разумных существ, способные сломить волю непостижимыми "
+"тайнами, скрывающимися за беспросветной бездной зубов.\n"
+"Процедура, которой подвергаются Гу-черви, заставляет их раскрывать эти "
+"темные секреты. Когда их кровь полностью сливается с едкими веществами, они "
+"претерпевают последнюю трансформацию – они приобретают “драконий” нефритовый "
+"панцирь, заслуживая прозвище Нефритовых Змиев. Отвратительное искажение "
+"образа благородных существ, Нефритовые Змеи высвобождают скрытые знания, "
+"дремлющие в их сознании. Они окутывают себя и всех вокруг густой тьмой, "
+"через проходит ни один луч света, кроме токсичного свечения нефритовой брони."
 
 #. [unit_type]: id=Mandate_Hydra, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:196
 msgid "Hydra"
-msgstr ""
+msgstr "Гидра"
 
 #. [unit_type]: id=Mandate_Hydra, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:208
@@ -4922,11 +5310,18 @@ msgid ""
 "the hail of teeth and swallowing them whole to satisfy their overgrown "
 "appetite."
 msgstr ""
+"Если черви развиваются естественным путем – не подвергаясь воздействию "
+"больших доз токсинов и ядов, превращающих их в Червей Гу – у них вырастают "
+"дополнительные головы, чем-то напоминая ужасное превращение Мангусов в "
+"Йельбегенов.\n"
+"Хотя Гидры не так проворны и быстры в рытье ям и создании туннелей, они "
+"представляют собой гораздо большую угрозу на поле боя – осыпая врага градом "
+"зубов и проглатывая их целиком, чтобы удовлетворить переросший аппетит."
 
 #. [unit_type]: id=Mandate_Avraga_Mogoi, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:260
 msgid "Avraga-Mogoi"
-msgstr ""
+msgstr "Аврага-Могой"
 
 #. [unit_type]: id=Mandate_Avraga_Mogoi, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:273
@@ -4939,6 +5334,13 @@ msgid ""
 "beasts called Avraga Mogoi sow horror on the battlefield – the only ones not "
 "afraid being the Mandate’s own soldiers and madmen. "
 msgstr ""
+"Спустя долгое время вроде бы бесконечного пожирания, Гидры могут достичь "
+"состояния, которое можно условно назвать “достаточно”. Эти ленивые, "
+"волочащиеся звери преобразуют свою чрезмерную массу ресурсов в новые головы "
+"и даже передние конечности – чтобы поддерживать свой тяжелый размер, а также "
+"убивать тех, кого с трудом достать челюстями. Подобно раздутым теням из тьмы "
+"Бездны их породившей, эти звери по имени Аврага Могой сеют ужас на поле боя "
+"– единственные, кто их не боится – это собственные солдаты Мандата и безумцы."
 
 #. [unit_type]: id=Ogre_Bull, race=bull
 #: units/ogres/Bulls.cfg:4
@@ -6929,7 +7331,7 @@ msgstr ""
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:624
 msgid "carousel"
-msgstr ""
+msgstr "карусель"
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:625
@@ -7979,7 +8381,7 @@ msgstr ""
 #. [dummy]: id=steppe_zeal
 #: utils/abilities_kingdom.cfg:2279
 msgid "zeal"
-msgstr ""
+msgstr "рвенпие"
 
 #. [dummy]: id=steppe_zeal
 #: utils/abilities_kingdom.cfg:2280
@@ -7996,10 +8398,8 @@ msgstr ""
 
 #. [tunneler]: id=tunneler{RADIUS}
 #: utils/abilities_mandate.cfg:25
-#, fuzzy
-#| msgid "Runner"
 msgid "tunneler"
-msgstr "Скороход"
+msgstr "туннель"
 
 #. [tunneler]: id=tunneler{RADIUS}
 #: utils/abilities_mandate.cfg:26
@@ -8009,13 +8409,15 @@ msgid ""
 "ability's range can be checked via a rightclick menu on units with this "
 "ability."
 msgstr ""
+"Этот юнит позволяет союзным бойцам телепортироваться через себя и другого "
+"туннельщика, если тот находится в радиусе действия. Радиус действия "
+"способности можно проверить с помощью контекстного меню на бойцах с этой "
+"способностью."
 
 #. [firststrike]: id=steppe_secondstrike
 #: utils/abilities_mandate.cfg:138
-#, fuzzy
-#| msgid "thunderstrike "
 msgid "secondstrike"
-msgstr "удар молнией "
+msgstr "бьёт вторым"
 
 #. [firststrike]: id=steppe_secondstrike
 #: utils/abilities_mandate.cfg:139
@@ -8025,17 +8427,13 @@ msgstr "Этой атакой боец всегда атакует вторым,
 
 #. [resistance]: id=steppe_dauntless
 #: utils/abilities_mandate.cfg:165
-#, fuzzy
-#| msgid "Godless"
 msgid "dauntless"
-msgstr "Безбожный"
+msgstr "бесстрашие"
 
 #. [resistance]: id=steppe_dauntless
 #: utils/abilities_mandate.cfg:166
-#, fuzzy
-#| msgid "female^agressive"
 msgid "female^dauntless"
-msgstr "агрессивная"
+msgstr "бесстрашие"
 
 #. [resistance]: id=steppe_dauntless
 #: utils/abilities_mandate.cfg:167
@@ -8043,55 +8441,51 @@ msgid ""
 "This unit’s resistances are doubled, up to a maximum of 50%, when attacking. "
 "Vulnerabilities are not affected."
 msgstr ""
+"Сопротивления этого бойца удваиваются, максимум до 50%, при атаке. "
+"Отрицательные сопротивления не затронуты."
 
 #. [damage]: id=steppe_explosion{PERCENT}
 #: utils/abilities_mandate.cfg:183
-#, fuzzy
-#| msgid "blood explosion"
 msgid "explosion"
-msgstr "взрыв крови"
+msgstr "взрыв"
 
 #. [damage]: id=steppe_explosion{PERCENT}
 #: utils/abilities_mandate.cfg:184
-#, fuzzy
-#| msgid ""
-#| "When this attack is used, random enemies adjacent to the target take "
 msgid "When this attack hits, units adjacent to the target unit are damaged by"
 msgstr ""
-"При использовании этой атаки, случайные стоящие рядом враги получают урон "
-"равный "
+"При использовании этой атаки, стоящие рядом враги получают урон равный "
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:476
-#, fuzzy
-#| msgid "shadow orb"
 msgid "shadow dash"
-msgstr "теневой шар"
+msgstr "теневой рывок"
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:477
 msgid "While this unit has full moves, this unit may teleport to any tile in a"
 msgstr ""
+"Когда боец имеет полные ходы, он может телепортироваться на любой гекс в "
+"радиусе"
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:477
 msgid "-tile radius from the unit's current location."
-msgstr ""
+msgstr "-гексов от его текущего положения."
 
 #. [dummy]: id=steppe_metamorph
 #: utils/abilities_mandate.cfg:565
 msgid "metamorph"
-msgstr ""
+msgstr "метафорф"
 
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
 #: utils/abilities_mandate.cfg:711
 msgid "entangle"
-msgstr ""
+msgstr "опутывание"
 
 #. [set_menu_item]: id=mandate_tunnel_calculator
 #: utils/abilities_mandate.cfg:746
 msgid "calculate tunnel range"
-msgstr ""
+msgstr "подсчитать радиус туннелей"
 
 #. [dummy]: id=steppe_stun
 #: utils/abilities_misc.cfg:39
@@ -8404,10 +8798,8 @@ msgstr ""
 
 #. [unstore_unit]
 #: utils/abilities_misc.cfg:1331
-#, fuzzy
-#| msgid "+$unit.abilities.hitandrun.moves| movepoints"
 msgid "+$weapon.specials.hitandrun.moves| movepoints"
-msgstr "+$unit.abilities.hitandrun.moves| movepoints"
+msgstr "+$unit.abilities.hitandrun.moves| ходов"
 
 #. [unstore_unit]
 #: utils/abilities_misc.cfg:1347
@@ -8829,7 +9221,7 @@ msgstr ""
 #. [unstore_unit]
 #: utils/abilities_misc.cfg:3109
 msgid "can attack again!"
-msgstr ""
+msgstr "могу атаковать снова!"
 
 #. [dummy]: id=steppe_double_attack
 #: utils/abilities_misc.cfg:3255
@@ -8861,13 +9253,8 @@ msgstr ""
 
 #. [damage]: id=steppe_stacking{NAME}{DAMAGE}
 #: utils/abilities_misc.cfg:3280
-#, fuzzy
-#| msgid ""
-#| "When this attack is used, random enemies adjacent to the target take "
 msgid "When this attack is used, its damage increases by"
-msgstr ""
-"При использовании этой атаки, случайные стоящие рядом враги получают урон "
-"равный "
+msgstr "При попадании урон атаки увеличивается на"
 
 #. [dummy]: id=steppe_kamikaze
 #: utils/abilities_misc.cfg:3435
@@ -8876,10 +9263,8 @@ msgstr ""
 
 #. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
 #: utils/abilities_misc.cfg:3491
-#, fuzzy
-#| msgid "percentile damage"
 msgid "lesser percentile damage"
-msgstr "процентный урон"
+msgstr "меньший процентный урон"
 
 #. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
 #. [damage]: id=steppe_percenticle_damage{PERCENT}
