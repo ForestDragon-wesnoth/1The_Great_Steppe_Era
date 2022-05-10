@@ -168,26 +168,20 @@ function steppe_attach_unit_status_renderer()
   end
 end
 
-function steppe_find_enslave_level(variable)
---   wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/ravana_inspect_table.lua"
-   helper = wesnoth.require "lua/helper.lua"
-   local attack = wml.variables[variable]
---   inspect_table({attack}, {})
-   local specials = helper.get_child(attack, "specials")
-   local special = helper.get_child(specials, "enslave")
---   wesnoth.message("unit enslave level:",special.enslave_level)
-   return special.enslave_level   
-end
 
-function steppe_find_enslave_nonliving(variable)
+--example of how to use the find_special_by_tag function:
+  --steppe_find_special_by_tag("second_weapon","enslave").enslave_level
+  --this returns the enslave level of the second weapon's enslave tag
+
+function steppe_find_special_by_tag(variable,special_tag)
 --   wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/ravana_inspect_table.lua"
    helper = wesnoth.require "lua/helper.lua"
    local attack = wml.variables[variable]
 --   inspect_table({attack}, {})
-   local specials = helper.get_child(attack, "specials")
-   local special = helper.get_child(specials, "enslave")
+   local specials = wml.get_child(attack, "specials")
+   local special = wml.get_child(specials, special_tag)
 --   wesnoth.message("unit enslave level:",special.enslave_level)
-   return special.works_on_nonliving
+   return special
 end
 
 
