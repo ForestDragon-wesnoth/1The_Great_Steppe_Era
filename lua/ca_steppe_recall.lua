@@ -59,7 +59,7 @@ end
 
 function ca_steppe_recall:execution(cfg)
     -- Let this function blacklist itself if the chosen recruit is too expensive
-    local recall_units = wesnoth.get_recall_units()
+    local recall_units = wesnoth.units.find_on_recall()
 
 --    wesnoth.message("the recall ai is executed for side " .. wesnoth.current.side)
  
