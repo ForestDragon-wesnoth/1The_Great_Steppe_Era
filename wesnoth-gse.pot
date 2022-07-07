@@ -55,7 +55,7 @@ msgid "The Northern Knyaz Triumvirate is a faction of the people of the north. T
 msgstr ""
 
 #: factions/faction_descriptions.cfg:1941
-msgid "The Ogre Kingdom is a formidable feudal power in the mountains west of the Steppe. Choose vassals, keep your mercenaries paid and preach your religion to turn the motley godless army into an army of powerful and righteous warriors of the Light! Ogres need time to gather and organize their forces, which is why the faction is best in the middle of the game."
+msgid "The Ogre Kingdom is a powerful feudal power located in the mountains west of the Steppes. Constant feuds and conflicts with neighbors has honed the siege skills of Ogres: at their disposal they have long-range Catapult Trolls, furious Stormtroopers, Fire Pigs, armored Knights and Monstrous Beavers from Bitter Swamps. Ogres’ army is unstoppable in a siege, but vulnerable in a maneuverable field battle."
 msgstr ""
 
 #: factions/faction_descriptions.cfg:1945
@@ -880,12 +880,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "father of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
+msgid "father of fiends"
 msgstr ""
 
 #. [attack]: type=blade
@@ -910,12 +910,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
+msgid "knyaz of fiends"
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "knyaz of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
 msgstr ""
 
 #. [attack]: type=blade
@@ -962,6 +962,8 @@ msgstr ""
 #. [unit_type]: id=Hunn_Familiar, race=undead
 #. [unit_type]: id=Hunn_Imp, race=undead
 #. [unit_type]: id=Kingdom_Battle_Serf, race=human
+#. [unit_type]: id=Kingdom_Fire_Boar, race=monster
+#. [unit_type]: id=Kingdom_Fire_Pig, race=monster
 #. [unit_type]: id=Kingdom_Messenger, race=human
 #. [unit_type]: id=Kingdom_River_Ataman, race=merman
 #. [unit_type]: id=Kingdom_River_Getman, race=merman
@@ -980,7 +982,7 @@ msgstr ""
 #. [unit_type]: id=Slav_Temsk_Elder_Raven, race=steppe_raven
 #. [unit_type]: id=Slav_Temsk_Raven, race=steppe_raven
 #. [unit_type]: id=Slav_Ushkuynik, race=steppe_northerner
-#: units/hunns/Hunn_Familiars.cfg:25 units/hunns/Hunn_Familiars.cfg:140 units/kingdom/Kingdom_Mermen.cfg:20 units/kingdom/Kingdom_Mermen.cfg:116 units/kingdom/Kingdom_Mermen.cfg:235 units/kingdom/Kingdom_Pigs.cfg:206 units/kingdom/Kingdom_Scout.cfg:18 units/kingdom/Kingdom_Scout.cfg:106 units/kingdom/Kingdom_Serfs.cfg:18 units/kingdom/Kingdom_Serfs.cfg:93 units/kingdom/Kingdom_Trolls.cfg:508 units/kingdom/Kingdom_Vassals.cfg:49 units/kingdom/Kingdom_Vassals.cfg:137 units/kingdom/Kingdom_Vassals.cfg:286 units/slavs/Novgorod-Drakes.cfg:67 units/slavs/Novgorod-Drakes.cfg:349 units/slavs/Novgorod-Drakes.cfg:351 units/slavs/Novgorod-Drakes.cfg:467 units/slavs/Slav-Temsk_Ravens.cfg:25 units/slavs/Slav-Temsk_Ravens.cfg:111 units/slavs/Slav_Horsemen.cfg:474 units/slavs/Slav_Militia.cfg:345
+#: units/hunns/Hunn_Familiars.cfg:25 units/hunns/Hunn_Familiars.cfg:140 units/kingdom/Kingdom_Mermen.cfg:20 units/kingdom/Kingdom_Mermen.cfg:116 units/kingdom/Kingdom_Mermen.cfg:235 units/kingdom/Kingdom_Pigs.cfg:33 units/kingdom/Kingdom_Pigs.cfg:157 units/kingdom/Kingdom_Pigs.cfg:275 units/kingdom/Kingdom_Scout.cfg:18 units/kingdom/Kingdom_Scout.cfg:106 units/kingdom/Kingdom_Serfs.cfg:18 units/kingdom/Kingdom_Serfs.cfg:93 units/kingdom/Kingdom_Trolls.cfg:507 units/kingdom/Kingdom_Vassals.cfg:49 units/kingdom/Kingdom_Vassals.cfg:137 units/kingdom/Kingdom_Vassals.cfg:286 units/slavs/Novgorod-Drakes.cfg:67 units/slavs/Novgorod-Drakes.cfg:349 units/slavs/Novgorod-Drakes.cfg:351 units/slavs/Novgorod-Drakes.cfg:467 units/slavs/Slav-Temsk_Ravens.cfg:25 units/slavs/Slav-Temsk_Ravens.cfg:111 units/slavs/Slav_Horsemen.cfg:474 units/slavs/Slav_Militia.cfg:345
 msgid ""
 msgstr ""
 
@@ -1110,7 +1112,7 @@ msgid "At the call of the queen-witch's army, the Primal Spawn rose up, tearing 
 msgstr ""
 
 #. [attack]: type=impact
-#: units/hunns/Hunn_Primal_Spawn.cfg:44 units/hunns/Hunn_Primal_Spawn.cfg:101 units/hunns/Hunn_Primal_Spawn.cfg:160 units/hunns/Hunn_Primal_Spawn.cfg:254 units/hunns/Hunn_Primal_Spawn.cfg:388 units/kingdom/Kingdom_Feudals.cfg:40 units/kingdom/Kingdom_Feudals.cfg:125 units/kingdom/Kingdom_Feudals.cfg:211 units/kingdom/Kingdom_Vassals.cfg:231 units/ogres/Bulls.cfg:45 units/ogres/Bulls.cfg:136
+#: units/hunns/Hunn_Primal_Spawn.cfg:44 units/hunns/Hunn_Primal_Spawn.cfg:101 units/hunns/Hunn_Primal_Spawn.cfg:160 units/hunns/Hunn_Primal_Spawn.cfg:254 units/hunns/Hunn_Primal_Spawn.cfg:388 units/kingdom/Kingdom_Feudals.cfg:41 units/kingdom/Kingdom_Feudals.cfg:127 units/kingdom/Kingdom_Feudals.cfg:214 units/kingdom/Kingdom_Vassals.cfg:231 units/ogres/Bulls.cfg:45 units/ogres/Bulls.cfg:136
 msgid "ram"
 msgstr ""
 
@@ -1495,7 +1497,7 @@ msgid "Overseers are the lower class of the naga aristocracy. They are young ind
 msgstr ""
 
 #. [attack]: type=impact
-#: units/khaganate/Khaganate_Nagas.cfg:39 units/khaganate/Khaganate_Nagas.cfg:107 units/khaganate/Khaganate_Nagas.cfg:184 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:362 units/kingdom/Kingdom_Feudals.cfg:289 units/kingdom/Kingdom_Trolls.cfg:399 units/kingdom/Kingdom_Trolls.cfg:459 units/kingdom/Kingdom_Trolls.cfg:519 units/kingdom/Kingdom_Vassals.cfg:300 units/slavs/Slav_Horsemen.cfg:503
+#: units/khaganate/Khaganate_Nagas.cfg:39 units/khaganate/Khaganate_Nagas.cfg:107 units/khaganate/Khaganate_Nagas.cfg:184 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:362 units/kingdom/Kingdom_Feudals.cfg:292 units/kingdom/Kingdom_Trolls.cfg:399 units/kingdom/Kingdom_Trolls.cfg:458 units/kingdom/Kingdom_Trolls.cfg:518 units/kingdom/Kingdom_Vassals.cfg:300 units/slavs/Slav_Horsemen.cfg:503
 msgid "mace"
 msgstr ""
 
@@ -1715,7 +1717,7 @@ msgstr ""
 #. [attack]: type=blade
 #. [attack]: type=pierce
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
-#: units/khaganate/Khaganate_Vampires.cfg:123 units/khaganate/Khaganate_Vampires.cfg:289 units/khaganate/Khaganate_Vampires.cfg:509 units/kingdom/Kingdom_Beavers.cfg:31 units/kingdom/Kingdom_Beavers.cfg:110 units/kingdom/Kingdom_Beavers.cfg:222 units/kingdom/Kingdom_Pigs.cfg:26 units/kingdom/Kingdom_Pigs.cfg:123 units/kingdom/Kingdom_Pigs.cfg:216 units/mandate/Mandate_Spiderwomen.cfg:27 units/mandate/Mandate_Spiderwomen.cfg:103 units/mandate/Mandate_Spiderwomen.cfg:214 units/mandate/Mandate_Worms.cfg:32 units/mandate/Mandate_Worms.cfg:85 units/mandate/Mandate_Worms.cfg:159 units/mandate/Mandate_Worms.cfg:224 units/mandate/Mandate_Worms.cfg:291 utils/abilities_mandate.cfg:647
+#: units/khaganate/Khaganate_Vampires.cfg:123 units/khaganate/Khaganate_Vampires.cfg:289 units/khaganate/Khaganate_Vampires.cfg:509 units/kingdom/Kingdom_Beavers.cfg:31 units/kingdom/Kingdom_Beavers.cfg:110 units/kingdom/Kingdom_Beavers.cfg:222 units/kingdom/Kingdom_Pigs.cfg:48 units/kingdom/Kingdom_Pigs.cfg:173 units/kingdom/Kingdom_Pigs.cfg:292 units/mandate/Mandate_Spiderwomen.cfg:27 units/mandate/Mandate_Spiderwomen.cfg:103 units/mandate/Mandate_Spiderwomen.cfg:214 units/mandate/Mandate_Worms.cfg:32 units/mandate/Mandate_Worms.cfg:85 units/mandate/Mandate_Worms.cfg:159 units/mandate/Mandate_Worms.cfg:224 units/mandate/Mandate_Worms.cfg:291 utils/abilities_mandate.cfg:647
 msgid "bite"
 msgstr ""
 
@@ -1944,7 +1946,7 @@ msgstr ""
 
 #. [unit_type]: id=Kingdom_Halfogre_Rebel_King, race=ogre
 #: units/kingdom/Kingdom_Crossbow_Halfogres.cfg:351
-msgid "Every half-ogre dreams of regaining the rights to the allotment, from where his ancestors were once expelled. Some achieve success in this struggle: having gathered many bandits under their command, they seize a castle from some knight and declare themselves kings of brigands. True, none of their "
+msgid "Every half-ogre dreams of regaining the rights to the allotment, from where his ancestors were once expelled. Some achieve success in this struggle: having gathered many bandits under their command, they seize a castle from some knight and declare themselves kings of brigands. True, none of their 'kingdoms' based on 'freedom, equality and brotherhood' (only for half-ogres, of course) lasted even a couple of years."
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Halfogre_Mercenary, race=ogre
@@ -1983,53 +1985,53 @@ msgid "Ogre Feudal"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Feudal, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:19
+#: units/kingdom/Kingdom_Feudals.cfg:20
 msgid ""
 "Under the feudal system, the top in the hierarchy of society is occupied by the warrior class. Due to their privileged position, Ogre feudal lords can afford armor and a mount – enormous boars, living in special lands of the upper class. \n"
 "A heavy spear combined with the strength of an Ogre rider inflicts heavy injuries, easily piercing through smaller creatures. The mount itself is also dangerous - rushing like a boulder along the mountainside, it crushes the bones and sends those not lucky enough to be in its way into flight. "
 msgstr ""
 
 #. [attack]: type=pierce
-#: units/kingdom/Kingdom_Feudals.cfg:30 units/kingdom/Kingdom_Feudals.cfg:115 units/kingdom/Kingdom_Feudals.cfg:201 units/kingdom/Kingdom_Vassals.cfg:221
+#: units/kingdom/Kingdom_Feudals.cfg:31 units/kingdom/Kingdom_Feudals.cfg:117 units/kingdom/Kingdom_Feudals.cfg:204 units/kingdom/Kingdom_Vassals.cfg:221
 msgid "lance"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Aristocrat, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:90
+#: units/kingdom/Kingdom_Feudals.cfg:91
 msgid "Ogre Aristocrat"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Aristocrat, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:104
+#: units/kingdom/Kingdom_Feudals.cfg:106
 msgid ""
 "Every state, culture, race has aristocrats. Although aristocrats are still a military class, in many places and contexts the word has taken on the connotation of some sophisticated person who is more inclined towards the arts and sciences than war. Ogre nobles combine both - their art is boar riding, their science is warfare.\n"
 "Having rich experience of warfare – perhaps the only way of vertical mobility – Ogre Aristocrats are much more skilled than their associates in battle, while personal wealth provides good armor and weapons."
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Royal_Knight, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:175
+#: units/kingdom/Kingdom_Feudals.cfg:177
 msgid "Ogre Royal Knight"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Royal_Knight, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:190
+#: units/kingdom/Kingdom_Feudals.cfg:193
 msgid ""
 "Having proved their loyalty and skill in combat, the most distinguished nobles can achieve the title of Royal Knights - members of the retinue of the Ogre King himself. “Boar Paladins” are easily distinguished from the rest of the warriors by the black banner that plaps over the pale bones of the fallen enemy, which now holds the flag of the victor.\n"
 "With great experience and mastery, the Royal Knights can change the direction of their heavy beasts with amazing accuracy, without giving anyone a chance to avoid their mighty charge."
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Magnate, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:262
+#: units/kingdom/Kingdom_Feudals.cfg:265
 msgid "Ogre Magnate"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Magnate, race=ogre
-#: units/kingdom/Kingdom_Feudals.cfg:277
+#: units/kingdom/Kingdom_Feudals.cfg:280
 msgid "Magnates are in many ways similar to Aristocrats, but their position is dictated more by wealth than by title. Often, they are even richer than many other representatives of the upper class, but their political power is limited – no matter how rich a magnate is, he cannot claim a vote in the Sejm - the council for monarch elections. However, most ogre kings tend to be on good terms with the magnates - the gold from their thick purses is enough to equip and train sizable armies. And they themselves are not simple folk in battle - they have at their disposal the thickest and most ferocious boars and the strongest maces - the main symbol of the magnate blood lines, with the power of heavy blows of which the magnates smite miserable and unworthy peasants beneath them. "
 msgstr ""
 
 #. [attack]: type=blade
-#: units/kingdom/Kingdom_Feudals.cfg:299 units/mandate/Mandate_Worms.cfg:236 units/mandate/Mandate_Worms.cfg:303
+#: units/kingdom/Kingdom_Feudals.cfg:305 units/mandate/Mandate_Worms.cfg:236 units/mandate/Mandate_Worms.cfg:303
 msgid "devour"
 msgstr ""
 
@@ -2082,7 +2084,7 @@ msgstr ""
 #: units/kingdom/Kingdom_Heirs.cfg:204
 msgid ""
 "To live up to the title of King, a Pan requires exceptional flexibility and durability to get through numerous military campaigns and internal intrigues. The lower feudal lord cannot disobey the words of the supreme monarch - both because of great authority and a great sword, the size of which is enough to cut from head to toe the enemies of the state and the throne.\n"
-"The ogre monarch holds Yatuk's Plate Glove, one of the relics of the kingdom, along with the Sword of the Founding King, which is also a symbol of secular power in the state."
+"The ogre monarch holds Matuk's Plate Glove, one of the relics of the kingdom, along with the Sword of the Founding King, which is also a symbol of secular power in the state."
 msgstr ""
 
 #. [attack]: type=impact
@@ -2120,38 +2122,24 @@ msgstr ""
 msgid "Fire Pig"
 msgstr ""
 
-#. [unit_type]: id=Kingdom_Fire_Pig, race=monster
-#: units/kingdom/Kingdom_Pigs.cfg:17
-msgid ""
-"Pigs play an important role in the Ogre economy. The breeds created by Ogres are distinguished by their fat and fertility, neither royal feasts nor tavern parties are held without their weighty hams.\n"
-"However, pigs are not only used for belly stuffing. More active and strong varieties are used in combat - due to their mass and aggressiveness, they are much more dangerous than a pack of fighting dogs. At the same time, the abundance of fat makes these animals easy to ignite - which is useful in the sieges and for wreaking havoc in enemy ranks."
-msgstr ""
-
 #. [attack]: type=fire
 #. [dummy]: id=steppe_kamikaze
-#: units/kingdom/Kingdom_Pigs.cfg:35 units/kingdom/Kingdom_Pigs.cfg:132 units/kingdom/Kingdom_Pigs.cfg:225 utils/abilities_misc.cfg:3538
+#: units/kingdom/Kingdom_Pigs.cfg:57 units/kingdom/Kingdom_Pigs.cfg:182 units/kingdom/Kingdom_Pigs.cfg:301 utils/abilities_misc.cfg:3538
 msgid "kamikaze"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Fire_Boar, race=monster
-#: units/kingdom/Kingdom_Pigs.cfg:92
+#: units/kingdom/Kingdom_Pigs.cfg:120
 msgid "Fire Boar"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Fire_Boar, race=monster
-#: units/kingdom/Kingdom_Pigs.cfg:102
+#: units/kingdom/Kingdom_Pigs.cfg:146
 msgid "Unleash the might of the Tsar Bimba!!!"
 msgstr ""
 
-#. [unit_type]: id=Kingdom_Fire_Boar, race=monster
-#: units/kingdom/Kingdom_Pigs.cfg:113
-msgid ""
-"In addition to ordinary pigs, Ogres often resort to the use of large boars - in many ways they are a key part in breeding large and heavy domestic pigs they possess. In case of improper keeping conditions, a pig also often “enboars” in the wild, adapting to a more severe habitat.\n"
-"If the animal is underdeveloped for riding or too aggressive for the rider, it is used in the same way as the war pig - it is launched as an independent combat unit. Due to their large size and unpredictable nature, wild boars are much more dangerous as living bombs than domesticated porkers."
-msgstr ""
-
 #. [unit_type]: id=Kingdom_Tsar_Bimba, race=monster
-#: units/kingdom/Kingdom_Pigs.cfg:193
+#: units/kingdom/Kingdom_Pigs.cfg:246
 msgid "Tsar Bimba"
 msgstr ""
 
@@ -2162,7 +2150,9 @@ msgstr ""
 
 #. [unit_type]: id=Kingdom_Cleric, race=ogre
 #: units/kingdom/Kingdom_Priests.cfg:21
-msgid "The ogre religion, which takes its roots from the teachings of white mages from the Kingdom of Wesnoth, aims to slay monsters and vile spirits, with which the soul of a noble slayer is cleansed. In order to maintain and spread the idea of ​​"
+msgid ""
+"The ogre religion, which takes its roots from the teachings of white mages from the Kingdom of Wesnoth, aims to slay monsters and vile spirits, with which the soul of a noble slayer is cleansed. In order to maintain and spread the idea of ​​'cleansing the fire of the soul', Ogres created a clergy estate, perhaps much more complexly organized than in the realm of Humans.\n"
+"Clerics are just the first step in the spiritual hierarchy. They serve in temples and monasteries, as well as - as befits any ogre - on the battlefield, where they strike heretics with streams of light and knock out their teeth with heavy blows."
 msgstr ""
 
 #. [attack]: type=arcane
@@ -2252,7 +2242,7 @@ msgstr ""
 
 #. [unit_type]: id=Kingdom_Siege_Troll, race=troll
 #: units/kingdom/Kingdom_Trolls.cfg:20
-msgid "Since ancient times, the Troll tribes that inhabit the Estmar Hills and the mountains adjacent to them have recognized the power of Ogres. Their way of life did not change until Ogres built castles and discovered that large slings of Trolls crushed walls like human catapults. From that moment on, every ogre feudal lord sought to gather stone thrower Trolls under his banner. They were much more valued than ordinary Trolls with clubs, and over time, the warfare of entire tribes was completely reorganized into a siege war. Young troll mercenaries were taught to throw stones so that they would bring more gold to the tribe. The result is impressive: a huge number of these "
+msgid "Since ancient times, the Troll tribes that inhabit the Estmar Hills and the mountains adjacent to them have recognized the power of Ogres. Their way of life did not change until Ogres built castles and discovered that large slings of Trolls crushed walls like human catapults. From that moment on, every ogre feudal lord sought to gather stone thrower Trolls under his banner. They were much more valued than ordinary Trolls with clubs, and over time, the warfare of entire tribes was completely reorganized into a siege war. Young troll mercenaries were taught to throw stones so that they would bring more gold to the tribe. The result is impressive: a huge number of these 'living catapults', much more mobile and cheaper than mechanical devices, makes the army of Ogres fearsome in sieges."
 msgstr ""
 
 #. [attack]: type=impact
@@ -2287,7 +2277,7 @@ msgstr ""
 
 #. [unit_type]: id=Kingdom_Troll_Veteran, race=troll
 #: units/kingdom/Kingdom_Trolls.cfg:388
-msgid "After the stone throwers break the walls, someone should has to lead the attack and be the first to rush into the gap. Many ogres are willing to take on this task, but the best one is the combat troll. Those who did not want to part with a club for a sling became Stormtrooper Trolls. Armored, holding tower shields and heavy clubs, they break into the ranks of the defenders and slam it with mighty blows. Often stormtroopers go berserk and by the end of the battle they are so wounded that only natural regeneration saves them from death. However, this "
+msgid "After the stone throwers break the walls, someone should has to lead the attack and be the first to rush into the gap. Many ogres are willing to take on this task, but the best one is the combat troll. Those who did not want to part with a club for a sling became Stormtrooper Trolls. Armored, holding tower shields and heavy clubs, they break into the ranks of the defenders and slam it with mighty blows. Often stormtroopers go berserk and by the end of the battle they are so wounded that only natural regeneration saves them from death. However, this 'life on the edge' brings the trolls no less fun than the destruction of buildings by throwing stones."
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Troll_Wallcrusher, race=troll
@@ -2297,11 +2287,11 @@ msgstr ""
 
 #. [unit_type]: id=Kingdom_Troll_Wallcrusher, race=troll
 #: units/kingdom/Kingdom_Trolls.cfg:447
-msgid "The main joy for the troll warrior is destruction. And Living Rams are in no way inferior to Trebuchet Trolls in that! These old, gigantic mercenaries are clad head to toe in armor forged by Ogres. They wield the heaviest clubs and the largest shields. Often, they literally ram into defenders, sweeping away everything in their path. And if necessary, they can knock out the castle gates, just like a real siege ram. Perhaps the heaviest and most terrifying infantry that can be found in the northern reaches of the Great Continent."
+msgid "The main joy for the troll warrior is destruction. And Wallcrushers are in no way inferior to Trebuchet Trolls in that! These old, gigantic mercenaries are clad head to toe in armor forged by Ogres. They wield the heaviest clubs and the largest shields. These titans are able to break the sturdiest castle gates with such ease as if they were an ordinary door, and make stone walls tremble with each strike as if it was an earthquake. They are perhaps the heaviest and most terrifying infantry that can be found in the northern reaches of the Great Continent."
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Troll_Mercenary, race=troll
-#: units/kingdom/Kingdom_Trolls.cfg:490
+#: units/kingdom/Kingdom_Trolls.cfg:489
 msgid "Troll Mercenary"
 msgstr ""
 
@@ -3290,16 +3280,16 @@ msgid "Drake Smith"
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Novgorod-Drakes.cfg:75 units/slavs/Novgorod-Drakes.cfg:359 units/slavs/Novgorod-Drakes.cfg:474
-msgid "build smithies"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Novgorod-Drakes.cfg:75
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Smithy - 10 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Novgorod-Drakes.cfg:75 units/slavs/Novgorod-Drakes.cfg:359 units/slavs/Novgorod-Drakes.cfg:474
+msgid "build smithies"
 msgstr ""
 
 #. [abilities]
@@ -3470,16 +3460,16 @@ msgid "В северных землях искусство стрельбы из
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
 msgstr ""
 
 #. [abilities]
@@ -3534,16 +3524,16 @@ msgid "Лесники – это наиболее опытные и сведущ
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
-msgid "build traps"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Spike Trap - 3 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
+msgid "build traps"
 msgstr ""
 
 #. [abilities]
@@ -3651,16 +3641,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3712,16 +3702,16 @@ msgid "В Крадской земле почитают волшебную Жар
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -4150,12 +4140,12 @@ msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3246
-msgid " or lower, the enemy is transformed into a random lvl0 animal until the end of the unit's next turn. Does not work on buildings"
+msgid "On hit, if the enemy's level is "
 msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3246
-msgid "On hit, if the enemy's level is "
+msgid " or lower, the enemy is transformed into a random lvl0 animal until the end of the unit's next turn. Does not work on buildings"
 msgstr ""
 
 #. [set_variable]
@@ -4405,12 +4395,12 @@ msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "% (can't reduce resistances below 0%)."
+msgid "While attacking with this weapon, the opponent's resistances are reduced by "
 msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "While attacking with this weapon, the opponent's resistances are reduced by "
+msgid "% (can't reduce resistances below 0%)."
 msgstr ""
 
 #. [dummy]: id=steppe_knockback
@@ -4789,12 +4779,12 @@ msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
+msgid "While this unit has full moves, this unit may teleport to any tile in a"
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "While this unit has full moves, this unit may teleport to any tile in a"
+msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
 msgstr ""
 
 #. [dummy]: id=steppe_metamorph
@@ -4864,12 +4854,12 @@ msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:660
-msgid " gold each turn if standing on an owned village."
+msgid "This unit earns "
 msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:660
-msgid "This unit earns "
+msgid " gold each turn if standing on an owned village."
 msgstr ""
 
 #. [unstore_unit]
@@ -4909,12 +4899,12 @@ msgstr ""
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:900
-msgid "% (up to 60%). However, this effect wears off after a turn."
+msgid "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) are increased by "
 msgstr ""
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:900
-msgid "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) are increased by "
+msgid "% (up to 60%). However, this effect wears off after a turn."
 msgstr ""
 
 #. [heals]: id=healing
@@ -4938,13 +4928,13 @@ msgid "regenerates"
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:938 utils/abilities_misc.cfg:954
-msgid "The unit will heal itself by "
+#: utils/abilities_misc.cfg:938
+msgid " HP per turn. If it is poisoned, it will remove the poison instead of healing."
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:938
-msgid " HP per turn. If it is poisoned, it will remove the poison instead of healing."
+#: utils/abilities_misc.cfg:938 utils/abilities_misc.cfg:954
+msgid "The unit will heal itself by "
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5061,12 +5051,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_antisocial
 #: utils/abilities_misc.cfg:1385
-msgid "%. This has no effect on non-living units, or other antisocial units."
+msgid "This unit is quite disliked by others, and will reduce adjacent ally units' damage by "
 msgstr ""
 
 #. [leadership]: id=steppe_antisocial
 #: utils/abilities_misc.cfg:1385
-msgid "This unit is quite disliked by others, and will reduce adjacent ally units' damage by "
+msgid "%. This has no effect on non-living units, or other antisocial units."
 msgstr ""
 
 #. [hitandrun]: id=steppe_hitandrun
@@ -5141,17 +5131,17 @@ msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1678
+msgid "% of the basic damage, with a "
+msgstr ""
+
+#. [damage]: id=steppe_area_effect_random
+#: utils/abilities_misc.cfg:1678
 msgid "When this attack is used, random enemies adjacent to the target take "
 msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1678
 msgid "% chance. Does not work on defense."
-msgstr ""
-
-#. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1678
-msgid "% of the basic damage, with a "
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
@@ -5239,12 +5229,12 @@ msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:1905
-msgid " times instead of 30."
+msgid "Like berserk, but units fight "
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:1905
-msgid "Like berserk, but units fight "
+msgid " times instead of 30."
 msgstr ""
 
 #. [damage]: id=steppe_desperate
@@ -5269,12 +5259,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2000
-msgid "% less damage."
+msgid "This unit deals"
 msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2000
-msgid "This unit deals"
+msgid "% less damage."
 msgstr ""
 
 #. [weaken]: id=steppe_weaken
@@ -5655,12 +5645,12 @@ msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1807
-msgid "Each turn, this unit deals "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1807
-msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgid "Each turn, this unit deals "
 msgstr ""
 
 #. [hides]: id=steppe_swampstalk
@@ -5902,17 +5892,17 @@ msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:487
-msgid "%</span> moves"
-msgstr ""
-
-#. [set_menu_item]: id=build_{ID}
-#: utils/abilities_slav_building.cfg:487
 msgid " - price: <span color='#cccc33'>"
 msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:487
 msgid "</span> gold and <span color='#2c9fed'>"
+msgstr ""
+
+#. [set_menu_item]: id=build_{ID}
+#: utils/abilities_slav_building.cfg:487
+msgid "%</span> moves"
 msgstr ""
 
 #. [message]: speaker=$able_to_build.id
@@ -6044,12 +6034,21 @@ msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:8
-msgid "long-range {VALUE}"
+msgid "long-range"
 msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "This unit can attack enemies in a {VALUE}-tile radius with this attack via a rightclick menu option. Long-ranged attacks are not affected by most weapon specials, as well as leadership/other damage-buffing auras. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
+msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks are not affected by most weapon specials, as well as leadership/other damage-buffing auras. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
+msgstr ""
+
+#. [longrange]: id=steppe_longrange
+#: utils/longrange_attacks.cfg:9
+msgid "This unit can attack enemies in a"
+msgstr ""
+
+#: utils/longrange_attacks.cfg:129
+msgid "Name:$steppe_RAunit[{NUMBER}].name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6058,10 +6057,6 @@ msgstr ""
 
 #: utils/longrange_attacks.cfg:129
 msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
-msgstr ""
-
-#: utils/longrange_attacks.cfg:129
-msgid "Name:$steppe_RAunit[{NUMBER}].name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6332,11 +6327,11 @@ msgid "Light Shield: +20% fire/arcane resistances, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1684
-msgid "Marketplace: can build marketplaces, +20% XP"
+msgid "Build Marketplace"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1684
-msgid "Build Marketplace"
+msgid "Marketplace: can build marketplaces, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1691
@@ -6348,11 +6343,11 @@ msgid "Teleporter: can build teleporters, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1698
-msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
+msgid "Build Library"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1698
-msgid "Build Library"
+msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1705
