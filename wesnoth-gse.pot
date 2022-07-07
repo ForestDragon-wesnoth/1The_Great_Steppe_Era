@@ -880,12 +880,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
+msgid "father of fiends"
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "father of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
 msgstr ""
 
 #. [attack]: type=blade
@@ -910,12 +910,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "knyaz of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
+msgid "knyaz of fiends"
 msgstr ""
 
 #. [attack]: type=blade
@@ -936,12 +936,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
-msgid "While is unit is in a 3-tile radius from them, his side's witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."
+msgid "boiling blood"
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
-msgid "boiling blood"
+msgid "While is unit is in a 3-tile radius from them, his side's witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."
 msgstr ""
 
 #. [attack]: type=blade
@@ -1112,7 +1112,7 @@ msgid "At the call of the queen-witch's army, the Primal Spawn rose up, tearing 
 msgstr ""
 
 #. [attack]: type=impact
-#: units/hunns/Hunn_Primal_Spawn.cfg:44 units/hunns/Hunn_Primal_Spawn.cfg:101 units/hunns/Hunn_Primal_Spawn.cfg:160 units/hunns/Hunn_Primal_Spawn.cfg:254 units/hunns/Hunn_Primal_Spawn.cfg:388 units/kingdom/Kingdom_Feudals.cfg:41 units/kingdom/Kingdom_Feudals.cfg:127 units/kingdom/Kingdom_Feudals.cfg:214 units/kingdom/Kingdom_Vassals.cfg:231 units/ogres/Bulls.cfg:45 units/ogres/Bulls.cfg:136
+#: units/hunns/Hunn_Primal_Spawn.cfg:44 units/hunns/Hunn_Primal_Spawn.cfg:101 units/hunns/Hunn_Primal_Spawn.cfg:160 units/hunns/Hunn_Primal_Spawn.cfg:254 units/hunns/Hunn_Primal_Spawn.cfg:388 units/kingdom/Kingdom_Feudals.cfg:41 units/kingdom/Kingdom_Feudals.cfg:127 units/kingdom/Kingdom_Feudals.cfg:214 units/kingdom/Kingdom_Feudals.cfg:306 units/kingdom/Kingdom_Vassals.cfg:231 units/ogres/Bulls.cfg:45 units/ogres/Bulls.cfg:136
 msgid "ram"
 msgstr ""
 
@@ -1497,7 +1497,7 @@ msgid "Overseers are the lower class of the naga aristocracy. They are young ind
 msgstr ""
 
 #. [attack]: type=impact
-#: units/khaganate/Khaganate_Nagas.cfg:39 units/khaganate/Khaganate_Nagas.cfg:107 units/khaganate/Khaganate_Nagas.cfg:184 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:362 units/kingdom/Kingdom_Feudals.cfg:292 units/kingdom/Kingdom_Trolls.cfg:399 units/kingdom/Kingdom_Trolls.cfg:458 units/kingdom/Kingdom_Trolls.cfg:518 units/kingdom/Kingdom_Vassals.cfg:300 units/slavs/Slav_Horsemen.cfg:503
+#: units/khaganate/Khaganate_Nagas.cfg:39 units/khaganate/Khaganate_Nagas.cfg:107 units/khaganate/Khaganate_Nagas.cfg:184 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:362 units/kingdom/Kingdom_Feudals.cfg:293 units/kingdom/Kingdom_Trolls.cfg:399 units/kingdom/Kingdom_Trolls.cfg:458 units/kingdom/Kingdom_Trolls.cfg:518 units/kingdom/Kingdom_Vassals.cfg:300 units/slavs/Slav_Horsemen.cfg:503
 msgid "mace"
 msgstr ""
 
@@ -2028,11 +2028,6 @@ msgstr ""
 #. [unit_type]: id=Kingdom_Magnate, race=ogre
 #: units/kingdom/Kingdom_Feudals.cfg:280
 msgid "Magnates are in many ways similar to Aristocrats, but their position is dictated more by wealth than by title. Often, they are even richer than many other representatives of the upper class, but their political power is limited – no matter how rich a magnate is, he cannot claim a vote in the Sejm - the council for monarch elections. However, most ogre kings tend to be on good terms with the magnates - the gold from their thick purses is enough to equip and train sizable armies. And they themselves are not simple folk in battle - they have at their disposal the thickest and most ferocious boars and the strongest maces - the main symbol of the magnate blood lines, with the power of heavy blows of which the magnates smite miserable and unworthy peasants beneath them. "
-msgstr ""
-
-#. [attack]: type=blade
-#: units/kingdom/Kingdom_Feudals.cfg:305 units/mandate/Mandate_Worms.cfg:236 units/mandate/Mandate_Worms.cfg:303
-msgid "devour"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Noble_Son, race=ogre
@@ -2726,6 +2721,11 @@ msgid ""
 "Although Hydras are not as agile and fast at burrowing and creating tunnels, they are much bigger threat on the battlefield – barraging the enemy with the hail of teeth and swallowing them whole to satisfy their overgrown appetite."
 msgstr ""
 
+#. [attack]: type=blade
+#: units/mandate/Mandate_Worms.cfg:236 units/mandate/Mandate_Worms.cfg:303
+msgid "devour"
+msgstr ""
+
 #. [unit_type]: id=Mandate_Avraga_Mogoi, race=steppe_worm
 #: units/mandate/Mandate_Worms.cfg:263
 msgid "Avraga-Mogoi"
@@ -3369,16 +3369,16 @@ msgid "В отличие от других княжеств, в темской �
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
+msgid "build idols"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Idol - 4 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
-msgid "build idols"
 msgstr ""
 
 #. [abilities]
@@ -3460,16 +3460,16 @@ msgid "В северных землях искусство стрельбы из
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
 msgstr ""
 
 #. [abilities]
@@ -3524,16 +3524,16 @@ msgid "Лесники – это наиболее опытные и сведущ
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
+msgid "build traps"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Archers.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Spike Trap - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
-msgid "build traps"
 msgstr ""
 
 #. [abilities]
@@ -3641,16 +3641,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3702,16 +3702,16 @@ msgid "В Крадской земле почитают волшебную Жар
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -3945,12 +3945,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:625
-msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
+msgid " times in one turn."
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:625
-msgid " times in one turn."
+msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_curseofdecay_calculator
@@ -4140,12 +4140,12 @@ msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3246
-msgid "On hit, if the enemy's level is "
+msgid " or lower, the enemy is transformed into a random lvl0 animal until the end of the unit's next turn. Does not work on buildings"
 msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3246
-msgid " or lower, the enemy is transformed into a random lvl0 animal until the end of the unit's next turn. Does not work on buildings"
+msgid "On hit, if the enemy's level is "
 msgstr ""
 
 #. [set_variable]
@@ -4395,12 +4395,12 @@ msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "While attacking with this weapon, the opponent's resistances are reduced by "
+msgid "% (can't reduce resistances below 0%)."
 msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "% (can't reduce resistances below 0%)."
+msgid "While attacking with this weapon, the opponent's resistances are reduced by "
 msgstr ""
 
 #. [dummy]: id=steppe_knockback
@@ -4722,6 +4722,26 @@ msgstr ""
 msgid "On offense, if the enemy is standing on a castle tile, the tile is destroyed on hit. This does not affect wall units. Additionally, the attack deals 50% more damage to Northern Knyazdom Triumvirate's wall units."
 msgstr ""
 
+#. [wealthy]: id=steppe_wealthy
+#: utils/abilities_kingdom.cfg:3089
+msgid "wealthy "
+msgstr ""
+
+#. [wealthy]: id=steppe_wealthy
+#: utils/abilities_kingdom.cfg:3090
+msgid "gold for his side each turn."
+msgstr ""
+
+#. [wealthy]: id=steppe_wealthy
+#: utils/abilities_kingdom.cfg:3090
+msgid "This unit generates"
+msgstr ""
+
+#. [unstore_unit]
+#: utils/abilities_kingdom.cfg:3140
+msgid "$this_item.abilities.wealthy.income|g"
+msgstr ""
+
 #. [tunneler]: id=tunneler{RADIUS}
 #: utils/abilities_mandate.cfg:32
 msgid "tunneler"
@@ -4779,12 +4799,12 @@ msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "While this unit has full moves, this unit may teleport to any tile in a"
+msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
+msgid "While this unit has full moves, this unit may teleport to any tile in a"
 msgstr ""
 
 #. [dummy]: id=steppe_metamorph
@@ -4854,12 +4874,12 @@ msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:660
-msgid "This unit earns "
+msgid " gold each turn if standing on an owned village."
 msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:660
-msgid " gold each turn if standing on an owned village."
+msgid "This unit earns "
 msgstr ""
 
 #. [unstore_unit]
@@ -4899,12 +4919,12 @@ msgstr ""
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:900
-msgid "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) are increased by "
+msgid "% (up to 60%). However, this effect wears off after a turn."
 msgstr ""
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:900
-msgid "% (up to 60%). However, this effect wears off after a turn."
+msgid "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) are increased by "
 msgstr ""
 
 #. [heals]: id=healing
@@ -5051,12 +5071,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_antisocial
 #: utils/abilities_misc.cfg:1385
-msgid "This unit is quite disliked by others, and will reduce adjacent ally units' damage by "
+msgid "%. This has no effect on non-living units, or other antisocial units."
 msgstr ""
 
 #. [leadership]: id=steppe_antisocial
 #: utils/abilities_misc.cfg:1385
-msgid "%. This has no effect on non-living units, or other antisocial units."
+msgid "This unit is quite disliked by others, and will reduce adjacent ally units' damage by "
 msgstr ""
 
 #. [hitandrun]: id=steppe_hitandrun
@@ -5136,12 +5156,12 @@ msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1678
-msgid "When this attack is used, random enemies adjacent to the target take "
+msgid "% chance. Does not work on defense."
 msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1678
-msgid "% chance. Does not work on defense."
+msgid "When this attack is used, random enemies adjacent to the target take "
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
@@ -5156,12 +5176,12 @@ msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
 #: utils/abilities_misc.cfg:1824
-msgid "Like backstab, but deals "
+msgid "% more damage instead of doubling."
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
 #: utils/abilities_misc.cfg:1824
-msgid "% more damage instead of doubling."
+msgid "Like backstab, but deals "
 msgstr ""
 
 #. [illuminates]: id=steppe_darkens
@@ -5405,12 +5425,12 @@ msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3040
-msgid "On hit, this reduces the enemy's defense on all terrain by "
+msgid "% for 1 turn. This stacks."
 msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3040
-msgid "% for 1 turn. This stacks."
+msgid "On hit, this reduces the enemy's defense on all terrain by "
 msgstr ""
 
 #. [unstore_unit]
@@ -5630,12 +5650,12 @@ msgstr ""
 
 #. [dummy]: id=thunderstrike{NUMBER}
 #: utils/abilities_ogre.cfg:1692
-msgid "Each turn, this unit attacks a random adjacent enemy with lightning, dealing "
+msgid " fire damage."
 msgstr ""
 
 #. [dummy]: id=thunderstrike{NUMBER}
 #: utils/abilities_ogre.cfg:1692
-msgid " fire damage."
+msgid "Each turn, this unit attacks a random adjacent enemy with lightning, dealing "
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
@@ -5645,12 +5665,12 @@ msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1807
-msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgid "Each turn, this unit deals "
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1807
-msgid "Each turn, this unit deals "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [hides]: id=steppe_swampstalk
@@ -5892,17 +5912,17 @@ msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:487
-msgid " - price: <span color='#cccc33'>"
-msgstr ""
-
-#. [set_menu_item]: id=build_{ID}
-#: utils/abilities_slav_building.cfg:487
 msgid "</span> gold and <span color='#2c9fed'>"
 msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:487
 msgid "%</span> moves"
+msgstr ""
+
+#. [set_menu_item]: id=build_{ID}
+#: utils/abilities_slav_building.cfg:487
+msgid " - price: <span color='#cccc33'>"
 msgstr ""
 
 #. [message]: speaker=$able_to_build.id
@@ -6039,12 +6059,12 @@ msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks are not affected by most weapon specials, as well as leadership/other damage-buffing auras. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
+msgid "This unit can attack enemies in a"
 msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "This unit can attack enemies in a"
+msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks are not affected by most weapon specials, as well as leadership/other damage-buffing auras. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6052,7 +6072,7 @@ msgid "Name:$steppe_RAunit[{NUMBER}].name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid " Attacker {NUMBER2}"
+msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6060,7 +6080,7 @@ msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslo
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
+msgid " Attacker {NUMBER2}"
 msgstr ""
 
 #. [set_menu_item]: id=steppe_ranged_attack
@@ -6327,11 +6347,11 @@ msgid "Light Shield: +20% fire/arcane resistances, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1684
-msgid "Build Marketplace"
+msgid "Marketplace: can build marketplaces, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1684
-msgid "Marketplace: can build marketplaces, +20% XP"
+msgid "Build Marketplace"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1691
@@ -6351,11 +6371,11 @@ msgid "Library: can build libraries (buildings that give experience to adjacent 
 msgstr ""
 
 #: utils/steppe_amla.cfg:1705
-msgid "Build Hiding Spot"
+msgid "Hiding spot: can build hiding spots, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1705
-msgid "Hiding spot: can build hiding spots, +20% XP"
+msgid "Build Hiding Spot"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1731
