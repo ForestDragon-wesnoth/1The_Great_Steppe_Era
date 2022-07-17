@@ -24,8 +24,8 @@ local buildloc_number
 function ca_building:evaluation()
 --        wesnoth.message("building evaluation")
 
---    local units = wesnoth.get_units { side = wesnoth.current.side, formula = 'movement_left > 0' }
-    local units = wesnoth.get_units { side = wesnoth.current.side, ability = "steppe_build"}
+--    local units = wesnoth.get_unit { side = wesnoth.current.side, formula = 'movement_left > 0' }
+    local units = wesnoth.units.get { side = wesnoth.current.side, ability = "steppe_build"}
 
     for i,u in ipairs(units) do
 --        wesnoth.message("building unit detected")
@@ -229,11 +229,11 @@ function ca_building:execution()
 
 --        wesnoth.message("building unit transformed")
             local command_data = { x = builder_unit.x, y = builder_unit.y, build_x = build_x, build_y = build_y, build_id = build_id }
-            wesnoth.invoke_synced_command("building_build", command_data)
+            wesnoth.sync.invoke_command("building_build", command_data)
 
 
 -- check if there has been a building built at the target coordinates
-        local builtunit = wesnoth.get_unit(build_x,build_y)
+        local builtunit = wesnoth.units.get(build_x,build_y)
         if builtunit and builtunit.type == buildoptions_usable[usable_buildnumber].build_unit then
             build_successful = true
         end

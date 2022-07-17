@@ -17,8 +17,8 @@ res.slow_7mp_leaders = function(args)
 
 --    debug_utils.dbms(args[1][2], true, "arguments", true)
 
---    for i, unit in ipairs(wesnoth.get_units { canrecruit = true, T.filter_wml { max_moves = 7 } }) do
-    for i, unit in ipairs(wesnoth.get_units { canrecruit = true, { "not", { trait = args[1][2].id} } }) do
+--    for i, unit in ipairs(wesnoth.get_unit { canrecruit = true, T.filter_wml { max_moves = 7 } }) do
+    for i, unit in ipairs(wesnoth.units.find_on_map { canrecruit = true, { "not", { trait = args[1][2].id} } }) do
         if unit.max_moves >= 7 and not unit.variables.dont_make_me_slow then
             wesnoth.add_modification(unit, "trait", trait_slow )
             unit.moves = unit.max_moves

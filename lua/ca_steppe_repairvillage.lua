@@ -145,7 +145,7 @@ function ca_repairvillage:execution()
 
 --        wesnoth.message("repairing unit transformed")
             local command_data = { repair_x = repair_x, repair_y = repair_y }
-            wesnoth.invoke_synced_command("repair_village", command_data)
+            wesnoth.sync.invoke_command("repair_village", command_data)
 
         local tmp_repair_tile_terrain2 = wesnoth.get_terrain(repair_x, repair_y)
 

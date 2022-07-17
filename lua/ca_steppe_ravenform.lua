@@ -28,8 +28,8 @@ function ca_ravenform:evaluation()
 --        wesnoth.message("ravenform evaluation")
 
 
---    local units = wesnoth.get_units { side = wesnoth.current.side, formula = 'movement_left > 0' }
-    local units = wesnoth.get_units { side = wesnoth.current.side, ability = "steppe_ravenform"}
+--    local units = wesnoth.get_unit { side = wesnoth.current.side, formula = 'movement_left > 0' }
+    local units = wesnoth.units.find_on_map { side = wesnoth.current.side, ability = "steppe_ravenform"}
 
     for i,u in ipairs(units) do
 --        wesnoth.message("ravenform unit detected")
@@ -97,7 +97,7 @@ local orig_species = ravenform_get_species(raven_unit)
 
 --        wesnoth.message("ravenform unit transformed")
             local command_data = { x = raven_unit.x, y = raven_unit.y }
-            wesnoth.invoke_synced_command("ravenform_transform", command_data)
+            wesnoth.sync.invoke_command("ravenform_transform", command_data)
 
 local new_species = ravenform_get_species(raven_unit)
 

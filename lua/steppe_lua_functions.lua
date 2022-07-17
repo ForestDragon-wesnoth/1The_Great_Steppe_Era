@@ -208,14 +208,14 @@ end
 --note: this won't be needed if/when I switch to 1.16, but it is necessary in 1.14
 function steppe_force_gamestate_change(ai)
     -- Can be done using any unit of the AI side; works even if the unit already has 0 moves
-    local unit = wesnoth.units.get { side = wesnoth.current.side }[1]
+    local unit = wesnoth.units.find_on_map { side = wesnoth.current.side }[1]
     local cfg_reset_moves = { id = unit.id, moves = unit.moves }
     ai.stopunit_moves(unit)
-    wesnoth.invoke_synced_command('reset_moves', cfg_reset_moves)
+    wesnoth.sync.invoke_command('reset_moves', cfg_reset_moves)
 end
 
 function wesnoth.custom_synced_commands.reset_moves(cfg)
-    local unit = wesnoth.units.get { id = cfg.id }[1]
+    local unit = wesnoth.units.find_on_map { id = cfg.id }[1]
     unit.moves = cfg.moves
 end
 

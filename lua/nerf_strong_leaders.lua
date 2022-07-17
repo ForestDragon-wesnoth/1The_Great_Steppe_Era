@@ -16,7 +16,7 @@ res.nerf_strong_leaders = function(args)
     local trait_debuff = args[1][2]
 
 --    debug_utils.dbms(args, true, "arguments", true)
-    for i, unit in ipairs(wesnoth.get_units { canrecruit = true, type_adv_tree = args.unit_tree, { "not", { trait = args[1][2].id} } }) do
+    for i, unit in ipairs(wesnoth.units.find_on_map { canrecruit = true, type_adv_tree = args.unit_tree, { "not", { trait = args[1][2].id} } }) do
         if not unit.variables.dont_make_me_slow then
             wesnoth.add_modification(unit, "trait", trait_debuff )
             unit.moves = unit.max_moves
