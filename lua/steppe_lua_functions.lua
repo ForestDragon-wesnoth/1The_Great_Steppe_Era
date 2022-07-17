@@ -189,7 +189,7 @@ function steppe_check_overlay_x1_y1(overlay_img)
 
 --checks the variables of a unit at x1,y1
 
-local overlayunit = wesnoth.get_unit(wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
+local overlayunit = wesnoth.units.get(wesnoth.current.event_context.x1, wesnoth.current.event_context.y1)
 
 for overlay in overlayunit.__cfg.overlays:gmatch("[^,]+") do
     if overlay:match("^%s*(.-)%s*$") == overlay_img then
@@ -208,14 +208,14 @@ end
 --note: this won't be needed if/when I switch to 1.16, but it is necessary in 1.14
 function steppe_force_gamestate_change(ai)
     -- Can be done using any unit of the AI side; works even if the unit already has 0 moves
-    local unit = wesnoth.get_unit { side = wesnoth.current.side }[1]
+    local unit = wesnoth.units.get { side = wesnoth.current.side }[1]
     local cfg_reset_moves = { id = unit.id, moves = unit.moves }
     ai.stopunit_moves(unit)
     wesnoth.invoke_synced_command('reset_moves', cfg_reset_moves)
 end
 
 function wesnoth.custom_synced_commands.reset_moves(cfg)
-    local unit = wesnoth.get_unit { id = cfg.id }[1]
+    local unit = wesnoth.units.get { id = cfg.id }[1]
     unit.moves = cfg.moves
 end
 
@@ -265,7 +265,7 @@ function steppe_check_impassable_between(x1,y1,x2,y2)
 
 --using copy-pasted find path function with custom caclulate so that movescost is ignored
 local max_moves = 99
-local path = wesnoth.find_path(x1, y1, x2, y2, {
+local path = wesnoth.paths.find_path(x1, y1, x2, y2, {
     ignore_units = true,
     ignore_teleport = true,
     calculate = function(x, y, current_cost)
@@ -286,7 +286,7 @@ local path = wesnoth.find_path(x1, y1, x2, y2, {
 
 --        debug_utils.dbms(path, true, "path:", true)
 
-        tile_with_wall = wesnoth.get_locations {
+        tile_with_wall = wesnoth.map.find {
             { "and", { x = path[i][1], y = path[i][2] }},
             { "and", { terrain = "_off^_usr,X*" } }
         }

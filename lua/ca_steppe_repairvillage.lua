@@ -22,7 +22,7 @@ function ca_repairvillage:evaluation()
 --        wesnoth.message("repairing evaluation")
 
 --    local units = wesnoth.get_unit { side = wesnoth.current.side, formula = 'movement_left > 0' }
-    local units = wesnoth.get_unit { side = wesnoth.current.side, ability = "steppe_repair_village"}
+    local units = wesnoth.units.get { side = wesnoth.current.side, ability = "steppe_repair_village"}
 
     destroyed_villages = H.get_variable_array "destroyed_village_information"
 

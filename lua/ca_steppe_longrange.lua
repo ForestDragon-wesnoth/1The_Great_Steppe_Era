@@ -29,7 +29,7 @@ function ca_longrange:evaluation(cfg, data)
 
 --    local units = wesnoth.get_units { side = wesnoth.current.side, formula = 'movement_left > 0' }
 
-    local units = wesnoth.get_units { side = wesnoth.current.side, { "has_attack", { special_id = "steppe_longrange" }} }
+    local units = wesnoth.units.find_on_map { side = wesnoth.current.side, { "has_attack", { special_id = "steppe_longrange" }} }
 
 -- TODO: add a check so that longranged attacks can't be used on units adjacent to the longrange unit
 
@@ -171,9 +171,9 @@ function ca_longrange:execution(cfg, data)
 
 --        local target = wesnoth.get_unit(wesnoth.get_variable("steppe_ca_longrange_target"))
 
-        local longrange_unit = wesnoth.get_unit(data.longrange_id) 
+        local longrange_unit = wesnoth.units.get(data.longrange_id) 
 
-        local target = wesnoth.get_unit(data.longrange_target)
+        local target = wesnoth.units.get(data.longrange_target)
 
 --        wesnoth.message(target.id)
 

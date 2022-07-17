@@ -8,8 +8,8 @@ function ca_steppe_recall:evaluation(cfg)
     -- Random recruiting from all the units the side has
 
     -- Check if leader is on keep
-    local leader = wesnoth.get_units { side = wesnoth.current.side, canrecruit = 'yes' }[1]
-    if (not leader) or (not wesnoth.get_terrain_info(wesnoth.get_terrain(leader.x, leader.y)).keep) then
+    local leader = wesnoth.units.find_on_map { side = wesnoth.current.side, canrecruit = 'yes' }[1]
+    if (not leader) or (not wesnoth.terrain_types[wesnoth.current.map[leader]].keep) then
         return 0
     end
 
@@ -28,7 +28,7 @@ function ca_steppe_recall:evaluation(cfg)
                     and (xa >= 1) and (xa <= width)
                     and (ya >= 1) and (ya <= height)
                 then
-                    local is_castle = wesnoth.get_terrain_info(wesnoth.get_terrain(xa, ya)).castle
+                    local is_castle = wesnoth.terrain_types[wesnoth.current.map[{ x = xa, y = ya }]].castle
 
                     if is_castle then
                         table.insert(new_hexes, { xa, ya })
