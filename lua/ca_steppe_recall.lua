@@ -15,7 +15,7 @@ function ca_steppe_recall:evaluation(cfg)
 
     -- Find all connected castle hexes
     local castle_map = LS.of_pairs({ { leader.x, leader.y } })
-    local width, height, border = wesnoth.get_map_size()
+    local width, height, border = wesnoth.current.map.playable_width,wesnoth.current.map.playable_height,wesnoth.current.map.border_size
     local new_castle_hex_found = true
 
     while new_castle_hex_found do
