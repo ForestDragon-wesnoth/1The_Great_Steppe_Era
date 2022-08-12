@@ -20,7 +20,7 @@ function steppe_attach_unit_status_renderer()
     local s = old_unit_weapons()
     local u = wesnoth.interface.get_displayed_unit()
     if u then
---        wesnoth.message("unit exists check passed")
+--        wesnoth.interface.add_chat_message("unit exists check passed")
       if steppe_has_ability(u, "devourer_of_souls") == true then
   
         table.insert(s, { "element", {
@@ -180,7 +180,7 @@ function steppe_find_special_by_tag(variable,special_tag)
 --   inspect_table({attack}, {})
    local specials = wml.get_child(attack, "specials")
    local special = wml.get_child(specials, special_tag)
---   wesnoth.message("unit enslave level:",special.enslave_level)
+--   wesnoth.interface.add_chat_message("unit enslave level:",special.enslave_level)
    return special
 end
 
@@ -282,7 +282,7 @@ local path = wesnoth.paths.find_path(x1, y1, x2, y2, {
 
     for i in ipairs(path) do
 
---        wesnoth.message(wesnoth.get_terrain(path[i][1], path[i][2]))
+--        wesnoth.interface.add_chat_message(wesnoth.get_terrain(path[i][1], path[i][2]))
 
 --        debug_utils.dbms(path, true, "path:", true)
 
@@ -311,10 +311,10 @@ end
 function steppe_longrange_filter(unit)
    local x,y = wml.variables["x1"],wml.variables["y1"]
 --coordinates work flawlessly
---   wesnoth.message(unit.x)
---   wesnoth.message(unit.y)
---   wesnoth.message(x)
---   wesnoth.message(y)
+--   wesnoth.interface.add_chat_message(unit.x)
+--   wesnoth.interface.add_chat_message(unit.y)
+--   wesnoth.interface.add_chat_message(x)
+--   wesnoth.interface.add_chat_message(y)
 
 --    debug_utils.dbms(unit, true, "unit:", true)
 

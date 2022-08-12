@@ -45,7 +45,7 @@ function dump_table(o, depth)
 end
 
 function dump(o)
-  wesnoth.message(dump_table(o, 1)) -- try wml.tostring()
+  wesnoth.interface.add_chat_message(dump_table(o, 1)) -- try wml.tostring()
 end
 
 function inspect_value(value, key, parent)
@@ -85,7 +85,7 @@ function inspect_table(t, path)
     v=t[v]
     if type(v)=="table" then
       if table_contains(excluded, k) then else
-        -- wesnoth.message("there is table",k)
+        -- wesnoth.interface.add_chat_message("there is table",k)
         table.insert(options, k)
       end
     else
