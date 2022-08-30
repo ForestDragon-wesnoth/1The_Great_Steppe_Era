@@ -633,8 +633,9 @@ msgstr ""
 #. [race]: id=steppe_southerner
 #. [race]: id=steppe_terracotta
 #. [unit_type]: id=Hunn_Primal_God, race=undead
+#. [unit_type]: id=Khaganate_Serpenthead_Immortal, race=undead
 #. [unit_type]: id=Khaganate_Serpenthead_Scholar, race=serpenthead
-#: races.cfg:239 races.cfg:250 races.cfg:260 races.cfg:369 units/hunns/Hunn_Primal_Spawn.cfg:373 units/khaganate/Khaganate_Serpentheads.cfg:370 utils/abilities_mandate.cfg:584
+#: races.cfg:239 races.cfg:250 races.cfg:260 races.cfg:369 units/hunns/Hunn_Primal_Spawn.cfg:373 units/khaganate/Khaganate_Serpentheads.cfg:374 units/khaganate/Khaganate_Serpentheads.cfg:523 utils/abilities_mandate.cfg:584
 msgid "TODO"
 msgstr ""
 
@@ -911,12 +912,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "knyaz of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
+msgid "knyaz of fiends"
 msgstr ""
 
 #. [attack]: type=blade
@@ -1126,7 +1127,7 @@ msgstr ""
 
 #. [attack]: type=pierce
 #. [dummy]: id=steppe_primal_rage2
-#: units/hunns/Hunn_Primal_Spawn.cfg:169 utils/abilities_hunn.cfg:468
+#: units/hunns/Hunn_Primal_Spawn.cfg:169 utils/abilities_hunn.cfg:473
 msgid "rampage"
 msgstr ""
 
@@ -1198,7 +1199,7 @@ msgid "The Chernavas are the lowest-ranking witches in the Coven's hierarchy, gi
 msgstr ""
 
 #. [attack]: type=impact
-#: units/hunns/Hunn_Witches.cfg:42 units/hunns/Hunn_Witches.cfg:169 units/hunns/Hunn_Witches.cfg:301 units/hunns/Hunn_Witches.cfg:479 units/hunns/Hunn_Witches.cfg:809 units/kingdom/Kingdom_Priests.cfg:119 units/kingdom/Kingdom_Priests.cfg:207 units/kingdom/Kingdom_Priests.cfg:318 units/kingdom/Kingdom_Vassals.cfg:61
+#: units/hunns/Hunn_Witches.cfg:42 units/hunns/Hunn_Witches.cfg:169 units/hunns/Hunn_Witches.cfg:301 units/hunns/Hunn_Witches.cfg:479 units/hunns/Hunn_Witches.cfg:823 units/kingdom/Kingdom_Priests.cfg:119 units/kingdom/Kingdom_Priests.cfg:207 units/kingdom/Kingdom_Priests.cfg:318 units/kingdom/Kingdom_Vassals.cfg:61
 msgid "staff"
 msgstr ""
 
@@ -1357,7 +1358,7 @@ msgstr ""
 #. [attack]: type=cold
 #. [attack]: type=impact
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
-#: units/hunns/Hunn_Witches.cfg:720 units/khaganate/Khaganate_Serpentheads.cfg:184 units/khaganate/Khaganate_Serpentheads.cfg:378 units/mandate/Mandate_Jiangshi_Vampires.cfg:31 units/mandate/Mandate_Jiangshi_Vampires.cfg:101 units/mandate/Mandate_Jiangshi_Vampires.cfg:175 utils/abilities_mandate.cfg:674
+#: units/hunns/Hunn_Witches.cfg:720 units/khaganate/Khaganate_Serpentheads.cfg:184 units/khaganate/Khaganate_Serpentheads.cfg:531 units/mandate/Mandate_Jiangshi_Vampires.cfg:31 units/mandate/Mandate_Jiangshi_Vampires.cfg:101 units/mandate/Mandate_Jiangshi_Vampires.cfg:175 utils/abilities_mandate.cfg:674
 msgid "touch"
 msgstr ""
 
@@ -1382,7 +1383,7 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=fire
-#: units/hunns/Hunn_Witches.cfg:819
+#: units/hunns/Hunn_Witches.cfg:833
 msgid "swamp fire"
 msgstr ""
 
@@ -1390,7 +1391,7 @@ msgstr ""
 #. [chance_to_hit]: id=steppe_evileyed
 #. [dummy]: id=steppe_evileye
 #. [set_variable]
-#: units/hunns/Hunn_Witches.cfg:832 utils/abilities_hunn.cfg:2264 utils/abilities_hunn.cfg:2279 utils/abilities_hunn.cfg:2308 utils/abilities_hunn.cfg:2384
+#: units/hunns/Hunn_Witches.cfg:846 utils/abilities_hunn.cfg:2269 utils/abilities_hunn.cfg:2284 utils/abilities_hunn.cfg:2313 utils/abilities_hunn.cfg:2389
 msgid "evil eye"
 msgstr ""
 
@@ -1689,19 +1690,29 @@ msgstr ""
 msgid "enslavement"
 msgstr ""
 
+#. [unit_type]: id=Khaganate_Serpenthead_Immortal, race=undead
+#: units/khaganate/Khaganate_Serpentheads.cfg:346
+msgid "Serpent Immortal"
+msgstr ""
+
+#. [attack]: type=blade
+#: units/khaganate/Khaganate_Serpentheads.cfg:382
+msgid "sabers"
+msgstr ""
+
 #. [unit_type]: id=Khaganate_Serpenthead_Scholar, race=serpenthead
-#: units/khaganate/Khaganate_Serpentheads.cfg:348
+#: units/khaganate/Khaganate_Serpentheads.cfg:501
 msgid "WIP Serpent Scholar"
 msgstr ""
 
 #. [attack]: type=arcane
-#: units/khaganate/Khaganate_Serpentheads.cfg:391
+#: units/khaganate/Khaganate_Serpentheads.cfg:544
 msgid "mathemagic"
 msgstr ""
 
 #. [attack]: type=arcane
 #. [mind_drain]: id=steppe_mind_drain
-#: units/khaganate/Khaganate_Serpentheads.cfg:405 utils/abilities_khaganate.cfg:2685
+#: units/khaganate/Khaganate_Serpentheads.cfg:558 utils/abilities_khaganate.cfg:2685
 msgid "mind drain"
 msgstr ""
 
@@ -2148,7 +2159,7 @@ msgstr ""
 
 #. [attack]: type=fire
 #. [dummy]: id=steppe_kamikaze
-#: units/kingdom/Kingdom_Pigs.cfg:57 units/kingdom/Kingdom_Pigs.cfg:182 units/kingdom/Kingdom_Pigs.cfg:301 utils/abilities_misc.cfg:3560
+#: units/kingdom/Kingdom_Pigs.cfg:57 units/kingdom/Kingdom_Pigs.cfg:182 units/kingdom/Kingdom_Pigs.cfg:301 utils/abilities_misc.cfg:3700
 msgid "kamikaze"
 msgstr ""
 
@@ -3314,16 +3325,16 @@ msgid "Drake Smith"
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Novgorod-Drakes.cfg:75 units/slavs/Novgorod-Drakes.cfg:359 units/slavs/Novgorod-Drakes.cfg:474
+msgid "build smithies"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Novgorod-Drakes.cfg:75
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Smithy - 10 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Novgorod-Drakes.cfg:75 units/slavs/Novgorod-Drakes.cfg:359 units/slavs/Novgorod-Drakes.cfg:474
-msgid "build smithies"
 msgstr ""
 
 #. [abilities]
@@ -3403,16 +3414,16 @@ msgid "В отличие от других княжеств, в темской �
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
+msgid "build idols"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Idol - 4 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
-msgid "build idols"
 msgstr ""
 
 #. [abilities]
@@ -3675,16 +3686,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3736,16 +3747,16 @@ msgid "В Крадской земле почитают волшебную Жар
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -3798,7 +3809,7 @@ msgstr ""
 
 #. [damage]: id=desperate
 #. [damage]: id=steppe_desperate
-#: utils/abilities_experimental.cfg:12 utils/abilities_misc.cfg:1949
+#: utils/abilities_experimental.cfg:12 utils/abilities_misc.cfg:2097
 msgid "desperate"
 msgstr ""
 
@@ -3923,7 +3934,7 @@ msgid "This attack always has at least a 50% chance to hit, and its damage is un
 msgstr ""
 
 #. [dummy]: id=steppe_container_of_darkness
-#: utils/abilities_hunn.cfg:171 utils/abilities_hunn.cfg:2883
+#: utils/abilities_hunn.cfg:171 utils/abilities_hunn.cfg:2888
 msgid "container of darkness"
 msgstr ""
 
@@ -3953,99 +3964,99 @@ msgid "When an allied undead unit is defeated next to this unit, the undead unit
 msgstr ""
 
 #. [dummy]: id=steppe_primal_rage
-#: utils/abilities_hunn.cfg:442
+#: utils/abilities_hunn.cfg:447
 msgid "primal rage"
 msgstr ""
 
 #. [dummy]: id=steppe_primal_rage
-#: utils/abilities_hunn.cfg:443
+#: utils/abilities_hunn.cfg:448
 msgid "After being attacked, the unit's attack with the 'rampage' special gains damage equal to 66% of the HP the unit lost during the attack. The bonus damage is reset upon successfully hitting an enemy with the rampage attack."
 msgstr ""
 
 #. [dummy]: id=steppe_primal_rage2
-#: utils/abilities_hunn.cfg:469
+#: utils/abilities_hunn.cfg:474
 msgid "This attack's damage is affected by the 'primal rage' ability. The bonus damage is reset upon successfully hitting an enemy with the rampage attack."
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_hunn.cfg:511
+#: utils/abilities_hunn.cfg:516
 msgid "attacks left: $({ATTACKLIMIT} - ${UNITVAR}.variables.carousel_attacks_done|)"
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
-#: utils/abilities_hunn.cfg:624
+#: utils/abilities_hunn.cfg:629
 msgid "carousel"
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
-#: utils/abilities_hunn.cfg:625
+#: utils/abilities_hunn.cfg:630
 msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
-#: utils/abilities_hunn.cfg:625
+#: utils/abilities_hunn.cfg:630
 msgid " times in one turn."
 msgstr ""
 
 #. [set_menu_item]: id=steppe_curseofdecay_calculator
-#: utils/abilities_hunn.cfg:1200
+#: utils/abilities_hunn.cfg:1205
 msgid "Which enemy is this unit cursed by?"
 msgstr ""
 
 #. [message]: speaker=narrator
-#: utils/abilities_hunn.cfg:1254
+#: utils/abilities_hunn.cfg:1259
 msgid "The curser isn't visible..."
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
-#: utils/abilities_hunn.cfg:1272
+#: utils/abilities_hunn.cfg:1277
 msgid "birther of fiends"
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
-#: utils/abilities_hunn.cfg:1273
+#: utils/abilities_hunn.cfg:1278
 msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After {BIRTHTURNS} turns pass, the kanavar is birthed and added to the recall list (costing {RECALL_COST} gold instead of the default 20 on first recall), the unit gets experience equal to {BIRTHTURNS} times her level, and the timer is reset."
 msgstr ""
 
 #. [floating_text]
-#: utils/abilities_hunn.cfg:1474
+#: utils/abilities_hunn.cfg:1479
 msgid "kanavar birthed!"
 msgstr ""
 
 #. [floating_text]
-#: utils/abilities_hunn.cfg:1500
+#: utils/abilities_hunn.cfg:1505
 msgid "<span color='#c800ff'> $tmp_hunn_birth_turns_left| turns before birth</span>"
 msgstr ""
 
 #. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1552
+#: utils/abilities_hunn.cfg:1557
 msgid "decay -"
 msgstr ""
 
 #. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1553
+#: utils/abilities_hunn.cfg:1558
 msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
 msgstr ""
 
 #. [dummy]: id=depleting{NUMBER}
 #. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1553 utils/abilities_ogre.cfg:1633
+#: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
 msgid "This unit loses "
 msgstr ""
 
 #. [floating_text]
 #. [unstore_unit]
-#: utils/abilities_hunn.cfg:1608 utils/abilities_hunn.cfg:1622
+#: utils/abilities_hunn.cfg:1613 utils/abilities_hunn.cfg:1627
 msgid "curse lifted"
 msgstr ""
 
 #. [dummy]: id=steppe_curse_of_decay{NUMBER}
-#: utils/abilities_hunn.cfg:1728
+#: utils/abilities_hunn.cfg:1733
 msgid "curse of decay {NUMBER}"
 msgstr ""
 
 #. [dummy]: id=steppe_curse_of_decay{NUMBER}
-#: utils/abilities_hunn.cfg:1729
+#: utils/abilities_hunn.cfg:1734
 msgid ""
 "When used offensively, this attack applies the 'decay {NUMBER}' effect to the target unit, making them lose {NUMBER} hp per turn (unlike poison, this can kill, and gives the unit who applied the status experience on kill). The curse is removed if either:\n"
 "- the unit with this attack applies the curse to a different unit\n"
@@ -4056,134 +4067,134 @@ msgid ""
 msgstr ""
 
 #. [set_variable]
-#: utils/abilities_hunn.cfg:1817
+#: utils/abilities_hunn.cfg:1822
 msgid "female^cursed"
 msgstr ""
 
 #. [set_variable]
-#: utils/abilities_hunn.cfg:1824
+#: utils/abilities_hunn.cfg:1829
 msgid "cursed"
 msgstr ""
 
 #. [floating_text]
-#: utils/abilities_hunn.cfg:1831
+#: utils/abilities_hunn.cfg:1836
 msgid "<span color='#c800ff'>curse of decay</span>"
 msgstr ""
 
 #. [dummy]: id=steppe_curse_of_nature
 #. [dummy]: id=stepped_cursed_curse_of_nature
 #. [set_variable]
-#: utils/abilities_hunn.cfg:2006 utils/abilities_hunn.cfg:2020 utils/abilities_hunn.cfg:2046 utils/abilities_hunn.cfg:2103
+#: utils/abilities_hunn.cfg:2011 utils/abilities_hunn.cfg:2025 utils/abilities_hunn.cfg:2051 utils/abilities_hunn.cfg:2108
 msgid "curse of nature"
 msgstr ""
 
 #. [dummy]: id=stepped_cursed_curse_of_nature
-#: utils/abilities_hunn.cfg:2007
+#: utils/abilities_hunn.cfg:2012
 msgid "Whenever a unit with this debuff gets hit, the other unit gets healed by 50% of the damage dealt."
 msgstr ""
 
 #. [dummy]: id=steppe_curse_of_nature
-#: utils/abilities_hunn.cfg:2021
+#: utils/abilities_hunn.cfg:2026
 msgid "This unit applies the 'curse of nature' effect to the target enemy for a turn. Whenever a unit with this debuff gets hit, the other unit gets healed by 50% of the damage dealt."
 msgstr ""
 
 #. [chance_to_hit]: id=steppe_evileyed
-#: utils/abilities_hunn.cfg:2265
+#: utils/abilities_hunn.cfg:2270
 msgid "This attack's chance to hit is reduced by 20%."
 msgstr ""
 
 #. [dummy]: id=steppe_evileye
-#: utils/abilities_hunn.cfg:2280
+#: utils/abilities_hunn.cfg:2285
 msgid "On hit, this reduces the enemy's chance to hit by 20% on all attacks for 1 turn."
 msgstr ""
 
 #. [set_variable]
-#: utils/abilities_hunn.cfg:2306
+#: utils/abilities_hunn.cfg:2311
 msgid "сглаз"
 msgstr ""
 
 #. [leadership]: id=steppe_queen_of_wolves
-#: utils/abilities_hunn.cfg:2497
+#: utils/abilities_hunn.cfg:2502
 msgid "queen of wolves"
 msgstr ""
 
 #. [leadership]: id=steppe_queen_of_wolves
-#: utils/abilities_hunn.cfg:2498
+#: utils/abilities_hunn.cfg:2503
 msgid "Adjacent allied wolves deal 25% more damage. If this unit is selected as leader (doesn't work if advanced into), she can recruit Fear Manifestations, and 2 Fear Shadows are added to the recall list (costing 9 gold)."
 msgstr ""
 
 #. [devourer_of_souls]: id=steppe_devourer_of_souls
-#: utils/abilities_hunn.cfg:2566
+#: utils/abilities_hunn.cfg:2571
 msgid "devourer of souls"
 msgstr ""
 
 #. [devourer_of_souls]: id=steppe_devourer_of_souls
-#: utils/abilities_hunn.cfg:2567
+#: utils/abilities_hunn.cfg:2572
 msgid "Whenever this unit kills an enemy, he absorbs an amount of souls equal to the level of the killed unit (10 souls max). If the unit absorbs souls when at max souls, he gains +1 max hp per excess soul instead. If this is unit is killed and has 5 or more souls, he revives with 50% hp, teleports to his side's leader (or an ally leader if teleporting to the leader is not an option), and loses 5 souls."
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_hunn.cfg:2616
+#: utils/abilities_hunn.cfg:2621
 msgid "soul devoured"
 msgstr ""
 
 #. [dummy]: id=steppe_soul_burst
-#: utils/abilities_hunn.cfg:2759
+#: utils/abilities_hunn.cfg:2764
 msgid "soul burst"
 msgstr ""
 
 #. [dummy]: id=steppe_soul_burst
-#: utils/abilities_hunn.cfg:2760
+#: utils/abilities_hunn.cfg:2765
 msgid "Whenever this attack kills an enemy, adjacent enemies take arcane damage equal to the exp you get from killing an enemy (8 for lvl1, 16 for lvl2, 24 for lvl3, etc.)."
 msgstr ""
 
 #. [dummy]: id=steppe_container_of_darkness
-#: utils/abilities_hunn.cfg:2884
+#: utils/abilities_hunn.cfg:2889
 msgid "This unit heals adjacent undead units. The healing amount starts at +2hp and heals 1 more for each 10% hp the unit lost (+2 when at fully hp, +3 when at/above 90% hp, +4 when at/above 80% hp, etc. up to +12 max)."
 msgstr ""
 
 #. [dummy]: id=steppe_absorb_power
-#: utils/abilities_hunn.cfg:2915
+#: utils/abilities_hunn.cfg:2920
 msgid "absorb power"
 msgstr ""
 
 #. [dummy]: id=steppe_absorb_power
-#: utils/abilities_hunn.cfg:2916
+#: utils/abilities_hunn.cfg:2921
 msgid "Whenever this attack kills an enemy, the attack's damage is permanently increased by the enemy's level."
 msgstr ""
 
 #. [floating_text]
-#: utils/abilities_hunn.cfg:2942
+#: utils/abilities_hunn.cfg:2947
 msgid "<span color='#c800ff'>+$unit.level| damage</span>"
 msgstr ""
 
 #. [dummy]: id=steppe_soul_thralls
-#: utils/abilities_hunn.cfg:2977
+#: utils/abilities_hunn.cfg:2982
 msgid "enslaver of souls"
 msgstr ""
 
 #. [dummy]: id=steppe_soul_thralls
-#: utils/abilities_hunn.cfg:2978
+#: utils/abilities_hunn.cfg:2983
 msgid "When a living unit (either ally or enemy) dies in a 2-tile radius from this unit, they are revived as a soul thrall of the resurrecting unit's side. Soul thralls have -40% damage/max hitpoints/exp/max exp, their level is reduced by 1, and the alignment changes to chaotic. If a dying unit is the radius of both an ally and enemy unit with this ability, the ally takes priority."
 msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
-#: utils/abilities_hunn.cfg:3249
+#: utils/abilities_hunn.cfg:3254
 msgid "curse of transformation "
 msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
-#: utils/abilities_hunn.cfg:3250
-msgid "On hit, if the enemy's level is "
-msgstr ""
-
-#. [curse_of_transformation]: id=steppe_curse_of_transformation
-#: utils/abilities_hunn.cfg:3250
+#: utils/abilities_hunn.cfg:3255
 msgid " or lower, the enemy is transformed into a random animal of the same level until the end of the unit's next turn. Only works on living enemies."
 msgstr ""
 
+#. [curse_of_transformation]: id=steppe_curse_of_transformation
+#: utils/abilities_hunn.cfg:3255
+msgid "On hit, if the enemy's level is "
+msgstr ""
+
 #. [chat]
-#: utils/abilities_hunn.cfg:3321
+#: utils/abilities_hunn.cfg:3326
 msgid "ERROR: there is no transform list for units of this level, transforming into rat as a failsafe"
 msgstr ""
 
@@ -4242,7 +4253,7 @@ msgid "This unit is a slave, and has very little loyalty to their masters. If at
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_khaganate.cfg:654 utils/abilities_ogre.cfg:955
+#: utils/abilities_khaganate.cfg:654 utils/abilities_ogre.cfg:971
 msgid "Freedom!"
 msgstr ""
 
@@ -4454,12 +4465,12 @@ msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "% (can't reduce resistances below 0%)."
+msgid "While attacking with this weapon, the opponent's resistances are reduced by "
 msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "While attacking with this weapon, the opponent's resistances are reduced by "
+msgid "% (can't reduce resistances below 0%)."
 msgstr ""
 
 #. [dummy]: id=steppe_knockback
@@ -4708,12 +4719,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_pride
 #: utils/abilities_kingdom.cfg:2250
-msgid "This unit's pride is so intense that it makes adjacent adjacent ally units' damage reduced by "
+msgid "%. This has no effect on non-living units or other units with pride."
 msgstr ""
 
 #. [leadership]: id=steppe_pride
 #: utils/abilities_kingdom.cfg:2250
-msgid "%. This has no effect on non-living units or other units with pride."
+msgid "This unit's pride is so intense that it makes adjacent adjacent ally units' damage reduced by "
 msgstr ""
 
 #. [dummy]: id=steppe_soul_flame
@@ -4848,12 +4859,12 @@ msgstr ""
 
 #. [steppe_explosion]: id=steppe_explosion
 #: utils/abilities_mandate.cfg:188
-msgid " (rounded down) of this attack's damage."
+msgid "When this attack hits, units adjacent to the target unit are damaged by"
 msgstr ""
 
 #. [steppe_explosion]: id=steppe_explosion
 #: utils/abilities_mandate.cfg:188
-msgid "When this attack hits, units adjacent to the target unit are damaged by"
+msgid " (rounded down) of this attack's damage."
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
@@ -4998,12 +5009,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid "This unit heals adjacent units by "
+msgid " HP per turn, or stops poison from taking effect for that turn."
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid " HP per turn, or stops poison from taking effect for that turn."
+msgid "This unit heals adjacent units by "
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5200,12 +5211,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid "This unit costs "
+msgid " upkeep instead of the amount equal to level."
 msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid " upkeep instead of the amount equal to level."
+msgid "This unit costs "
 msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
@@ -5213,48 +5224,60 @@ msgstr ""
 msgid "area of effect"
 msgstr ""
 
+#. [damage]: id=steppe_all_around_random
+#. [damage]: id=steppe_area_effect_random
+#: utils/abilities_misc.cfg:1700 utils/abilities_misc.cfg:1848
+msgid "% of the basic damage, with a "
+msgstr ""
+
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1700
 msgid "When this attack is used, random enemies adjacent to the target take "
 msgstr ""
 
+#. [damage]: id=steppe_all_around_random
 #. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1700
+#: utils/abilities_misc.cfg:1700 utils/abilities_misc.cfg:1848
 msgid "% chance. Does not work on defense."
 msgstr ""
 
-#. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1700
-msgid "% of the basic damage, with a "
+#. [damage]: id=steppe_all_around_random
+#: utils/abilities_misc.cfg:1847
+msgid "all around"
+msgstr ""
+
+#. [damage]: id=steppe_all_around_random
+#: utils/abilities_misc.cfg:1848
+msgid "When this attack is used, random enemies adjacent to the attacker take "
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
-#: utils/abilities_misc.cfg:1844
+#: utils/abilities_misc.cfg:1992
 msgid "backstab {PERCENTAGE}%"
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
-#: utils/abilities_misc.cfg:1845
+#: utils/abilities_misc.cfg:1993
 msgid "backstab"
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
-#: utils/abilities_misc.cfg:1846
+#: utils/abilities_misc.cfg:1994
 msgid "Like backstab, but deals "
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
-#: utils/abilities_misc.cfg:1846
+#: utils/abilities_misc.cfg:1994
 msgid "% more damage instead of doubling."
 msgstr ""
 
 #. [illuminates]: id=steppe_darkens
-#: utils/abilities_misc.cfg:1867
+#: utils/abilities_misc.cfg:2015
 msgid "darkens"
 msgstr ""
 
 #. [illuminates]: id=steppe_darkens
-#: utils/abilities_misc.cfg:1868
+#: utils/abilities_misc.cfg:2016
 msgid ""
 "This unit darkens the surrounding area, making chaotic units fight better, and lawful units fight worse.\n"
 "\n"
@@ -5262,319 +5285,319 @@ msgid ""
 msgstr ""
 
 #. [chance_to_hit]: id=steppe_always_hits
-#: utils/abilities_misc.cfg:1877
+#: utils/abilities_misc.cfg:2025
 msgid "always hits"
 msgstr ""
 
 #. [chance_to_hit]: id=steppe_always_hits
-#: utils/abilities_misc.cfg:1878
+#: utils/abilities_misc.cfg:2026
 msgid "This attack always has a 100% chance to hit regardless of the defensive ability of the unit being attacked."
 msgstr ""
 
 #. [berserk]: id=steppe_offense_berserk
-#: utils/abilities_misc.cfg:1889
+#: utils/abilities_misc.cfg:2037
 msgid "offense berserk"
 msgstr ""
 
 #. [berserk]: id=steppe_offense_berserk
-#: utils/abilities_misc.cfg:1890
+#: utils/abilities_misc.cfg:2038
 msgid "Like berserk, but only works on offense."
 msgstr ""
 
 #. [illuminates]: id=lesser_illumination
-#: utils/abilities_misc.cfg:1904
+#: utils/abilities_misc.cfg:2052
 msgid "lesser illuminates"
 msgstr ""
 
 #. [illuminates]: id=lesser_illumination
-#: utils/abilities_misc.cfg:1905
+#: utils/abilities_misc.cfg:2053
 msgid "Works like illuminates, except it makes the time of day 15% brighter instead of 25%."
 msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
-#: utils/abilities_misc.cfg:1915
+#: utils/abilities_misc.cfg:2063
 msgid "drain"
 msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
-#: utils/abilities_misc.cfg:1916
+#: utils/abilities_misc.cfg:2064
 msgid "% instead of 50%."
 msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
-#: utils/abilities_misc.cfg:1916
+#: utils/abilities_misc.cfg:2064
 msgid "Like drain, but heals by "
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
-#: utils/abilities_misc.cfg:1926
+#: utils/abilities_misc.cfg:2074
 msgid "berserk"
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
-#: utils/abilities_misc.cfg:1927
-msgid "Like berserk, but units fight "
-msgstr ""
-
-#. [berserk]: id=steppe_custom_berserk{VALUE}
-#: utils/abilities_misc.cfg:1927
+#: utils/abilities_misc.cfg:2075
 msgid " times instead of 30."
 msgstr ""
 
+#. [berserk]: id=steppe_custom_berserk{VALUE}
+#: utils/abilities_misc.cfg:2075
+msgid "Like berserk, but units fight "
+msgstr ""
+
 #. [damage]: id=steppe_desperate
-#: utils/abilities_misc.cfg:1950
+#: utils/abilities_misc.cfg:2098
 msgid "This attack deals 10% more damage for each 10% HP the unit is missing."
 msgstr ""
 
 #. [dummy]: id=steppe_resolute
-#: utils/abilities_misc.cfg:1967
+#: utils/abilities_misc.cfg:2115
 msgid "resolute"
 msgstr ""
 
 #. [dummy]: id=steppe_resolute
-#: utils/abilities_misc.cfg:1968
+#: utils/abilities_misc.cfg:2116
 msgid "When below 60% hitpoints, this unit gains 10% to all resistances and regenerates 4 hp per turn. When below 30% hitpoints, this unit gains 20% to all resistances and regenerates 8 hp per turn."
 msgstr ""
 
 #. [leadership]: id=steppe_weakened
-#: utils/abilities_misc.cfg:2021
+#: utils/abilities_misc.cfg:2169
 msgid "weakened {VALUE}%"
 msgstr ""
 
 #. [leadership]: id=steppe_weakened
-#: utils/abilities_misc.cfg:2022
-msgid "This unit deals"
-msgstr ""
-
-#. [leadership]: id=steppe_weakened
-#: utils/abilities_misc.cfg:2022
+#: utils/abilities_misc.cfg:2170
 msgid "% less damage."
 msgstr ""
 
+#. [leadership]: id=steppe_weakened
+#: utils/abilities_misc.cfg:2170
+msgid "This unit deals"
+msgstr ""
+
 #. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2040
+#: utils/abilities_misc.cfg:2188
 msgid "weaken"
+msgstr ""
+
+#. [weaken]: id=steppe_weaken
+#: utils/abilities_misc.cfg:2189
+msgid "On hit, this attack reduces the enemy's damage by "
 msgstr ""
 
 #. [armorbreak]: id=steppe_armorbreak
 #. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2041 utils/abilities_misc.cfg:2357
+#: utils/abilities_misc.cfg:2189 utils/abilities_misc.cfg:2505
 msgid "% for one turn. Applying a stronger version of this effect replaces the weaker one."
 msgstr ""
 
-#. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2041
-msgid "On hit, this attack reduces the enemy's damage by "
-msgstr ""
-
 #. [floating_text]
-#: utils/abilities_misc.cfg:2107 utils/abilities_misc.cfg:2223
+#: utils/abilities_misc.cfg:2255 utils/abilities_misc.cfg:2371
 msgid "<span color='#ff7e00'>weaken</span>"
 msgstr ""
 
 #. [resistance]: id=steppe_armorbroken
-#: utils/abilities_misc.cfg:2346
+#: utils/abilities_misc.cfg:2494
 msgid "broken armor "
 msgstr ""
 
 #. [resistance]: id=steppe_armorbroken
-#: utils/abilities_misc.cfg:2347
-msgid "%. This effect disappears after a turn."
-msgstr ""
-
-#. [resistance]: id=steppe_armorbroken
-#: utils/abilities_misc.cfg:2347
+#: utils/abilities_misc.cfg:2495
 msgid "This unit’s physical resistances are reduced by "
 msgstr ""
 
+#. [resistance]: id=steppe_armorbroken
+#: utils/abilities_misc.cfg:2495
+msgid "%. This effect disappears after a turn."
+msgstr ""
+
 #. [armorbreak]: id=steppe_armorbreak
-#: utils/abilities_misc.cfg:2356
+#: utils/abilities_misc.cfg:2504
 msgid "armorbreak"
 msgstr ""
 
 #. [armorbreak]: id=steppe_armorbreak
-#: utils/abilities_misc.cfg:2357
+#: utils/abilities_misc.cfg:2505
 msgid "On hit, this attack reduces the enemy's physical resistances by "
 msgstr ""
 
 #. [floating_text]
-#: utils/abilities_misc.cfg:2577
+#: utils/abilities_misc.cfg:2725
 msgid "<span color='#ff7e00'>armor broken</span>"
 msgstr ""
 
 #. [reflect_damage]: id=steppe_reflect_damage
-#: utils/abilities_misc.cfg:2701
+#: utils/abilities_misc.cfg:2849
 msgid "reflect damage "
 msgstr ""
 
 #. [reflect_damage]: id=steppe_reflect_damage
-#: utils/abilities_misc.cfg:2702
+#: utils/abilities_misc.cfg:2850
 msgid "When this unit is hit, part of the damage received is also dealt to the enemy. This ignores enemy resistances and can kill."
 msgstr ""
 
 #. [leadership]: id=steppe_inspire
-#: utils/abilities_misc.cfg:2820
+#: utils/abilities_misc.cfg:2968
 msgid "inspire"
 msgstr ""
 
 #. [leadership]: id=steppe_inspire
-#: utils/abilities_misc.cfg:2821
+#: utils/abilities_misc.cfg:2969
 msgid "Adjacent allies deal more damage - 15% if the same level, 30% if one level lower, 45% if two levels lower, etc."
 msgstr ""
 
 #. [mentor]: id=steppe_mentor
-#: utils/abilities_misc.cfg:2834
+#: utils/abilities_misc.cfg:2982
 msgid "mentor "
 msgstr ""
 
 #. [mentor]: id=steppe_mentor
-#: utils/abilities_misc.cfg:2835
+#: utils/abilities_misc.cfg:2983
 msgid "Each turn, this unit gives adjacent allies +{VALUE} experience."
 msgstr ""
 
 #. [regenerate]: id=self_unpoison
-#: utils/abilities_misc.cfg:2931
+#: utils/abilities_misc.cfg:3079
 msgid "self-unpoison"
 msgstr ""
 
 #. [regenerate]: id=self_unpoison
-#: utils/abilities_misc.cfg:2932
+#: utils/abilities_misc.cfg:3080
 msgid "If poisoned, this unit will remove their own poison at the start of each turn instead of healing."
 msgstr ""
 
 #. [hides]: id=steppe_hide_allies
-#: utils/abilities_misc.cfg:2941 utils/abilities_misc.cfg:2942
+#: utils/abilities_misc.cfg:3089 utils/abilities_misc.cfg:3090
 msgid "hide allies"
 msgstr ""
 
 #. [hides]: id=steppe_hide_allies
-#: utils/abilities_misc.cfg:2943
+#: utils/abilities_misc.cfg:3091
 msgid "This unit makes adjacent allies invisible. If the allies move away from this unit, they become visible again. Does not affect buildings."
 msgstr ""
 
 #. [hides]: id=steppe_hillstalk
-#: utils/abilities_misc.cfg:2961
+#: utils/abilities_misc.cfg:3109
 msgid "hillstalk"
 msgstr ""
 
 #. [hides]: id=steppe_hillstalk
-#: utils/abilities_misc.cfg:2962
+#: utils/abilities_misc.cfg:3110
 msgid "This unit is invisible on hill/mountain terrain."
 msgstr ""
 
 #. [light_area]: id=steppe_light_area
-#: utils/abilities_misc.cfg:3032
+#: utils/abilities_misc.cfg:3180
 msgid "light area"
 msgstr ""
 
 #. [light_area]: id=steppe_light_area
-#: utils/abilities_misc.cfg:3033
+#: utils/abilities_misc.cfg:3181
 msgid "This unit illuminates tiles in a {RADIUS}-tile radius. Unlike normal illuminates, this ability sets ToD light to 25% even during night."
 msgstr ""
 
 #. [dark_area]: id=steppe_dark_area
-#: utils/abilities_misc.cfg:3044
+#: utils/abilities_misc.cfg:3192
 msgid "dark area"
 msgstr ""
 
 #. [dark_area]: id=steppe_dark_area
-#: utils/abilities_misc.cfg:3045
+#: utils/abilities_misc.cfg:3193
 msgid "This unit darkens tiles in a {RADIUS}-tile radius. Unlike normal darkens, this ability sets ToD light to -25% even during day."
 msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
-#: utils/abilities_misc.cfg:3061
+#: utils/abilities_misc.cfg:3209
 msgid "reduce defense"
 msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
-#: utils/abilities_misc.cfg:3062
-msgid "On hit, this reduces the enemy's defense on all terrain by "
-msgstr ""
-
-#. [reduce_defense]: id=steppe_reduce_defense
-#: utils/abilities_misc.cfg:3062
+#: utils/abilities_misc.cfg:3210
 msgid "% for 1 turn. This stacks."
 msgstr ""
 
+#. [reduce_defense]: id=steppe_reduce_defense
+#: utils/abilities_misc.cfg:3210
+msgid "On hit, this reduces the enemy's defense on all terrain by "
+msgstr ""
+
 #. [unstore_unit]
-#: utils/abilities_misc.cfg:3082
+#: utils/abilities_misc.cfg:3230
 msgid "-$weapon.specials.reduce_defense.value| defense"
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_misc.cfg:3131
+#: utils/abilities_misc.cfg:3279
 msgid "-$second_weapon.specials.reduce_defense.value| defense"
 msgstr ""
 
 #. [damage]: id=steppe_giantslayer
-#: utils/abilities_misc.cfg:3180 utils/abilities_misc.cfg:3205
+#: utils/abilities_misc.cfg:3328 utils/abilities_misc.cfg:3353
 msgid "giantslayer"
 msgstr ""
 
 #. [damage]: id=steppe_giantslayer
-#: utils/abilities_misc.cfg:3181 utils/abilities_misc.cfg:3206
+#: utils/abilities_misc.cfg:3329 utils/abilities_misc.cfg:3354
 msgid "This attack deals 25% more damage for each level the enemy is above this unit."
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_misc.cfg:3235
+#: utils/abilities_misc.cfg:3383
 msgid "can attack again!"
 msgstr ""
 
 #. [dummy]: id=steppe_double_attack
-#: utils/abilities_misc.cfg:3381
+#: utils/abilities_misc.cfg:3521
 msgid "double attack"
 msgstr ""
 
 #. [dummy]: id=steppe_double_attack
-#: utils/abilities_misc.cfg:3382
+#: utils/abilities_misc.cfg:3522
 msgid "After using this attack, this unit and can attack again, but only with the same attack (or another attack with the same weapon special)."
 msgstr ""
 
 #. [dummy]: id=steppe_triple_attack
-#: utils/abilities_misc.cfg:3391
+#: utils/abilities_misc.cfg:3531
 msgid "triple attack"
 msgstr ""
 
 #. [dummy]: id=steppe_triple_attack
-#: utils/abilities_misc.cfg:3392
+#: utils/abilities_misc.cfg:3532
 msgid "After using this attack, this unit and can attack again two more times, but only with the same attack (or another attack with the same weapon special)."
 msgstr ""
 
 #. [damage]: id=steppe_stacking{NAME}{DAMAGE}
-#: utils/abilities_misc.cfg:3406
+#: utils/abilities_misc.cfg:3546
 msgid "When this attack is used, its damage increases by"
 msgstr ""
 
 #. [dummy]: id=steppe_kamikaze
-#: utils/abilities_misc.cfg:3561
+#: utils/abilities_misc.cfg:3701
 msgid "When this unit hits an enemy with this attack, the unit dies."
 msgstr ""
 
 #. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
-#: utils/abilities_misc.cfg:3617
+#: utils/abilities_misc.cfg:3757
 msgid "lesser percentile damage"
 msgstr ""
 
 #. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
 #. [damage]: id=steppe_percenticle_damage{PERCENT}
-#: utils/abilities_misc.cfg:3618 utils/abilities_misc.cfg:3635
+#: utils/abilities_misc.cfg:3758 utils/abilities_misc.cfg:3775
 msgid "This attack deals bonus damage equal to "
 msgstr ""
 
 #. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
-#: utils/abilities_misc.cfg:3618
+#: utils/abilities_misc.cfg:3758
 msgid "% of the enemy's current hitpoints. (the bonus damage is still affected by resistances though)."
 msgstr ""
 
 #. [damage]: id=steppe_percenticle_damage{PERCENT}
-#: utils/abilities_misc.cfg:3634
+#: utils/abilities_misc.cfg:3774
 msgid "percentile damage"
 msgstr ""
 
 #. [damage]: id=steppe_percenticle_damage{PERCENT}
-#: utils/abilities_misc.cfg:3635
+#: utils/abilities_misc.cfg:3775
 msgid "% of the enemy's max hitpoints (the bonus damage is still affected by resistances though)."
 msgstr ""
 
@@ -5644,17 +5667,17 @@ msgid "$lootgold|g"
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_ogre.cfg:757
+#: utils/abilities_ogre.cfg:773
 msgid "+$tmp_incomebonus| income"
 msgstr ""
 
 #. [dummy]: id=steppe_capture
-#: utils/abilities_ogre.cfg:1027
+#: utils/abilities_ogre.cfg:1043
 msgid "capture"
 msgstr ""
 
 #. [dummy]: id=steppe_capture
-#: utils/abilities_ogre.cfg:1028
+#: utils/abilities_ogre.cfg:1044
 msgid ""
 "Instead of a killing units, this attack captures them instead. Captured units are put in a cage, moved behind the capturer, and, if not freed within 1 turn, are automatically sold into slavery, and the capturer side gains gold equal to 125% of the unit cost, and if the capturer unit still exists, they gain the same exp that they would get if they killed the unit. \n"
 "\n"
@@ -5664,76 +5687,76 @@ msgid ""
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_ogre.cfg:1103
+#: utils/abilities_ogre.cfg:1119
 msgid "Captured!"
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_ogre.cfg:1272
+#: utils/abilities_ogre.cfg:1288
 msgid ""
 "Not enough units\n"
 "		 to free!"
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_ogre.cfg:1400
+#: utils/abilities_ogre.cfg:1416
 msgid ""
 "Too many enemies next\n"
 "						to the cage to sell!"
 msgstr ""
 
 #. [unstore_unit]
-#: utils/abilities_ogre.cfg:1452
+#: utils/abilities_ogre.cfg:1468
 msgid "$capturegold|g"
 msgstr ""
 
 #. [resistance]: id=steppe_ogre_bodyguard
-#: utils/abilities_ogre.cfg:1596
+#: utils/abilities_ogre.cfg:1612
 msgid "bodyguard"
 msgstr ""
 
 #. [resistance]: id=steppe_ogre_bodyguard
-#: utils/abilities_ogre.cfg:1597
+#: utils/abilities_ogre.cfg:1613
 msgid "If standing next to either a Ogre Mancatcher, Ogre Slaver Apprentice or Ogre Slaver, this unit deals 20% more damage, and the other units(s) gain a 10% bonus to all resistances (up to 30%."
 msgstr ""
 
 #. [dummy]: id=depleting{NUMBER}
-#: utils/abilities_ogre.cfg:1632
+#: utils/abilities_ogre.cfg:1648
 msgid "depleting"
 msgstr ""
 
 #. [dummy]: id=depleting{NUMBER}
-#: utils/abilities_ogre.cfg:1633
+#: utils/abilities_ogre.cfg:1649
 msgid " hp each turn. Like poison, this ability cannot kill the unit."
 msgstr ""
 
 #. [dummy]: id=thunderstrike{NUMBER}
-#: utils/abilities_ogre.cfg:1691
+#: utils/abilities_ogre.cfg:1707
 msgid "thunderstrike "
 msgstr ""
 
 #. [dummy]: id=thunderstrike{NUMBER}
-#: utils/abilities_ogre.cfg:1692
-msgid " fire damage."
-msgstr ""
-
-#. [dummy]: id=thunderstrike{NUMBER}
-#: utils/abilities_ogre.cfg:1692
+#: utils/abilities_ogre.cfg:1708
 msgid "Each turn, this unit attacks a random adjacent enemy with lightning, dealing "
 msgstr ""
 
+#. [dummy]: id=thunderstrike{NUMBER}
+#: utils/abilities_ogre.cfg:1708
+msgid " fire damage."
+msgstr ""
+
 #. [dummy]: id=lifesteal_aura{NUMBER}
-#: utils/abilities_ogre.cfg:1806
+#: utils/abilities_ogre.cfg:1822
 msgid "lifesteal aura "
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
-#: utils/abilities_ogre.cfg:1807
+#: utils/abilities_ogre.cfg:1823
 msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
-#: utils/abilities_ogre.cfg:1807
+#: utils/abilities_ogre.cfg:1823
 msgid "Each turn, this unit deals "
 msgstr ""
 
@@ -5927,12 +5950,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid "This unit heals adjacent mechanical units by "
+msgid " HP per turn"
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid " HP per turn"
+msgid "This unit heals adjacent mechanical units by "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_demolish
@@ -5981,17 +6004,17 @@ msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:487
-msgid "</span> gold and <span color='#2c9fed'>"
-msgstr ""
-
-#. [set_menu_item]: id=build_{ID}
-#: utils/abilities_slav_building.cfg:487
 msgid " - price: <span color='#cccc33'>"
 msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:487
 msgid "%</span> moves"
+msgstr ""
+
+#. [set_menu_item]: id=build_{ID}
+#: utils/abilities_slav_building.cfg:487
+msgid "</span> gold and <span color='#2c9fed'>"
 msgstr ""
 
 #. [message]: speaker=$able_to_build.id
@@ -6093,12 +6116,12 @@ msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1478
-msgid ", and only works on buildings who can advance."
+msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
 msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1478
-msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
+msgid ", and only works on buildings who can advance."
 msgstr ""
 
 #. [set_menu_item]: id=steppe_upgrade_buildings
@@ -6145,11 +6168,11 @@ msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
+msgid " Attacker {NUMBER2}"
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid " Attacker {NUMBER2}"
+msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
 msgstr ""
 
 #. [set_menu_item]: id=steppe_ranged_attack
@@ -6298,7 +6321,7 @@ msgid "+2 swamp fire damage, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:956
-msgid "Hateful Gaze: +3 evil eye damage, and evil eye gains the stun special, +20% XP"
+msgid "Hateful Gaze: +4 evil eye damage, and evil eye gains the stun special, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:981 utils/steppe_amla.cfg:1896 utils/steppe_amla.cfg:2381
@@ -6416,27 +6439,27 @@ msgid "Light Shield: +20% fire/arcane resistances, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1683
-msgid "Marketplace: can build marketplaces, +20% XP"
-msgstr ""
-
-#: utils/steppe_amla.cfg:1683
 msgid "Build Marketplace"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1690
-msgid "Build Teleporter"
+#: utils/steppe_amla.cfg:1683
+msgid "Marketplace: can build marketplaces, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1690
 msgid "Teleporter: can build teleporters, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1697
-msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
+#: utils/steppe_amla.cfg:1690
+msgid "Build Teleporter"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1697
 msgid "Build Library"
+msgstr ""
+
+#: utils/steppe_amla.cfg:1697
+msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1704
