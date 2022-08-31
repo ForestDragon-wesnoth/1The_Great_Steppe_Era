@@ -88,8 +88,9 @@ function ca_building:evaluation()
 
             end
 
-
-            if (u.moves / u.max_moves) >= (buildoptions.build_movescost_name / 100) and wesnoth.sides[wesnoth.current.side].gold >= tmp_buildcost then
+--replaced, since build cost is now fixed starting from patch 1.4.4
+--            if (u.moves / u.max_moves) >= (buildoptions.build_movescost_name / 100) and wesnoth.sides[wesnoth.current.side].gold >= tmp_buildcost then
+            if u.moves >= buildoptions.build_movescost and wesnoth.sides[wesnoth.current.side].gold >= tmp_buildcost then
 --               buildoptions_usable = buildoptions
 -- prevent the AI from building watchtowers, as clearlng fog does very little for AI, and the gold can be better spent elsewhere
                 if buildoptions.build_unit ~= "Slav_Watchtower" then
