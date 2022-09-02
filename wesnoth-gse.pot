@@ -912,12 +912,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "knyaz of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
+msgid "knyaz of fiends"
 msgstr ""
 
 #. [attack]: type=blade
@@ -3521,16 +3521,16 @@ msgid "В северных землях искусство стрельбы из
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
 msgstr ""
 
 #. [abilities]
@@ -3585,16 +3585,16 @@ msgid "Лесники – это наиболее опытные и сведущ
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
-msgid "build traps"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Spike Trap - 3 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
+msgid "build traps"
 msgstr ""
 
 #. [abilities]
@@ -3631,16 +3631,16 @@ msgid "Дозорные — это самые простые и многочис
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:242 units/slavs/Slav_Horsemen.cfg:381 units/slavs/Slav_Horsemen.cfg:481
+msgid "build towers"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:381
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Watchtower - 2 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:242 units/slavs/Slav_Horsemen.cfg:381 units/slavs/Slav_Horsemen.cfg:481
-msgid "build towers"
 msgstr ""
 
 #. [abilities]
@@ -3702,16 +3702,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3763,16 +3763,16 @@ msgid "В Крадской земле почитают волшебную Жар
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -4006,12 +4006,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
+msgid " times in one turn."
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid " times in one turn."
+msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_curseofdecay_calculator
@@ -4031,7 +4031,17 @@ msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
-msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After {BIRTHTURNS} turns pass, the kanavar is birthed and added to the recall list (costing {RECALL_COST} gold instead of the default 20 on first recall), the unit gets experience equal to {BIRTHTURNS} times her level, and the timer is reset."
+msgid "gold instead of the default 21 on first recall, but having 4 upkeep instead 1 until the unit advances), the unit gets experience equal to number of turns it takes to give birth multiplied by her level, and the timer is reset."
+msgstr ""
+
+#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
+#: utils/abilities_hunn.cfg:1278
+msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
+msgstr ""
+
+#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
+#: utils/abilities_hunn.cfg:1278
+msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
 msgstr ""
 
 #. [floating_text]
@@ -4049,15 +4059,15 @@ msgstr ""
 msgid "decay -"
 msgstr ""
 
+#. [dummy]: id=steppe_depleting_hunn
+#: utils/abilities_hunn.cfg:1558
+msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
+msgstr ""
+
 #. [dummy]: id=depleting{NUMBER}
 #. [dummy]: id=steppe_depleting_hunn
 #: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
 msgid "This unit loses "
-msgstr ""
-
-#. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1558
-msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
 msgstr ""
 
 #. [floating_text]
@@ -4201,12 +4211,12 @@ msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3255
-msgid " or lower, the enemy is transformed into a random animal of the same level until the end of the unit's next turn. Only works on living enemies."
+msgid "On hit, if the enemy's level is "
 msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3255
-msgid "On hit, if the enemy's level is "
+msgid " or lower, the enemy is transformed into a random animal of the same level until the end of the unit's next turn. Only works on living enemies."
 msgstr ""
 
 #. [chat]
@@ -4456,12 +4466,12 @@ msgstr ""
 
 #. [mind_drain]: id=steppe_mind_drain
 #: utils/abilities_khaganate.cfg:2686
-msgid "On hit, this attack steals up to "
+msgid " experience from the enemy."
 msgstr ""
 
 #. [mind_drain]: id=steppe_mind_drain
 #: utils/abilities_khaganate.cfg:2686
-msgid " experience from the enemy."
+msgid "On hit, this attack steals up to "
 msgstr ""
 
 #. [floating_text]
@@ -4820,12 +4830,12 @@ msgstr ""
 
 #. [wealthy]: id=steppe_wealthy
 #: utils/abilities_kingdom.cfg:3195
-msgid "gold for his side each turn."
+msgid "This unit generates"
 msgstr ""
 
 #. [wealthy]: id=steppe_wealthy
 #: utils/abilities_kingdom.cfg:3195
-msgid "This unit generates"
+msgid "gold for his side each turn."
 msgstr ""
 
 #. [unstore_unit]
@@ -5039,13 +5049,13 @@ msgid "regenerates"
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:940
-msgid " HP per turn. If it is poisoned, it will remove the poison instead of healing."
+#: utils/abilities_misc.cfg:940 utils/abilities_misc.cfg:956
+msgid "The unit will heal itself by "
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:940 utils/abilities_misc.cfg:956
-msgid "The unit will heal itself by "
+#: utils/abilities_misc.cfg:940
+msgid " HP per turn. If it is poisoned, it will remove the poison instead of healing."
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5240,6 +5250,12 @@ msgstr ""
 msgid "area of effect"
 msgstr ""
 
+#. [damage]: id=steppe_all_around_random
+#. [damage]: id=steppe_area_effect_random
+#: utils/abilities_misc.cfg:1700 utils/abilities_misc.cfg:1848
+msgid "% of the basic damage, with a "
+msgstr ""
+
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1700
 msgid "When this attack is used, random enemies adjacent to the target take "
@@ -5249,12 +5265,6 @@ msgstr ""
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1700 utils/abilities_misc.cfg:1848
 msgid "% chance. Does not work on defense."
-msgstr ""
-
-#. [damage]: id=steppe_all_around_random
-#. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1700 utils/abilities_misc.cfg:1848
-msgid "% of the basic damage, with a "
 msgstr ""
 
 #. [damage]: id=steppe_all_around_random
@@ -5279,12 +5289,12 @@ msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
 #: utils/abilities_misc.cfg:2006
-msgid "% more damage instead of doubling."
+msgid "Like backstab, but deals "
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
 #: utils/abilities_misc.cfg:2006
-msgid "Like backstab, but deals "
+msgid "% more damage instead of doubling."
 msgstr ""
 
 #. [illuminates]: id=steppe_darkens
@@ -5337,12 +5347,12 @@ msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "% instead of 50%."
+msgid "Like drain, but heals by "
 msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "Like drain, but heals by "
+msgid "% instead of 50%."
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
@@ -5395,15 +5405,15 @@ msgstr ""
 msgid "weaken"
 msgstr ""
 
+#. [weaken]: id=steppe_weaken
+#: utils/abilities_misc.cfg:2201
+msgid "On hit, this attack reduces the enemy's damage by "
+msgstr ""
+
 #. [armorbreak]: id=steppe_armorbreak
 #. [weaken]: id=steppe_weaken
 #: utils/abilities_misc.cfg:2201 utils/abilities_misc.cfg:2517
 msgid "% for one turn. Applying a stronger version of this effect replaces the weaker one."
-msgstr ""
-
-#. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2201
-msgid "On hit, this attack reduces the enemy's damage by "
 msgstr ""
 
 #. [floating_text]
@@ -5418,12 +5428,12 @@ msgstr ""
 
 #. [resistance]: id=steppe_armorbroken
 #: utils/abilities_misc.cfg:2507
-msgid "%. This effect disappears after a turn."
+msgid "This unit’s physical resistances are reduced by "
 msgstr ""
 
 #. [resistance]: id=steppe_armorbroken
 #: utils/abilities_misc.cfg:2507
-msgid "This unit’s physical resistances are reduced by "
+msgid "%. This effect disappears after a turn."
 msgstr ""
 
 #. [armorbreak]: id=steppe_armorbreak
@@ -5597,14 +5607,14 @@ msgid "lesser percentile damage"
 msgstr ""
 
 #. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
-#: utils/abilities_misc.cfg:3770
-msgid "% of the enemy's current hitpoints. (the bonus damage is still affected by resistances though)."
-msgstr ""
-
-#. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
 #. [damage]: id=steppe_percenticle_damage{PERCENT}
 #: utils/abilities_misc.cfg:3770 utils/abilities_misc.cfg:3787
 msgid "This attack deals bonus damage equal to "
+msgstr ""
+
+#. [damage]: id=steppe_lesser_percenticle_damage{PERCENT}
+#: utils/abilities_misc.cfg:3770
+msgid "% of the enemy's current hitpoints. (the bonus damage is still affected by resistances though)."
 msgstr ""
 
 #. [damage]: id=steppe_percenticle_damage{PERCENT}
@@ -5753,12 +5763,12 @@ msgstr ""
 
 #. [dummy]: id=thunderstrike{NUMBER}
 #: utils/abilities_ogre.cfg:1708
-msgid " fire damage."
+msgid "Each turn, this unit attacks a random adjacent enemy with lightning, dealing "
 msgstr ""
 
 #. [dummy]: id=thunderstrike{NUMBER}
 #: utils/abilities_ogre.cfg:1708
-msgid "Each turn, this unit attacks a random adjacent enemy with lightning, dealing "
+msgid " fire damage."
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
@@ -5768,12 +5778,12 @@ msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgid "Each turn, this unit deals "
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid "Each turn, this unit deals "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [hides]: id=steppe_swampstalk
@@ -6020,17 +6030,17 @@ msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:488
-msgid "</span> gold and <span color='#2c9fed'>"
-msgstr ""
-
-#. [set_menu_item]: id=build_{ID}
-#: utils/abilities_slav_building.cfg:488
 msgid " - price: <span color='#cccc33'>"
 msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:488
 msgid "</span> moves"
+msgstr ""
+
+#. [set_menu_item]: id=build_{ID}
+#: utils/abilities_slav_building.cfg:488
+msgid "</span> gold and <span color='#2c9fed'>"
 msgstr ""
 
 #. [message]: speaker=$able_to_build.id
@@ -6085,14 +6095,14 @@ msgid "building damage boost"
 msgstr ""
 
 #. [building_boost_damage]: id=steppe_building_damage_boost
-#: utils/abilities_slav_building.cfg:1289
-msgid "% more damage"
-msgstr ""
-
-#. [building_boost_damage]: id=steppe_building_damage_boost
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
 #: utils/abilities_slav_building.cfg:1289 utils/abilities_slav_building.cfg:1298
 msgid "Buildings build by this unit have "
+msgstr ""
+
+#. [building_boost_damage]: id=steppe_building_damage_boost
+#: utils/abilities_slav_building.cfg:1289
+msgid "% more damage"
 msgstr ""
 
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
@@ -6176,19 +6186,19 @@ msgid "-tile radius with this attack via a rightclick menu option. Long-ranged a
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
-msgstr ""
-
-#: utils/longrange_attacks.cfg:129
 msgid " Attacker {NUMBER2}"
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
+msgid "Name:$steppe_RAunit[{NUMBER}].name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "Name:$steppe_RAunit[{NUMBER}].name| "
+msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
+msgstr ""
+
+#: utils/longrange_attacks.cfg:129
+msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
 msgstr ""
 
 #. [set_menu_item]: id=steppe_ranged_attack
@@ -6463,19 +6473,19 @@ msgid "Build Marketplace"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1690
-msgid "Teleporter: can build teleporters, +20% XP"
-msgstr ""
-
-#: utils/steppe_amla.cfg:1690
 msgid "Build Teleporter"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1697
-msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
+#: utils/steppe_amla.cfg:1690
+msgid "Teleporter: can build teleporters, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1697
 msgid "Build Library"
+msgstr ""
+
+#: utils/steppe_amla.cfg:1697
+msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1704
