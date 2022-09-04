@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2022-09-04 15:34+0300\n"
+"PO-Revision-Date: 2022-09-04 19:39+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -2026,6 +2026,11 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
+msgid "boiling blood"
+msgstr "кипящая кровь"
+
+#. [abilities]
+#: units/hunns/Hunn_Demons.cfg:269
 msgid ""
 "While is unit is in a 3-tile radius from them, his side's witches can give "
 "birth to kanavars. All kanavars birthed/recruited while this unit is alive "
@@ -2034,11 +2039,6 @@ msgstr ""
 "Союзные ведьмы в радиусе 3-ех гексов начинают рожать канаваров. Все канавары, "
 "рождённые и завербованные, пока жив разжигатель, получают свойство "
 "\"бесстрашный\"."
-
-#. [abilities]
-#: units/hunns/Hunn_Demons.cfg:269
-msgid "boiling blood"
-msgstr "кипящая кровь"
 
 #. [attack]: type=blade
 #: units/hunns/Hunn_Demons.cfg:278 units/kingdom/Kingdom_Heirs.cfg:215
@@ -4147,10 +4147,8 @@ msgstr "Бунтарь-страж"
 
 #. [unit_type]: id=Khaganate_Slave_Rouser, race=steppe_southerner
 #: units/khaganate/Slave_Spearmen.cfg:298
-#, fuzzy
-#| msgid "Slave Archer"
 msgid "Slave Rouser"
-msgstr "Раб-стрелок"
+msgstr "Прислужник"
 
 #. [unit_type]: id=Khaganate_Slave_Rouser, race=steppe_southerner
 #: units/khaganate/Slave_Spearmen.cfg:320
@@ -4167,10 +4165,8 @@ msgstr ""
 
 #. [variation]
 #: units/khaganate/Slave_Spearmen.cfg:388
-#, fuzzy
-#| msgid "Rebel Bowman"
 msgid "Rebel Bannerbearer"
-msgstr "Бунтарь-лучник"
+msgstr "Бунтарь-знаменосец"
 
 #. [unit_type]: id=Kingdom_Giant_Beaver, race=monster
 #: units/kingdom/Kingdom_Beavers.cfg:5
@@ -4625,7 +4621,7 @@ msgstr ""
 #. [effect]: type=impact
 #: units/kingdom/Kingdom_Heirs.cfg:145 units/mandate/Mandate_Kobold.cfg:28
 #: units/mandate/Mandate_Kobold.cfg:127 units/mandate/Mandate_Kobold.cfg:231
-#: utils/steppe_amla.cfg:1736
+#: utils/steppe_amla.cfg:1841
 msgid "shield"
 msgstr "щит"
 
@@ -6801,7 +6797,7 @@ msgstr "удар головой"
 #. [attack]: type=cold
 #. [effect]: type=cold
 #: units/ogres/Tarbynns.cfg:63 units/ogres/Tarbynns.cfg:146
-#: units/ogres/Tarbynns.cfg:257 utils/steppe_amla.cfg:413
+#: units/ogres/Tarbynns.cfg:257 utils/steppe_amla.cfg:414
 msgid "drain life"
 msgstr "вытягивание жизни"
 
@@ -7215,18 +7211,18 @@ msgstr ""
 
 #. [abilities]
 #: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167
+#: units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
+msgid "build idols"
+msgstr "строит идолы"
+
+#. [abilities]
+#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167
 #: units/slavs/Slav-Temsk_Raiders.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Idol - 4 gold"
 msgstr "Этот боец может строить идолы (стоимость - 4 золотых)"
-
-#. [abilities]
-#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167
-#: units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
-msgid "build idols"
-msgstr "строит идолы"
 
 #. [abilities]
 #: units/slavs/Slav-Temsk_Raiders.cfg:35 units/slavs/Slav-Temsk_Raiders.cfg:170
@@ -7336,18 +7332,18 @@ msgid ""
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125
-#: units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
-msgstr "строит сторожевые башни"
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
 msgstr "Этот боец может строить сторожевые башни (стоимость - 5 золотых)"
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125
+#: units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
+msgstr "строит сторожевые башни"
 
 #. [abilities]
 #: units/slavs/Slav_Archers.cfg:34 units/slavs/Slav_Archers.cfg:129
@@ -7591,18 +7587,18 @@ msgstr ""
 
 #. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97
+#: units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
+msgstr "строит деревянные стены"
+
+#. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97
 #: units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
 msgstr "Этот боец может строить стены (стоимость - 3 золотых)"
-
-#. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97
-#: units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
-msgstr "строит деревянные стены"
 
 #. [abilities]
 #: units/slavs/Slav_Militia.cfg:36 units/slavs/Slav_Militia.cfg:100
@@ -7688,17 +7684,17 @@ msgstr ""
 
 #. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
-#: units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
-msgstr "создаёт исцеляющий свет"
-
-#. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
 msgstr "Этот юнит может создавать исцеляющий свет (стоимость - 5 золотых)"
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
+#: units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
+msgstr "создаёт исцеляющий свет"
 
 #. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:39 units/slavs/Slav_Skylarks.cfg:121
@@ -8004,11 +8000,6 @@ msgstr "карусель"
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid " times in one turn."
-msgstr " раз за ход. "
-
-#. [dummy]: id=steppe_carousel
-#: utils/abilities_hunn.cfg:630
 msgid ""
 "After using this attack, this unit regains 25% of their moves, and can attack "
 "again (but only with the same attack). This attack cannot attack the same "
@@ -8017,6 +8008,11 @@ msgstr ""
 "После атаки юнит получает 25% своих ходов и может передвинуться и атаковать "
 "ещё раз (но только этой же атакой). Атаковать одного и того же юнита дважды "
 "нельзя. Способность можно использовать "
+
+#. [dummy]: id=steppe_carousel
+#: utils/abilities_hunn.cfg:630
+msgid " times in one turn."
+msgstr " раз за ход. "
 
 #. [set_menu_item]: id=steppe_curseofdecay_calculator
 #: utils/abilities_hunn.cfg:1205
@@ -8036,6 +8032,15 @@ msgstr "роженица бесов"
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
 msgid ""
+"If there is an allied demon in a 3-tile radius from this unit, she will start "
+"birthing a Kanavar. After"
+msgstr ""
+"Если в радиусе 3 клеток от ведьмы стоит демон-созюник, то она начнет рожать "
+"канавара. После"
+
+#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
+#: utils/abilities_hunn.cfg:1278
+msgid ""
 "gold instead of the default 21 on first recall, but having 4 upkeep instead 1 "
 "until the unit advances), the unit gets experience equal to number of turns "
 "it takes to give birth multiplied by her level, and the timer is reset."
@@ -8048,15 +8053,6 @@ msgstr ""
 #: utils/abilities_hunn.cfg:1278
 msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
 msgstr "ходов канавар рождается и появляется в списке призыва (стоит"
-
-#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
-#: utils/abilities_hunn.cfg:1278
-msgid ""
-"If there is an allied demon in a 3-tile radius from this unit, she will start "
-"birthing a Kanavar. After"
-msgstr ""
-"Если в радиусе 3 клеток от ведьмы стоит демон-созюник, то она начнет рожать "
-"канавара. После"
 
 #. [floating_text]
 #: utils/abilities_hunn.cfg:1479
@@ -8075,12 +8071,6 @@ msgstr ""
 msgid "decay -"
 msgstr "гниение -"
 
-#. [dummy]: id=depleting{NUMBER}
-#. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
-msgid "This unit loses "
-msgstr "Этот юнит теряет "
-
 #. [dummy]: id=steppe_depleting_hunn
 #: utils/abilities_hunn.cfg:1558
 msgid ""
@@ -8092,6 +8082,12 @@ msgstr ""
 "яда, юнит может погибнуть от гниение (опыт получает юнит которые наложил этот "
 "эффект). Живые юниты убитые проклятием заменяются Низшими Убырями на стороне "
 "проклинателя."
+
+#. [dummy]: id=depleting{NUMBER}
+#. [dummy]: id=steppe_depleting_hunn
+#: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
+msgid "This unit loses "
+msgstr "Этот юнит теряет "
 
 #. [floating_text]
 #. [unstore_unit]
@@ -8302,17 +8298,17 @@ msgstr "проклятье превращения"
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3255
-msgid "On hit, if the enemy's level is "
-msgstr "При попадании, если уровень врага "
-
-#. [curse_of_transformation]: id=steppe_curse_of_transformation
-#: utils/abilities_hunn.cfg:3255
 msgid ""
 " or lower, the enemy is transformed into a random animal of the same level "
 "until the end of the unit's next turn. Only works on living enemies."
 msgstr ""
 " или ниже, враг преврщается в рандомное животное своего уровня до конца его "
 "следующего хода. Работает только на живых врагов."
+
+#. [curse_of_transformation]: id=steppe_curse_of_transformation
+#: utils/abilities_hunn.cfg:3255
+msgid "On hit, if the enemy's level is "
+msgstr "При попадании, если уровень врага "
 
 #. [chat]
 #: utils/abilities_hunn.cfg:3326
@@ -8736,29 +8732,23 @@ msgstr ""
 
 #. [mind_drain]: id=steppe_mind_drain
 #: utils/abilities_khaganate.cfg:2690
-#, fuzzy
-#| msgid "On hit, this attack reduces the enemy's damage by "
-msgid "On hit, this attack steals up to "
-msgstr "При попадании, эта атака уменьшает урон врага на "
+msgid " experience from the enemy."
+msgstr " опыта врага."
 
 #. [mind_drain]: id=steppe_mind_drain
 #: utils/abilities_khaganate.cfg:2690
-msgid " experience from the enemy."
-msgstr ""
+msgid "On hit, this attack steals up to "
+msgstr "При попадании, эта атака крадёт до"
 
 #. [floating_text]
 #: utils/abilities_khaganate.cfg:2743 utils/abilities_khaganate.cfg:2793
-#, fuzzy
-#| msgid "+$tmp_builder_exp| exp"
 msgid "+$tmp_expsteal| xp"
-msgstr "+$tmp_builder_exp| опыта"
+msgstr "+$tmp_expsteal| опыта"
 
 #. [floating_text]
 #: utils/abilities_khaganate.cfg:2748 utils/abilities_khaganate.cfg:2798
-#, fuzzy
-#| msgid "+$tmp_builder_exp| exp"
 msgid "-$tmp_expsteal| xp"
-msgstr "+$tmp_builder_exp| опыта"
+msgstr "-$tmp_expsteal| опыта"
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:20
@@ -9294,19 +9284,19 @@ msgstr "теневой рывок"
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
+msgid "While this unit has full moves, this unit may teleport to any tile in a"
+msgstr ""
+"Когда боец имеет полные ходы, он может телепортироваться на любой гекс в "
+"радиусе"
+
+#. [teleport]: id=steppe_shadow_dash{RADIUS}
+#: utils/abilities_mandate.cfg:493
 msgid ""
 "-tile radius from the unit's current location. Cannot teleport through "
 "impassable terrain."
 msgstr ""
 " клеток от теперешнего положения юнита. Не может телепортировать через "
 "некоторые виды непроходимой местности."
-
-#. [teleport]: id=steppe_shadow_dash{RADIUS}
-#: utils/abilities_mandate.cfg:493
-msgid "While this unit has full moves, this unit may teleport to any tile in a"
-msgstr ""
-"Когда боец имеет полные ходы, он может телепортироваться на любой гекс в "
-"радиусе"
 
 #. [dummy]: id=steppe_metamorph
 #: utils/abilities_mandate.cfg:583
@@ -9392,12 +9382,12 @@ msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:662
-msgid "This unit earns "
+msgid " gold each turn if standing on an owned village."
 msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:662
-msgid " gold each turn if standing on an owned village."
+msgid "This unit earns "
 msgstr ""
 
 #. [unstore_unit]
@@ -9451,15 +9441,15 @@ msgstr "незамедляемый"
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:902
+msgid "% (up to 60%). However, this effect wears off after a turn."
+msgstr "% (вплоть до 60%). Эффект действует до конца хода."
+
+#. [resistance]: id=protected{NUMBER}
+#: utils/abilities_misc.cfg:902
 msgid ""
 "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) "
 "are increased by "
 msgstr "Сопротивления юнита (все, кроме мистического) увеличены на"
-
-#. [resistance]: id=protected{NUMBER}
-#: utils/abilities_misc.cfg:902
-msgid "% (up to 60%). However, this effect wears off after a turn."
-msgstr "% (вплоть до 60%). Эффект действует до конца хода."
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:913
@@ -9468,13 +9458,13 @@ msgstr "лечит"
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid " HP per turn, or stops poison from taking effect for that turn."
-msgstr " ЗД за ход, и замедляет яд."
+msgid "This unit heals adjacent units by "
+msgstr "Этот боец лечит союзных механических юнитов на "
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid "This unit heals adjacent units by "
-msgstr "Этот боец лечит союзных механических юнитов на "
+msgid " HP per turn, or stops poison from taking effect for that turn."
+msgstr " ЗД за ход, и замедляет яд."
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
 #: utils/abilities_misc.cfg:939
@@ -9482,15 +9472,15 @@ msgid "regenerates"
 msgstr "регенерация"
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:940 utils/abilities_misc.cfg:956
-msgid "The unit will heal itself by "
-msgstr "Этот юнит лечит себя на "
-
-#. [regenerate]: id=regeneratessteppe{VALUE}
 #: utils/abilities_misc.cfg:940
 msgid ""
 " HP per turn. If it is poisoned, it will remove the poison instead of healing."
 msgstr " ЗД каждый ход. Если отравлен, то он исцеляет яд вместо лечения."
+
+#. [regenerate]: id=regeneratessteppe{VALUE}
+#: utils/abilities_misc.cfg:940 utils/abilities_misc.cfg:956
+msgid "The unit will heal itself by "
+msgstr "Этот юнит лечит себя на "
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
 #: utils/abilities_misc.cfg:955
@@ -9695,13 +9685,13 @@ msgstr "содержания"
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid "This unit costs "
-msgstr "Этот юнит тратит "
+msgid " upkeep instead of the amount equal to level."
+msgstr " содержания вместо равного уровню."
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid " upkeep instead of the amount equal to level."
-msgstr " содержания вместо равного уровню."
+msgid "This unit costs "
+msgstr "Этот юнит тратит "
 
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1699
@@ -9822,13 +9812,13 @@ msgstr "высасывание"
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "Like drain, but heals by "
-msgstr "Как обычное высасывание, но лечит на "
+msgid "% instead of 50%."
+msgstr "% от нанесенного урона вместо 50%."
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "% instead of 50%."
-msgstr "% от нанесенного урона вместо 50%."
+msgid "Like drain, but heals by "
+msgstr "Как обычное высасывание, но лечит на "
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2086
@@ -9837,13 +9827,13 @@ msgstr "берсерк"
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2087
-msgid " times instead of 30."
-msgstr " раз вместо 30."
+msgid "Like berserk, but units fight "
+msgstr "Как берсерк, но юниті бьются "
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2087
-msgid "Like berserk, but units fight "
-msgstr "Как берсерк, но юниті бьются "
+msgid " times instead of 30."
+msgstr " раз вместо 30."
 
 #. [damage]: id=steppe_desperate
 #: utils/abilities_misc.cfg:2110
@@ -9886,11 +9876,6 @@ msgstr "Этот юнит наносит"
 msgid "weaken"
 msgstr "ослабление"
 
-#. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2201
-msgid "On hit, this attack reduces the enemy's damage by "
-msgstr "При попадании, эта атака уменьшает урон врага на "
-
 #. [armorbreak]: id=steppe_armorbreak
 #. [weaken]: id=steppe_weaken
 #: utils/abilities_misc.cfg:2201 utils/abilities_misc.cfg:2517
@@ -9899,6 +9884,11 @@ msgid ""
 "weaker one."
 msgstr ""
 "% на один ход. Наложение более сильного ослабления заменит старое ослабление."
+
+#. [weaken]: id=steppe_weaken
+#: utils/abilities_misc.cfg:2201
+msgid "On hit, this attack reduces the enemy's damage by "
+msgstr "При попадании, эта атака уменьшает урон врага на "
 
 #. [floating_text]
 #: utils/abilities_misc.cfg:2267 utils/abilities_misc.cfg:2383
@@ -10044,13 +10034,13 @@ msgstr "уменьшение защиты"
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3222
-msgid "On hit, this reduces the enemy's defense on all terrain by "
-msgstr "При попадании снижает защиту врага на любой местности на "
+msgid "% for 1 turn. This stacks."
+msgstr "%  на 1 ход. Этот эффект стакается."
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3222
-msgid "% for 1 turn. This stacks."
-msgstr "%  на 1 ход. Этот эффект стакается."
+msgid "On hit, this reduces the enemy's defense on all terrain by "
+msgstr "При попадании снижает защиту врага на любой местности на "
 
 #. [unstore_unit]
 #: utils/abilities_misc.cfg:3242
@@ -10365,13 +10355,13 @@ msgstr "аура высасывания "
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid " HP for each enemy damaged. Like poison, this can't kill."
-msgstr " урона каждому врагу. Как яд, эта способность не может убить."
+msgid "Each turn, this unit deals "
+msgstr "Каждый ход юнит наносит "
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid "Each turn, this unit deals "
-msgstr "Каждый ход юнит наносит "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgstr " урона каждому врагу. Как яд, эта способность не может убить."
 
 #. [hides]: id=steppe_swampstalk
 #: utils/abilities_slav.cfg:31
@@ -10632,13 +10622,13 @@ msgstr "чинит"
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid "This unit heals adjacent mechanical units by "
-msgstr "Этот боец лечит союзных механических юнитов на "
+msgid " HP per turn"
+msgstr "ЗД за ход"
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid " HP per turn"
-msgstr "ЗД за ход"
+msgid "This unit heals adjacent mechanical units by "
+msgstr "Этот боец лечит союзных механических юнитов на "
 
 #. [set_menu_item]: id=steppe_demolish
 #: utils/abilities_slav_building.cfg:177
@@ -10777,15 +10767,15 @@ msgid "building damage boost"
 msgstr "бонусный урон зданий"
 
 #. [building_boost_damage]: id=steppe_building_damage_boost
-#: utils/abilities_slav_building.cfg:1289
-msgid "% more damage"
-msgstr "% больше урона"
-
-#. [building_boost_damage]: id=steppe_building_damage_boost
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
 #: utils/abilities_slav_building.cfg:1289 utils/abilities_slav_building.cfg:1298
 msgid "Buildings build by this unit have "
 msgstr "Здания, построенные этим юнитом, имеют "
+
+#. [building_boost_damage]: id=steppe_building_damage_boost
+#: utils/abilities_slav_building.cfg:1289
+msgid "% more damage"
+msgstr "% больше урона"
 
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
 #: utils/abilities_slav_building.cfg:1297
@@ -10827,17 +10817,17 @@ msgstr "улучшение зданий"
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid ", and only works on buildings who can advance."
-msgstr " уровня, и работает только на те здания, которые могут продвинуться."
-
-#. [upgrade_buildings]: id=steppe_upgrade_buildings
-#: utils/abilities_slav_building.cfg:1487
 msgid ""
 "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can "
 "only upgrade units to level "
 msgstr ""
 "Этот юнит может улучшать здания на соседних гексах через ПКМ-меню. Может "
 "улучшить здания только до "
+
+#. [upgrade_buildings]: id=steppe_upgrade_buildings
+#: utils/abilities_slav_building.cfg:1487
+msgid ", and only works on buildings who can advance."
+msgstr " уровня, и работает только на те здания, которые могут продвинуться."
 
 #. [set_menu_item]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1509
@@ -10872,11 +10862,6 @@ msgstr "дальнобойный"
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "This unit can attack enemies in a"
-msgstr "Этот боец может атаковать врагов в радиусе"
-
-#. [longrange]: id=steppe_longrange
-#: utils/longrange_attacks.cfg:9
 msgid ""
 "-tile radius with this attack via a rightclick menu option. Long-ranged "
 "attacks work with leadership/other damage-buffing abilities/specials, but "
@@ -10889,6 +10874,11 @@ msgstr ""
 "работать. Дальнобойную атаку нельзя использовать по врагам на соседних "
 "гексах, и нельзя стрелять через непроходимую местность (стены, высокие горы и "
 "т.д., но через пропасти стрелять можно)."
+
+#. [longrange]: id=steppe_longrange
+#: utils/longrange_attacks.cfg:9
+msgid "This unit can attack enemies in a"
+msgstr "Этот боец может атаковать врагов в радиусе"
 
 #: utils/longrange_attacks.cfg:129
 msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
@@ -10937,49 +10927,50 @@ msgstr "промах!"
 msgid "This unit has custom AMLA upgrades."
 msgstr "Этот юнит имеет уникальные AMLA улучшения."
 
-#: utils/steppe_amla.cfg:289
+#: utils/steppe_amla.cfg:290
 msgid "+5 Max Hp, +20% XP"
 msgstr "+5 макс. ЗД, +20% опыта"
 
-#: utils/steppe_amla.cfg:308 utils/steppe_amla.cfg:358
+#: utils/steppe_amla.cfg:309 utils/steppe_amla.cfg:359
 msgid "+15% melee damage, +20% XP"
 msgstr "+15% ближнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:322
+#: utils/steppe_amla.cfg:323
 msgid "Linebreaker: trample gains stun special, +20% XP"
 msgstr "Разрушитель строя: растоптать получает оглушение, +20% опыта"
 
-#: utils/steppe_amla.cfg:339
+#: utils/steppe_amla.cfg:340
 msgid "+2 spear damage, +20% XP"
 msgstr "+2 урона к копью, +20% опыта"
 
-#: utils/steppe_amla.cfg:372
+#: utils/steppe_amla.cfg:373
 msgid "lesser regenerates +6 is replaced by normal regenerates, +15% XP"
 msgstr "меньшая регенерация +6 заменяется на обычную регенерацию, +15% опыта"
 
-#: utils/steppe_amla.cfg:393 utils/steppe_amla.cfg:2148
+#: utils/steppe_amla.cfg:394 utils/steppe_amla.cfg:941
+#: utils/steppe_amla.cfg:2253
 msgid "+1 moves, +20% XP"
 msgstr "+1 ход, +20% опыта"
 
-#: utils/steppe_amla.cfg:406
+#: utils/steppe_amla.cfg:407
 msgid "Ritual Bull: 8-1 cold ranged magical drain attack, +20% XP"
 msgstr ""
 "Ритуальный бык: получает 8-1 дальнюю магическую атаку холодом с высасыванием, "
 "+20% опыта"
 
-#: utils/steppe_amla.cfg:430
+#: utils/steppe_amla.cfg:431
 msgid "+4 drain life damage, +15% XP"
 msgstr "+4 урона к вытягиванию жизни, +15% опыта"
 
-#: utils/steppe_amla.cfg:452
+#: utils/steppe_amla.cfg:453
 msgid "Submission: enslave 3 is replaced by enslave 4, +20% XP"
 msgstr "Повиновение: порабощение 3 заменяется на порабощение 4, +20% опыта"
 
-#: utils/steppe_amla.cfg:470
+#: utils/steppe_amla.cfg:471
 msgid "Can use the enslave attack twice per turn, +25% XP"
 msgstr "Можно использовать порабощение два раза в ход, +25% ОП"
 
-#: utils/steppe_amla.cfg:487
+#: utils/steppe_amla.cfg:488
 msgid ""
 "+15% black fire damage, black fire ignores 15% of enemy fire resistance, +20% "
 "XP"
@@ -10987,185 +10978,198 @@ msgstr ""
 "+15% урона черным огнем, атака игнорирует 15% сопротивления врага к огню, "
 "+20% ОП"
 
-#: utils/steppe_amla.cfg:512
+#: utils/steppe_amla.cfg:513
 msgid "+30% enslavement damage, +15% XP"
 msgstr "+30% урона к порабощению, +15% опыта"
 
-#: utils/steppe_amla.cfg:565
+#: utils/steppe_amla.cfg:566
 msgid "Khagan's Authority: allows the unit to recruit, +15% XP"
 msgstr "Каганская властьy: юнит получает возможность вербовать, +15% опыта"
 
-#: utils/steppe_amla.cfg:587 utils/steppe_amla.cfg:1188
-#: utils/steppe_amla.cfg:1838
+#: utils/steppe_amla.cfg:588 utils/steppe_amla.cfg:1293
+#: utils/steppe_amla.cfg:1943
 msgid "+2 melee damage, +20% XP"
 msgstr "+2 ближнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:601
+#: utils/steppe_amla.cfg:602
 msgid "+1 moves, +15% XP"
 msgstr "+1 ход, +15% опыта"
 
-#: utils/steppe_amla.cfg:618
+#: utils/steppe_amla.cfg:619
 msgid "claws gain the drain special, +20% XP"
 msgstr "когти получают высасывание, +20% опыта"
 
-#: utils/steppe_amla.cfg:635
+#: utils/steppe_amla.cfg:636
 msgid "+2 wail damage, +20% XP"
 msgstr "+2 урона к воплю, +20% опыта"
 
-#: utils/steppe_amla.cfg:654 utils/steppe_amla.cfg:713
-#: utils/steppe_amla.cfg:1947
+#: utils/steppe_amla.cfg:655 utils/steppe_amla.cfg:714
+#: utils/steppe_amla.cfg:2052
 msgid "+20% melee damage, +20% XP"
 msgstr "+20% ближнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:668
+#: utils/steppe_amla.cfg:669
 msgid "enslave 1 is replaced by enslave 2, +20% XP"
 msgstr "порабощение 1 заменяется на порабощение 2, +20% опыта"
 
-#: utils/steppe_amla.cfg:686
+#: utils/steppe_amla.cfg:687
 msgid "oversight 33% is replaced by oversight 45%, +20% XP"
 msgstr "надзор 33% заменяется на надзор 45%, +20% опыта"
 
-#: utils/steppe_amla.cfg:727
+#: utils/steppe_amla.cfg:728
 msgid "oversight 15% ability and loyal trait, +20% XP"
 msgstr "надзор 15% и свойство верный, +20% опыта"
 
-#: utils/steppe_amla.cfg:755
+#: utils/steppe_amla.cfg:758
 msgid ""
 "lesser leadership ability and loyal trait, +20% XP (available only when freed)"
 msgstr ""
 "меньшее лидерство и верность, +20% опыта (работает только когда освобождён)"
 
-#: utils/steppe_amla.cfg:786 utils/steppe_amla.cfg:2218
-#: utils/steppe_amla.cfg:2272 utils/steppe_amla.cfg:2367
+#: utils/steppe_amla.cfg:791 utils/steppe_amla.cfg:2323
+#: utils/steppe_amla.cfg:2377 utils/steppe_amla.cfg:2472
 msgid "+20% ranged damage, +20% XP"
 msgstr "+20% дальнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:800
+#: utils/steppe_amla.cfg:805
 msgid ""
 "oversight 15% ability and loyal trait, +20% XP (available only when freed)"
 msgstr ""
 "надзор 15% и свойство верный, +20% опыта (работает только когда освобождён)"
 
-#: utils/steppe_amla.cfg:823
+#: utils/steppe_amla.cfg:835
 msgid "lesser leadership ability and loyal trait, +20% XP"
 msgstr "меньшее лидерство и свойство верный, +20% опыта"
 
-#: utils/steppe_amla.cfg:857
+#: utils/steppe_amla.cfg:868
+msgid "+2 spear damage, +1 bow damage, +20% XP"
+msgstr "+2 урона к копью, +1 урона к луку +20% опыта"
+
+#: utils/steppe_amla.cfg:887
+msgid "oversight 15% ability, +20% XP"
+msgstr "надзор 15%, +20% опыта"
+
+#: utils/steppe_amla.cfg:915
+msgid "Replace leadership with inspire, +20% XP (available only when freed)"
+msgstr ""
+"вдохновление вместо лидерства, +20% опыта (работает только когда освобождён)"
+
+#: utils/steppe_amla.cfg:962
 msgid "One with Nature: +10% forest defense and ambush ability, +20% XP"
 msgstr ""
 "Единство с природой: +10% защиты в лесу и способность засада, +20% опыта"
 
-#: utils/steppe_amla.cfg:879
+#: utils/steppe_amla.cfg:984
 msgid "Herbal Mastery: heal +8 is replaced by heal +10, +20% XP"
 msgstr "Травное мастерство: лечит +8 заменяется на лечит +10, +20% опыта"
 
-#: utils/steppe_amla.cfg:900
+#: utils/steppe_amla.cfg:1005
 msgid "Nature's Cruelty: nature's curse attack gains poison special, +20% XP"
 msgstr "Жестокость природы: проклятье природы получает яд, +20% опыта"
 
-#: utils/steppe_amla.cfg:920
+#: utils/steppe_amla.cfg:1025
 msgid "One with the Swamp: +10% swamp defense and swampstalk ability, +20% XP"
 msgstr "Единство с болотом: +10% болотной защиты и засада в болоте, +20% опыта"
 
-#: utils/steppe_amla.cfg:942
+#: utils/steppe_amla.cfg:1047
 msgid "+2 swamp fire damage, +20% XP"
 msgstr "+2 урона к болотному огню, +20% опыта"
 
-#: utils/steppe_amla.cfg:956
+#: utils/steppe_amla.cfg:1061
 msgid ""
 "Hateful Gaze: +4 evil eye damage, and evil eye gains the stun special, +20% XP"
 msgstr ""
 "Ненавистный взгляд: +4 урона к сглазу, сглаз получает оглушение, +20% опыта"
 
-#: utils/steppe_amla.cfg:981 utils/steppe_amla.cfg:1896
-#: utils/steppe_amla.cfg:2381
+#: utils/steppe_amla.cfg:1086 utils/steppe_amla.cfg:2001
+#: utils/steppe_amla.cfg:2486
 msgid "Nightstalk ability, +20% XP"
 msgstr "Способность невидимка, +20% опыта"
 
-#: utils/steppe_amla.cfg:996
+#: utils/steppe_amla.cfg:1101
 msgid "Pack alpha and skimirsher abilities, +25% XP"
 msgstr "Способность глава стаи и неуловимость, +25% опыта"
 
 #. [leadership]: id=steppe_pack_alpha
-#: utils/steppe_amla.cfg:1006
+#: utils/steppe_amla.cfg:1111
 msgid "pack alpha"
 msgstr "глава стаи"
 
 #. [leadership]: id=steppe_pack_alpha
-#: utils/steppe_amla.cfg:1007
+#: utils/steppe_amla.cfg:1112
 msgid "Works like normal leadership, but only works on wolves."
 msgstr "Работает как обычное лидерство, но только на волков."
 
-#: utils/steppe_amla.cfg:1030
+#: utils/steppe_amla.cfg:1135
 msgid "+1 melee damage, +20% XP"
 msgstr "+1 ближний урон, +20% опыта"
 
-#: utils/steppe_amla.cfg:1048
+#: utils/steppe_amla.cfg:1153
 msgid "Shadow Poison: bow and arrow dance attacks gain poison special, +20% XP"
 msgstr "Теневой яд: лук и танец стрел получают особенность яд, +20% опыта"
 
-#: utils/steppe_amla.cfg:1069
+#: utils/steppe_amla.cfg:1174
 msgid "Arcane Shield: +10% to all resistances, +20% XP"
 msgstr "Мистический щит: +10% ко всем сопротивлениям, +20% опыта"
 
-#: utils/steppe_amla.cfg:1090
+#: utils/steppe_amla.cfg:1195
 msgid "Lesser Leadership ability, +20% XP"
 msgstr "Меньшее лидерство, +20% опыта"
 
-#: utils/steppe_amla.cfg:1105
+#: utils/steppe_amla.cfg:1210
 msgid "Teleport ability, +20% XP"
 msgstr "Телепорт, +20% опыта"
 
-#: utils/steppe_amla.cfg:1124
+#: utils/steppe_amla.cfg:1229
 msgid "Controlled Rage: berserk now works only on offense, +20% XP"
 msgstr "Обуздать гнев: берсерк работает только при нападении, +20% опыта"
 
-#: utils/steppe_amla.cfg:1143
+#: utils/steppe_amla.cfg:1248
 msgid "Swift Blade: melee gains the reliable special, +20% XP"
 msgstr "Быстрый клинок: ближние атаки получают свойство надёжный, +20% опыта"
 
-#: utils/steppe_amla.cfg:1165
+#: utils/steppe_amla.cfg:1270
 msgid "Bloodlust: drain 33% special on melee, and feeding ability, +20% XP"
 msgstr ""
 "Кровожадность: высасывание 33% на ближние атаки и способность пожиратель, "
 "+20% опыта"
 
-#: utils/steppe_amla.cfg:1202
+#: utils/steppe_amla.cfg:1307
 msgid "Plague spawns lvl1 ghouls instead of lvl0 ones, +20% XP"
 msgstr "Чума создаем убыров первого уровня вместо нулевого, +20% ОП"
 
-#: utils/steppe_amla.cfg:1224
+#: utils/steppe_amla.cfg:1329
 msgid "+2 dark clot damage, +20% XP"
 msgstr "+2 урона к темному сгустку, +20% опыта"
 
-#: utils/steppe_amla.cfg:1238
+#: utils/steppe_amla.cfg:1343
 msgid "Curse of transformation now slows enemies, +20% XP"
 msgstr "Проклятие трансформации замедлняет врагов, +20% ОП"
 
-#: utils/steppe_amla.cfg:1255
+#: utils/steppe_amla.cfg:1360
 msgid "Can use the curse of transformation attack twice per turn, +25% XP"
 msgstr "Можно использовать проклятие трансформации два раза в ход, +25% ОП"
 
-#: utils/steppe_amla.cfg:1279
+#: utils/steppe_amla.cfg:1384
 msgid "Desperate: desperate special on melee, +20% XP"
 msgstr "Отчаянный:ближние атаки получают способность отчаянный, +20% опыта"
 
-#: utils/steppe_amla.cfg:1296
+#: utils/steppe_amla.cfg:1401
 msgid "Bloodlust: drain 30% special on melee, +20% XP"
 msgstr "Кровожадность: высасывает 30% sна ближние атаки, +20% опыта"
 
-#: utils/steppe_amla.cfg:1313 utils/steppe_amla.cfg:1715
+#: utils/steppe_amla.cfg:1418 utils/steppe_amla.cfg:1820
 msgid "Resolute ability, +20% XP"
 msgstr "Способность решительный, +20% опыта"
 
-#: utils/steppe_amla.cfg:1333
+#: utils/steppe_amla.cfg:1438
 msgid ""
 "Blade Mastery: +1 damage and reliable special on sword in human form, +20% XP"
 msgstr ""
 "Мастер клинка: +1 урона и свойство надежный на атаку мечом в форме человека, "
 "+20% опыта"
 
-#: utils/steppe_amla.cfg:1356
+#: utils/steppe_amla.cfg:1461
 msgid ""
 "Bird of Prey: +2 claw damage/+8 beak damage in raven form, and +4 raven "
 "damage in human form, +20% XP"
@@ -11173,7 +11177,7 @@ msgstr ""
 "Свирепая птица: +2 урона когтям/+8 урона клюву, и +4 урона ворону в "
 "человеческой форме, +20% опыта"
 
-#: utils/steppe_amla.cfg:1380
+#: utils/steppe_amla.cfg:1485
 msgid ""
 "Hunting Tactics: poison for claws, and hit-and-run for beak in raven form (as "
 "well as raven attack in human form), +20% XP"
@@ -11181,51 +11185,47 @@ msgstr ""
 "Тактика Охоты: яд на когти, и ударил-убежал для клюва в форме ворона (также "
 "для атаки вороном в форме человека) +20% опыта"
 
-#: utils/steppe_amla.cfg:1413
+#: utils/steppe_amla.cfg:1518
 msgid "Nightstalk ability for both forms, +20% XP"
 msgstr "Способность невидимка на обе формы, +20% опыта"
 
-#: utils/steppe_amla.cfg:1429
+#: utils/steppe_amla.cfg:1534
 msgid "Lesser Leadership ability for both forms, +20% XP"
 msgstr "Меньшее лидерство на обе формы, +20% опыта"
 
-#: utils/steppe_amla.cfg:1444
+#: utils/steppe_amla.cfg:1549
 msgid "Footwork: skirmisher ability for human form, +15% XP"
 msgstr "Быстроногий: неуловимость в форме человека, +15% опыта"
 
-#: utils/steppe_amla.cfg:1621
+#: utils/steppe_amla.cfg:1726
 msgid "Healing Light: heal +6 is replaced by heal +9, +20% XP"
 msgstr "Исцеляющий свет: лечит +6 заменяется на лечит +9, +20% опыта"
 
-#: utils/steppe_amla.cfg:1642
+#: utils/steppe_amla.cfg:1747
 msgid "+3 light burst damage, +2 solar flame damage, +20% XP"
 msgstr "+3 урона к вспышке света, +2 урона к солнечному пламени, +20% XP"
 
-#: utils/steppe_amla.cfg:1661
+#: utils/steppe_amla.cfg:1766
 msgid "Light Shield: +20% fire/arcane resistances, +20% XP"
 msgstr "Световой щит: +20% сопротивления к огню/мистическому, +20% опыта"
 
-#: utils/steppe_amla.cfg:1683
-msgid "Build Marketplace"
-msgstr "Построить рынок"
-
-#: utils/steppe_amla.cfg:1683
+#: utils/steppe_amla.cfg:1788
 msgid "Marketplace: can build marketplaces, +20% XP"
 msgstr "Может строить рынки, +20% опыта"
 
-#: utils/steppe_amla.cfg:1690
+#: utils/steppe_amla.cfg:1788
+msgid "Build Marketplace"
+msgstr "Построить рынок"
+
+#: utils/steppe_amla.cfg:1795
 msgid "Build Teleporter"
 msgstr "Построить телепорт"
 
-#: utils/steppe_amla.cfg:1690
+#: utils/steppe_amla.cfg:1795
 msgid "Teleporter: can build teleporters, +20% XP"
 msgstr "Может строить телепорты, +20% опыта"
 
-#: utils/steppe_amla.cfg:1697
-msgid "Build Library"
-msgstr "Построить библиотеку"
-
-#: utils/steppe_amla.cfg:1697
+#: utils/steppe_amla.cfg:1802
 msgid ""
 "Library: can build libraries (buildings that give experience to adjacent "
 "allies each turn), +20% XP"
@@ -11233,19 +11233,23 @@ msgstr ""
 "Может строить библиотеки (библиотека даёт союзникам немного опыта каждый "
 "ход), +20% опыта"
 
-#: utils/steppe_amla.cfg:1704
+#: utils/steppe_amla.cfg:1802
+msgid "Build Library"
+msgstr "Построить библиотеку"
+
+#: utils/steppe_amla.cfg:1809
 msgid "Build Hiding Spot"
 msgstr "Построить укрытие"
 
-#: utils/steppe_amla.cfg:1704
+#: utils/steppe_amla.cfg:1809
 msgid "Hiding spot: can build hiding spots, +20% XP"
 msgstr "Может строить укрытие, +20% опыта"
 
-#: utils/steppe_amla.cfg:1730
+#: utils/steppe_amla.cfg:1835
 msgid "Shield attack (12-1 block 50%), +20% XP"
 msgstr "Атака щитом (12-1, блок 50%), +20% опыта"
 
-#: utils/steppe_amla.cfg:1783 utils/steppe_amla.cfg:1818
+#: utils/steppe_amla.cfg:1888 utils/steppe_amla.cfg:1923
 msgid ""
 "Studier Buildings: this unit's buildings have 30% more hitpoints (doesn't "
 "apply to ones already built), +20% XP"
@@ -11253,7 +11257,7 @@ msgstr ""
 "Прочные Здания: здания построенные этим юнитом имеют 30% больше ЗД (не влияет "
 "на уже построенные здания), +20% ОП"
 
-#: utils/steppe_amla.cfg:1803
+#: utils/steppe_amla.cfg:1908
 msgid ""
 "Stronger Buildings: this unit's buildings deal 30% more damage (doesn't apply "
 "to ones already built), +20% XP"
@@ -11261,20 +11265,20 @@ msgstr ""
 "Сильные Здания: здания построенные этим юнитом имеют 30% больше урона (не "
 "влияет на уже построенные здания), +20% ОП"
 
-#: utils/steppe_amla.cfg:1852
+#: utils/steppe_amla.cfg:1957
 msgid "+2 ranged damage, +20% XP"
 msgstr "+2 дальнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:1866
+#: utils/steppe_amla.cfg:1971
 msgid "+10% forest/swamp defense, reduced movement cost on swamps, +20% XP"
 msgstr "+10% защиты в лесу/болоте, лучше проходимость в болоте, +20% ОП"
 
-#: utils/steppe_amla.cfg:1911 utils/steppe_amla.cfg:2132
-#: utils/steppe_amla.cfg:2396
+#: utils/steppe_amla.cfg:2016 utils/steppe_amla.cfg:2237
+#: utils/steppe_amla.cfg:2501
 msgid "Cunning: skirmisher and concealment abilities, +20% XP"
 msgstr "Хитрость: неуловимость и засада в деревнях, +20% опыта"
 
-#: utils/steppe_amla.cfg:1927
+#: utils/steppe_amla.cfg:2032
 msgid ""
 "Deadlier Traps: this unit's traps deal 50% more damage (doesn't apply to "
 "traps already built), +20% XP"
@@ -11282,7 +11286,7 @@ msgstr ""
 "Смертельные Ловушки: ловушки построенные этим юнитом имеют 50% больше урона "
 "(не влияет на уже построенные ловушки), +20% ОП"
 
-#: utils/steppe_amla.cfg:1961
+#: utils/steppe_amla.cfg:2066
 msgid ""
 "Waterproof Enchanted Armor: +10% water defense, better movement on shallow "
 "water, +20% XP"
@@ -11290,7 +11294,7 @@ msgstr ""
 "Зачарованная Водонепроницаемая броня: лучше защита и проходимость в воде, "
 "+20% ОП"
 
-#: utils/steppe_amla.cfg:1986
+#: utils/steppe_amla.cfg:2091
 msgid ""
 "Enchanted Diving Gear: +10% water defense, can move on deep water, submerge "
 "ability, +20% XP"
@@ -11298,15 +11302,15 @@ msgstr ""
 "Зачарованный Водолазный Костюм: лучше защита в воде, может двигатся в "
 "глубокой воде, способность 'погружается', +20% ОП"
 
-#: utils/steppe_amla.cfg:2030
+#: utils/steppe_amla.cfg:2135
 msgid "+1/2 melee damage, +20% XP"
 msgstr "+1/2 ближнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:2049
+#: utils/steppe_amla.cfg:2154
 msgid "+2/2 melee damage, +20% XP"
 msgstr "+2/2 ближнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:2069
+#: utils/steppe_amla.cfg:2174
 msgid ""
 "Defense: +10% physical resistances and firststrike, cannot take other paths "
 "after this, +20% XP"
@@ -11314,117 +11318,117 @@ msgstr ""
 "Защита +10% физических сопротивлений и особенность бьет первым, не может "
 "брать другие улучшения после этого, +20% опыта"
 
-#: utils/steppe_amla.cfg:2104
+#: utils/steppe_amla.cfg:2209
 msgid "+3 melee damage axe, +20% XP"
 msgstr "+3 урона на топор, +20% опыта"
 
-#: utils/steppe_amla.cfg:2118
+#: utils/steppe_amla.cfg:2223
 msgid "+2 sling damage, +20% XP"
 msgstr "+2 урона на пращу, +20% опыта"
 
-#: utils/steppe_amla.cfg:2164
+#: utils/steppe_amla.cfg:2269
 msgid "Feast in his honor! (+8 Max Hp), +20% XP"
 msgstr "Устроить пир в его честь! (+8 макс. ЗД), +20% опыта"
 
-#: utils/steppe_amla.cfg:2177
+#: utils/steppe_amla.cfg:2282
 msgid "Hunt in his honor! (+10% damage), +15% XP"
 msgstr "Устроить охоту в его честь! (+10% урона), +15% опыта"
 
-#: utils/steppe_amla.cfg:2190
+#: utils/steppe_amla.cfg:2295
 msgid "Ascend him to the throne!, -10% XP"
 msgstr "Короновать его! -10% опыта"
 
-#: utils/steppe_amla.cfg:2232
+#: utils/steppe_amla.cfg:2337
 msgid "Faith Healing ability, +20% XP"
 msgstr "Способность святое исцеление, +20% опыта"
 
-#: utils/steppe_amla.cfg:2247
+#: utils/steppe_amla.cfg:2352
 msgid "Illuminates ability, +20% XP"
 msgstr "Способность освещает, +20% опыта"
 
-#: utils/steppe_amla.cfg:2286
+#: utils/steppe_amla.cfg:2391
 msgid "Better at penetrating armor, +20% XP"
 msgstr "Лучше пробивает броню, +20% опыта"
 
-#: utils/steppe_amla.cfg:2316 utils/steppe_amla.cfg:2445
-#: utils/steppe_amla.cfg:2582
+#: utils/steppe_amla.cfg:2421 utils/steppe_amla.cfg:2550
+#: utils/steppe_amla.cfg:2687
 msgid "+20% damage, +20% XP"
 msgstr "+20% урона, +20% XP"
 
-#: utils/steppe_amla.cfg:2329
+#: utils/steppe_amla.cfg:2434
 msgid ""
 "Giantslayer ability (deals more damage to enemies of higher level), +20% XP"
 msgstr ""
 "Убийца великанов (наносит бонусный урон врагам, уровень которых выше уровня "
 "этого юнита), +20% ОП"
 
-#: utils/steppe_amla.cfg:2344
+#: utils/steppe_amla.cfg:2449
 msgid "Percentile damage bonus on attacks, +20% XP"
 msgstr "Процентный бонус урона на атаки, +20% ОП"
 
-#: utils/steppe_amla.cfg:2412
+#: utils/steppe_amla.cfg:2517
 msgid ""
 "Incinerate special on the fire crossbow, and poison on normal crossbow, +20% "
 "XP"
 msgstr "Огненный арбалет поджигает, обычный отравляет, +20% опыта"
 
-#: utils/steppe_amla.cfg:2458
+#: utils/steppe_amla.cfg:2563
 msgid "Better at mentoring (3 xp per turn), +20% XP"
 msgstr "Опытный наставник (3 опыта за ход), +20% опыта"
 
-#: utils/steppe_amla.cfg:2479
+#: utils/steppe_amla.cfg:2584
 msgid "Even better at mentoring (4 xp per turn), +20% XP"
 msgstr "Умудрённый наставник (4 опыта за ход), +20% опыта"
 
-#: utils/steppe_amla.cfg:2595
+#: utils/steppe_amla.cfg:2700
 msgid "Generates 6 gold per turn instead of 4, +20% XP"
 msgstr "Приносит 6 золота за ход вместо 4, +20% опыта"
 
-#: utils/steppe_amla.cfg:2621
+#: utils/steppe_amla.cfg:2726
 msgid "Blessing of the Abyss: gain nocturnal regeneration +8 ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2638
+#: utils/steppe_amla.cfg:2743
 msgid "Blessing of the Abyss: gain nocturnal regeneration +10 ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2655
+#: utils/steppe_amla.cfg:2760
 msgid "Blessing of the Abyss: gain nocturnal regeneration +12 ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2677
+#: utils/steppe_amla.cfg:2782
 msgid "+25% melee damage, +20% XP"
 msgstr "+25% ближнего урона, +20% опыта"
 
-#: utils/steppe_amla.cfg:2691
+#: utils/steppe_amla.cfg:2796
 msgid "+3 firework damage (only ranged), +20% XP"
 msgstr "+3 урона на дальний феерверк, +20% опыта"
 
-#: utils/steppe_amla.cfg:2705
+#: utils/steppe_amla.cfg:2810
 msgid "Enchanted Armor: +20% to fire/cold resistances, +20% XP"
 msgstr "Зачарованная Броня: +20% сопротивления к огню/холоду, +20% опыта"
 
-#: utils/steppe_amla.cfg:2722
+#: utils/steppe_amla.cfg:2827
 msgid "Dauntless ability, +20% XP"
 msgstr "Способность бесстрашия, +20% опыта"
 
-#: utils/steppe_amla.cfg:2744
+#: utils/steppe_amla.cfg:2849
 msgid "Focused Fire: crossbow gains the 'reliable' special, +20% XP"
 msgstr "Точная Стрельба: арбалет получает свойство надёжный, +20% опыта"
 
-#: utils/steppe_amla.cfg:2761
+#: utils/steppe_amla.cfg:2866
 msgid "Rapid Fire: +1 ranged strikes, +20% XP"
 msgstr "Быстрая Стрельба: +1 дальний удар, +20% опыта"
 
-#: utils/steppe_amla.cfg:2775
+#: utils/steppe_amla.cfg:2880
 msgid "Able to hide in hills and mountains, +20% XP"
 msgstr "Может прятаться в холмах и горах, +20% ОП"
 
-#: utils/steppe_amla.cfg:2799
+#: utils/steppe_amla.cfg:2904
 msgid "+8 handcannon damage, +20% XP"
 msgstr "+8 урона пушкой, +20% опыта"
 
-#: utils/steppe_amla.cfg:2813
+#: utils/steppe_amla.cfg:2918
 msgid ""
 "Bigger Blast: Explosive shot deals 50% damage to adjacent enemies instead of "
 "30%, +20% XP"
@@ -11432,7 +11436,7 @@ msgstr ""
 "Большой Взрыв: взрывной заряд наносит 50% урона стоящим рядом врагам вместо "
 "30%, +20% ОП"
 
-#: utils/steppe_amla.cfg:2832
+#: utils/steppe_amla.cfg:2937
 msgid ""
 "Bigger Blast: Explosive shot deals 75% damage to adjacent enemies instead of "
 "50%, +20% XP"

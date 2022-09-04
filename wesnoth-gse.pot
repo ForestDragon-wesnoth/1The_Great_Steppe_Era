@@ -937,12 +937,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
-msgid "While is unit is in a 3-tile radius from them, his side's witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."
+msgid "boiling blood"
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
-msgid "boiling blood"
+msgid "While is unit is in a 3-tile radius from them, his side's witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."
 msgstr ""
 
 #. [attack]: type=blade
@@ -2116,7 +2116,7 @@ msgstr ""
 
 #. [attack]: type=impact
 #. [effect]: type=impact
-#: units/kingdom/Kingdom_Heirs.cfg:145 units/mandate/Mandate_Kobold.cfg:28 units/mandate/Mandate_Kobold.cfg:127 units/mandate/Mandate_Kobold.cfg:231 utils/steppe_amla.cfg:1736
+#: units/kingdom/Kingdom_Heirs.cfg:145 units/mandate/Mandate_Kobold.cfg:28 units/mandate/Mandate_Kobold.cfg:127 units/mandate/Mandate_Kobold.cfg:231 utils/steppe_amla.cfg:1841
 msgid "shield"
 msgstr ""
 
@@ -3173,7 +3173,7 @@ msgstr ""
 
 #. [attack]: type=cold
 #. [effect]: type=cold
-#: units/ogres/Tarbynns.cfg:63 units/ogres/Tarbynns.cfg:146 units/ogres/Tarbynns.cfg:257 utils/steppe_amla.cfg:413
+#: units/ogres/Tarbynns.cfg:63 units/ogres/Tarbynns.cfg:146 units/ogres/Tarbynns.cfg:257 utils/steppe_amla.cfg:414
 msgid "drain life"
 msgstr ""
 
@@ -3449,16 +3449,16 @@ msgid "В отличие от других княжеств, в темской �
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
+msgid "build idols"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Idol - 4 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav-Temsk_Raiders.cfg:32 units/slavs/Slav-Temsk_Raiders.cfg:167 units/slavs/Slav-Temsk_Raiders.cfg:237 units/slavs/Slav-Temsk_Raiders.cfg:346
-msgid "build idols"
 msgstr ""
 
 #. [abilities]
@@ -3540,16 +3540,16 @@ msgid "В северных землях искусство стрельбы из
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
 msgstr ""
 
 #. [abilities]
@@ -3721,16 +3721,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3782,16 +3782,16 @@ msgid "People of the Krad worship the magical Firebird; it's this godlike creatu
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -4025,12 +4025,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid " times in one turn."
+msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
+msgid " times in one turn."
 msgstr ""
 
 #. [set_menu_item]: id=steppe_curseofdecay_calculator
@@ -4050,17 +4050,17 @@ msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
+msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
+msgstr ""
+
+#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
+#: utils/abilities_hunn.cfg:1278
 msgid "gold instead of the default 21 on first recall, but having 4 upkeep instead 1 until the unit advances), the unit gets experience equal to number of turns it takes to give birth multiplied by her level, and the timer is reset."
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
 msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
-msgstr ""
-
-#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
-#: utils/abilities_hunn.cfg:1278
-msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
 msgstr ""
 
 #. [floating_text]
@@ -4078,15 +4078,15 @@ msgstr ""
 msgid "decay -"
 msgstr ""
 
+#. [dummy]: id=steppe_depleting_hunn
+#: utils/abilities_hunn.cfg:1558
+msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
+msgstr ""
+
 #. [dummy]: id=depleting{NUMBER}
 #. [dummy]: id=steppe_depleting_hunn
 #: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
 msgid "This unit loses "
-msgstr ""
-
-#. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1558
-msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
 msgstr ""
 
 #. [floating_text]
@@ -4230,12 +4230,12 @@ msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3255
-msgid "On hit, if the enemy's level is "
+msgid " or lower, the enemy is transformed into a random animal of the same level until the end of the unit's next turn. Only works on living enemies."
 msgstr ""
 
 #. [curse_of_transformation]: id=steppe_curse_of_transformation
 #: utils/abilities_hunn.cfg:3255
-msgid " or lower, the enemy is transformed into a random animal of the same level until the end of the unit's next turn. Only works on living enemies."
+msgid "On hit, if the enemy's level is "
 msgstr ""
 
 #. [chat]
@@ -4485,12 +4485,12 @@ msgstr ""
 
 #. [mind_drain]: id=steppe_mind_drain
 #: utils/abilities_khaganate.cfg:2690
-msgid "On hit, this attack steals up to "
+msgid " experience from the enemy."
 msgstr ""
 
 #. [mind_drain]: id=steppe_mind_drain
 #: utils/abilities_khaganate.cfg:2690
-msgid " experience from the enemy."
+msgid "On hit, this attack steals up to "
 msgstr ""
 
 #. [floating_text]
@@ -4919,12 +4919,12 @@ msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
+msgid "While this unit has full moves, this unit may teleport to any tile in a"
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "While this unit has full moves, this unit may teleport to any tile in a"
+msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
 msgstr ""
 
 #. [dummy]: id=steppe_metamorph
@@ -4994,12 +4994,12 @@ msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:662
-msgid "This unit earns "
+msgid " gold each turn if standing on an owned village."
 msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:662
-msgid " gold each turn if standing on an owned village."
+msgid "This unit earns "
 msgstr ""
 
 #. [unstore_unit]
@@ -5039,12 +5039,12 @@ msgstr ""
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:902
-msgid "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) are increased by "
+msgid "% (up to 60%). However, this effect wears off after a turn."
 msgstr ""
 
 #. [resistance]: id=protected{NUMBER}
 #: utils/abilities_misc.cfg:902
-msgid "% (up to 60%). However, this effect wears off after a turn."
+msgid "This unit’s resistances (blade,pierce,impact,fire and cold, but not arcane) are increased by "
 msgstr ""
 
 #. [heals]: id=healing
@@ -5054,12 +5054,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid " HP per turn, or stops poison from taking effect for that turn."
+msgid "This unit heals adjacent units by "
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid "This unit heals adjacent units by "
+msgid " HP per turn, or stops poison from taking effect for that turn."
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5068,13 +5068,13 @@ msgid "regenerates"
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:940 utils/abilities_misc.cfg:956
-msgid "The unit will heal itself by "
+#: utils/abilities_misc.cfg:940
+msgid " HP per turn. If it is poisoned, it will remove the poison instead of healing."
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
-#: utils/abilities_misc.cfg:940
-msgid " HP per turn. If it is poisoned, it will remove the poison instead of healing."
+#: utils/abilities_misc.cfg:940 utils/abilities_misc.cfg:956
+msgid "The unit will heal itself by "
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5256,12 +5256,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid "This unit costs "
+msgid " upkeep instead of the amount equal to level."
 msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid " upkeep instead of the amount equal to level."
+msgid "This unit costs "
 msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
@@ -5366,12 +5366,12 @@ msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "Like drain, but heals by "
+msgid "% instead of 50%."
 msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "% instead of 50%."
+msgid "Like drain, but heals by "
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
@@ -5381,12 +5381,12 @@ msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2087
-msgid " times instead of 30."
+msgid "Like berserk, but units fight "
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2087
-msgid "Like berserk, but units fight "
+msgid " times instead of 30."
 msgstr ""
 
 #. [damage]: id=steppe_desperate
@@ -5424,15 +5424,15 @@ msgstr ""
 msgid "weaken"
 msgstr ""
 
-#. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2201
-msgid "On hit, this attack reduces the enemy's damage by "
-msgstr ""
-
 #. [armorbreak]: id=steppe_armorbreak
 #. [weaken]: id=steppe_weaken
 #: utils/abilities_misc.cfg:2201 utils/abilities_misc.cfg:2517
 msgid "% for one turn. Applying a stronger version of this effect replaces the weaker one."
+msgstr ""
+
+#. [weaken]: id=steppe_weaken
+#: utils/abilities_misc.cfg:2201
+msgid "On hit, this attack reduces the enemy's damage by "
 msgstr ""
 
 #. [floating_text]
@@ -5557,12 +5557,12 @@ msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3222
-msgid "On hit, this reduces the enemy's defense on all terrain by "
+msgid "% for 1 turn. This stacks."
 msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3222
-msgid "% for 1 turn. This stacks."
+msgid "On hit, this reduces the enemy's defense on all terrain by "
 msgstr ""
 
 #. [unstore_unit]
@@ -5797,12 +5797,12 @@ msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgid "Each turn, this unit deals "
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid "Each turn, this unit deals "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [hides]: id=steppe_swampstalk
@@ -5995,12 +5995,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid "This unit heals adjacent mechanical units by "
+msgid " HP per turn"
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid " HP per turn"
+msgid "This unit heals adjacent mechanical units by "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_demolish
@@ -6114,14 +6114,14 @@ msgid "building damage boost"
 msgstr ""
 
 #. [building_boost_damage]: id=steppe_building_damage_boost
-#: utils/abilities_slav_building.cfg:1289
-msgid "% more damage"
-msgstr ""
-
-#. [building_boost_damage]: id=steppe_building_damage_boost
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
 #: utils/abilities_slav_building.cfg:1289 utils/abilities_slav_building.cfg:1298
 msgid "Buildings build by this unit have "
+msgstr ""
+
+#. [building_boost_damage]: id=steppe_building_damage_boost
+#: utils/abilities_slav_building.cfg:1289
+msgid "% more damage"
 msgstr ""
 
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
@@ -6161,12 +6161,12 @@ msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid ", and only works on buildings who can advance."
+msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
 msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
+msgid ", and only works on buildings who can advance."
 msgstr ""
 
 #. [set_menu_item]: id=steppe_upgrade_buildings
@@ -6196,12 +6196,12 @@ msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "This unit can attack enemies in a"
+msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks work with leadership/other damage-buffing abilities/specials, but some other weapon specials might not work properly. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
 msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks work with leadership/other damage-buffing abilities/specials, but some other weapon specials might not work properly. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
+msgid "This unit can attack enemies in a"
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6245,433 +6245,445 @@ msgstr ""
 msgid "This unit has custom AMLA upgrades."
 msgstr ""
 
-#: utils/steppe_amla.cfg:289
+#: utils/steppe_amla.cfg:290
 msgid "+5 Max Hp, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:308 utils/steppe_amla.cfg:358
+#: utils/steppe_amla.cfg:309 utils/steppe_amla.cfg:359
 msgid "+15% melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:322
+#: utils/steppe_amla.cfg:323
 msgid "Linebreaker: trample gains stun special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:339
+#: utils/steppe_amla.cfg:340
 msgid "+2 spear damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:372
+#: utils/steppe_amla.cfg:373
 msgid "lesser regenerates +6 is replaced by normal regenerates, +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:393 utils/steppe_amla.cfg:2148
+#: utils/steppe_amla.cfg:394 utils/steppe_amla.cfg:941 utils/steppe_amla.cfg:2253
 msgid "+1 moves, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:406
+#: utils/steppe_amla.cfg:407
 msgid "Ritual Bull: 8-1 cold ranged magical drain attack, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:430
+#: utils/steppe_amla.cfg:431
 msgid "+4 drain life damage, +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:452
+#: utils/steppe_amla.cfg:453
 msgid "Submission: enslave 3 is replaced by enslave 4, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:470
+#: utils/steppe_amla.cfg:471
 msgid "Can use the enslave attack twice per turn, +25% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:487
+#: utils/steppe_amla.cfg:488
 msgid "+15% black fire damage, black fire ignores 15% of enemy fire resistance, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:512
+#: utils/steppe_amla.cfg:513
 msgid "+30% enslavement damage, +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:565
+#: utils/steppe_amla.cfg:566
 msgid "Khagan's Authority: allows the unit to recruit, +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:587 utils/steppe_amla.cfg:1188 utils/steppe_amla.cfg:1838
+#: utils/steppe_amla.cfg:588 utils/steppe_amla.cfg:1293 utils/steppe_amla.cfg:1943
 msgid "+2 melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:601
+#: utils/steppe_amla.cfg:602
 msgid "+1 moves, +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:618
+#: utils/steppe_amla.cfg:619
 msgid "claws gain the drain special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:635
+#: utils/steppe_amla.cfg:636
 msgid "+2 wail damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:654 utils/steppe_amla.cfg:713 utils/steppe_amla.cfg:1947
+#: utils/steppe_amla.cfg:655 utils/steppe_amla.cfg:714 utils/steppe_amla.cfg:2052
 msgid "+20% melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:668
+#: utils/steppe_amla.cfg:669
 msgid "enslave 1 is replaced by enslave 2, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:686
+#: utils/steppe_amla.cfg:687
 msgid "oversight 33% is replaced by oversight 45%, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:727
+#: utils/steppe_amla.cfg:728
 msgid "oversight 15% ability and loyal trait, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:755
+#: utils/steppe_amla.cfg:758
 msgid "lesser leadership ability and loyal trait, +20% XP (available only when freed)"
 msgstr ""
 
-#: utils/steppe_amla.cfg:786 utils/steppe_amla.cfg:2218 utils/steppe_amla.cfg:2272 utils/steppe_amla.cfg:2367
+#: utils/steppe_amla.cfg:791 utils/steppe_amla.cfg:2323 utils/steppe_amla.cfg:2377 utils/steppe_amla.cfg:2472
 msgid "+20% ranged damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:800
+#: utils/steppe_amla.cfg:805
 msgid "oversight 15% ability and loyal trait, +20% XP (available only when freed)"
 msgstr ""
 
-#: utils/steppe_amla.cfg:823
+#: utils/steppe_amla.cfg:835
 msgid "lesser leadership ability and loyal trait, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:857
+#: utils/steppe_amla.cfg:868
+msgid "+2 spear damage, +1 bow damage, +20% XP"
+msgstr ""
+
+#: utils/steppe_amla.cfg:887
+msgid "oversight 15% ability, +20% XP"
+msgstr ""
+
+#: utils/steppe_amla.cfg:915
+msgid "Replace leadership with inspire, +20% XP (available only when freed)"
+msgstr ""
+
+#: utils/steppe_amla.cfg:962
 msgid "One with Nature: +10% forest defense and ambush ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:879
+#: utils/steppe_amla.cfg:984
 msgid "Herbal Mastery: heal +8 is replaced by heal +10, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:900
+#: utils/steppe_amla.cfg:1005
 msgid "Nature's Cruelty: nature's curse attack gains poison special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:920
+#: utils/steppe_amla.cfg:1025
 msgid "One with the Swamp: +10% swamp defense and swampstalk ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:942
+#: utils/steppe_amla.cfg:1047
 msgid "+2 swamp fire damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:956
+#: utils/steppe_amla.cfg:1061
 msgid "Hateful Gaze: +4 evil eye damage, and evil eye gains the stun special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:981 utils/steppe_amla.cfg:1896 utils/steppe_amla.cfg:2381
+#: utils/steppe_amla.cfg:1086 utils/steppe_amla.cfg:2001 utils/steppe_amla.cfg:2486
 msgid "Nightstalk ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:996
+#: utils/steppe_amla.cfg:1101
 msgid "Pack alpha and skimirsher abilities, +25% XP"
 msgstr ""
 
 #. [leadership]: id=steppe_pack_alpha
-#: utils/steppe_amla.cfg:1006
+#: utils/steppe_amla.cfg:1111
 msgid "pack alpha"
 msgstr ""
 
 #. [leadership]: id=steppe_pack_alpha
-#: utils/steppe_amla.cfg:1007
+#: utils/steppe_amla.cfg:1112
 msgid "Works like normal leadership, but only works on wolves."
 msgstr ""
 
-#: utils/steppe_amla.cfg:1030
+#: utils/steppe_amla.cfg:1135
 msgid "+1 melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1048
+#: utils/steppe_amla.cfg:1153
 msgid "Shadow Poison: bow and arrow dance attacks gain poison special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1069
+#: utils/steppe_amla.cfg:1174
 msgid "Arcane Shield: +10% to all resistances, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1090
+#: utils/steppe_amla.cfg:1195
 msgid "Lesser Leadership ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1105
+#: utils/steppe_amla.cfg:1210
 msgid "Teleport ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1124
+#: utils/steppe_amla.cfg:1229
 msgid "Controlled Rage: berserk now works only on offense, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1143
+#: utils/steppe_amla.cfg:1248
 msgid "Swift Blade: melee gains the reliable special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1165
+#: utils/steppe_amla.cfg:1270
 msgid "Bloodlust: drain 33% special on melee, and feeding ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1202
+#: utils/steppe_amla.cfg:1307
 msgid "Plague spawns lvl1 ghouls instead of lvl0 ones, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1224
+#: utils/steppe_amla.cfg:1329
 msgid "+2 dark clot damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1238
+#: utils/steppe_amla.cfg:1343
 msgid "Curse of transformation now slows enemies, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1255
+#: utils/steppe_amla.cfg:1360
 msgid "Can use the curse of transformation attack twice per turn, +25% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1279
+#: utils/steppe_amla.cfg:1384
 msgid "Desperate: desperate special on melee, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1296
+#: utils/steppe_amla.cfg:1401
 msgid "Bloodlust: drain 30% special on melee, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1313 utils/steppe_amla.cfg:1715
+#: utils/steppe_amla.cfg:1418 utils/steppe_amla.cfg:1820
 msgid "Resolute ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1333
+#: utils/steppe_amla.cfg:1438
 msgid "Blade Mastery: +1 damage and reliable special on sword in human form, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1356
+#: utils/steppe_amla.cfg:1461
 msgid "Bird of Prey: +2 claw damage/+8 beak damage in raven form, and +4 raven damage in human form, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1380
+#: utils/steppe_amla.cfg:1485
 msgid "Hunting Tactics: poison for claws, and hit-and-run for beak in raven form (as well as raven attack in human form), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1413
+#: utils/steppe_amla.cfg:1518
 msgid "Nightstalk ability for both forms, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1429
+#: utils/steppe_amla.cfg:1534
 msgid "Lesser Leadership ability for both forms, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1444
+#: utils/steppe_amla.cfg:1549
 msgid "Footwork: skirmisher ability for human form, +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1621
+#: utils/steppe_amla.cfg:1726
 msgid "Healing Light: heal +6 is replaced by heal +9, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1642
+#: utils/steppe_amla.cfg:1747
 msgid "+3 light burst damage, +2 solar flame damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1661
+#: utils/steppe_amla.cfg:1766
 msgid "Light Shield: +20% fire/arcane resistances, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1683
-msgid "Build Marketplace"
-msgstr ""
-
-#: utils/steppe_amla.cfg:1683
+#: utils/steppe_amla.cfg:1788
 msgid "Marketplace: can build marketplaces, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1690
+#: utils/steppe_amla.cfg:1788
+msgid "Build Marketplace"
+msgstr ""
+
+#: utils/steppe_amla.cfg:1795
 msgid "Build Teleporter"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1690
+#: utils/steppe_amla.cfg:1795
 msgid "Teleporter: can build teleporters, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1697
-msgid "Build Library"
-msgstr ""
-
-#: utils/steppe_amla.cfg:1697
+#: utils/steppe_amla.cfg:1802
 msgid "Library: can build libraries (buildings that give experience to adjacent allies each turn), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1704
+#: utils/steppe_amla.cfg:1802
+msgid "Build Library"
+msgstr ""
+
+#: utils/steppe_amla.cfg:1809
 msgid "Build Hiding Spot"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1704
+#: utils/steppe_amla.cfg:1809
 msgid "Hiding spot: can build hiding spots, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1730
+#: utils/steppe_amla.cfg:1835
 msgid "Shield attack (12-1 block 50%), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1783 utils/steppe_amla.cfg:1818
+#: utils/steppe_amla.cfg:1888 utils/steppe_amla.cfg:1923
 msgid "Studier Buildings: this unit's buildings have 30% more hitpoints (doesn't apply to ones already built), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1803
+#: utils/steppe_amla.cfg:1908
 msgid "Stronger Buildings: this unit's buildings deal 30% more damage (doesn't apply to ones already built), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1852
+#: utils/steppe_amla.cfg:1957
 msgid "+2 ranged damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1866
+#: utils/steppe_amla.cfg:1971
 msgid "+10% forest/swamp defense, reduced movement cost on swamps, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1911 utils/steppe_amla.cfg:2132 utils/steppe_amla.cfg:2396
+#: utils/steppe_amla.cfg:2016 utils/steppe_amla.cfg:2237 utils/steppe_amla.cfg:2501
 msgid "Cunning: skirmisher and concealment abilities, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1927
+#: utils/steppe_amla.cfg:2032
 msgid "Deadlier Traps: this unit's traps deal 50% more damage (doesn't apply to traps already built), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1961
+#: utils/steppe_amla.cfg:2066
 msgid "Waterproof Enchanted Armor: +10% water defense, better movement on shallow water, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:1986
+#: utils/steppe_amla.cfg:2091
 msgid "Enchanted Diving Gear: +10% water defense, can move on deep water, submerge ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2030
+#: utils/steppe_amla.cfg:2135
 msgid "+1/2 melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2049
+#: utils/steppe_amla.cfg:2154
 msgid "+2/2 melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2069
+#: utils/steppe_amla.cfg:2174
 msgid "Defense: +10% physical resistances and firststrike, cannot take other paths after this, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2104
+#: utils/steppe_amla.cfg:2209
 msgid "+3 melee damage axe, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2118
+#: utils/steppe_amla.cfg:2223
 msgid "+2 sling damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2164
+#: utils/steppe_amla.cfg:2269
 msgid "Feast in his honor! (+8 Max Hp), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2177
+#: utils/steppe_amla.cfg:2282
 msgid "Hunt in his honor! (+10% damage), +15% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2190
+#: utils/steppe_amla.cfg:2295
 msgid "Ascend him to the throne!, -10% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2232
+#: utils/steppe_amla.cfg:2337
 msgid "Faith Healing ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2247
+#: utils/steppe_amla.cfg:2352
 msgid "Illuminates ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2286
+#: utils/steppe_amla.cfg:2391
 msgid "Better at penetrating armor, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2316 utils/steppe_amla.cfg:2445 utils/steppe_amla.cfg:2582
+#: utils/steppe_amla.cfg:2421 utils/steppe_amla.cfg:2550 utils/steppe_amla.cfg:2687
 msgid "+20% damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2329
+#: utils/steppe_amla.cfg:2434
 msgid "Giantslayer ability (deals more damage to enemies of higher level), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2344
+#: utils/steppe_amla.cfg:2449
 msgid "Percentile damage bonus on attacks, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2412
+#: utils/steppe_amla.cfg:2517
 msgid "Incinerate special on the fire crossbow, and poison on normal crossbow, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2458
+#: utils/steppe_amla.cfg:2563
 msgid "Better at mentoring (3 xp per turn), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2479
+#: utils/steppe_amla.cfg:2584
 msgid "Even better at mentoring (4 xp per turn), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2595
+#: utils/steppe_amla.cfg:2700
 msgid "Generates 6 gold per turn instead of 4, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2621
+#: utils/steppe_amla.cfg:2726
 msgid "Blessing of the Abyss: gain nocturnal regeneration +8 ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2638
+#: utils/steppe_amla.cfg:2743
 msgid "Blessing of the Abyss: gain nocturnal regeneration +10 ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2655
+#: utils/steppe_amla.cfg:2760
 msgid "Blessing of the Abyss: gain nocturnal regeneration +12 ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2677
+#: utils/steppe_amla.cfg:2782
 msgid "+25% melee damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2691
+#: utils/steppe_amla.cfg:2796
 msgid "+3 firework damage (only ranged), +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2705
+#: utils/steppe_amla.cfg:2810
 msgid "Enchanted Armor: +20% to fire/cold resistances, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2722
+#: utils/steppe_amla.cfg:2827
 msgid "Dauntless ability, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2744
+#: utils/steppe_amla.cfg:2849
 msgid "Focused Fire: crossbow gains the 'reliable' special, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2761
+#: utils/steppe_amla.cfg:2866
 msgid "Rapid Fire: +1 ranged strikes, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2775
+#: utils/steppe_amla.cfg:2880
 msgid "Able to hide in hills and mountains, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2799
+#: utils/steppe_amla.cfg:2904
 msgid "+8 handcannon damage, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2813
+#: utils/steppe_amla.cfg:2918
 msgid "Bigger Blast: Explosive shot deals 50% damage to adjacent enemies instead of 30%, +20% XP"
 msgstr ""
 
-#: utils/steppe_amla.cfg:2832
+#: utils/steppe_amla.cfg:2937
 msgid "Bigger Blast: Explosive shot deals 75% damage to adjacent enemies instead of 50%, +20% XP"
 msgstr ""
 
