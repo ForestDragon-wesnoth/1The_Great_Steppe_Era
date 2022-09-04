@@ -882,12 +882,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "father of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
+msgid "father of fiends"
 msgstr ""
 
 #. [attack]: type=blade
@@ -912,17 +912,17 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
+msgid "knyaz of fiends"
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "knyaz of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
 msgstr ""
 
 #. [attack]: type=blade
 #. [attack]: type=pierce
-#: units/hunns/Hunn_Demons.cfg:124 units/hunns/Hunn_Demons.cfg:134 units/hunns/Hunn_Riders.cfg:30 units/hunns/Hunn_Riders.cfg:120 units/hunns/Hunn_Riders.cfg:244 units/khaganate/Khaganate_Nuckelavee.cfg:30 units/khaganate/Khaganate_Nuckelavee.cfg:112 units/khaganate/Khaganate_Nuckelavee.cfg:122 units/khaganate/Slave_Spearmen.cfg:41 units/khaganate/Slave_Spearmen.cfg:111 units/kingdom/Kingdom_Serfs.cfg:26 units/kingdom/Kingdom_Serfs.cfg:36 units/mandate/Mandate_Kobold.cfg:500 units/ogres/Ogre_Chariots.cfg:60 units/ogres/Ogre_Chariots.cfg:182 units/slavs/Slav_Horsemen.cfg:39 units/slavs/Slav_Horsemen.cfg:108 units/slavs/Slav_Horsemen.cfg:251 units/slavs/Slav_Horsemen.cfg:390 units/slavs/Slav_Horsemen.cfg:490 units/slavs/Slav_Militia.cfg:41 units/slavs/Slav_Militia.cfg:107 units/slavs/Slav_Militia.cfg:238
+#: units/hunns/Hunn_Demons.cfg:124 units/hunns/Hunn_Demons.cfg:134 units/hunns/Hunn_Riders.cfg:30 units/hunns/Hunn_Riders.cfg:120 units/hunns/Hunn_Riders.cfg:244 units/khaganate/Khaganate_Nuckelavee.cfg:30 units/khaganate/Khaganate_Nuckelavee.cfg:112 units/khaganate/Khaganate_Nuckelavee.cfg:122 units/khaganate/Slave_Spearmen.cfg:41 units/khaganate/Slave_Spearmen.cfg:111 units/khaganate/Slave_Spearmen.cfg:332 units/kingdom/Kingdom_Serfs.cfg:26 units/kingdom/Kingdom_Serfs.cfg:36 units/mandate/Mandate_Kobold.cfg:500 units/ogres/Ogre_Chariots.cfg:60 units/ogres/Ogre_Chariots.cfg:182 units/slavs/Slav_Horsemen.cfg:39 units/slavs/Slav_Horsemen.cfg:108 units/slavs/Slav_Horsemen.cfg:251 units/slavs/Slav_Horsemen.cfg:390 units/slavs/Slav_Horsemen.cfg:490 units/slavs/Slav_Militia.cfg:41 units/slavs/Slav_Militia.cfg:107 units/slavs/Slav_Militia.cfg:238
 msgid "spear"
 msgstr ""
 
@@ -1041,7 +1041,7 @@ msgid "axe"
 msgstr ""
 
 #. [attack]: type=pierce
-#: units/hunns/Hunn_Kanavars.cfg:37 units/hunns/Hunn_Kanavars.cfg:120 units/hunns/Hunn_Kanavars.cfg:220 units/khaganate/Slave_Archers.cfg:51 units/khaganate/Slave_Archers.cfg:142 units/khaganate/Slave_Archers.cfg:240 units/slavs/Building_Walls.cfg:210 units/slavs/Building_Walls.cfg:311 units/slavs/Building_Walls.cfg:412 units/slavs/Slav_Archers.cfg:49 units/slavs/Slav_Archers.cfg:146 units/slavs/Slav_Archers.cfg:249 units/slavs/Slav_Archers.cfg:366 units/slavs/Slav_Archers.cfg:469 units/slavs/Slav_Horsemen.cfg:142 units/slavs/Slav_Horsemen.cfg:285
+#: units/hunns/Hunn_Kanavars.cfg:37 units/hunns/Hunn_Kanavars.cfg:120 units/hunns/Hunn_Kanavars.cfg:220 units/khaganate/Slave_Archers.cfg:51 units/khaganate/Slave_Archers.cfg:142 units/khaganate/Slave_Archers.cfg:239 units/khaganate/Slave_Spearmen.cfg:344 units/slavs/Building_Walls.cfg:210 units/slavs/Building_Walls.cfg:311 units/slavs/Building_Walls.cfg:412 units/slavs/Slav_Archers.cfg:49 units/slavs/Slav_Archers.cfg:146 units/slavs/Slav_Archers.cfg:249 units/slavs/Slav_Archers.cfg:366 units/slavs/Slav_Archers.cfg:469 units/slavs/Slav_Horsemen.cfg:142 units/slavs/Slav_Horsemen.cfg:285
 msgid "bow"
 msgstr ""
 
@@ -1531,7 +1531,7 @@ msgid "whip"
 msgstr ""
 
 #. [attack]: type=blade
-#: units/khaganate/Khaganate_Nagas.cfg:272 units/khaganate/Slave_Archers.cfg:231
+#: units/khaganate/Khaganate_Nagas.cfg:272 units/khaganate/Slave_Archers.cfg:230
 msgid "scimitar"
 msgstr ""
 
@@ -1808,7 +1808,7 @@ msgid "dagger"
 msgstr ""
 
 #. [variation]
-#: units/khaganate/Slave_Archers.cfg:94 units/khaganate/Slave_Archers.cfg:186 units/khaganate/Slave_Archers.cfg:286 units/khaganate/Slave_Spearmen.cfg:68 units/khaganate/Slave_Spearmen.cfg:168 units/khaganate/Slave_Spearmen.cfg:286
+#: units/khaganate/Slave_Archers.cfg:94 units/khaganate/Slave_Archers.cfg:185 units/khaganate/Slave_Archers.cfg:285 units/khaganate/Slave_Spearmen.cfg:68 units/khaganate/Slave_Spearmen.cfg:168 units/khaganate/Slave_Spearmen.cfg:286
 msgid "freed"
 msgstr ""
 
@@ -1828,22 +1828,22 @@ msgid "slave archer^WIP: NOT YET TRANSLATED"
 msgstr ""
 
 #. [variation]
-#: units/khaganate/Slave_Archers.cfg:187
+#: units/khaganate/Slave_Archers.cfg:186
 msgid "Rebel Archer"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Marksman, race=steppe_southerner
-#: units/khaganate/Slave_Archers.cfg:195
+#: units/khaganate/Slave_Archers.cfg:194
 msgid "Khaganate Marksman"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Marksman, race=steppe_southerner
-#: units/khaganate/Slave_Archers.cfg:222
+#: units/khaganate/Slave_Archers.cfg:221
 msgid "slave marksman^WIP: NOT YET TRANSLATED"
 msgstr ""
 
 #. [variation]
-#: units/khaganate/Slave_Archers.cfg:287
+#: units/khaganate/Slave_Archers.cfg:286
 msgid "Desert Marksman"
 msgstr ""
 
@@ -1895,6 +1895,16 @@ msgstr ""
 #. [variation]
 #: units/khaganate/Slave_Spearmen.cfg:287
 msgid "Desert Sentinel"
+msgstr ""
+
+#. [unit_type]: id=Khaganate_Slave_Rouser, race=steppe_southerner
+#: units/khaganate/Slave_Spearmen.cfg:299
+msgid "WIP Slave Rouser"
+msgstr ""
+
+#. [unit_type]: id=Khaganate_Slave_Rouser, race=steppe_southerner
+#: units/khaganate/Slave_Spearmen.cfg:321
+msgid "Не все рабы готовы сражаться в первых рядах за лучшее место в Каганате. Некоторые пресмыкаются перед нагами и змееглавами: они превозносят покорность, служение Великому Кагану и Империи, шпионят за другими рабами.  Взамен им дают  более лёгкую работу и более безопасную роль в бою - держать знамя и трубить команды надзирателя в рог. Впрочем, подлая мораль прислужников работает в обе стороны: они не упустят возможности дезертировать, если хозяев не будет рядом, и именно поэтому им никогда не сравниться в своих выгодах с по-настоящему лояльными гвардейцами Кагана. "
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Giant_Beaver, race=monster
@@ -3401,7 +3411,7 @@ msgstr ""
 
 #. [unit_type]: id=Slav_Apprentice, race=steppe_northerner
 #: units/slavs/Slav-Builders.cfg:22
-msgid "По всему Северу стоят загадочные мастерские, где умудрённые чародеи из поколения в поколение передают тайну заговора предметов; это волшебство, направленное на созидание, стало той силой, с помощью которой раз за разом вставали из пепла разорённые города. Подмастерья — это ученики мастеров. Они помогают мастерам в работе и изучают волшебную науку. Их заговорённые инструменты не так искусны, как инструменты мастеров, однако даже они могут выполнять несложные задания и возводить разные деревянные конструкции, а также улучшать рукотворные постройки. Заговор, в свою очередь, может быть направлен не только на созидание, но и на разрушение; если нужно постоять за себя, подмастерья могут заговорить солнечный свет и метнуть в противника обжигающий сгусток."
+msgid "There are a lot of mysterious workshops in the Northern lands where wise enchanters pass from generation to generation the mystery of enchanting items. This magic aimed at creation became the force which over and over helped devastated towns to rise from the ashes. These are apprentices of architects. They assist master architects and study the craft of enchantment. Their enchanted tools are not so sophisticated as those of masters, but they still can do simple tasks and build various wooden constructions, as well as to improve buildings. Enchantment can be aimed not only at creating but also at destruction: when they need to stand up for themselves, apprentices can enchant sunlight and hurl a burning blob into the enemy."
 msgstr ""
 
 #. [attack]: type=fire
@@ -3521,16 +3531,16 @@ msgid "В северных землях искусство стрельбы из
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
 msgstr ""
 
 #. [abilities]
@@ -3585,16 +3595,16 @@ msgid "Лесники – это наиболее опытные и сведущ
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
+msgid "build traps"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Archers.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Spike Trap - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
-msgid "build traps"
 msgstr ""
 
 #. [abilities]
@@ -3631,16 +3641,16 @@ msgid "Дозорные — это самые простые и многочис
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:242 units/slavs/Slav_Horsemen.cfg:381 units/slavs/Slav_Horsemen.cfg:481
-msgid "build towers"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:381
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Watchtower - 2 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:242 units/slavs/Slav_Horsemen.cfg:381 units/slavs/Slav_Horsemen.cfg:481
+msgid "build towers"
 msgstr ""
 
 #. [abilities]
@@ -3702,16 +3712,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3759,7 +3769,12 @@ msgstr ""
 
 #. [unit_type]: id=Slav_Skylark, race=mechanical
 #: units/slavs/Slav_Skylarks.cfg:31
-msgid "В Крадской земле почитают волшебную Жар-Птицу; именно от этого богоподобного существа научились мастера заговаривать свет. Соединив искусство работы по дереву и солнечное колдовство, северяне научились создавать Жаворонков — волшебных деревянных птиц, которые оживают за счёт частички света Жар-Птицы, и несут её в своём резном тельце. Частичка эта может вспыхивать, озаряя всё вокруг светом, благодатным для северян и губительным для врагов. Свет Жар-Птицы является незаменимой поддержкой в бою, а потому стаи жаворонков очень часто сопровождают княжеские рати."
+msgid "People of the Krad worship the magical Firebird; it's this godlike creature that taught Northern masters to enchant light. Combining the craft of woodwork and sun magic, Northerners learnt to create Skylarks - magical wooden birds that come alive from a speck of the Firebird's light and carry it in their carved little body. This speck can flare up illuminating everything around with light that helps Northerners and burns their enemies. The light of the Firebird is an indispensable support in combat, and so packs of Skylarks often accompany Knyazes' hosts."
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -3768,11 +3783,6 @@ msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -4031,7 +4041,7 @@ msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
-msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
+msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
@@ -4041,7 +4051,7 @@ msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
-msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
+msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
 msgstr ""
 
 #. [floating_text]
@@ -4491,12 +4501,12 @@ msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "% (can't reduce resistances below 0%)."
+msgid "While attacking with this weapon, the opponent's resistances are reduced by "
 msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "While attacking with this weapon, the opponent's resistances are reduced by "
+msgid "% (can't reduce resistances below 0%)."
 msgstr ""
 
 #. [dummy]: id=steppe_knockback
@@ -4745,12 +4755,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_pride
 #: utils/abilities_kingdom.cfg:2250
-msgid "%. This has no effect on non-living units or other units with pride."
+msgid "This unit's pride is so intense that it makes adjacent adjacent ally units' damage reduced by "
 msgstr ""
 
 #. [leadership]: id=steppe_pride
 #: utils/abilities_kingdom.cfg:2250
-msgid "This unit's pride is so intense that it makes adjacent adjacent ally units' damage reduced by "
+msgid "%. This has no effect on non-living units or other units with pride."
 msgstr ""
 
 #. [dummy]: id=steppe_soul_flame
@@ -4885,12 +4895,12 @@ msgstr ""
 
 #. [steppe_explosion]: id=steppe_explosion
 #: utils/abilities_mandate.cfg:188
-msgid " (rounded down) of this attack's damage."
+msgid "When this attack hits, units adjacent to the target unit are damaged by"
 msgstr ""
 
 #. [steppe_explosion]: id=steppe_explosion
 #: utils/abilities_mandate.cfg:188
-msgid "When this attack hits, units adjacent to the target unit are damaged by"
+msgid " (rounded down) of this attack's damage."
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
@@ -5035,12 +5045,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid " HP per turn, or stops poison from taking effect for that turn."
+msgid "This unit heals adjacent units by "
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid "This unit heals adjacent units by "
+msgid " HP per turn, or stops poison from taking effect for that turn."
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5172,12 +5182,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_antisocial
 #: utils/abilities_misc.cfg:1407
-msgid "This unit is quite disliked by others, and will reduce adjacent ally units' damage by "
+msgid "%. This has no effect on non-living units, or other antisocial units."
 msgstr ""
 
 #. [leadership]: id=steppe_antisocial
 #: utils/abilities_misc.cfg:1407
-msgid "%. This has no effect on non-living units, or other antisocial units."
+msgid "This unit is quite disliked by others, and will reduce adjacent ally units' damage by "
 msgstr ""
 
 #. [hitandrun]: id=steppe_hitandrun
@@ -5237,12 +5247,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid "This unit costs "
+msgid " upkeep instead of the amount equal to level."
 msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid " upkeep instead of the amount equal to level."
+msgid "This unit costs "
 msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
@@ -5347,12 +5357,12 @@ msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "% instead of 50%."
+msgid "Like drain, but heals by "
 msgstr ""
 
 #. [drains]: id=steppe_custom_drain{PERCENTAGE}
 #: utils/abilities_misc.cfg:2076
-msgid "Like drain, but heals by "
+msgid "% instead of 50%."
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
@@ -5392,12 +5402,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2182
-msgid "% less damage."
+msgid "This unit deals"
 msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2182
-msgid "This unit deals"
+msgid "% less damage."
 msgstr ""
 
 #. [weaken]: id=steppe_weaken
@@ -5405,15 +5415,15 @@ msgstr ""
 msgid "weaken"
 msgstr ""
 
-#. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2201
-msgid "On hit, this attack reduces the enemy's damage by "
-msgstr ""
-
 #. [armorbreak]: id=steppe_armorbreak
 #. [weaken]: id=steppe_weaken
 #: utils/abilities_misc.cfg:2201 utils/abilities_misc.cfg:2517
 msgid "% for one turn. Applying a stronger version of this effect replaces the weaker one."
+msgstr ""
+
+#. [weaken]: id=steppe_weaken
+#: utils/abilities_misc.cfg:2201
+msgid "On hit, this attack reduces the enemy's damage by "
 msgstr ""
 
 #. [floating_text]
@@ -5911,12 +5921,12 @@ msgstr ""
 
 #. [idol]: id=steppe_idol
 #: utils/abilities_slav.cfg:1223
-msgid "damage for 3 turns, and gives the idol experience. Replaces weaker version of this effect."
+msgid "Each turn, this unit gives a random adjacent ally"
 msgstr ""
 
 #. [idol]: id=steppe_idol
 #: utils/abilities_slav.cfg:1223
-msgid "Each turn, this unit gives a random adjacent ally"
+msgid "damage for 3 turns, and gives the idol experience. Replaces weaker version of this effect."
 msgstr ""
 
 #. [floating_text]
@@ -5976,12 +5986,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid "This unit heals adjacent mechanical units by "
+msgid " HP per turn"
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid " HP per turn"
+msgid "This unit heals adjacent mechanical units by "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_demolish
@@ -6030,17 +6040,17 @@ msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:488
-msgid "</span> gold and <span color='#2c9fed'>"
-msgstr ""
-
-#. [set_menu_item]: id=build_{ID}
-#: utils/abilities_slav_building.cfg:488
 msgid "</span> moves"
 msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:488
 msgid " - price: <span color='#cccc33'>"
+msgstr ""
+
+#. [set_menu_item]: id=build_{ID}
+#: utils/abilities_slav_building.cfg:488
+msgid "</span> gold and <span color='#2c9fed'>"
 msgstr ""
 
 #. [message]: speaker=$able_to_build.id
@@ -6095,14 +6105,14 @@ msgid "building damage boost"
 msgstr ""
 
 #. [building_boost_damage]: id=steppe_building_damage_boost
-#. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
-#: utils/abilities_slav_building.cfg:1289 utils/abilities_slav_building.cfg:1298
-msgid "Buildings build by this unit have "
+#: utils/abilities_slav_building.cfg:1289
+msgid "% more damage"
 msgstr ""
 
 #. [building_boost_damage]: id=steppe_building_damage_boost
-#: utils/abilities_slav_building.cfg:1289
-msgid "% more damage"
+#. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
+#: utils/abilities_slav_building.cfg:1289 utils/abilities_slav_building.cfg:1298
+msgid "Buildings build by this unit have "
 msgstr ""
 
 #. [building_boost_hitpoint]: id=steppe_building_hitpoint_boost
@@ -6142,12 +6152,12 @@ msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
+msgid ", and only works on buildings who can advance."
 msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid ", and only works on buildings who can advance."
+msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_upgrade_buildings
@@ -6194,11 +6204,11 @@ msgid " Attacker {NUMBER2}"
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
+msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
+msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
 msgstr ""
 
 #. [set_menu_item]: id=steppe_ranged_attack
