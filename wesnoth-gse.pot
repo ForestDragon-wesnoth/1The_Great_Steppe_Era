@@ -633,9 +633,8 @@ msgstr ""
 #. [race]: id=steppe_southerner
 #. [race]: id=steppe_terracotta
 #. [unit_type]: id=Hunn_Primal_God, race=undead
-#. [unit_type]: id=Khaganate_Serpenthead_Immortal, race=undead
 #. [unit_type]: id=Khaganate_Serpenthead_Scholar, race=serpenthead
-#: races.cfg:239 races.cfg:250 races.cfg:260 races.cfg:369 units/hunns/Hunn_Primal_Spawn.cfg:373 units/khaganate/Khaganate_Serpentheads.cfg:477 units/khaganate/Khaganate_Serpentheads.cfg:635 utils/abilities_mandate.cfg:584
+#: races.cfg:239 races.cfg:250 races.cfg:260 races.cfg:369 units/hunns/Hunn_Primal_Spawn.cfg:373 units/khaganate/Khaganate_Serpentheads.cfg:635 utils/abilities_mandate.cfg:584
 msgid "TODO"
 msgstr ""
 
@@ -882,12 +881,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
+msgid "father of fiends"
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "father of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
 msgstr ""
 
 #. [attack]: type=blade
@@ -922,7 +921,7 @@ msgstr ""
 
 #. [attack]: type=blade
 #. [attack]: type=pierce
-#: units/hunns/Hunn_Demons.cfg:124 units/hunns/Hunn_Demons.cfg:134 units/hunns/Hunn_Riders.cfg:30 units/hunns/Hunn_Riders.cfg:120 units/hunns/Hunn_Riders.cfg:244 units/khaganate/Khaganate_Nuckelavee.cfg:30 units/khaganate/Khaganate_Nuckelavee.cfg:112 units/khaganate/Khaganate_Nuckelavee.cfg:122 units/khaganate/Slave_Spearmen.cfg:41 units/khaganate/Slave_Spearmen.cfg:111 units/khaganate/Slave_Spearmen.cfg:332 units/kingdom/Kingdom_Serfs.cfg:26 units/kingdom/Kingdom_Serfs.cfg:36 units/mandate/Mandate_Kobold.cfg:500 units/ogres/Ogre_Chariots.cfg:60 units/ogres/Ogre_Chariots.cfg:182 units/slavs/Slav_Horsemen.cfg:39 units/slavs/Slav_Horsemen.cfg:108 units/slavs/Slav_Horsemen.cfg:251 units/slavs/Slav_Horsemen.cfg:390 units/slavs/Slav_Horsemen.cfg:490 units/slavs/Slav_Militia.cfg:41 units/slavs/Slav_Militia.cfg:107 units/slavs/Slav_Militia.cfg:238
+#: units/hunns/Hunn_Demons.cfg:124 units/hunns/Hunn_Demons.cfg:134 units/hunns/Hunn_Riders.cfg:30 units/hunns/Hunn_Riders.cfg:120 units/hunns/Hunn_Riders.cfg:244 units/khaganate/Khaganate_Nuckelavee.cfg:30 units/khaganate/Khaganate_Nuckelavee.cfg:112 units/khaganate/Khaganate_Nuckelavee.cfg:122 units/khaganate/Slave_Spearmen.cfg:41 units/khaganate/Slave_Spearmen.cfg:111 units/khaganate/Slave_Spearmen.cfg:331 units/kingdom/Kingdom_Serfs.cfg:26 units/kingdom/Kingdom_Serfs.cfg:36 units/mandate/Mandate_Kobold.cfg:500 units/ogres/Ogre_Chariots.cfg:60 units/ogres/Ogre_Chariots.cfg:182 units/slavs/Slav_Horsemen.cfg:39 units/slavs/Slav_Horsemen.cfg:108 units/slavs/Slav_Horsemen.cfg:251 units/slavs/Slav_Horsemen.cfg:390 units/slavs/Slav_Horsemen.cfg:490 units/slavs/Slav_Militia.cfg:41 units/slavs/Slav_Militia.cfg:107 units/slavs/Slav_Militia.cfg:238
 msgid "spear"
 msgstr ""
 
@@ -938,12 +937,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
-msgid "boiling blood"
+msgid "While is unit is in a 3-tile radius from them, his side's witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:269
-msgid "While is unit is in a 3-tile radius from them, his side's witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain the 'fearless' trait."
+msgid "boiling blood"
 msgstr ""
 
 #. [attack]: type=blade
@@ -1041,7 +1040,7 @@ msgid "axe"
 msgstr ""
 
 #. [attack]: type=pierce
-#: units/hunns/Hunn_Kanavars.cfg:37 units/hunns/Hunn_Kanavars.cfg:120 units/hunns/Hunn_Kanavars.cfg:220 units/khaganate/Slave_Archers.cfg:51 units/khaganate/Slave_Archers.cfg:142 units/khaganate/Slave_Archers.cfg:239 units/khaganate/Slave_Spearmen.cfg:344 units/slavs/Building_Walls.cfg:210 units/slavs/Building_Walls.cfg:311 units/slavs/Building_Walls.cfg:412 units/slavs/Slav_Archers.cfg:49 units/slavs/Slav_Archers.cfg:146 units/slavs/Slav_Archers.cfg:249 units/slavs/Slav_Archers.cfg:366 units/slavs/Slav_Archers.cfg:469 units/slavs/Slav_Horsemen.cfg:142 units/slavs/Slav_Horsemen.cfg:285
+#: units/hunns/Hunn_Kanavars.cfg:37 units/hunns/Hunn_Kanavars.cfg:120 units/hunns/Hunn_Kanavars.cfg:220 units/khaganate/Slave_Archers.cfg:51 units/khaganate/Slave_Archers.cfg:142 units/khaganate/Slave_Archers.cfg:239 units/khaganate/Slave_Spearmen.cfg:343 units/slavs/Building_Walls.cfg:210 units/slavs/Building_Walls.cfg:311 units/slavs/Building_Walls.cfg:412 units/slavs/Slav_Archers.cfg:49 units/slavs/Slav_Archers.cfg:146 units/slavs/Slav_Archers.cfg:249 units/slavs/Slav_Archers.cfg:366 units/slavs/Slav_Archers.cfg:469 units/slavs/Slav_Horsemen.cfg:142 units/slavs/Slav_Horsemen.cfg:285
 msgid "bow"
 msgstr ""
 
@@ -1711,6 +1710,11 @@ msgstr ""
 msgid "Serpent Immortal"
 msgstr ""
 
+#. [unit_type]: id=Khaganate_Serpenthead_Immortal, race=undead
+#: units/khaganate/Khaganate_Serpentheads.cfg:477
+msgid "The will spirit of a serpenthead is truly powerful – it is the very thing that allows the rulers of the Khaganate to bend the will of others to obey them. Even in death a serpenthead can be a powerful tool of the Great Khagan - the Serpentheads embalm their deceased brethren, using both physical and magical means. Through a series of complex procedures, the body of the mummy literally freezes in time, impervious to decay and parasites hungry for dead flesh, then is reanimated with same dark magic that spawned the Nuckelavee. Deceivers of death - Immortals - are warriors merciless and brutal in battle, that shower enemies with sabers held by their cold, tireless grip."
+msgstr ""
+
 #. [attack]: type=blade
 #: units/khaganate/Khaganate_Serpentheads.cfg:485
 msgid "sabers"
@@ -1728,7 +1732,7 @@ msgstr ""
 
 #. [attack]: type=arcane
 #. [mind_drain]: id=steppe_mind_drain
-#: units/khaganate/Khaganate_Serpentheads.cfg:670 utils/abilities_khaganate.cfg:2685
+#: units/khaganate/Khaganate_Serpentheads.cfg:670 utils/abilities_khaganate.cfg:2689
 msgid "mind drain"
 msgstr ""
 
@@ -1808,7 +1812,7 @@ msgid "dagger"
 msgstr ""
 
 #. [variation]
-#: units/khaganate/Slave_Archers.cfg:94 units/khaganate/Slave_Archers.cfg:185 units/khaganate/Slave_Archers.cfg:285 units/khaganate/Slave_Spearmen.cfg:68 units/khaganate/Slave_Spearmen.cfg:168 units/khaganate/Slave_Spearmen.cfg:286
+#: units/khaganate/Slave_Archers.cfg:94 units/khaganate/Slave_Archers.cfg:185 units/khaganate/Slave_Archers.cfg:285 units/khaganate/Slave_Spearmen.cfg:68 units/khaganate/Slave_Spearmen.cfg:168 units/khaganate/Slave_Spearmen.cfg:285 units/khaganate/Slave_Spearmen.cfg:387
 msgid "freed"
 msgstr ""
 
@@ -1893,18 +1897,23 @@ msgid "pike"
 msgstr ""
 
 #. [variation]
-#: units/khaganate/Slave_Spearmen.cfg:287
+#: units/khaganate/Slave_Spearmen.cfg:286
 msgid "Desert Sentinel"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Slave_Rouser, race=steppe_southerner
-#: units/khaganate/Slave_Spearmen.cfg:299
-msgid "WIP Slave Rouser"
+#: units/khaganate/Slave_Spearmen.cfg:298
+msgid "Slave Rouser"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Slave_Rouser, race=steppe_southerner
-#: units/khaganate/Slave_Spearmen.cfg:321
+#: units/khaganate/Slave_Spearmen.cfg:320
 msgid "Не все рабы готовы сражаться в первых рядах за лучшее место в Каганате. Некоторые пресмыкаются перед нагами и змееглавами: они превозносят покорность, служение Великому Кагану и Империи, шпионят за другими рабами.  Взамен им дают  более лёгкую работу и более безопасную роль в бою - держать знамя и трубить команды надзирателя в рог. Впрочем, подлая мораль прислужников работает в обе стороны: они не упустят возможности дезертировать, если хозяев не будет рядом, и именно поэтому им никогда не сравниться в своих выгодах с по-настоящему лояльными гвардейцами Кагана. "
+msgstr ""
+
+#. [variation]
+#: units/khaganate/Slave_Spearmen.cfg:388
+msgid "Rebel Bannerbearer"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Giant_Beaver, race=monster
@@ -3595,16 +3604,16 @@ msgid "Лесники – это наиболее опытные и сведущ
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
-msgid "build traps"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:346
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Spike Trap - 3 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:346 units/slavs/Slav_Archers.cfg:449
+msgid "build traps"
 msgstr ""
 
 #. [abilities]
@@ -3641,16 +3650,16 @@ msgid "Дозорные — это самые простые и многочис
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:242 units/slavs/Slav_Horsemen.cfg:381 units/slavs/Slav_Horsemen.cfg:481
+msgid "build towers"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:381
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Watchtower - 2 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Horsemen.cfg:31 units/slavs/Slav_Horsemen.cfg:99 units/slavs/Slav_Horsemen.cfg:242 units/slavs/Slav_Horsemen.cfg:381 units/slavs/Slav_Horsemen.cfg:481
-msgid "build towers"
 msgstr ""
 
 #. [abilities]
@@ -3712,16 +3721,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3910,12 +3919,12 @@ msgid "Adjacent units (both allies and enemies) resistances are inverted (20% be
 msgstr ""
 
 #. [damage]: id=square_root
-#: utils/abilities_experimental.cfg:142 utils/abilities_khaganate.cfg:2815
+#: utils/abilities_experimental.cfg:142 utils/abilities_khaganate.cfg:2819
 msgid "square root"
 msgstr ""
 
 #. [damage]: id=square_root
-#: utils/abilities_experimental.cfg:143 utils/abilities_khaganate.cfg:2816
+#: utils/abilities_experimental.cfg:143 utils/abilities_khaganate.cfg:2820
 msgid "This attack deals bonus damage equal to the square root of the enemy's max hitpoints."
 msgstr ""
 
@@ -4016,12 +4025,12 @@ msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
+msgid " times in one turn."
 msgstr ""
 
 #. [dummy]: id=steppe_carousel
 #: utils/abilities_hunn.cfg:630
-msgid " times in one turn."
+msgid "After using this attack, this unit regains 25% of their moves, and can attack again (but only with the same attack). This attack cannot attack the same unit twice in one turn. This ability can be used up to "
 msgstr ""
 
 #. [set_menu_item]: id=steppe_curseofdecay_calculator
@@ -4041,17 +4050,17 @@ msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
-msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
-msgstr ""
-
-#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
-#: utils/abilities_hunn.cfg:1278
 msgid "gold instead of the default 21 on first recall, but having 4 upkeep instead 1 until the unit advances), the unit gets experience equal to number of turns it takes to give birth multiplied by her level, and the timer is reset."
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
 msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
+msgstr ""
+
+#. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
+#: utils/abilities_hunn.cfg:1278
+msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
 msgstr ""
 
 #. [floating_text]
@@ -4069,15 +4078,15 @@ msgstr ""
 msgid "decay -"
 msgstr ""
 
-#. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1558
-msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
-msgstr ""
-
 #. [dummy]: id=depleting{NUMBER}
 #. [dummy]: id=steppe_depleting_hunn
 #: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
 msgid "This unit loses "
+msgstr ""
+
+#. [dummy]: id=steppe_depleting_hunn
+#: utils/abilities_hunn.cfg:1558
+msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
 msgstr ""
 
 #. [floating_text]
@@ -4399,98 +4408,98 @@ msgid ""
 msgstr ""
 
 #. [leadership]: id=steppe_punisher
-#: utils/abilities_khaganate.cfg:2138
+#: utils/abilities_khaganate.cfg:2142
 msgid "punisher"
 msgstr ""
 
 #. [leadership]: id=steppe_punisher
-#: utils/abilities_khaganate.cfg:2139
+#: utils/abilities_khaganate.cfg:2143
 msgid "Adjacent enemy slaves (or freed slaves) deal 25% less damage, and adjacent enemy disloyal units deal 15% less damage."
 msgstr ""
 
 #. [dummy]: id=steppe_nightform
-#: utils/abilities_khaganate.cfg:2170
+#: utils/abilities_khaganate.cfg:2174
 msgid "night form"
 msgstr ""
 
 #. [dummy]: id=steppe_nightform
-#: utils/abilities_khaganate.cfg:2171
+#: utils/abilities_khaganate.cfg:2175
 msgid "This unit turns into their night form variation at dusk/night, and transforms back at dawn/day."
 msgstr ""
 
 #. [disable]: id=steppe_bloodmagic
-#: utils/abilities_khaganate.cfg:2271
+#: utils/abilities_khaganate.cfg:2275
 msgid "blood magic"
 msgstr ""
 
 #. [disable]: id=steppe_bloodmagic
-#: utils/abilities_khaganate.cfg:2272
+#: utils/abilities_khaganate.cfg:2276
 msgid "This attack can't be used on non-living units."
 msgstr ""
 
 #. [damage]: id=steppe_finishoff
-#: utils/abilities_khaganate.cfg:2290
+#: utils/abilities_khaganate.cfg:2294
 msgid "finish off"
 msgstr ""
 
 #. [damage]: id=steppe_finishoff
-#: utils/abilities_khaganate.cfg:2291
+#: utils/abilities_khaganate.cfg:2295
 msgid "This attack deals more damage the less HP the opponent has: 25% more if below 70% HP, 50% more if below 50% HP, and 100% more if the opponent is below 30% HP. Additionally, the attack has +10% chance to hit if the opponent is below 30% HP, +20% if below 20% HP, and +30% if below 10% HP."
 msgstr ""
 
 #. [attacks]: id=steppe_paralyzed
 #. [set_variable]
-#: utils/abilities_khaganate.cfg:2372 utils/abilities_khaganate.cfg:2446 utils/abilities_khaganate.cfg:2537
+#: utils/abilities_khaganate.cfg:2376 utils/abilities_khaganate.cfg:2450 utils/abilities_khaganate.cfg:2541
 msgid "paralyzed"
 msgstr ""
 
 #. [attacks]: id=steppe_paralyzed
-#: utils/abilities_khaganate.cfg:2373
+#: utils/abilities_khaganate.cfg:2377
 msgid "This attack's strikes are reduced to 1."
 msgstr ""
 
 #. [dummy]: id=steppe_paralyze
-#: utils/abilities_khaganate.cfg:2389
+#: utils/abilities_khaganate.cfg:2393
 msgid "paralyze"
 msgstr ""
 
 #. [dummy]: id=steppe_paralyze
-#: utils/abilities_khaganate.cfg:2390
+#: utils/abilities_khaganate.cfg:2394
 msgid "This attack sets the opponent's number of strikes on all attacks to 1, and defense on all terain by 10%, until the enemy's next turn. Does not work on non-living units."
 msgstr ""
 
 #. [set_variable]
-#: utils/abilities_khaganate.cfg:2439 utils/abilities_khaganate.cfg:2530
+#: utils/abilities_khaganate.cfg:2443 utils/abilities_khaganate.cfg:2534
 msgid "female^paralyzed"
 msgstr ""
 
 #. [leadership]: id=steppe_khagans_presense
-#: utils/abilities_khaganate.cfg:2639
+#: utils/abilities_khaganate.cfg:2643
 msgid "khagan's presence"
 msgstr ""
 
 #. [leadership]: id=steppe_khagans_presense
-#: utils/abilities_khaganate.cfg:2640
+#: utils/abilities_khaganate.cfg:2644
 msgid "Adjacent ally khaganate units (except other units with this ability) deal 15% more damage and adjacent slaves/disloyals deal 33% more damage. Slaves in a 2-tile radius cannot be freed regardless of level difference. Also, ally disloyal units in a 2-tile radius no longer have a chance to betray you when defeated. Whenever an adjacent slave kills an enemy, this unit gains exp equal to 33% of the exp from the kill (rounded up. If there are multiple overseers, the overseer who gets the exp is chosen randomly). Doesn't work if the unit is captured."
 msgstr ""
 
 #. [mind_drain]: id=steppe_mind_drain
-#: utils/abilities_khaganate.cfg:2686
-msgid " experience from the enemy."
-msgstr ""
-
-#. [mind_drain]: id=steppe_mind_drain
-#: utils/abilities_khaganate.cfg:2686
+#: utils/abilities_khaganate.cfg:2690
 msgid "On hit, this attack steals up to "
 msgstr ""
 
+#. [mind_drain]: id=steppe_mind_drain
+#: utils/abilities_khaganate.cfg:2690
+msgid " experience from the enemy."
+msgstr ""
+
 #. [floating_text]
-#: utils/abilities_khaganate.cfg:2739 utils/abilities_khaganate.cfg:2789
+#: utils/abilities_khaganate.cfg:2743 utils/abilities_khaganate.cfg:2793
 msgid "+$tmp_expsteal| xp"
 msgstr ""
 
 #. [floating_text]
-#: utils/abilities_khaganate.cfg:2744 utils/abilities_khaganate.cfg:2794
+#: utils/abilities_khaganate.cfg:2748 utils/abilities_khaganate.cfg:2798
 msgid "-$tmp_expsteal| xp"
 msgstr ""
 
@@ -4895,12 +4904,12 @@ msgstr ""
 
 #. [steppe_explosion]: id=steppe_explosion
 #: utils/abilities_mandate.cfg:188
-msgid "When this attack hits, units adjacent to the target unit are damaged by"
+msgid " (rounded down) of this attack's damage."
 msgstr ""
 
 #. [steppe_explosion]: id=steppe_explosion
 #: utils/abilities_mandate.cfg:188
-msgid " (rounded down) of this attack's damage."
+msgid "When this attack hits, units adjacent to the target unit are damaged by"
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
@@ -4910,12 +4919,12 @@ msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "While this unit has full moves, this unit may teleport to any tile in a"
+msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
 msgstr ""
 
 #. [teleport]: id=steppe_shadow_dash{RADIUS}
 #: utils/abilities_mandate.cfg:493
-msgid "-tile radius from the unit's current location. Cannot teleport through impassable terrain."
+msgid "While this unit has full moves, this unit may teleport to any tile in a"
 msgstr ""
 
 #. [dummy]: id=steppe_metamorph
@@ -5045,12 +5054,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid "This unit heals adjacent units by "
+msgid " HP per turn, or stops poison from taking effect for that turn."
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_misc.cfg:914
-msgid " HP per turn, or stops poison from taking effect for that turn."
+msgid "This unit heals adjacent units by "
 msgstr ""
 
 #. [regenerate]: id=regeneratessteppe{VALUE}
@@ -5247,17 +5256,22 @@ msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid " upkeep instead of the amount equal to level."
+msgid "This unit costs "
 msgstr ""
 
 #. [dummy]: id=steppe_upkeep{VALUE}
 #: utils/abilities_misc.cfg:1530
-msgid "This unit costs "
+msgid " upkeep instead of the amount equal to level."
 msgstr ""
 
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1699
 msgid "area of effect"
+msgstr ""
+
+#. [damage]: id=steppe_area_effect_random
+#: utils/abilities_misc.cfg:1700
+msgid "When this attack is used, random enemies adjacent to the target take "
 msgstr ""
 
 #. [damage]: id=steppe_all_around_random
@@ -5270,11 +5284,6 @@ msgstr ""
 #. [damage]: id=steppe_area_effect_random
 #: utils/abilities_misc.cfg:1700 utils/abilities_misc.cfg:1848
 msgid "% chance. Does not work on defense."
-msgstr ""
-
-#. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1700
-msgid "When this attack is used, random enemies adjacent to the target take "
 msgstr ""
 
 #. [damage]: id=steppe_all_around_random
@@ -5299,12 +5308,12 @@ msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
 #: utils/abilities_misc.cfg:2006
-msgid "% more damage instead of doubling."
+msgid "Like backstab, but deals "
 msgstr ""
 
 #. [damage]: id=steppe_custom_backstab{MULT}
 #: utils/abilities_misc.cfg:2006
-msgid "Like backstab, but deals "
+msgid "% more damage instead of doubling."
 msgstr ""
 
 #. [illuminates]: id=steppe_darkens
@@ -5402,12 +5411,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2182
-msgid "This unit deals"
+msgid "% less damage."
 msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2182
-msgid "% less damage."
+msgid "This unit deals"
 msgstr ""
 
 #. [weaken]: id=steppe_weaken
@@ -5415,15 +5424,15 @@ msgstr ""
 msgid "weaken"
 msgstr ""
 
+#. [weaken]: id=steppe_weaken
+#: utils/abilities_misc.cfg:2201
+msgid "On hit, this attack reduces the enemy's damage by "
+msgstr ""
+
 #. [armorbreak]: id=steppe_armorbreak
 #. [weaken]: id=steppe_weaken
 #: utils/abilities_misc.cfg:2201 utils/abilities_misc.cfg:2517
 msgid "% for one turn. Applying a stronger version of this effect replaces the weaker one."
-msgstr ""
-
-#. [weaken]: id=steppe_weaken
-#: utils/abilities_misc.cfg:2201
-msgid "On hit, this attack reduces the enemy's damage by "
 msgstr ""
 
 #. [floating_text]
@@ -5438,12 +5447,12 @@ msgstr ""
 
 #. [resistance]: id=steppe_armorbroken
 #: utils/abilities_misc.cfg:2507
-msgid "This unit’s physical resistances are reduced by "
+msgid "%. This effect disappears after a turn."
 msgstr ""
 
 #. [resistance]: id=steppe_armorbroken
 #: utils/abilities_misc.cfg:2507
-msgid "%. This effect disappears after a turn."
+msgid "This unit’s physical resistances are reduced by "
 msgstr ""
 
 #. [armorbreak]: id=steppe_armorbreak
@@ -5548,12 +5557,12 @@ msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3222
-msgid "% for 1 turn. This stacks."
+msgid "On hit, this reduces the enemy's defense on all terrain by "
 msgstr ""
 
 #. [reduce_defense]: id=steppe_reduce_defense
 #: utils/abilities_misc.cfg:3222
-msgid "On hit, this reduces the enemy's defense on all terrain by "
+msgid "% for 1 turn. This stacks."
 msgstr ""
 
 #. [unstore_unit]
@@ -5788,12 +5797,12 @@ msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid "Each turn, this unit deals "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgid "Each turn, this unit deals "
 msgstr ""
 
 #. [hides]: id=steppe_swampstalk
@@ -5921,12 +5930,12 @@ msgstr ""
 
 #. [idol]: id=steppe_idol
 #: utils/abilities_slav.cfg:1223
-msgid "Each turn, this unit gives a random adjacent ally"
+msgid "damage for 3 turns, and gives the idol experience. Replaces weaker version of this effect."
 msgstr ""
 
 #. [idol]: id=steppe_idol
 #: utils/abilities_slav.cfg:1223
-msgid "damage for 3 turns, and gives the idol experience. Replaces weaker version of this effect."
+msgid "Each turn, this unit gives a random adjacent ally"
 msgstr ""
 
 #. [floating_text]
@@ -5986,12 +5995,12 @@ msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid " HP per turn"
+msgid "This unit heals adjacent mechanical units by "
 msgstr ""
 
 #. [heals]: id=healing
 #: utils/abilities_slav_building.cfg:10
-msgid "This unit heals adjacent mechanical units by "
+msgid " HP per turn"
 msgstr ""
 
 #. [set_menu_item]: id=steppe_demolish
@@ -6196,19 +6205,19 @@ msgid "-tile radius with this attack via a rightclick menu option. Long-ranged a
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "Name:$steppe_RAunit[{NUMBER}].name| "
-msgstr ""
-
-#: utils/longrange_attacks.cfg:129
-msgid " Attacker {NUMBER2}"
-msgstr ""
-
-#: utils/longrange_attacks.cfg:129
 msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
 msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
+msgstr ""
+
+#: utils/longrange_attacks.cfg:129
+msgid "Name:$steppe_RAunit[{NUMBER}].name| "
+msgstr ""
+
+#: utils/longrange_attacks.cfg:129
+msgid " Attacker {NUMBER2}"
 msgstr ""
 
 #. [set_menu_item]: id=steppe_ranged_attack
@@ -6483,11 +6492,11 @@ msgid "Marketplace: can build marketplaces, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1690
-msgid "Teleporter: can build teleporters, +20% XP"
+msgid "Build Teleporter"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1690
-msgid "Build Teleporter"
+msgid "Teleporter: can build teleporters, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1697
