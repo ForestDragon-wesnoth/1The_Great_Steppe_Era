@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
-"POT-Creation-Date: \n"
+"POT-Creation-Date: 2022-12-09 18:22+0400\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -24,17 +24,17 @@ msgid "The Great Steppe Era"
 msgstr ""
 
 #. [era]: id=The_Great_Steppe_Era_AoH, description=Lvl3 leaders and lvl1-2 recruits.
-#: era.cfg:30
+#: era.cfg:31
 msgid "The Great Steppe Era (Age of Heroes)"
 msgstr ""
 
 #. [era]: id=The_Great_Steppe_Era_RPG, description=Lvl1 leaders, for RPG scenarios.
-#: era.cfg:55
+#: era.cfg:56
 msgid "The Great Steppe Era (RPG)"
 msgstr ""
 
 #. [era]: id=The_Great_Steppe_Era_Default, description=Combines the great steppe with mainline factions (including Dunefolk). Not balanced, and is just for fun.
-#: era.cfg:81
+#: era.cfg:82
 msgid "GSE + Default"
 msgstr ""
 
@@ -102,6 +102,11 @@ msgstr ""
 #. [multiplayer_side]: id=slavs_rpg, type=random, description={FACTION_DESCRIPTION_SLAVS}
 #: factions/slavs-aoh.cfg:4 factions/slavs-rpg.cfg:4 factions/slavs.cfg:4
 msgid "Northern Knyaz Triumvirate"
+msgstr ""
+
+#. [multiplayer_side]: id=yoke, type=random
+#: factions/wip_yoke.cfg:4
+msgid "Dark Yoke WIP"
 msgstr ""
 
 #. [lua]: wesnoth.interface.game_display.unit_weapons
@@ -634,7 +639,7 @@ msgstr ""
 #. [race]: id=steppe_terracotta
 #. [unit_type]: id=Hunn_Primal_God, race=undead
 #. [unit_type]: id=Khaganate_Serpenthead_Scholar, race=serpenthead
-#: races.cfg:239 races.cfg:250 races.cfg:260 races.cfg:369 units/hunns/Hunn_Primal_Spawn.cfg:373 units/khaganate/Khaganate_Serpentheads.cfg:638 utils/abilities_mandate.cfg:584
+#: races.cfg:239 races.cfg:250 races.cfg:260 races.cfg:369 units/hunns/Hunn_Primal_Spawn.cfg:373 units/khaganate/Khaganate_Serpentheads.cfg:642 utils/abilities_mandate.cfg:584
 msgid "TODO"
 msgstr ""
 
@@ -881,16 +886,16 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "father of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:29
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars."
+msgid "father of fiends"
 msgstr ""
 
 #. [attack]: type=blade
-#: units/hunns/Hunn_Demons.cfg:35 units/hunns/Hunn_Riders.cfg:256 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:510 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:604 units/kingdom/Kingdom_Heirs.cfg:32 units/kingdom/Kingdom_Heirs.cfg:81 units/kingdom/Kingdom_Heirs.cfg:135 units/kingdom/Kingdom_Vassals.cfg:21 units/kingdom/Kingdom_Vassals.cfg:149 units/mandate/Mandate_Terracotta_Warriors.cfg:107 units/mandate/Mandate_Terracotta_Warriors.cfg:188 units/mandate/Mandate_Terracotta_Warriors.cfg:274 units/ogres/Ogre_Slavers.cfg:151 units/ogres/Ogre_Slavers.cfg:294 units/slavs/Slav-Temsk_Raiders.cfg:175 units/slavs/Slav-Temsk_Raiders.cfg:245 units/slavs/Slav_Archers.cfg:239 units/slavs/Slav_Horsemen.cfg:132 units/slavs/Slav_Horsemen.cfg:275
+#: units/hunns/Hunn_Demons.cfg:35 units/hunns/Hunn_Riders.cfg:256 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:510 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:604 units/kingdom/Kingdom_Heirs.cfg:32 units/kingdom/Kingdom_Heirs.cfg:81 units/kingdom/Kingdom_Heirs.cfg:135 units/kingdom/Kingdom_Vassals.cfg:21 units/kingdom/Kingdom_Vassals.cfg:149 units/mandate/Mandate_Terracotta_Warriors.cfg:108 units/mandate/Mandate_Terracotta_Warriors.cfg:190 units/mandate/Mandate_Terracotta_Warriors.cfg:277 units/ogres/Ogre_Slavers.cfg:151 units/ogres/Ogre_Slavers.cfg:294 units/slavs/Slav-Temsk_Raiders.cfg:175 units/slavs/Slav-Temsk_Raiders.cfg:245 units/slavs/Slav_Archers.cfg:239 units/slavs/Slav_Horsemen.cfg:132 units/slavs/Slav_Horsemen.cfg:275
 msgid "sword"
 msgstr ""
 
@@ -911,12 +916,12 @@ msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "knyaz of fiends"
+msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
 msgstr ""
 
 #. [abilities]
 #: units/hunns/Hunn_Demons.cfg:117
-msgid "While is unit is in a 3-tile radius from them, allied witches can give birth to kanavars. All kanavars birthed/recruited while this unit is alive permanently gain a permanent 1 damage bonus. This does not stack."
+msgid "knyaz of fiends"
 msgstr ""
 
 #. [attack]: type=blade
@@ -1198,7 +1203,7 @@ msgid "The Chernavas are the lowest-ranking witches in the Coven's hierarchy, gi
 msgstr ""
 
 #. [attack]: type=impact
-#: units/hunns/Hunn_Witches.cfg:42 units/hunns/Hunn_Witches.cfg:169 units/hunns/Hunn_Witches.cfg:301 units/hunns/Hunn_Witches.cfg:479 units/hunns/Hunn_Witches.cfg:823 units/kingdom/Kingdom_Priests.cfg:119 units/kingdom/Kingdom_Priests.cfg:207 units/kingdom/Kingdom_Priests.cfg:318 units/kingdom/Kingdom_Vassals.cfg:61
+#: units/hunns/Hunn_Witches.cfg:42 units/hunns/Hunn_Witches.cfg:169 units/hunns/Hunn_Witches.cfg:301 units/hunns/Hunn_Witches.cfg:479 units/hunns/Hunn_Witches.cfg:823 units/kingdom/Kingdom_Priests.cfg:132 units/kingdom/Kingdom_Priests.cfg:220 units/kingdom/Kingdom_Priests.cfg:331 units/kingdom/Kingdom_Vassals.cfg:61
 msgid "staff"
 msgstr ""
 
@@ -1208,7 +1213,7 @@ msgid "chill burst"
 msgstr ""
 
 #. [attack]: type=arcane
-#: units/hunns/Hunn_Witches.cfg:65 units/hunns/Hunn_Witches.cfg:192 units/hunns/Hunn_Witches.cfg:324 units/hunns/Hunn_Witches.cfg:505 units/ogres/Bulls.cfg:299 units/ogres/Bulls.cfg:382 units/ogres/Ogre_Shamans.cfg:46 units/ogres/Ogre_Shamans.cfg:121 units/ogres/Ogre_Shamans.cfg:212
+#: units/hunns/Hunn_Witches.cfg:65 units/hunns/Hunn_Witches.cfg:192 units/hunns/Hunn_Witches.cfg:324 units/hunns/Hunn_Witches.cfg:505 units/ogres/Bulls.cfg:299 units/ogres/Bulls.cfg:382 units/ogres/Ogre_Shamans.cfg:43 units/ogres/Ogre_Shamans.cfg:112 units/ogres/Ogre_Shamans.cfg:197
 msgid "curse"
 msgstr ""
 
@@ -1357,7 +1362,7 @@ msgstr ""
 #. [attack]: type=cold
 #. [attack]: type=impact
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
-#: units/hunns/Hunn_Witches.cfg:720 units/khaganate/Khaganate_Serpentheads.cfg:186 units/khaganate/Khaganate_Serpentheads.cfg:646 units/mandate/Mandate_Jiangshi_Vampires.cfg:31 units/mandate/Mandate_Jiangshi_Vampires.cfg:101 units/mandate/Mandate_Jiangshi_Vampires.cfg:175 utils/abilities_mandate.cfg:674
+#: units/hunns/Hunn_Witches.cfg:720 units/khaganate/Khaganate_Serpentheads.cfg:186 units/khaganate/Khaganate_Serpentheads.cfg:650 units/mandate/Mandate_Jiangshi_Vampires.cfg:31 units/mandate/Mandate_Jiangshi_Vampires.cfg:101 units/mandate/Mandate_Jiangshi_Vampires.cfg:175 utils/abilities_mandate.cfg:674
 msgid "touch"
 msgstr ""
 
@@ -1671,8 +1676,7 @@ msgid "Serpent Khagan"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Serpenthead_Khagan, race=serpenthead
-#. [unit_type]: id=Khaganate_Serpenthead_Khagan_WIP#TODO: remove WIP from name later, race=serpenthead
-#: units/khaganate/Khaganate_Serpentheads.cfg:275 units/khaganate/Khaganate_Serpentheads.cfg:375
+#: units/khaganate/Khaganate_Serpentheads.cfg:275
 msgid ""
 "The Great Khagan - an absolute monarch and the hereditary ruler of the Serpent Khaganate. The khagan can always be recognized by his huge (twice the size of other serpentheads) body size, dark silk clothes with sewn gold scales, a crown decorated with a golden snake, and a long staff - a scepter with the shape of a cobra on the knob.\n"
 "The khagan by law is the naster of all creatures inhabiting the kaganate, and they are his slaves. Residents of other countries are also slaves of the khagan, they just don't know about it yet. The purpose of the conquest wars of the Serpent Khaganate is to remind the lost souls that the Cosmos, represented by all the Gods inhabiting the stars, gave mortals a single Master, so that he would bring order and make their sinful lives useful...\n"
@@ -1681,12 +1685,12 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=impact
-#: units/khaganate/Khaganate_Serpentheads.cfg:287 units/khaganate/Khaganate_Serpentheads.cfg:387
+#: units/khaganate/Khaganate_Serpentheads.cfg:287
 msgid "scepter"
 msgstr ""
 
 #. [attack]: type=fire
-#: units/khaganate/Khaganate_Serpentheads.cfg:300 units/khaganate/Khaganate_Serpentheads.cfg:400
+#: units/khaganate/Khaganate_Serpentheads.cfg:300
 msgid "black firestorm"
 msgstr ""
 
@@ -1695,44 +1699,34 @@ msgstr ""
 msgid "enslavement"
 msgstr ""
 
-#. [unit_type]: id=Khaganate_Serpenthead_Khagan_WIP#TODO: remove WIP from name later, race=serpenthead
-#: units/khaganate/Khaganate_Serpentheads.cfg:350
-msgid "WIP Serpent Khagan"
-msgstr ""
-
-#. [attack]: type=arcane
-#: units/khaganate/Khaganate_Serpentheads.cfg:414
-msgid "domination"
-msgstr ""
-
 #. [unit_type]: id=Khaganate_Serpenthead_Immortal, race=undead
-#: units/khaganate/Khaganate_Serpentheads.cfg:451
+#: units/khaganate/Khaganate_Serpentheads.cfg:455
 msgid "Serpent Immortal"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Serpenthead_Immortal, race=undead
-#: units/khaganate/Khaganate_Serpentheads.cfg:480
+#: units/khaganate/Khaganate_Serpentheads.cfg:484
 msgid "The will spirit of a serpenthead is truly powerful – it is the very thing that allows the rulers of the Khaganate to bend the will of others to obey them. Even in death a serpenthead can be a powerful tool of the Great Khagan - the Serpentheads embalm their deceased brethren, using both physical and magical means. Through a series of complex procedures, the body of the mummy literally freezes in time, impervious to decay and parasites hungry for dead flesh, then is reanimated with same dark magic that spawned the Nuckelavee. Deceivers of death - Immortals - are warriors merciless and brutal in battle, that shower enemies with sabers held by their cold, tireless grip."
 msgstr ""
 
 #. [attack]: type=blade
-#: units/khaganate/Khaganate_Serpentheads.cfg:488
+#: units/khaganate/Khaganate_Serpentheads.cfg:492
 msgid "sabers"
 msgstr ""
 
 #. [unit_type]: id=Khaganate_Serpenthead_Scholar, race=serpenthead
-#: units/khaganate/Khaganate_Serpentheads.cfg:616
+#: units/khaganate/Khaganate_Serpentheads.cfg:620
 msgid "WIP Serpent Scholar"
 msgstr ""
 
 #. [attack]: type=arcane
-#: units/khaganate/Khaganate_Serpentheads.cfg:659
+#: units/khaganate/Khaganate_Serpentheads.cfg:663
 msgid "mathemagic"
 msgstr ""
 
 #. [attack]: type=arcane
 #. [mind_drain]: id=steppe_mind_drain
-#: units/khaganate/Khaganate_Serpentheads.cfg:673 utils/abilities_khaganate.cfg:2689
+#: units/khaganate/Khaganate_Serpentheads.cfg:677 utils/abilities_khaganate.cfg:2689
 msgid "mind drain"
 msgstr ""
 
@@ -1968,7 +1962,7 @@ msgid "Prolonged proximity to Humans gave rise to the phenomenon of half-ogres. 
 msgstr ""
 
 #. [attack]: type=impact
-#: units/kingdom/Kingdom_Crossbow_Halfogres.cfg:42 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:214 units/kingdom/Kingdom_Mermen.cfg:136 units/kingdom/Kingdom_Mermen.cfg:256 units/ogres/Bulls.cfg:222 units/ogres/Bulls.cfg:286 units/ogres/Bulls.cfg:368 units/ogres/Ogre_Hunters.cfg:365 units/ogres/Ogre_Hunters.cfg:480 units/ogres/Ogre_Shamans.cfg:36 units/ogres/Ogre_Shamans.cfg:297 units/ogres/Ogre_Shamans.cfg:386 units/slavs/Slav_Horsemen.cfg:403
+#: units/kingdom/Kingdom_Crossbow_Halfogres.cfg:42 units/kingdom/Kingdom_Crossbow_Halfogres.cfg:214 units/kingdom/Kingdom_Mermen.cfg:136 units/kingdom/Kingdom_Mermen.cfg:256 units/ogres/Bulls.cfg:222 units/ogres/Bulls.cfg:286 units/ogres/Bulls.cfg:368 units/ogres/Ogre_Hunters.cfg:365 units/ogres/Ogre_Hunters.cfg:480 units/ogres/Ogre_Shamans.cfg:33 units/ogres/Ogre_Shamans.cfg:276 units/ogres/Ogre_Shamans.cfg:359 units/slavs/Slav_Horsemen.cfg:403
 msgid "club"
 msgstr ""
 
@@ -2227,29 +2221,29 @@ msgstr ""
 
 #. [attack]: type=arcane
 #. [damage]: id=steppe_holy_light
-#: units/kingdom/Kingdom_Priests.cfg:43 units/kingdom/Kingdom_Priests.cfg:129 units/kingdom/Kingdom_Priests.cfg:217 units/kingdom/Kingdom_Priests.cfg:328 units/kingdom/Kingdom_Vassals.cfg:71 utils/abilities_slav.cfg:1790
+#: units/kingdom/Kingdom_Priests.cfg:43 units/kingdom/Kingdom_Priests.cfg:142 units/kingdom/Kingdom_Priests.cfg:230 units/kingdom/Kingdom_Priests.cfg:341 units/kingdom/Kingdom_Vassals.cfg:71 utils/abilities_slav.cfg:1790
 msgid "holy light"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Bishop, race=ogre
-#: units/kingdom/Kingdom_Priests.cfg:91
+#: units/kingdom/Kingdom_Priests.cfg:104
 msgid "Ogre Bishop"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Bishop, race=ogre
-#: units/kingdom/Kingdom_Priests.cfg:107
+#: units/kingdom/Kingdom_Priests.cfg:120
 msgid ""
 "Bishops are a higher level of the clergy, which is granted to clerics for their zealous service to the Church, proving their devotion to the ideals of the cult.\n"
 "Bishops are engaged in general control over the conduct within the spiritual organization: the observance of rituals, the service of lower ranks, the collection of taxes. Beginning at this stage, priests receive a crude staff to help them direct the cleansing light as well as tap on the tops of dissenters."
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Cardinal, race=ogre
-#: units/kingdom/Kingdom_Priests.cfg:177
+#: units/kingdom/Kingdom_Priests.cfg:190
 msgid "Ogre Cardinal"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Cardinal, race=ogre
-#: units/kingdom/Kingdom_Priests.cfg:194
+#: units/kingdom/Kingdom_Priests.cfg:207
 msgid ""
 "As with the knightly retinue of a secular ruler, the spiritual authority needs the closest associates - cardinals who report and carry out the orders of the Ogre Pope himself.\n"
 "As in the case of the King of Ogres, the title of the Ogre Pope is hereditary, therefore, as with the royal knightly retinue, it is the duty of the cardinals to protect the higher person from competition in the succession of the throne. Although they do not wield sharp spears or swords, they have ruthless fire in their hands, which they will not hesitate to use against the enemies of the Pope, but they mainly use it against evil spirits and heretics, disgusting to the religion of light.\n"
@@ -2257,17 +2251,17 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=fire
-#: units/kingdom/Kingdom_Priests.cfg:230 units/kingdom/Kingdom_Priests.cfg:341
+#: units/kingdom/Kingdom_Priests.cfg:243 units/kingdom/Kingdom_Priests.cfg:354
 msgid "cleansing flame"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Pope, race=ogre
-#: units/kingdom/Kingdom_Priests.cfg:286
+#: units/kingdom/Kingdom_Priests.cfg:299
 msgid "Ogre Pope"
 msgstr ""
 
 #. [unit_type]: id=Kingdom_Pope, race=ogre
-#: units/kingdom/Kingdom_Priests.cfg:304
+#: units/kingdom/Kingdom_Priests.cfg:317
 msgid ""
 "The Ogre Pope is the highest clergy title in the Ogre religion. It is on His behalf that the policy of the church is carried out - the spread of the teachings, the construction of temples, the announcement of the crusades. His power rivals that of the secular ruler, the King of Ogres. On the one hand, this confrontation weakens the integrity of the state, on the other hand, it prevents the petty tyrants to come in full power on both sides.\n"
 "The staff of the Pope is the heaviest club of all the clergy. With its help, the head of the church crushes the skulls of heretics and schismatics, the lists of which are usually fixed on the club itself.\n"
@@ -2544,7 +2538,7 @@ msgid "Mangus Grunt"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Mangus, race=steppe_mangus
-#: units/mandate/Mandate_Manguses.cfg:17
+#: units/mandate/Mandate_Manguses.cfg:18
 msgid ""
 "Mangus Grunts are quite young individuals, making their first steps on the military hierarchy. Despite the lack of actual training, they are usually quite formidable warriors thanks to strong competition among siblings and a tradition of solving local feuds in duels and fights. Of course, where their weak discipline and skill are especially showing, they compensate, or truer to say – overcompensate – with their hulking size and might. \n"
 "As it is difficult to manufacture high-quality weapons for creatures of such size, most Mangus rely on flails and meteor hammers, which one casually wraps around his waist or forearm even in peaceful times – as peace is but preparation for war."
@@ -2552,29 +2546,29 @@ msgstr ""
 
 #. [attack]: type=impact
 #. [then]: type=blade, type=impact, type=arcane, type=impact, type=pierce, type=impact
-#: units/mandate/Mandate_Manguses.cfg:27 units/mandate/Mandate_Manguses.cfg:76 units/mandate/Mandate_Manguses.cfg:134 utils/abilities_mandate.cfg:661
+#: units/mandate/Mandate_Manguses.cfg:28 units/mandate/Mandate_Manguses.cfg:78 units/mandate/Mandate_Manguses.cfg:137 utils/abilities_mandate.cfg:661
 msgid "flail"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Kheshig, race=steppe_mangus
-#: units/mandate/Mandate_Manguses.cfg:53
+#: units/mandate/Mandate_Manguses.cfg:54
 msgid "Mangus Kheshig"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Kheshig, race=steppe_mangus
-#: units/mandate/Mandate_Manguses.cfg:66
+#: units/mandate/Mandate_Manguses.cfg:68
 msgid ""
 "Keshigs are generals’ bodyguards and elite shock troopers, feared by enemies and admired by allies. They are real soldiers battered in war, not just tavern brawls and bloody sports. Only mature Mangus that possess a good proportion of recklessness and cunning rise up to become to join the ranks of Keshigs.\n"
 "Keshigs’ equipment is finer as well as their technique. Their skill with meteor hammers is not just instinctive brutish swings, but deadly and effective martial art taught through years of experience in harsh and unforgiving combat."
 msgstr ""
 
 #. [unit_type]: id=Mandate_Yelbeghen, race=steppe_mangus
-#: units/mandate/Mandate_Manguses.cfg:102
+#: units/mandate/Mandate_Manguses.cfg:104
 msgid "Yelbeghen"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Yelbeghen, race=steppe_mangus
-#: units/mandate/Mandate_Manguses.cfg:124
+#: units/mandate/Mandate_Manguses.cfg:127
 msgid ""
 "Mangus potentially can live for very long if not for eternity, although recklessness and rabidity with which the young join battle greatly minimizes the chance of living up to what might be considered senior age by other races’ standards. Such rare privilege is amply paid off with Mangus being seemingly insusceptible to mental and physical weakness as they get older. Most severe traumas and wounds would eventually heal up and leave nothing more than marks and scars, so no old Mangus remains forever maimed and inactive. \n"
 "At a certain point, old Mangus would conduct a journey to the Pit – the same place from which they were born. Descending into the absolute unending darkness, Mangus spend days if not weeks and months there. Returning back to the surface, Mangus appear stronger, larger and most of all – possessing three heads or faces fused together, and earn the name Yelbeghen – “demonic dragon”. They lead the government and military – showing no mercy or weakness in both."
@@ -2630,31 +2624,31 @@ msgid "Terracotta Warrior"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Terracotta_Warrior, race=steppe_terracotta
-#: units/mandate/Mandate_Terracotta_Warriors.cfg:94
+#: units/mandate/Mandate_Terracotta_Warriors.cfg:95
 msgid ""
 "The human civilization of Xian was the first to be touched by the blessing darkness of Tartarus. Although Xian created the foundation of the current empire, they were also the first to fail on their post. They lost the favor of Tartarus, having gone it would seem, into the annals of history. However, then they were revived - their perishable bodies fused together with the magical clay of Tartarus, the ashamed received a second chance. Xian people proved their flexibility and perseverance, becoming once again a key unit of the state.\n"
 "As in ancient times, Xian Terracotta warriors rely on their swords and iron discipline, strengthened tenfold since they gave up their bodies to the glory of the Mandate."
 msgstr ""
 
 #. [unit_type]: id=Mandate_Terracotta_Sergeant, race=steppe_terracotta
-#: units/mandate/Mandate_Terracotta_Warriors.cfg:157
+#: units/mandate/Mandate_Terracotta_Warriors.cfg:158
 msgid "Terracotta Sergeant"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Terracotta_Sergeant, race=steppe_terracotta
-#: units/mandate/Mandate_Terracotta_Warriors.cfg:175
+#: units/mandate/Mandate_Terracotta_Warriors.cfg:177
 msgid ""
 "The reborn Xian seem to be mindless statues with no will of their own, although this is not entirely true. Although their thoughts are thickly clouded, they are still driven by a sense of warrior self-improvement - Terracotta Warriors grow in dexterity and skill just like living beings. Not only their swordsmanship improves, but also their unity of body and clay frame - they can change their physical state quicker to increase their defenses and aggressive initiative.\n"
 "Warriors who have attained a certain level of prowess are promoted to Terracotta Sergeants and serve as an example not only to the rest of the Terracotta Host, but to the entire army of Tartarus Mandate."
 msgstr ""
 
 #. [unit_type]: id=Mandate_Terracotta_Bannerlord, race=steppe_terracotta
-#: units/mandate/Mandate_Terracotta_Warriors.cfg:238
+#: units/mandate/Mandate_Terracotta_Warriors.cfg:240
 msgid "Terracotta Bannerlord"
 msgstr ""
 
 #. [unit_type]: id=Mandate_Terracotta_Bannerlord, race=steppe_terracotta
-#: units/mandate/Mandate_Terracotta_Warriors.cfg:260
+#: units/mandate/Mandate_Terracotta_Warriors.cfg:263
 msgid ""
 "Terracotta Sergeants do not stop in their development and in mindless obsession keep on honing their skills, which is facilitated by almost complete immunity of the clay body to fatigue.\n"
 "At some point, the Terracotta Sergeant gains enough skill to maintain long-term extra limbs and assimilate foreign bodies into their own - bone, metal and stone. Over time, these abilities will allow them to create their own terracotta steed - often using a live horse as a base.\n"
@@ -3039,17 +3033,21 @@ msgid "Ogre Apprentice"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Apprentice, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:25
-msgid "apprentice^WIP: NOT YET TRANSLATED"
+#: units/ogres/Ogre_Shamans.cfg:19
+msgid ""
+"Some ogres, being too weak for a warrior’s path but intelligent and brave enough to bond their life with the supernatural, become Apprentices – lesser sorcerers that are taught the basics of magic by two conflicting groups – the nature-venerating Shamans and the loyal Bull Priests.\n"
+"Despised by their kin for their choice, Apprentices, however, have to accompany them in battles, healing allied warriors with incantations and raining combat spells on their enemies.\n"
+"These lesser sorcerers wear long wool clothing, their weapon are tambourine and strapped-on horns, which shows their connection to both the Shamans and the Bull Priests. \n"
+"For their final stage of education, after 5 years of oral lessons by the Shamans and the Priests, tearing themselves apart between serving the former or the latter, apprentices choose one of two groups and through initiation join their ranks – now they, with full understanding of the basics, are ready to receive secrets of magic from their mentors, while their reputation among their kin changes from despising the sorcerers to fearing them with deep-laid superstition."
 msgstr ""
 
 #. [unit_type]: id=Ogre_Bull_Priest, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:77
+#: units/ogres/Ogre_Shamans.cfg:74
 msgid "Ogre Bull Priest"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Bull_Priest, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:98
+#: units/ogres/Ogre_Shamans.cfg:89
 msgid ""
 "Bull priests ar members of the dominant cult of the Underground Bull, the patron god of cow herds, nomadic cattle breeding and the lord of the afterlife of the ogres. The Underground Bull, according to ogre legends, is the ancestor of the Maataf dynasty ruling in the hordes, thanks to which the support of the khans' power from the side of the Priests-bull-worshipers is absolute. The members of this cult choose the paths of managing herds in the steppes, healing the grunts from diseases and control the slaughter of livestock during the autumn Harvesting Festival. In war, the bull priests use powerful curses, but their most terrible weapon are the demonic undead bulls summoned into our world - bone abominations known as the Tarbynns, existing and growing in our dimension by drawing out life itself from the bull priests' foes.\n"
 "The Tarbynns are the bodyguards and minions of the Underground Bull's worshippers, they are a formidable force both in conflicts with the external enemies of the horde, and in struggles with the main rivals of the rriests for influence in Ogre society - the Shamans.\n"
@@ -3057,57 +3055,57 @@ msgid ""
 msgstr ""
 
 #. [attack]: type=blade
-#: units/ogres/Ogre_Shamans.cfg:111 units/ogres/Ogre_Shamans.cfg:202
+#: units/ogres/Ogre_Shamans.cfg:102 units/ogres/Ogre_Shamans.cfg:187
 msgid "sacrificial dagger"
 msgstr ""
 
 #. [attack]: type=cold
-#: units/ogres/Ogre_Shamans.cfg:135 units/ogres/Ogre_Shamans.cfg:226
+#: units/ogres/Ogre_Shamans.cfg:126 units/ogres/Ogre_Shamans.cfg:211
 msgid "curse of the bull god"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Bull_Prophet, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:169
+#: units/ogres/Ogre_Shamans.cfg:160
 msgid "Ogre High Priest"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Bull_Prophet, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:191
-msgid "bull prophet^WIP: NOT YET TRANSLATED"
+#: units/ogres/Ogre_Shamans.cfg:176
+msgid "A High Priest – is the head of the Bull-God cult, the closest advisor of the Khan, the keeper of all the secrets of ancient religion of the steppes. The title of the High one together with the golden bull mask are given through initiation to the oldest bull priest of the horde. With this title come great responsibility for organizing festivals, control over apprentices, and the key role as the deity’s medium. This role is realized through the mask, horns of which are smothered by loyal apprentices with blood of each calf sacrifice taking place… The sacrificial blood dries out with horrifying speed, as if consumed by the gold. And with that golden mask must the High Priests sleep, to see their god in their dreams, to hear his commands and send him their pleas. The High Priest is also the only ogre in the entire horde who is allowed to summon the nightmares – the highest forms of demonic tarbynn, terrifyingly effective in combat, the apex predators of the Nether Worlds’ food chain. The curses sent by the High Priests with the power of their horned staffs become even more powerful with the influence of their golden masks."
 msgstr ""
 
 #. [unit_type]: id=Ogre_Thunder_Shaman, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:263
+#: units/ogres/Ogre_Shamans.cfg:248
 msgid "Ogre Thunder Shaman"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Thunder_Shaman, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:286
-msgid "thunder shaman^WIP: NOT YET TRANSLATED"
+#: units/ogres/Ogre_Shamans.cfg:265
+msgid "Shamans – are a group of ogre sorcerers famous for their control over nature. Shamans can easily consume their enemy with a terrible blizzard, which would freeze him to the bone and render him unable to see anything further than his own nose, or strike him with an annihilating lightning. The main tool of a shaman – a tambourine, which contains a powerful spirit amplifying the connection to the supernatural. Socially speaking, although Shamans possess some unique abilities, they are an isolated group, opposing both the Bull Priests and the Khan. Sometimes, Shamans manage to take over small hordes – but these hordes do not exist for long, as their main source of power – the fear amongst the community, whose lives do not particularly matter to the ruling sorcerers."
 msgstr ""
 
 #. [attack]: type=cold
-#: units/ogres/Ogre_Shamans.cfg:307 units/ogres/Ogre_Shamans.cfg:396
+#: units/ogres/Ogre_Shamans.cfg:286 units/ogres/Ogre_Shamans.cfg:369
 msgid "blizzard"
 msgstr ""
 
 #. [attack]: type=fire
-#: units/ogres/Ogre_Shamans.cfg:320 units/ogres/Ogre_Shamans.cfg:409
+#: units/ogres/Ogre_Shamans.cfg:299 units/ogres/Ogre_Shamans.cfg:382
 msgid "lightning"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Tempest_Lord, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:351
+#: units/ogres/Ogre_Shamans.cfg:330
 msgid "Ogre Grand Shaman"
 msgstr ""
 
 #. [unit_type]: id=Ogre_Tempest_Lord, race=steppeogre
-#: units/ogres/Ogre_Shamans.cfg:375
-msgid "grand shaman^WIP: NOT YET TRANSLATED"
+#: units/ogres/Ogre_Shamans.cfg:348
+msgid "The Grand Shaman – is a shaman that achieved perfection in all the ways of communicating with the spirits, and recognized for that by other shamans above him. The Grand Shaman loses his sight on the material world after initiation, while his sight of immaterial awakens. This makes him a reliable predictor of weather and other important events, allows him to see through criminals, guilty of stealing, robbery and murder. Nature becomes a loyal ally of the Grand Shaman: blizzards and lightnings invoked by him are even more powerful and deadly, compare to what other shamans are capable of. The tambourine of the Grand Shaman is an extremely powerful magical weapon: within lies a being of great power, so called chief-ghost, which in turn controls entire planes of lesser beings of the spirit world. "
 msgstr ""
 
 #. [attack]: type=fire
-#: units/ogres/Ogre_Shamans.cfg:422
+#: units/ogres/Ogre_Shamans.cfg:395
 msgid "lightning storm"
 msgstr ""
 
@@ -3163,7 +3161,9 @@ msgstr ""
 
 #. [unit_type]: id=Ogre_Tarbynn, race=undead
 #: units/ogres/Tarbynns.cfg:34
-msgid "Tarbynns are horrible creations of the Bull God from the underworld. Herds of these skeletal creatures graze in his dark realm, and the largest and strongest of them are his bodyguards. Taking steppe ogres under his protection, the Bull God revealed to them the secret of summoning tarbynns into the world of the living. Squads of these demons became a formidable force which priests use to combat both foreign enemies and internal rivals, shamans. The lowest and weakest kind of tarbynns are observers. They are summoned most often, so the word "
+msgid ""
+"Tarbynns are horrible creations of the Bull God from the underworld. Herds of these skeletal creatures graze in his dark realm, and the largest and strongest of them are his bodyguards. Taking steppe ogres under his protection, the Bull God revealed to them the secret of summoning tarbynns into the world of the living. Squads of these demons became a formidable force which priests use to combat both foreign enemies and internal rivals, shamans. The lowest and weakest kind of tarbynns are observers. They are summoned most often, so the word 'tarbynn' means lesser demons in the first place (more powerful kinds have their own established names). To summon an observer, priests fill a pot with bull's blood, throw a skull and cast the spell. If everything is done properly, the skull comes to live and a semi-sentient hungry beast with burning eyes arises from the pot. Streams of blood circle around its head and serve as its fuel. To maintain its existence, a tarbynn must constantly replenish his blood supply, so hunger is the only feeling it knows.\n"
+"Even lesser of tarbynns have access to terrible blood magic, with their gaze they can literally draw the red liquid from their victim's body and fill their aura with it. Though actually, the main purpose of observers is not combat; they are summoned to watch out for enemies or suspicious allies. Dozens of these flying skulls patrol neighbourhoods of priests in steppe settlements, they also accompany ogres' armies in large campaigns. Ordinary ogres don't like to be watched by hungry demons-skulls, that's why they treat priests with resentment and hidden fear."
 msgstr ""
 
 #. [attack]: type=impact
@@ -3360,16 +3360,16 @@ msgid "Drake Smith"
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Novgorod-Drakes.cfg:75 units/slavs/Novgorod-Drakes.cfg:359 units/slavs/Novgorod-Drakes.cfg:474
-msgid "build smithies"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Novgorod-Drakes.cfg:75
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Smithy - 10 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Novgorod-Drakes.cfg:75 units/slavs/Novgorod-Drakes.cfg:359 units/slavs/Novgorod-Drakes.cfg:474
+msgid "build smithies"
 msgstr ""
 
 #. [abilities]
@@ -3540,16 +3540,16 @@ msgid "В северных землях искусство стрельбы из
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
-msgid "build outposts"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Archers.cfg:31
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Guard tower - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Archers.cfg:31 units/slavs/Slav_Archers.cfg:125 units/slavs/Slav_Archers.cfg:227
+msgid "build outposts"
 msgstr ""
 
 #. [abilities]
@@ -3721,16 +3721,16 @@ msgid "Воины - это младшее ополчение, вооруженн
 msgstr ""
 
 #. [abilities]
+#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
+msgid "build walls"
+msgstr ""
+
+#. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:351
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Wooden Wall - 3 gold"
-msgstr ""
-
-#. [abilities]
-#: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:228 units/slavs/Slav_Militia.cfg:351
-msgid "build walls"
 msgstr ""
 
 #. [abilities]
@@ -3782,16 +3782,16 @@ msgid "People of the Krad worship the magical Firebird; it's this godlike creatu
 msgstr ""
 
 #. [abilities]
-#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
-msgid "build lights"
-msgstr ""
-
-#. [abilities]
 #: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118
 msgid ""
 "This unit can build the following:\n"
 "\n"
 "Healing Light - 5 gold"
+msgstr ""
+
+#. [abilities]
+#: units/slavs/Slav_Skylarks.cfg:36 units/slavs/Slav_Skylarks.cfg:118 units/slavs/Slav_Skylarks.cfg:227
+msgid "build lights"
 msgstr ""
 
 #. [abilities]
@@ -4050,12 +4050,12 @@ msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
-msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
+msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
 #: utils/abilities_hunn.cfg:1278
-msgid "If there is an allied demon in a 3-tile radius from this unit, she will start birthing a Kanavar. After"
+msgid "turns pass, the kanavar is birthed and added to the recall list (costing"
 msgstr ""
 
 #. [birther_of_fiends]: id=steppe_birther_of_fiends{ID}
@@ -4078,15 +4078,15 @@ msgstr ""
 msgid "decay -"
 msgstr ""
 
+#. [dummy]: id=steppe_depleting_hunn
+#: utils/abilities_hunn.cfg:1558
+msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
+msgstr ""
+
 #. [dummy]: id=depleting{NUMBER}
 #. [dummy]: id=steppe_depleting_hunn
 #: utils/abilities_hunn.cfg:1558 utils/abilities_ogre.cfg:1649
 msgid "This unit loses "
-msgstr ""
-
-#. [dummy]: id=steppe_depleting_hunn
-#: utils/abilities_hunn.cfg:1558
-msgid " hp each turn. Unlike poison, this ability can kill (in which case, the unit who applied this effect receives the experience). Living units killed by the curse are replaced by Lesser Ghouls for the curser's side."
 msgstr ""
 
 #. [floating_text]
@@ -4510,12 +4510,12 @@ msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "While attacking with this weapon, the opponent's resistances are reduced by "
+msgid "% (can't reduce resistances below 0%)."
 msgstr ""
 
 #. [dummy]: id=penetrate_armor_{VALUE}
 #: utils/abilities_kingdom.cfg:21
-msgid "% (can't reduce resistances below 0%)."
+msgid "While attacking with this weapon, the opponent's resistances are reduced by "
 msgstr ""
 
 #. [dummy]: id=steppe_knockback
@@ -4849,12 +4849,12 @@ msgstr ""
 
 #. [wealthy]: id=steppe_wealthy
 #: utils/abilities_kingdom.cfg:3195
-msgid "This unit generates"
+msgid "gold for his side each turn."
 msgstr ""
 
 #. [wealthy]: id=steppe_wealthy
 #: utils/abilities_kingdom.cfg:3195
-msgid "gold for his side each turn."
+msgid "This unit generates"
 msgstr ""
 
 #. [unstore_unit]
@@ -4993,13 +4993,18 @@ msgid "This attack incinerates its targets. Burning units lose 12 HP every turn 
 msgstr ""
 
 #. [dummy]: id=work{NUMBER}
-#: utils/abilities_misc.cfg:662
-msgid "This unit earns "
+#: utils/abilities_misc.cfg:661
+msgid "work "
 msgstr ""
 
 #. [dummy]: id=work{NUMBER}
 #: utils/abilities_misc.cfg:662
 msgid " gold each turn if standing on an owned village."
+msgstr ""
+
+#. [dummy]: id=work{NUMBER}
+#: utils/abilities_misc.cfg:662
+msgid "This unit earns "
 msgstr ""
 
 #. [unstore_unit]
@@ -5269,9 +5274,10 @@ msgstr ""
 msgid "area of effect"
 msgstr ""
 
+#. [damage]: id=steppe_all_around_random
 #. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1701
-msgid "When this attack is used, random enemies adjacent to the target take "
+#: utils/abilities_misc.cfg:1701 utils/abilities_misc.cfg:1849
+msgid "% chance. Does not work on defense."
 msgstr ""
 
 #. [damage]: id=steppe_all_around_random
@@ -5280,10 +5286,9 @@ msgstr ""
 msgid "% of the basic damage, with a "
 msgstr ""
 
-#. [damage]: id=steppe_all_around_random
 #. [damage]: id=steppe_area_effect_random
-#: utils/abilities_misc.cfg:1701 utils/abilities_misc.cfg:1849
-msgid "% chance. Does not work on defense."
+#: utils/abilities_misc.cfg:1701
+msgid "When this attack is used, random enemies adjacent to the target take "
 msgstr ""
 
 #. [damage]: id=steppe_all_around_random
@@ -5381,12 +5386,12 @@ msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2088
-msgid "Like berserk, but units fight "
+msgid " times instead of 30."
 msgstr ""
 
 #. [berserk]: id=steppe_custom_berserk{VALUE}
 #: utils/abilities_misc.cfg:2088
-msgid " times instead of 30."
+msgid "Like berserk, but units fight "
 msgstr ""
 
 #. [damage]: id=steppe_desperate
@@ -5411,12 +5416,12 @@ msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2183
-msgid "This unit deals"
+msgid "% less damage."
 msgstr ""
 
 #. [leadership]: id=steppe_weakened
 #: utils/abilities_misc.cfg:2183
-msgid "% less damage."
+msgid "This unit deals"
 msgstr ""
 
 #. [weaken]: id=steppe_weaken
@@ -5797,12 +5802,12 @@ msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid " HP for each enemy damaged. Like poison, this can't kill."
+msgid "Each turn, this unit deals "
 msgstr ""
 
 #. [dummy]: id=lifesteal_aura{NUMBER}
 #: utils/abilities_ogre.cfg:1823
-msgid "Each turn, this unit deals "
+msgid " HP for each enemy damaged. Like poison, this can't kill."
 msgstr ""
 
 #. [hides]: id=steppe_swampstalk
@@ -6054,12 +6059,12 @@ msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:488
-msgid "</span> gold and <span color='#2c9fed'>"
+msgid "</span> moves"
 msgstr ""
 
 #. [set_menu_item]: id=build_{ID}
 #: utils/abilities_slav_building.cfg:488
-msgid "</span> moves"
+msgid "</span> gold and <span color='#2c9fed'>"
 msgstr ""
 
 #. [message]: speaker=$able_to_build.id
@@ -6161,12 +6166,12 @@ msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid ", and only works on buildings who can advance."
+msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
 msgstr ""
 
 #. [upgrade_buildings]: id=steppe_upgrade_buildings
 #: utils/abilities_slav_building.cfg:1487
-msgid "This unit can upgrade buildings on adjacent tiles via a rightclick menu. Can only upgrade units to level "
+msgid ", and only works on buildings who can advance."
 msgstr ""
 
 #. [set_menu_item]: id=steppe_upgrade_buildings
@@ -6184,6 +6189,52 @@ msgstr ""
 msgid "I'm not skilled enough to upgrade this building!"
 msgstr ""
 
+#. [dummy]: id=yokehorde_buffable
+#: utils/abilities_yoke.cfg:26
+msgid "horde's agility"
+msgstr ""
+
+#. [dummy]: id=yokehorde_buffable
+#. [dummy]: id=yokehorde_damagebuff{VALUE}
+#: utils/abilities_yoke.cfg:27 utils/abilities_yoke.cfg:55
+msgid "This attack gains 1 strike for every adjacent ally with the 'dark horde' ability."
+msgstr ""
+
+#. [dummy]: id=yokehorde_damagebuff{VALUE}
+#: utils/abilities_yoke.cfg:54
+msgid "horde's strentgh"
+msgstr ""
+
+#. [dummy]: id=steppe_dark_horde
+#: utils/abilities_yoke.cfg:69
+msgid "dark horde"
+msgstr ""
+
+#. [dummy]: id=steppe_dark_horde
+#: utils/abilities_yoke.cfg:70
+msgid "Adjacent units with the 'horde' weapon special gain 1 more strike on attacks with it. This stacks."
+msgstr ""
+
+#. [dummy]: id=steppe_infect_villages
+#: utils/abilities_yoke.cfg:77
+msgid "infect villages"
+msgstr ""
+
+#. [dummy]: id=steppe_infect_villages
+#: utils/abilities_yoke.cfg:78
+msgid "When this unit moves into a village, it transforms into a Dark Growth."
+msgstr ""
+
+#. [yoke_curse]: id=steppe_yoke_curse
+#: utils/abilities_yoke.cfg:100
+msgid "curse of the yoke"
+msgstr ""
+
+#. [yoke_curse]: id=steppe_yoke_curse
+#: utils/abilities_yoke.cfg:101
+msgid "If standing in an owned village, spawns a Yoke Fright. The spawned frights cannot move/attack on the same turn that they are spawned."
+msgstr ""
+
 #. [set_menu_item]: id=steppe_hintmenu_{ID}
 #: utils/faction_hints.cfg:36
 msgid "Faction Hint"
@@ -6196,12 +6247,12 @@ msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks work with leadership/other damage-buffing abilities/specials, but some other weapon specials might not work properly. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
+msgid "This unit can attack enemies in a"
 msgstr ""
 
 #. [longrange]: id=steppe_longrange
 #: utils/longrange_attacks.cfg:9
-msgid "This unit can attack enemies in a"
+msgid "-tile radius with this attack via a rightclick menu option. Long-ranged attacks work with leadership/other damage-buffing abilities/specials, but some other weapon specials might not work properly. Cannot use longrange attacks on adjacent units. Cannot shoot enemies through impassable terrain (like cave walls)."
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6209,11 +6260,11 @@ msgid "Name:$steppe_RAunit[{NUMBER}].name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
+msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
-msgid "$steppe_RAunit[{NUMBER}].variables.type_name| "
+msgid "Attack:$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].damage|-$steppe_RAunit[{NUMBER}].attack[$steppe_RAunit[{NUMBER}].attackslot|].number|"
 msgstr ""
 
 #: utils/longrange_attacks.cfg:129
@@ -6520,11 +6571,11 @@ msgid "Build Library"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1809
-msgid "Build Hiding Spot"
+msgid "Hiding spot: can build hiding spots, +20% XP"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1809
-msgid "Hiding spot: can build hiding spots, +20% XP"
+msgid "Build Hiding Spot"
 msgstr ""
 
 #: utils/steppe_amla.cfg:1835
