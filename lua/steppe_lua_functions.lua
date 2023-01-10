@@ -325,3 +325,73 @@ function steppe_longrange_filter(unit)
       return true
    end
 end
+
+--used for longrange and aoe attacks, resistances, and various damage-affecting abilities/ToD are automatically calculated here
+function steppe_calculate_undefended_attack_damage(attackerid,defenderid,weaponslot_wml)
+    local debug_utils = wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/debug_utils.lua"
+
+    local attacker = wesnoth.units.find_on_map { id = attackerid}
+    local defender = wesnoth.units.find_on_map { id = defenderid}
+    local weaponslot_lua = weaponslot_wml + 1--lua arrays start at 1 while wml ones start at 0
+
+    local att_stats, def_stats, weapondata = wesnoth.simulate_combat(attacker[1], weaponslot_lua, defender[1], nil)
+
+--    debug_utils.dbms(weapondata, true, "weapon data", true)
+
+    return weapondata.damage
+
+    --OLD UNUSED CODE:
+
+                        --THIS teleports the unit to a new location instead of making a fake unit on those coordinates, not really what I want
+                        --UPD: this code isn't even nedded
+
+--                        attacker[1].x = args.fake_attacker_x
+--                        attacker[1].y = args.fake_attacker_y
+
+--                        debug_utils.dbms(attacker, true, "attacker", true)
+--                        debug_utils.dbms(defender, true, "defender", true)
+
+--code is no longer needed as weapondata variable has what I need
+----                        debug_utils.dbms(att_stats, true, "attacker stats", true)
+----                        debug_utils.dbms(def_stats, true, "defender stats", true)
+--                        debug_utils.dbms(weapondata, true, "weapon data", true)
+--
+--                        local one_strike_damage = 0
+--                        --interate through possible hp values to get
+--
+--                        --failsafe: if 0 hp is the only possibility where damage is dealt, kill the enemy
+--                        if def_stats.hp_chance[0] > 0.0 then
+--                            one_strike_damage = defender[1].hitpoints
+--                        end
+--
+--                        for i in ipairs(def_stats.hp_chance) do
+--                            --skip hp values that aren't possible 
+--                            if def_stats.hp_chance[i] > 0.0 then
+--                                if i < defender[1].hitpoints then
+--                                    one_strike_damage = defender[1].hitpoints - i
+--                                end
+--                            end
+--                        end
+
+--                        wml.variables["tmp_longrange_strike_damage"] = one_strike_damage
+
+--                        wml.variables["tmp_longrange_strike_damage"] = weapondata.damage
+
+--                        debug_utils.dbms(att_stats.hp_chance, true, "attacker hp", true)
+--                        debug_utils.dbms(def_stats.hp_chance, true, "defender hp", true)
+
+end
+
+function steppe_calculate_undefended_attack_chance_to_hit(attackerid,defenderid,weaponslot_wml)
+    local debug_utils = wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/debug_utils.lua"
+
+    local attacker = wesnoth.units.find_on_map { id = attackerid}
+    local defender = wesnoth.units.find_on_map { id = defenderid}
+    local weaponslot_lua = weaponslot_wml + 1--lua arrays start at 1 while wml ones start at 0
+
+    local att_stats, def_stats, weapondata = wesnoth.simulate_combat(attacker[1], weaponslot_lua, defender[1], nil)
+
+--    debug_utils.dbms(weapondata, true, "weapon data", true)
+
+    return weapondata.chance_to_hit
+end
