@@ -326,7 +326,7 @@ function steppe_longrange_filter(unit)
    end
 end
 
---used for longrange and aoe attacks, resistances, and various damage-affecting abilities/ToD are automatically calculated here
+--used for longrange and aoe attacks. resistances, and various damage-affecting abilities/ToD are automatically calculated here
 function steppe_calculate_undefended_attack_damage(attackerid,defenderid,weaponslot_wml)
     local debug_utils = wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/debug_utils.lua"
 
