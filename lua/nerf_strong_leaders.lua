@@ -7,7 +7,7 @@ local res = {}
 res.nerf_strong_leaders = function(args)
     local nerf_strong_leaders = wml.variables["nerf_strong_leaders"]
     if nerf_strong_leaders == nil then
-        nerf_strong_leaders = wesnoth.game_config.mp_settings and (wesnoth.game_config.mp_settings.mp_campaign == "")
+        nerf_strong_leaders = wesnoth.scenario.mp_settings and (wesnoth.scenario.mp_settings.mp_campaign == "")
     end
     if not nerf_strong_leaders then
         return
@@ -18,7 +18,7 @@ res.nerf_strong_leaders = function(args)
 --    debug_utils.dbms(args, true, "arguments", true)
     for i, unit in ipairs(wesnoth.units.find_on_map { canrecruit = true, type_adv_tree = args.unit_tree, { "not", { trait = args[1][2].id} } }) do
         if not unit.variables.dont_make_me_slow then
-            wesnoth.add_modification(unit, "trait", trait_debuff )
+            wesnoth.units.add_modification(unit, "trait", trait_debuff )
             unit.moves = unit.max_moves
             unit.hitpoints = unit.max_hitpoints
         end
