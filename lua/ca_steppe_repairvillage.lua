@@ -1,4 +1,4 @@
-local H = wesnoth.require "helper"
+--local H = wesnoth.require "helper"
 local AH = wesnoth.require "ai/lua/ai_helper.lua"
 local LS = wesnoth.require "location_set"
 local M = wesnoth.map
@@ -22,9 +22,9 @@ function ca_repairvillage:evaluation()
 --        wesnoth.message("repairing evaluation")
 
 --    local units = wesnoth.get_unit { side = wesnoth.current.side, formula = 'movement_left > 0' }
-    local units = wesnoth.units.get { side = wesnoth.current.side, ability = "steppe_repair_village"}
+    local units = wesnoth.units.find_on_map { side = wesnoth.current.side, ability = "steppe_repair_village"}
 
-    destroyed_villages = H.get_variable_array "destroyed_village_information"
+    destroyed_villages = wml.array_access.get("destroyed_village_information")
 
 --    debug_utils.dbms(destroyed_villages, true, "destroyed villages", true)
 

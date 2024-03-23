@@ -1,4 +1,3 @@
-local H = wesnoth.require "helper"
 local AH = wesnoth.require("ai/lua/ai_helper.lua")
 local LS = wesnoth.require "location_set"
 
@@ -23,7 +22,9 @@ function ca_steppe_recall:evaluation(cfg)
         local new_hexes = {}
 
         castle_map:iter(function(x, y)
-            for xa,ya in H.adjacent_tiles(x, y) do
+            for xa,ya in wesnoth.current.map:iter_adjacent(x, y) do
+
+                
                 if (not castle_map:get(xa, ya))
                     and (xa >= 1) and (xa <= width)
                     and (ya >= 1) and (ya <= height)
