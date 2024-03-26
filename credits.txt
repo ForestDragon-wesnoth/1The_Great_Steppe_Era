@@ -6,6 +6,8 @@ People who contributed to the project:
 
  Mechanical: main artist
 
+ Kordov: main portrait artist
+
  Tezereth: Naga/slave infantry animations
 
  zhora: gnoll portrait
