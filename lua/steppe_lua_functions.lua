@@ -175,7 +175,6 @@ end
 
 function steppe_find_special_by_tag(variable,special_tag)
 --   wesnoth.require "~add-ons/1The_Great_Steppe_Era/lua/ravana_inspect_table.lua"
-   helper = wesnoth.require "lua/helper.lua"
    local attack = wml.variables[variable]
 --   inspect_table({attack}, {})
    local specials = wml.get_child(attack, "specials")
