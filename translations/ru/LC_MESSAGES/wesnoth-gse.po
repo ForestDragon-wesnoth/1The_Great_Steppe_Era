@@ -3,7 +3,7 @@ msgstr ""
 "Project-Id-Version: \n"
 "Report-Msgid-Bugs-To: https://bugs.wesnoth.org/\n"
 "POT-Creation-Date: \n"
-"PO-Revision-Date: 2024-03-24 10:07+0200\n"
+"PO-Revision-Date: 2024-04-03 11:15+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ru\n"
@@ -9584,12 +9584,12 @@ msgstr "Этой атакой боец всегда атакует вторым,
 #. [resistance]: id=steppe_dauntless
 #: utils/abilities_mandate.cfg:175
 msgid "dauntless"
-msgstr "бесстрашие"
+msgstr "натиск"
 
 #. [resistance]: id=steppe_dauntless
 #: utils/abilities_mandate.cfg:176
 msgid "female^dauntless"
-msgstr "бесстрашие"
+msgstr "натиск"
 
 #. [resistance]: id=steppe_dauntless
 #: utils/abilities_mandate.cfg:177
