@@ -16,6 +16,10 @@ People who contributed to the project:
 
  kaygan: vampire animations
 
+ Hejnewar: balance proposals, kanavar upkeep mechanic
+
+ igorbat/bolyarich: balancing, playtesting, gameplay ideas
+
 Add-ons I took some assets from:
 
  UMC Magic Icons: many great magic icons
