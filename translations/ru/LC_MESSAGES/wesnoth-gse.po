@@ -7914,15 +7914,20 @@ msgstr "Гридь"
 
 #. [unit_type]: id=Slav_Grand_Guard, race=steppe_northerner
 #: units/slavs/Slav_Militia.cfg:222
-msgid ""
-"Гриди — это мужчины, которые приобрели тяжёлое вооружение и полностью "
+msgid "Great Warriors are men who acquired heavy weapons and devoted "
+"themselves entirely to military affairs. They form a standing army in "
+"every major city; a detachment of great warriors is the core of a knyaz's "
+"infantry. They have gone through many battles and are masters of both spear "
+"and battle axe. They can be called heavy infantry, but they are slightly lighter "
+"armed than their Wesnoth counterparts, and therefore retain mobility in battle "
+"and confidently operate not only in defense, but also in a quick attack."
+msgstr "Гриди — это мужчины, которые приобрели тяжёлое вооружение и полностью "
 "посвятили себя военному делу. Они составляют постоянное войско в каждом "
 "крупном городе; отряд гридей является ядром пешей части княжеской армии. Они "
 "прошли через многие сражения и в совершенстве владеют и копьем, и боевым "
 "топором. Их можно назвать тяжёлой пехотой, однако они вооружены чуть легче, "
 "чем их веснотские коллеги, а потому сохранили подвижность в бою и уверенно "
 "действуют не только в обороне, но и в быстром нападении."
-msgstr ""
 
 #. [abilities]
 #: units/slavs/Slav_Militia.cfg:228
