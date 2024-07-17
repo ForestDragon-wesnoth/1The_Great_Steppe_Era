@@ -7873,8 +7873,17 @@ msgstr "Ратник"
 
 #. [unit_type]: id=Slav_Guard, race=steppe_northerner
 #: units/slavs/Slav_Militia.cfg:91
-msgid ""
-"Если воины — это сельское ополчение, то ратники — это ополчение городское. "
+msgid "While fighters are a rural militia, warriors are an urban militia. "
+"As merchants and artisans, warriors can afford the best weapons. They wear "
+"gambesons and helmets, hold large shields and heavy spears in their hands, "
+"and have a battle ax on their belts for close combat. Like villagers, "
+"warriors also participate in military training and every year refresh their "
+"memory of combat techniques and drill skills. However, residents of outlying "
+"cities constantly have to put these skills into practice: throughout the warm "
+"season, steppe enemies carry out their raids. More than once, warriors have "
+"seen how hordes turn cities into ashes, and therefore are ready to fight to the "
+"death for what the generations of their ancestors built."
+msgstr "Если воины — это сельское ополчение, то ратники — это ополчение городское. "
 "Будучи торговцами и ремесленниками, ратники могут позволить себе лучшее "
 "вооружение. Они одеваются в стёганки и шлемы, в руках держат большие щиты и "
 "тяжелые копья, а на поясе имеют боевой топор для тесной схватки. Как и "
@@ -7884,7 +7893,6 @@ msgid ""
 "совершают свои набеги степные враги. Не раз ратники видели, как орды "
 "превращают города в пепелища, а потому готовы насмерть стоять за то, что "
 "выстроили поколения их предков."
-msgstr ""
 
 #. [abilities]
 #: units/slavs/Slav_Militia.cfg:97 units/slavs/Slav_Militia.cfg:353
