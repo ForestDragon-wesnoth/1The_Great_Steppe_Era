@@ -7823,8 +7823,15 @@ msgstr "Воин"
 
 #. [unit_type]: id=Slav_Militia, race=steppe_northerner
 #: units/slavs/Slav_Militia.cfg:27
-msgid ""
-"Воины - это младшее ополчение, вооруженные мужчины из сельской местности.  На "
+msgid "Fighters are a junior militia, armed men from the countryside. Knyazes "
+"call them into service when the strength of their retinue alone is not enough. "
+"Even though they are poorly armed, the centuries-old proximity to the steppe has"
+" made the northerners staunch and brave warriors. Regular military training, which"
+" the knyazes organize in the time free from field work, adds combat skills to their"
+" courage. Any enemy who mistook them for a crowd of untrained and weak peasants "
+"quickly realized how much he was mistaken: the wall of shields of these stern men"
+" showed itself to be a reliable weapon both in attack and in defense of their native lands."
+msgstr "Воины - это младшее ополчение, вооруженные мужчины из сельской местности.  На "
 "службу их призывают князья, когда сил одной дружины недостаточно. Пусть они "
 "бедно вооружены, вековое соседство со степью сделало северян стойкими и "
 "храбрыми воинами, а регулярные военные сборы, которые князья организовывают в "
@@ -7832,7 +7839,6 @@ msgid ""
 "Всякий противник, который принимал их за толпу необученных и слабых крестьян, "
 "быстро осознавал, как сильно он ошибся: стена из щитов этих суровых мужчин "
 "показала себя надёжным оружием и в нападении, и в защите родных земель. "
-msgstr ""
 
 #. [abilities]
 #: units/slavs/Slav_Militia.cfg:33 units/slavs/Slav_Militia.cfg:97
