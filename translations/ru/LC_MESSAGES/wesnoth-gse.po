@@ -7396,7 +7396,16 @@ msgstr "Воин-ворон"
 
 #. [unit_type]: id=Slav_Temsk_Ravenblade, race=steppe_northerner
 #: units/slavs/Slav-Temsk_Raiders.cfg:158
-msgid "ravenblade^WIP: NOT YET TRANSLATED"
+msgid "Many incredible things from the dark times have been preserved in the land of Temsk. "
+"For example, a cult whose followers can turn into birds. Many northerners from Krada or "
+"Zimnovsk consider this to be something dark, but essentially this cult originates from the "
+"veneration of a patron animal, not from evil gods. Brave and skillful warriors who want to "
+"connect their lives with the knyaz’s court and become his warriors are dedicated to it. "
+"The younger Temsk warriors are called Ravenblades. They dress in light, good-quality clothes"
+" with a feather cloak, wear tiaras and straight swords. These are the eyes and ears of the "
+"Temsk knyaz. Their abilities are extremely useful: in peacetime, they often fly around lands"
+" and keep order, and in war they act both as scouts and as elite units that go behind enemy "
+"lines and destroy their convoys, messengers and commanders."
 msgstr ""
 "В темской земле сохранилось немало невероятных вещей из тёмных времён. "
 "Например, культ, последователи которого умеют оборачиваться в птиц. Многие "
