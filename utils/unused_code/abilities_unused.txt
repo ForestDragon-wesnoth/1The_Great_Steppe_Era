@@ -2650,3 +2650,839 @@ Can the unit be freed: <span color='#$steppe_cagecalc_canfree_color|'>$steppe_ca
     [+attack]
     [+specials]
 #enddef
+
+#define STEPPE_SLAVEFREE_EXCEPTION
+            ability=steppe_slave
+#            [or]
+#              level=0
+#            [/or]
+            [or]
+                [filter_wml]
+                    [status]
+                        not_living="yes"
+                    [/status]
+                [/filter_wml]
+                [not]
+                type={STEPPE_NONLIVINGEXCEPTION}
+                [/not]
+            [/or]
+            [or]
+            ability=steppe_captured
+            [/or]
+#            [or]
+#            ability=khaganatefaction
+#            [/or]
+            [or]
+            ability=steppe_cattle
+            [/or]
+            [or]
+            race=bull
+            [/or]
+            [or]
+            race=wolf
+            [/or]
+            [or]
+            race=monster
+            [/or]
+            [or]
+            race=bats
+            [/or]
+            [or]
+            race=falcon
+            [/or]
+#enddef
+
+#define EVENTLOADER_EVENTS_KHAGANATE
+{STEPPE_ENSLAVE_EVENTS}
+[event]
+    name=attack
+    id=khaganate_slavefree
+    first_time_only=no
+    [filter]
+    [not]
+            {STEPPE_SLAVEFREE_EXCEPTION}
+    [/not]
+    [/filter]
+    [filter_second]
+            ability=steppe_slave
+            [not]
+            {STEPPE_SLAVE_OVERSIGHT_FILTER second_unit}
+            [/not]
+    [/filter_second]
+    [filter_condition]
+        {VARIABLE_CONDITIONAL tmp_steppe_islongranged_attack not_equals yes}
+    [/filter_condition]
+
+    [store_unit]
+        [filter]
+            x,y=$x2,$y2
+        [/filter]
+
+        variable=steppe_slavecalc_unit
+        kill=no
+    [/store_unit]
+
+    {VARIABLE freer_points 0}
+    {VARIABLE slaver_points 0}
+
+
+#macro from above
+    {STEPPE_SLAVEFREE_LEVELCALC steppe_slavecalc_unit $x2 $y2}
+ 
+
+
+
+
+    [if]
+    {VARIABLE_CONDITIONAL freer_points greater_than $slaver_points}
+    [then]
+
+#this check is so khaganate cannot free enemy slaves, only convert them
+    [if]
+    [have_unit]
+        side=$unit.side
+        canrecruit=yes
+        ability=khaganatefaction
+    [/have_unit]
+    [then]
+
+#stores the origside - if the conditions match it will be greatet than 0, if it fails the check it will be nill, a much more elegant way of checking than changing the unit side and running a [have_unit] check
+    [store_side]
+        side=$second_unit.variables.origside
+        [allied_with]
+            side=$unit.side
+        [/allied_with]
+        variable=tmp_slave_origside
+    [/store_side]
+
+    [if]
+        {VARIABLE_CONDITIONAL tmp_slave_origside.side greater_than 0}
+        [then]
+#if the slave was a former ally, free as normal
+    {STEPPE_FREESLAVE $x2 $y2 $unit.side}
+    {MODIFY_UNIT id=$second_unit.id moves 0}
+    {MODIFY_UNIT id=$second_unit.id attacks_left 0}
+
+
+        [/then]
+        [else]
+
+    [if]
+        [variable]
+            name=second_unit.gender
+            equals=female
+        [/variable]
+
+        [then]
+            [set_variable]
+                name=tmp_convert_text
+                value= _ "female^Converted!"
+            [/set_variable]
+        [/then]
+
+        [else]
+            [set_variable]
+                name=tmp_convert_text
+                value= _ "Converted!"
+            [/set_variable]
+        [/else]
+    [/if]
+    {VARIABLE second_unit.side $unit.side}
+    [unstore_unit]
+        variable=second_unit
+        text=$tmp_convert_text
+        red=255
+        green=126
+        blue=0
+        find_vacant=no
+    [/unstore_unit]
+    #if a converted unit was in a cage, free the unit
+    {STEPPE_FREEUNIT $x2 $y2}
+
+    {CLEAR_VARIABLE tmp_convert_text}
+    {MODIFY_UNIT id=$second_unit.id moves 0}
+    {MODIFY_UNIT id=$second_unit.id attacks_left 0}
+
+
+        [/else]
+        [/if]
+
+        {CLEAR_VARIABLE tmp_slave_origside}
+
+    [/then]
+    [else]
+    {STEPPE_FREESLAVE $x2 $y2 $unit.side}
+    {MODIFY_UNIT id=$second_unit.id moves 0}
+    {MODIFY_UNIT id=$second_unit.id attacks_left 0}
+
+    [/else]
+    [/if]
+
+    [/then]
+    [else]
+
+
+    [/else]
+    [/if]
+    
+
+#    [chat]
+#       speaker=_"Debug"
+#       message= _ "Freer points: $freer_points|. Slaver points: $slaver_points| Slaver points 2: $slaver_points2|. Prisoner free: $prisoner_tofree|"
+#    [/chat]
+    {CLEAR_VARIABLE freer_points}
+    {CLEAR_VARIABLE slaver_points}
+    {CLEAR_VARIABLE slaver_points2}
+    {CLEAR_VARIABLE steppe_slavecalc_unit}
+[/event]
+[event]
+    name=die
+    id=khaganate_leaderdeath_events
+    first_time_only=no
+    [filter]
+            canrecruit=yes
+    [/filter]
+
+    [if]
+    [not]
+    [have_unit]
+    canrecruit=yes
+    side=$unit.side
+    [not]
+    ability=steppe_captured
+    [/not]
+    [/have_unit]
+    [/not]
+    [then]
+#free the slaves, or convert them if the killer's side is also khaganate
+    [store_unit]
+        [filter]
+            side=$unit.side
+            ability=steppe_slave
+        [/filter]
+        variable=steppe_slave2
+        kill=no
+    [/store_unit]
+    [if]
+    [have_unit]
+        side=$second_unit.side
+        canrecruit=yes
+        ability=khaganatefaction
+    [/have_unit]
+    [then]
+    {GSE_DEPRECATED_MACRO_FOREACH steppe_slave2 i}
+    {MODIFY_UNIT id=$steppe_slave2[$i].id side $second_unit.side}
+    [fire_event]
+        name=steppe_customevent_changeside
+        [primary_unit]
+            id=$steppe_slave2[$i].id
+        [/primary_unit]
+    [/fire_event]
+    [capture_village]
+    x,y=$steppe_slave2[$i].x,$steppe_slave2[$i].y
+    side=$second_unit.side
+    [/capture_village]
+    {GSE_DEPRECATED_MACRO_NEXT i}
+    [/then]
+    [else]
+    {GSE_DEPRECATED_MACRO_FOREACH steppe_slave2 i}
+    {STEPPE_FREESLAVE $steppe_slave2[$i].x $steppe_slave2[$i].y $second_unit.side}
+    {GSE_DEPRECATED_MACRO_NEXT i}
+    [/else]
+    [/if]
+
+#all disloyal units on the dead leather's side automatically desert to the killer's side
+    [store_unit]
+        [filter]
+            side=$unit.side
+            ability=steppe_disloyal
+        [not]
+#to prevent any weirdness if the leader was disloyal
+            id=$unit.id
+        [/not]
+        [/filter]
+        variable=steppe_deserters
+        kill=no
+    [/store_unit]
+    {GSE_DEPRECATED_MACRO_FOREACH steppe_deserters i}
+    [sound]
+        name=horn-signals/horn-1.ogg
+    [/sound]
+    {MODIFY_UNIT id=$steppe_deserters[$i].id side $second_unit.side}
+    {MODIFY_UNIT id=$steppe_deserters[$i].id experience "$($steppe_deserters[$i].experience| / 2)"}#halving unit experience
+#in case the deserting unit is a leader:
+
+    {MODIFY_UNIT id=$steppe_deserters[$i].id canrecruit no}
+    [capture_village]
+    x,y=$steppe_deserters[$i].x,$steppe_deserters[$i].y
+    side=$second_unit.side
+    [/capture_village]
+
+#move the traitor unit to the enemy side's leader
+
+        [store_unit]
+            [filter]
+                side=$second_unit.side
+                canrecruit=yes
+            [/filter]
+            variable=steppe_disloyal_leader
+            kill=no
+        [/store_unit]
+        {DISLOYAL_STORE_LOCATION $steppe_deserters[$i].id}
+        {CLEAR_VARIABLE steppe_disloyal_leader}
+
+    {MODIFY_UNIT id=$steppe_slave2[$i].id side $second_unit.side}
+    {GSE_DEPRECATED_MACRO_NEXT i}
+
+    [/then]
+    [/if]
+    {CLEAR_VARIABLE steppe_slave}
+[/event]
+[event]
+    name=post advance
+    first_time_only=no
+    [filter]
+      ability=steppe_slave_freed
+    [/filter]
+    [object]
+       [filter]
+           id=$unit.id
+       [/filter]
+       duration=forever
+       silent=yes
+       [effect]
+          apply_to=remove_ability
+          [abilities]
+             {ABILITY_STEPPE_SLAVE}
+          [/abilities]
+       [/effect]
+    [/object]
+    [remove_unit_overlay]
+        id=$unit.id
+        image="misc/hero-icon-old.png~CS(-101,-101,-101)"
+    [/remove_unit_overlay]
+[/event]
+#slaves lose their slave overlay when advancing to khaganate sentinels/marksmen.
+[event]
+    name=post advance
+    first_time_only=no
+    [filter]
+        type=Khaganate_Sentinel,Khaganate_Marksman
+    [/filter]
+    [remove_unit_overlay]
+        id=$unit.id
+        image="misc/hero-icon-old.png~CS(-101,-101,-101)"
+    [/remove_unit_overlay]
+[/event]
+#for RPG:
+[event]
+    name=start
+    first_time_only=no
+    [store_unit]
+        [filter]
+            canrecruit=yes
+            ability=steppe_slave
+        [/filter]
+        variable=steppe_slaveleader
+        kill=no
+    [/store_unit]
+    {GSE_DEPRECATED_MACRO_FOREACH steppe_slaveleader i}
+    [remove_unit_overlay]
+        id=$steppe_slaveleader[$i].id
+        image="misc/hero-icon-old.png~CS(-101,-101,-101)"
+    [/remove_unit_overlay]
+    [object]
+       [filter]
+           id=$steppe_slaveleader.id
+       [/filter]
+       duration=forever
+       silent=yes
+       [effect]
+          apply_to=remove_ability
+          [abilities]
+             {ABILITY_STEPPE_SLAVE}
+          [/abilities]
+       [/effect]
+       [effect]
+          apply_to=new_ability
+          [abilities]
+             {ABILITY_FREED}
+          [/abilities]
+       [/effect]
+    [/object]
+    {MODIFY_UNIT id=$steppe_slaveleader.id variation freed}
+    {GSE_DEPRECATED_MACRO_NEXT i}
+    {CLEAR_VARIABLE slaveleader}
+[/event]
+[event]
+    name=start
+    id=steppe_slavecalculator_menu
+    first_time_only=no
+    [set_menu_item]
+        id=steppe_slavecalculator
+        description=_"Calculate whether this unit can be freed/converted"
+        image=items/book2.png~CROP(21,23,27,24)~SCALE(20,20)
+        #DO NOT SET SYNCED TO NO FOR ANY MENUS THAT ACTUALLY AFFECT THE GAME!!!
+        synced=yes
+        [show_if]
+        {VARIABLE_CONDITIONAL steppe_disable_calculator_menu not_equals yes}
+        [/show_if]
+
+        [filter_location]
+            [filter]
+                    ability=steppe_slave
+            [/filter]
+        [/filter_location]
+        [command]
+    [allow_undo] [/allow_undo]
+
+    [store_unit]
+        [filter]
+            x,y=$x1,$y1
+        [/filter]
+
+        variable=steppe_slavecalc_unit
+        kill=no
+    [/store_unit]
+
+    {VARIABLE freer_points 0}
+    {VARIABLE slaver_points 0}
+
+    [if]
+    [have_unit]
+            id=$steppe_slavecalc_unit.id
+            [filter_side]
+            [enemy_of]
+                side=$side_number
+            [/enemy_of]
+            [/filter_side]
+    [/have_unit]
+    [then]
+    {VARIABLE steppe_slavecalc_freer_color 00ff00}
+    {VARIABLE steppe_slavecalc_slaver_color ff0000}
+    [/then]
+    [else]
+    {VARIABLE steppe_slavecalc_freer_color ff0000}
+    {VARIABLE steppe_slavecalc_slaver_color 00ff00}
+    [/else]
+    [/if]
+
+    [if]
+    [have_unit]
+        side=$side_number
+        canrecruit=yes
+        ability=khaganatefaction
+    [/have_unit]
+    [then]
+
+    {VARIABLE steppe_slavecalc_faction_canfreeslaves _"No"}
+
+    [/then]
+    [else]
+    {VARIABLE steppe_slavecalc_faction_canfreeslaves _"Yes"}
+    [/else]
+    [/if]
+
+
+    [if]
+    [have_unit]
+        side=$side_number
+        canrecruit=yes
+        ability=khaganatefaction
+    [/have_unit]
+    [and]
+    [have_unit]
+            id=$steppe_slavecalc_unit.id
+            [filter_side]
+            [enemy_of]
+                side=$side_number
+            [/enemy_of]
+            [/filter_side]
+    [/have_unit]
+    [/and]
+    [then]
+#variable used to say that the side cannot free slaves because it's khaganate
+    {VARIABLE steppe_slavecalc_thisside_is_khaganate_true yes}
+    [/then]
+    [else]
+    [/else]
+    [/if]
+
+
+    [if]
+    [have_unit]
+            id=$steppe_slavecalc_unit.id
+            {STEPPE_SLAVE_OVERSIGHT_FILTER steppe_slavecalc_unit}
+    [/have_unit]
+    [then]
+    {VARIABLE steppe_slavecalc_oversight_true yes}
+
+    {VARIABLE steppe_slavecalc_oversight _"Yes"}
+    [/then]
+    [else]
+
+    {VARIABLE steppe_slavecalc_oversight _"No"}
+
+    [/else]
+    [/if]
+
+#macro from above
+    {STEPPE_SLAVEFREE_LEVELCALC steppe_slavecalc_unit $x1 $y1}
+
+    [if]
+    {VARIABLE_CONDITIONAL freer_points greater_than $slaver_points}
+    [and]
+    {VARIABLE_CONDITIONAL steppe_slavecalc_oversight_true not_equals yes}
+    [/and]
+    [and]
+    {VARIABLE_CONDITIONAL steppe_slavecalc_thisside_is_khaganate_true not_equals yes}
+    [/and]
+    [then]
+
+    {VARIABLE steppe_slavecalc_canfree _"Yes"}
+
+    {VARIABLE steppe_slavecalc_freeable_color $steppe_slavecalc_freer_color}
+
+    [/then]
+    [else]
+
+    {VARIABLE steppe_slavecalc_canfree _"No"}
+
+    {VARIABLE steppe_slavecalc_freeable_color $steppe_slavecalc_slaver_color}
+
+    [/else]
+    [/if]
+ 
+
+    {VARIABLE slaver_points1 $slaver_points}
+    {VARIABLE_OP slaver_points1 sub $slaver_points2}
+
+        [message]
+            speaker=narrator
+            side_for=$side_number
+            caption=_"Slave freeing/converting calculator"
+            message=_"Total slaver level (including slaves): <span color='#$steppe_slavecalc_slaver_color|'>$slaver_points|</span>
+'levels' from slaves (0.5 each): $slaver_points2|
+Oversight: <span color='#cccc33'>$steppe_slavecalc_oversight|</span>
+Your faction can free slaves: <span color='#cccc33'>$steppe_slavecalc_faction_canfreeslaves|</span>
+
+Total level of freers/converters: <span color='#$steppe_slavecalc_freer_color|'>$freer_points|</span>
+
+Can the unit be freed/converted: <span color='#$steppe_slavecalc_freeable_color|'>$steppe_slavecalc_canfree|</span>
+
+(note: this menu only calculates only the <b>current</b> total levels, which can easily change during an enemy's turn, and invisible units don't affect the total level)"
+            image=portraits/factionhint-khaganate.png
+        [/message]
+
+    {CLEAR_VARIABLE freer_points}
+    {CLEAR_VARIABLE slaver_points}
+    {CLEAR_VARIABLE slaver_points1}
+    {CLEAR_VARIABLE slaver_points2}
+    {CLEAR_VARIABLE steppe_slavecalc_unit}
+    {CLEAR_VARIABLE steppe_slavecalc_canfree}
+    {CLEAR_VARIABLE steppe_slavecalc_oversight}
+    {CLEAR_VARIABLE steppe_slavecalc_oversight_true}
+    {CLEAR_VARIABLE steppe_slavecalc_slaver_color}
+    {CLEAR_VARIABLE steppe_slavecalc_freer_color}
+    {CLEAR_VARIABLE steppe_slavecalc_freeable_color}
+    {CLEAR_VARIABLE steppe_slavecalc_thisside_is_khaganate_true}
+    {CLEAR_VARIABLE steppe_slavecalc_faction_canfreeslaves}
+
+        [/command]
+    [/set_menu_item]
+
+
+    [set_menu_item]
+        id=steppe_disloyalcalculator
+        description=_"Calculate whether this unit can desert"
+        image=items/book2.png~CROP(21,23,27,24)~SCALE(20,20)
+        #DO NOT SET SYNCED TO NO FOR ANY MENUS THAT ACTUALLY AFFECT THE GAME!!!
+        synced=yes
+        [show_if]
+        {VARIABLE_CONDITIONAL steppe_disable_calculator_menu not_equals yes}
+        [/show_if]
+
+        [filter_location]
+            [filter]
+                    ability=steppe_disloyal
+                    [not]
+                        trait=loyal
+                    [/not]
+            [/filter]
+        [/filter_location]
+        [command]
+    [allow_undo] [/allow_undo]
+
+    [store_unit]
+        [filter]
+            x,y=$x1,$y1
+        [/filter]
+
+        variable=steppe_disloyalcalc_unit
+        kill=no
+    [/store_unit]
+
+    {VARIABLE enemy_points 0}
+    {VARIABLE khaganate_points $steppe_disloyalcalc_unit.level}
+
+    [if]
+    [have_unit]
+            id=$steppe_disloyalcalc_unit.id
+            [filter_side]
+            [enemy_of]
+                side=$side_number
+            [/enemy_of]
+            [/filter_side]
+    [/have_unit]
+    [then]
+    {VARIABLE steppe_disloyalcalc_freer_color 00ff00}
+    {VARIABLE steppe_disloyalcalc_khaganate_color ff0000}
+    [/then]
+    [else]
+    {VARIABLE steppe_disloyalcalc_freer_color ff0000}
+    {VARIABLE steppe_disloyalcalc_khaganate_color 00ff00}
+    [/else]
+    [/if]
+
+    [if]
+    [have_unit]
+            id=$steppe_disloyalcalc_unit.id
+            {STEPPE_SLAVE_OVERSIGHT_FILTER steppe_disloyalcalc_unit}
+    [/have_unit]
+    [then]
+    {VARIABLE steppe_disloyalcalc_oversight_true yes}
+
+    {VARIABLE steppe_disloyalcalc_oversight _"Yes"}
+    [/then]
+    [else]
+
+    {VARIABLE steppe_disloyalcalc_oversight _"No"}
+
+    [/else]
+    [/if]
+
+#macro from above
+    {STEPPE_DISLOYAL_LEVELCALC steppe_disloyalcalc_unit $x1 $y1}
+
+    [if]
+    {VARIABLE_CONDITIONAL enemy_points greater_than $khaganate_points}
+    [and]
+    {VARIABLE_CONDITIONAL steppe_disloyalcalc_oversight_true not_equals yes}
+    [/and]
+    [then]
+
+    {VARIABLE steppe_disloyalcalc_candesert _"Yes"}
+
+    {VARIABLE steppe_disloyalcalc_candesert_color $steppe_disloyalcalc_freer_color}
+
+    [/then]
+    [else]
+
+    {VARIABLE steppe_disloyalcalc_candesert _"No"}
+
+    {VARIABLE steppe_disloyalcalc_candesert_color $steppe_disloyalcalc_khaganate_color}
+
+    [/else]
+    [/if]
+ 
+        [message]
+            speaker=narrator
+            side_for=$side_number
+            caption=_"Disloyal desert-ability calculator"
+            message=_"Total khaganate levels: <span color='#$steppe_disloyalcalc_khaganate_color|'>$khaganate_points|</span>
+Oversight: <span color='#cccc33'>$steppe_disloyalcalc_oversight|</span>
+
+Total level of enemies of the khaganate: <span color='#$steppe_disloyalcalc_freer_color|'>$enemy_points|</span>
+
+Can the unit desert: <span color='#$steppe_disloyalcalc_candesert_color|'>$steppe_disloyalcalc_candesert|</span>
+
+(note: this menu only calculates only the <b>current</b> total levels, which can easily change during an enemy's turn, and invisible units don't affect the total level)"
+            image=portraits/factionhint-khaganate.png
+        [/message]
+
+    {CLEAR_VARIABLE freer_points}
+    {CLEAR_VARIABLE slaver_points}
+    {CLEAR_VARIABLE slaver_points1}
+    {CLEAR_VARIABLE slaver_points2}
+    {CLEAR_VARIABLE steppe_disloyalcalc_unit}
+    {CLEAR_VARIABLE steppe_disloyalcalc_canfree}
+    {CLEAR_VARIABLE steppe_disloyalcalc_oversight}
+    {CLEAR_VARIABLE steppe_disloyalcalc_oversight_true}
+    {CLEAR_VARIABLE steppe_disloyalcalc_khaganate_color}
+    {CLEAR_VARIABLE steppe_disloyalcalc_freer_color}
+    {CLEAR_VARIABLE steppe_disloyalcalc_candesert_color}
+
+        [/command]
+    [/set_menu_item]
+[/event]
+[event]
+    name=unit placed,post advance
+    id=steppe_khaganate_halo
+    first_time_only=no
+    [filter]
+    ability=steppe_oversight
+    [or]
+    ability=steppe_khagans_presense
+    [/or]
+    [/filter]
+    {IF_VAR steppe_disable_oversight_halos not_equals yes  (
+    [then]
+    [if]
+    [have_unit]
+    x,y=$x1,$y1
+    ability=steppe_khagans_presense
+    [/have_unit]
+    [then]
+    [object]
+        silent=yes
+        duration=forever
+        id=steppe_oversight_halo
+        take_only_once=no
+
+        [filter]
+            id=$unit.id
+        [/filter]
+
+        [effect]
+            apply_to=halo
+            halo="halo/oversight-aura-khagan.png"
+        [/effect]
+        [effect]
+            apply_to=new_ability
+            [abilities]
+              [dummy]
+                 id=steppe_halo_dummy_ability #for filtering later
+              [/dummy]
+            [/abilities]
+        [/effect]
+    [/object]
+    [/then]
+    [else]
+    [object]
+        silent=yes
+        duration=forever
+        id=steppe_oversight_halo
+        take_only_once=no
+
+        [filter]
+            id=$unit.id
+        [/filter]
+
+        [effect]
+            apply_to=halo
+            halo="halo/oversight-aura-naga.png"
+        [/effect]
+        [effect]
+            apply_to=new_ability
+            [abilities]
+              [dummy]
+                 id=steppe_halo_dummy_ability #for filtering later
+              [/dummy]
+            [/abilities]
+        [/effect]        
+    [/object]
+    [/else]
+    [/if]
+    [/then]
+    )}
+[/event]
+
+#removes the halo if the unit is somehow transformed into a non-overseer unit, via add-ons
+
+[event]
+    name=post advance
+    id=steppe_khaganate_halo_remover
+    first_time_only=no
+    [filter]
+    ability=steppe_halo_dummy_ability
+    [not]
+    ability=steppe_oversight
+    [or]
+    ability=steppe_khagans_presense
+    [/or]
+    [/not]
+    [/filter]
+    {IF_VAR steppe_disable_oversight_halos not_equals yes  (
+    [then]
+    [remove_object]
+        id=$unit.id
+        object_id=steppe_oversight_halo
+    [/remove_object]
+    [/then]
+    )}
+[/event]
+
+[event]
+    name=die
+    id=steppe_oversight_exp_event
+    first_time_only=no
+
+    [filter]
+    [/filter]
+    [filter_second]
+        ability=steppe_slave
+        [or]
+            ability=steppe_disloyal
+        [/or]
+    [/filter_second]
+
+    [store_unit]
+        [filter]
+            side=$second_unit.side
+            [filter_adjacent]
+                 id=$second_unit.id
+            [/filter_adjacent]
+            [and]
+            ability=steppe_oversight
+            [or]
+            ability=steppe_khagans_presense
+            [/or]
+            [/and]
+        [not]
+        [filter_wml]
+        [status]
+            petrified=yes
+        [/status]
+        [/filter_wml]
+        [or]
+           ability=steppe_captured
+        [/or]
+        [/not]
+        [/filter]
+        variable=steppe_overseer
+        kill=no
+    [/store_unit]
+    [if]
+    [variable]
+        name=steppe_overseer.length
+        greater_than=0
+    [/variable]
+    [then]
+
+    {VARIABLE overseer_random_limit $steppe_overseer.length}
+    {VARIABLE_OP overseer_random_limit sub 1}
+    {RANDOM 0..$overseer_random_limit}
+
+#since the array number is offset by one from the length (if there are 2 units, the length is 2, but the units are [0] and [1])
+
+    {EXP_VALUE_CALC $unit.id tmp_overseer_exp} #calculate the killed unit's xp, if this doesn't work, change the event to last breath event
+    {VARIABLE_OP tmp_overseer_exp multiply 0.33}
+    {VARIABLE_OP tmp_overseer_exp round ceil}
+    {VARIABLE_OP steppe_overseer[$random].experience add $tmp_overseer_exp}
+
+    [unstore_unit]
+        variable=steppe_overseer[$random]
+        text=_"+$tmp_overseer_exp| exp"
+#        red=0
+#        green=0
+#        blue=255
+        find_vacant=no
+    [/unstore_unit]
+
+    [/then]
+    [/if]
+    {CLEAR_VARIABLE steppe_overseer}
+    {CLEAR_VARIABLE overseer_random_limit}
+    {CLEAR_VARIABLE tmp_overseer_exp}
+[/event]
+#enddef
