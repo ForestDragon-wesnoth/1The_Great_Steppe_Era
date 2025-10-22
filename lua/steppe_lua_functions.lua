@@ -339,46 +339,6 @@ function steppe_calculate_undefended_attack_damage(attackerid,defenderid,weapons
 
     return weapondata.damage
 
-    --OLD UNUSED CODE:
-
-                        --THIS teleports the unit to a new location instead of making a fake unit on those coordinates, not really what I want
-                        --UPD: this code isn't even nedded
-
---                        attacker[1].x = args.fake_attacker_x
---                        attacker[1].y = args.fake_attacker_y
-
---                        debug_utils.dbms(attacker, true, "attacker", true)
---                        debug_utils.dbms(defender, true, "defender", true)
-
---code is no longer needed as weapondata variable has what I need
-----                        debug_utils.dbms(att_stats, true, "attacker stats", true)
-----                        debug_utils.dbms(def_stats, true, "defender stats", true)
---                        debug_utils.dbms(weapondata, true, "weapon data", true)
---
---                        local one_strike_damage = 0
---                        --interate through possible hp values to get
---
---                        --failsafe: if 0 hp is the only possibility where damage is dealt, kill the enemy
---                        if def_stats.hp_chance[0] > 0.0 then
---                            one_strike_damage = defender[1].hitpoints
---                        end
---
---                        for i in ipairs(def_stats.hp_chance) do
---                            --skip hp values that aren't possible 
---                            if def_stats.hp_chance[i] > 0.0 then
---                                if i < defender[1].hitpoints then
---                                    one_strike_damage = defender[1].hitpoints - i
---                                end
---                            end
---                        end
-
---                        wml.variables["tmp_longrange_strike_damage"] = one_strike_damage
-
---                        wml.variables["tmp_longrange_strike_damage"] = weapondata.damage
-
---                        debug_utils.dbms(att_stats.hp_chance, true, "attacker hp", true)
---                        debug_utils.dbms(def_stats.hp_chance, true, "defender hp", true)
-
 end
 
 function steppe_calculate_undefended_attack_chance_to_hit(attackerid,defenderid,weaponslot_wml)
